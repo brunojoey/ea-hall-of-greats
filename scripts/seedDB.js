@@ -15,7 +15,7 @@ const winnerSeed = [
     hallOfGreatsOne: {
       gameOne: {
         name: "Metal Gear Solid",
-        image: "",
+        image: "../images/metal_gear_solid.jpg",
         description: "You are Snake, a government agent on a mission to regain control of a secret nuclear weapons base from terrorist hands. Lightly armed and facing an army of foes, Snake must avoid firefights in order to survive. If Snake can locate them he can utilize advanced hardware, ranging from silenced pistols to ground-to-air missiles. Enemies react to sight and sound - so stay quiet and stay in the shadows. State-of-the-art graphics: textures, transparencies, models and explosions. Taut, gripping story with multiple endings - a truly cinematic experience.",
         genre: "Action Adventure",
         year: 1998,
@@ -26,7 +26,7 @@ const winnerSeed = [
       },
       gameTwo: {
         name: "Super Metroid",
-        image: "",
+        image: "../images/super_metroid.jpg",
         description: "Super Metroid is an 2D, side-scrolling action-adventure game, which primarily takes place on the fictional planet Zebes—a large, open-ended world with areas connected by doors and elevators. The player controls Samus Aran as she searches the planet for a Metroid that was stolen by Ridley, the leader of the Space Pirates.",
         genre: "Metroidvania",
         year: 1994,
@@ -39,7 +39,7 @@ const winnerSeed = [
     hallOfGreatsTwo: {
       gameOne: {
         name: "Super Mario 64",
-        image: "",
+        image: "../images/super_mario_64.jpg",
         description: "Mario is super in a whole new way! Combining the finest 3-D graphics ever developed for a video game and an explosive sound track, Super Mario 64 becomes a new standard for video games. It's packed with bruising battles, daunting obstacle courses and underwater adventures. Retrieve the Power Stars from their hidden locations and confront your arch nemesis - Bowser, King of the Koopas!",
         genre: "Platformer",
         year: 1996,
@@ -50,7 +50,7 @@ const winnerSeed = [
       },
       gameTwo: {
         name: "Street Fighter II",
-        image: "",
+        image: "../images/street_fighter_two.jpg",
         description: "A sequel to Street Fighter, Street Fighter II improved upon the many concepts introduced in the first game, including the use of command-based special moves and a six-button configuration, while offering players a selection of multiple playable characters, each with their own unique fighting style and special moves.",
         genre: "Fighting",
         year: "1992",
@@ -63,7 +63,7 @@ const winnerSeed = [
     hallOfGreatsThree: {
       gameOne: {
         name: "The Legend of Zelda: Ocarina of Time",
-        image: "",
+        image: "../images/ocarina_of_time.jpg",
         description: "As a young boy, Link is tricked by Ganondorf, the King of the Gerudo Thieves. The evil human uses Link to gain access to the Sacred Realm, where he places his tainted hands on Triforce and transforms the beautiful Hyrulean landscape into a barren wasteland. Link is determined to fix the problems he helped to create, so with the help of Rauru he travels through time gathering the powers of the Seven Sages.",
         genre: "Action-Adventure",
         year: 1998,
@@ -74,7 +74,7 @@ const winnerSeed = [
       },
       gameTwo: {
         name: "Castlevania: Symphony of the Night",
-        image: "",
+        image: "../images/symphony_of_the_night.jpg",
         description: "As a descendant of Dracula, you must end the vampire bloodline. Can you rid the world of this unspeakable terror? Uncover the mystery of Castlevania and challenge an adventure as legendary as its name. Over 140 different enemies, bosses, and ghastly creatures. Awesome magical spells - transform into a bat, a wolf, or etheral mist. Hidden weapons, secrets, and characters...the largest Castlevania ever!",
         genre: "Metroidvania",
         year: 1997,
@@ -87,7 +87,7 @@ const winnerSeed = [
     hallOfGreatsFour: {
       gameOne: {
         name: "Chrono Trigger",
-        image: "",
+        image: "../images/chrono_trigger.jpg",
         description: "When a newly developed teleportation device malfunctions at the Millennial Fair, young Crono must travel through time to rescue his unfortunate companion from an intricate web of past and present perils. The swashbuckling adventure that ensues soon unveils an evil force set to destroy the world, triggering Crono's race against time to change the course of history and bring about a brighter future.",
         genre: "Role-Playing Game",
         year: 1995,
@@ -111,7 +111,7 @@ const winnerSeed = [
     hallOfGreatsFive: {
       gameOne: {
         name: "Resident Evil 4",
-        image: "",
+        image: "../images/resident_evil_four.jpg",
         description:
           "Resident Evil 4 marks a new chapter in the Resident Evil series. You'll rejoin Leon S. Kennedy six years after his first mission as a rookie cop from Resident Evil 2. Now a US agent, Leon is on a top secret mission to investigate the disappearance of the president's daughter. As Leon, you must make your way to a mysterious location in Europe, where new enemies await. Take them down by using enhanced aim-and-shoot features and a new action button.",
         genre: "Survival Horror",
@@ -123,7 +123,7 @@ const winnerSeed = [
       },
       gameTwo: {
         name: "Resident Evil Remake",
-        image: "",
+        image: "../images/resident_evil_remake.jpg",
         description: "Raccoon City has been completely overrun by mutant beasts and bloodthirsty zombies. You are a member of S.T.A.R.S.--a rescue squad sent into the community to investigate the ominous mansion at the core of the disaster. Take the role of operative Jill Valentine or Chris Redfield and uncover the secrets behind a radical, genetic research facility. With an array of weapons to master and horrors around every corner, the ultimate test may be just to make it out alive.",
         genre: "Survival Horror",
         year: 2002,
@@ -136,7 +136,7 @@ const winnerSeed = [
     hallOfGreatsSix: {
       gameOne: {
         name: "Metroid Prime",
-        image: "",
+        image: "../images/metroid_prime.jpg",
         description: "Samus returns in a new mission to unravel the mystery behind the ruined walls scattered across Tallon IV. In Metroid Prime, you'll play the role of this bounty hunter and view the world through her visor, which displays information ranging from current energy levels to ammunition. Equipped with a Power Beam and Gravity Suit, you must shoot locked switches, solve puzzles, and eliminate enemies. It's up to you to explore the world and recover more power-ups and weapons, which gradually open more gameplay areas.",
         genre: "Metroidvania",
         year: 2002,
@@ -147,7 +147,7 @@ const winnerSeed = [
       },
       gameTwo: {
         name: "Paper Mario & The Thousand-Year Door",
-        image: "",
+        image: "../images/paper_mario_thousand.jpg",
         description: "Time passes, the pages turn… and a new chapter unfolds in an unfamiliar land! Get ready for a two-dimensional role-playing adventure for the ages as Mario returns to paper form to discover a mystery that sleeps behind an ancient, legendary portal called the Thousand-Year Door. The quest is long, the dangers many, and this time, Mario will have to make full use of his papery qualities just to survive.",
         genre: "Role-Playing Game",
         year: 2004,
@@ -160,7 +160,7 @@ const winnerSeed = [
     hallOfGreatsSeven: {
       gameOne: {
         name: "Final Fantasy VI",
-        image: "",
+        image: "../images/ff_six.jp",
         description: "Part of the Final Fantasy turn-based Japanese RPG franchise, Final Fantasy VI follows an ensemble cast of characters as they attempt to save the their steampunk/fantasy land from the repercussions of the otherworldly campaigns of Emperor Gestahl and his court jester/general Kefka, while trying to resolve their personal issues together and find meaning in their own existence through their tumultuous journey.",
         genre: "Role-Playing Game",
         year: 1994,
@@ -171,7 +171,7 @@ const winnerSeed = [
       },
       gameTwo: {
         name: "Tetris",
-        image: "",
+        image: "../images/tetris.jpg",
         description: "Tetris is a puzzle video game for the Game Boy released in 1989. It is a portable version of Alexey Pajitnov's original Tetris and it was bundled in the North American and European releases of the Game Boy itself. It was the first game compatible with the Game Link Cable, a pack-in accessory that allowed two Game Boys to link together for multiplayer purposes.",
         genre: "Puzzle",
         year: 1989,
@@ -184,7 +184,7 @@ const winnerSeed = [
     hallOfGreatsEight: {
       gameOne: {
         name: "Bloodborne",
-        image: "",
+        image: "../images/bloodborne.jpg",
         description: "Bloodborne is an action RPG in which you hunt for answers in the ancient city of Yharnam, now cursed with a strange endemic illness spreading through the streets like a disease. Peril, death and madness infest this dark world, and you're tasked with uncovering its darkest secrets which will be necessary for you to survive. Armed with a singular arsenal of weaponry, including guns and saw cleavers, you'll require wits, strategy and reflexes to dispatch the agile and intelligent enemies that guard the city's underbelly. You will utility holy chalices to access an array of vast underground ruins, chock full of traps, beasts, and rewards, to explore and conquer on your own or with other people.",
         genre: "Action Role-Playing Game",
         year: 2015,
@@ -195,7 +195,7 @@ const winnerSeed = [
       },
       gameTwo: {
         name: "Portal",
-        image: "",
+        image: "../images/portal.jpg",
         description: "Set in the mysterious Aperture Science Laboratories, Portal has been called one of the most innovative new games on the horizon and offers gamers hours of unique gameplay. The game is designed to change the way players approach, manipulate, and surmise the possibilities in a given environment; similar to how Half-Life 2's Gravity Gun innovated new ways to leverage an object in any given situation. Players must solve physical puzzles and challenges by opening portals to maneuvering objects, and themselves, through space. ",
         genre: "Puzzle",
         year: 2007,
@@ -208,7 +208,7 @@ const winnerSeed = [
     hallOfGreatsNine: {
       gameOne: {
         name: "The Legend of Zelda: A Link to the Past",
-        image: "",
+        image: "../images/link_past.jpg",
         description: "A top-down action/adventure title in which Link, a blacksmith's nephew living in the fantastical land of Hyrule, must free the land from the evildoings of Ganon by taking up the mythical Master Sword and collecting the three Triforces in order to free the Seven Maidens, including the princess of Hyrule, Zelda, from the dungeons and castles of the Dark World.",
         genre: "Action-Adventure",
         year: 1991,
@@ -219,7 +219,7 @@ const winnerSeed = [
       },
       gameTwo: {
         name: "Super Mario Bros. 3",
-        image: "",
+        image: "../images/super_mario_bros_three.jpg",
         description: "Your mission is to rescue the Mushroom Kingdom monarchs who have been transformed into animals by Bowser and his mischievous offspring, and in the process save the princess kidnapped by Bowser.",
         genre: "Platformer",
         year: 1988,
@@ -232,7 +232,7 @@ const winnerSeed = [
     hallOfGreatsTen: {
       gameOne: {
         name: "The Last of Us",
-        image: "",
+        image: "../images/the_last_of_us.jpg",
         description:
           "Twenty years after a pandemic radically transformed known civilization, infected humans run amuck and survivors kill one another for sustenance and weapons - literally whatever they can get their hands on. Joel, a salty survivor, is hired to smuggle a fourteen-year-old girl, Ellie, out of a rough military quarantine, but what begins as a simple job quickly turns into a brutal journey across the country.",
         genre: "Action-Adventure",
@@ -244,7 +244,7 @@ const winnerSeed = [
       },
       gameTwo: {
         name: "The Witcher III: The Wild Hunt",
-        image: "",
+        image: "../images/the_witcher_three.jpg",
         description: "With the Empire attacking the Kingdoms of the North and the Wild Hunt, a cavalcade of ghastly riders, breathing down your neck, the only way to survive is to fight back. As Geralt of Rivia, a master swordsman and monster hunter, leave none of your enemies standing. Explore a gigantic open world, slay beasts and decide the fates of whole communities with your actions, all in a genuine next generation format.",
         genre: "Action Role-Playing Game",
         year: 2015,
@@ -257,7 +257,7 @@ const winnerSeed = [
     hallOfGreatsEleven: {
       gameOne: {
         name: "Counter-Strike",
-        image: "",
+        image: "../images/counter_strike.jpg",
         description: "Play the world's number 1 online action game. Engage in an incredibly realistic brand of terrorist warfare in this wildly popular team-based game. Ally with teammates to complete strategic missions. Take out enemy sites. Rescue hostages. Your role affects your team's success. Your team's success affects your role.",
         genre: "First-Person Shooter",
         year: 2000,
@@ -268,7 +268,7 @@ const winnerSeed = [
       },
       gameTwo: {
         name: "Final Fantasy VII",
-        image: "",
+        image: "../images/ff_seven.jpg",
         description: "What begins as a rebellion against an evil corporation becomes much more. And what erupts goes beyond imagination. With vivid landscapes, lush 3D animation and environments, Square Soft's multi-million dollar masterpiece is like nothing ever seen before.",
         genre: "Role-Playing Game",
         year: 1997,
@@ -281,7 +281,7 @@ const winnerSeed = [
     hallOfGreatsTwelve: {
       gameOne: {
         name: "World of Warcraft",
-        image: "",
+        image: "../images/world_of_warcraft.jpg",
         description: "World of Warcraft is a massively multiplayer online roleplaying game (MMORPG) set in the Warcraft universe. Players assume the roles of Warcraft heroes as they explore, adventure, and quest across a vast world. Being Massively Multiplayer, World of Warcraft allows thousands of players to interact within the same world. Whether adventuring together or fighting against each other in epic battles, players will form friendships, forge alliances, and compete with enemies for power and glory.",
         genre: "MMO Role-Playing Game",
         year: 2004,
@@ -292,7 +292,7 @@ const winnerSeed = [
       },
       gameTwo: {
         name: "The Ultimate Doom",
-        image: "",
+        image: "../images/ultimate_doom.jpg",
         description: "Things aren't looking too good. You'll never navigate off the planet on your own. Plus, all the heavy weapons have been taken by the assault team leaving you with only a pistol. If you only could get your hands around a plasma rifle or even a shotgun you could take a few down on your way out. Whatever killed your buddies deserves a couple of pellets in the forehead. Securing your helmet, you exit the landing pod. Hopefully you can find more substantial firepower somewhere within the station. As you walk through the main entrance of the base, you hear animal-like growls echoing through the distant corridors. They know you're here. There's no turning back now.",
         genre: "First-Person Shooter",
         year: 1995,
@@ -305,7 +305,7 @@ const winnerSeed = [
     hallOfGreatsThirteen: {
       gameOne: {
         name: "Donkey Kong Country: Tropical Freeze",
-        image: "",
+        image: "../images/dk_tropical_freeze.jpg",
         description: "All the challenging ground-pounding, barrel-blasting, side-scrolling mine cart action from the Donkey Kong Country series is back along with a bushel of new game-play elements and features. And now, there are four playable characters! Dixie Kong is back to join the adventure as a playable character alongside Diddy Kong, and for the first time in Donkey Kong Country, bearded old hero Cranky Kong joins the adventure with his bouncy cane. Any of the three can buddy up with Donkey Kong, and each character offers a different gameplay experience. On their journey to reclaim Donkey Kong Island, Donkey Kong and his friends travel across five islands with a variety of stages that include underwater areas and frozen environments.",
         genre: "Platformer",
         year: 2014,
@@ -316,7 +316,7 @@ const winnerSeed = [
       },
       gameTwo: {
         name: "Yakuza 0",
-        image: "",
+        image: "../images/yakuza_zero.jpg",
         description: "Tokyo 1988. Getting rich is easy, the women are beautiful, and everyone wants in on the action. It's time to become Yakuza. The glitz, glamour, and unbridled decadence of the 80s are back in Yakuza 0! Fight like hell through Tokyo and Osaka with protagonist Kazuma Kiryu and series regular Goro Majima. Play as Kazuma Kiryu and discover how he finds himself in a world of trouble when a simple debt collection goes wrong and his mark winds up murdered. Then, step into the silver-toed shoes of Goro Majima and explore his normal life as the proprietor of a cabaret club.",
         genre: "Action-Adventure",
         year: 2017,
