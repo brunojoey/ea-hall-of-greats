@@ -1,4 +1,4 @@
 module.exports = {
-    Winners: require('./winners'),
-    Nominations: require('./nominations')
+    Games: require('./games'),
+    Allies: require('./allies')
 };
