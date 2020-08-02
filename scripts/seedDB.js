@@ -1150,6 +1150,100 @@ const gameSeed = [
         banned: true,
       },
     ],
+    games: [
+      {
+        ally: "Brandon Jones",
+        game: "World of Warcraft",
+        hallOfGreat: 12,
+        image: "../images/world_of_warcraft.jpg",
+        description:
+          "World of Warcraft is a massively multiplayer online roleplaying game (MMORPG) set in the Warcraft universe. Players assume the roles of Warcraft heroes as they explore, adventure, and quest across a vast world. Being Massively Multiplayer, World of Warcraft allows thousands of players to interact within the same world. Whether adventuring together or fighting against each other in epic battles, players will form friendships, forge alliances, and compete with enemies for power and glory.",
+        genre: "MMO Role-Playing Game",
+        year: 2004,
+        platforms: "PC",
+        metacritic: 93,
+        votes: 14,
+        victory: true,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Ben Moore",
+        game: "Doom",
+        hallOfGreat: 12,
+        image: "../images/ultimate_doom.jpg",
+        description:
+          "Things aren't looking too good. You'll never navigate off the planet on your own. Plus, all the heavy weapons have been taken by the assault team leaving you with only a pistol. If you only could get your hands around a plasma rifle or even a shotgun you could take a few down on your way out. Whatever killed your buddies deserves a couple of pellets in the forehead. Securing your helmet, you exit the landing pod. Hopefully you can find more substantial firepower somewhere within the station. As you walk through the main entrance of the base, you hear animal-like growls echoing through the distant corridors. They know you're here. There's no turning back now.",
+        genre: "First-Person Shooter",
+        year: 1993,
+        platforms: "PC",
+        metacritic: 91,
+        votes: 11,
+        victory: true,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Michael Huber",
+        game: "Super Smash Bros. Ultimate",
+        hallOfGreat: 12,
+        votes: 6,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Kyle Bosman",
+        game: "Mega Man Legends",
+        hallOfGreat: 12,
+        votes: 5,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Brad Ellis",
+        game: "Shovel Knight: Treasure Trove",
+        hallOfGreat: 12,
+        votes: 4,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Michael Damiani",
+        game: "Teenage Mutant Ninja Turtles: Turtles in Time",
+        hallOfGreat: 12,
+        votes: 3,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Ian Hinck",
+        game: "Silent Hill 2",
+        hallOfGreat: 12,
+        votes: 3,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Daniel Bloodworth",
+        game: "Guitar Hero II",
+        hallOfGreat: 12,
+        votes: 2,
+        victory: false,
+        banned: false,
+      },
+    ],
 
   },
 ];
