@@ -1056,6 +1056,100 @@ const gameSeed = [
         banned: false,
       },
     ],
+    games: [
+      {
+        ally: "Ben Moore",
+        game: "Counter-Strike",
+        hallOfGreat: 11,
+        image: "../images/counter_strike.jpg",
+        description:
+          "Play the world's number 1 online action game. Engage in an incredibly realistic brand of terrorist warfare in this wildly popular team-based game. Ally with teammates to complete strategic missions. Take out enemy sites. Rescue hostages. Your role affects your team's success. Your team's success affects your role.",
+        genre: "First-Person Shooter",
+        year: 2000,
+        platforms: "PC",
+        metacritic: 88,
+        votes: 15,
+        victory: true,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Brad Ellis",
+        game: "Final Fantasy VII",
+        hallOfGreat: 11,
+        image: "../images/ff_seven.jpg",
+        description:
+          "What begins as a rebellion against an evil corporation becomes much more. And what erupts goes beyond imagination. With vivid landscapes, lush 3D animation and environments, Square Soft's multi-million dollar masterpiece is like nothing ever seen before.",
+        genre: "Role-Playing Game",
+        year: 1997,
+        platforms: "Playstation One",
+        metacritic: 92,
+        votes: 13,
+        victory: true,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Don Casanova",
+        game: "Alien Vs. Predator",
+        hallOfGreat: 11,
+        votes: 12,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Daniel Bloodworth",
+        game: "Animal Crossing",
+        hallOfGreat: 11,
+        votes: 3,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Michael Huber",
+        game: "Marvel's Spider-Man",
+        hallOfGreat: 11,
+        votes: 2,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Ian Hinck",
+        game: "Metal Gear Solid 3: Snake Eater",
+        hallOfGreat: 11,
+        votes: 2,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Brandon Jones",
+        game: "Plants vs. Zombies",
+        hallOfGreat: 11,
+        votes: 1,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Kyle Bosman",
+        game: "Dungeons & Dragons",
+        hallOfGreat: 11,
+        votes: 0,
+        victory: false,
+        banned: true,
+      },
+    ],
 
   },
 ];
