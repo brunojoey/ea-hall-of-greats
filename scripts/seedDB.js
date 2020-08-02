@@ -876,6 +876,100 @@ const gameSeed = [
         banned: true,
       },
     ],
+    games: [
+      {
+        ally: "Michael Damiani",
+        game: "The Legend of Zelda: A Link to the Past",
+        hallOfGreat: 9,
+        image: "../images/link_past.jpg",
+        description:
+          "A top-down action/adventure title in which Link, a blacksmith's nephew living in the fantastical land of Hyrule, must free the land from the evildoings of Ganon by taking up the mythical Master Sword and collecting the three Triforces in order to free the Seven Maidens, including the princess of Hyrule, Zelda, from the dungeons and castles of the Dark World.",
+        genre: "Action-Adventure",
+        year: 1991,
+        platforms: "Super NES",
+        metacritic: 92,
+        votes: 13,
+        victory: true,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Kyle Bosman",
+        game: "Super Mario Bros. 3",
+        hallOfGreat: 9,
+        image: "../images/super_mario_bros_three.jpg",
+        description:
+          "Your mission is to rescue the Mushroom Kingdom monarchs who have been transformed into animals by Bowser and his mischievous offspring, and in the process save the princess kidnapped by Bowser.",
+        genre: "Platformer",
+        year: 1988,
+        platforms: "NES",
+        metacritic: 97,
+        votes: 12,
+        victory: true,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Ben Moore",
+        game: "Final Fantasy IX",
+        hallOfGreat: 8,
+        votes: 11,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Brad Ellis",
+        game: "The Legend of Zelda: Twilight Princess",
+        hallOfGreat: 8,
+        votes: 6,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Don Casanova",
+        game: "WaveRace 64",
+        hallOfGreat: 9,
+        votes: 3,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Michael Huber",
+        game: "Sekiro: Shadows Die Twice",
+        hallOfGreat: 9,
+        votes: 3,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Brandon Jones",
+        game: "GoldenEye 007",
+        hallOfGreat: 9,
+        votes: 0,
+        victory: false,
+        banned: true,
+      },
+    ],
+    games: [
+      {
+        ally: "Ian Hinck",
+        game: "Dark Souls: Remastered",
+        hallOfGreat: 9,
+        votes: 0,
+        victory: false,
+        banned: true,
+      },
+    ],
 
   },
 ];
