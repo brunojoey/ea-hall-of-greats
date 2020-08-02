@@ -667,6 +667,110 @@ const gameSeed = [
         banned: false,
       },
     ],
+    games: [
+      {
+        ally: "Brandon Jones",
+        game: "Final Fantasy VI",
+        hallOfGreat: 7,
+        image: "../images/ff_six.jp",
+        description:
+          "Part of the Final Fantasy turn-based Japanese RPG franchise, Final Fantasy VI follows an ensemble cast of characters as they attempt to save the their steampunk/fantasy land from the repercussions of the otherworldly campaigns of Emperor Gestahl and his court jester/general Kefka, while trying to resolve their personal issues together and find meaning in their own existence through their tumultuous journey.",
+        genre: "Role-Playing Game",
+        year: 1994,
+        platforms: "Super NES",
+        metacritic: 94,
+        votes: 13,
+        victory: true,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Kyle Bosman",
+        game: "Tetris",
+        hallOfGreat: 7,
+        image: "../images/tetris.jpg",
+        description:
+          "Tetris is a puzzle video game for the Game Boy released in 1989. It is a portable version of Alexey Pajitnov's original Tetris and it was bundled in the North American and European releases of the Game Boy itself. It was the first game compatible with the Game Link Cable, a pack-in accessory that allowed two Game Boys to link together for multiplayer purposes.",
+        genre: "Puzzle",
+        year: 1989,
+        platforms: "Gameboy",
+        metacritic: 0,
+        votes: 13,
+        victory: true,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Brad Ellis",
+        game: "Bloodborne",
+        hallOfGreat: 7,
+        votes: 9,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Don Casanova",
+        game: "Mortal kombat (2011)",
+        hallOfGreat: 7,
+        votes: 8,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Ben Moore",
+        game: "Halo: Combat Evolved",
+        hallOfGreat: 7,
+        votes: 3,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Michael Huber",
+        game: "Batman: Arkham City",
+        hallOfGreat: 7,
+        votes: 3,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Ian Hinck",
+        game: "Silent Hill 2",
+        hallOfGreat: 7,
+        votes: 3,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Michael Damiani",
+        game: "Super Mario RPG",
+        hallOfGreat: 7,
+        votes: 2,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Michael Huber",
+        game: "Ms. Pac-Man",
+        hallOfGreat: 7,
+        votes: 0,
+        victory: false,
+        banned: true,
+      },
+    ],
 
   },
 ];
