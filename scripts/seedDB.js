@@ -914,7 +914,7 @@ const gameSeed = [
       {
         ally: "Ben Moore",
         game: "Final Fantasy IX",
-        hallOfGreat: 8,
+        hallOfGreat: 9,
         votes: 11,
         victory: false,
         banned: false,
@@ -924,7 +924,7 @@ const gameSeed = [
       {
         ally: "Brad Ellis",
         game: "The Legend of Zelda: Twilight Princess",
-        hallOfGreat: 8,
+        hallOfGreat: 9,
         votes: 6,
         victory: false,
         banned: false,
@@ -968,6 +968,92 @@ const gameSeed = [
         votes: 0,
         victory: false,
         banned: true,
+      },
+    ],
+    games: [
+      {
+        ally: "Michael Huber",
+        game: "The Last of Us",
+        hallOfGreat: 10,
+        image: "../images/the_last_of_us.jpg",
+        description:
+          "Twenty years after a pandemic radically transformed known civilization, infected humans run amuck and survivors kill one another for sustenance and weapons - literally whatever they can get their hands on. Joel, a salty survivor, is hired to smuggle a fourteen-year-old girl, Ellie, out of a rough military quarantine, but what begins as a simple job quickly turns into a brutal journey across the country.",
+        genre: "Action-Adventure",
+        year: 2013,
+        platforms: "Playstation 3",
+        metacritic: 95,
+        votes: 8,
+        victory: true,
+        wonByPatreonVote: true,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Daniel Bloodworth",
+        game: "The Witcher III: Wild Hunt",
+        hallOfGreat: 10,
+        image: "../images/the_witcher_three.jpg",
+        description:
+          "With the Empire attacking the Kingdoms of the North and the Wild Hunt, a cavalcade of ghastly riders, breathing down your neck, the only way to survive is to fight back. As Geralt of Rivia, a master swordsman and monster hunter, leave none of your enemies standing. Explore a gigantic open world, slay beasts and decide the fates of whole communities with your actions, all in a genuine next generation format.",
+        genre: "Action Role-Playing Game",
+        year: 2015,
+        platforms: "Playstation 4, Xbox One, PC",
+        metacritic: 92,
+        votes: 8,
+        victory: true,
+        wonByPatreonVote: true,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Ben Moore",
+        game: "Phantasy Star Online",
+        hallOfGreat: 10,
+        votes: 8,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Kyle Bosman",
+        game: "Halo: Combat Evolved",
+        hallOfGreat: 10,
+        votes: 6,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Michael Damiani",
+        game: "BioShock",
+        hallOfGreat: 10,
+        votes: 6,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Don Casanova",
+        game: "Burnout 3: Takedown",
+        hallOfGreat: 10,
+        votes: 5,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Ian Hinck",
+        game: "Final Fantasy VII",
+        hallOfGreat: 10,
+        votes: 1,
+        victory: false,
+        banned: false,
       },
     ],
 
