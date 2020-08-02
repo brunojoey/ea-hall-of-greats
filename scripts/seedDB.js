@@ -763,9 +763,114 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Huber",
+        ally: "Daniel Bloodworth",
         game: "Ms. Pac-Man",
         hallOfGreat: 7,
+        votes: 0,
+        victory: false,
+        banned: true,
+      },
+    ],
+    games: [
+      {
+        ally: "Ian Hinck",
+        game: "Bloodborne",
+        hallOfGreat: 8,
+        image: "../images/bloodborne.jpg",
+        description:
+          "Bloodborne is an action RPG in which you hunt for answers in the ancient city of Yharnam, now cursed with a strange endemic illness spreading through the streets like a disease. Peril, death and madness infest this dark world, and you're tasked with uncovering its darkest secrets which will be necessary for you to survive. Armed with a singular arsenal of weaponry, including guns and saw cleavers, you'll require wits, strategy and reflexes to dispatch the agile and intelligent enemies that guard the city's underbelly. You will utility holy chalices to access an array of vast underground ruins, chock full of traps, beasts, and rewards, to explore and conquer on your own or with other people.",
+        genre: "Action Role-Playing Game",
+        year: 2015,
+        platforms: "Playstation 4",
+        metacritic: 92,
+        votes: 13,
+        victory: true,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Brandon Jones",
+        game: "Portal",
+        hallOfGreat: 8,
+        image: "../images/portal.jpg",
+        description:
+          "Set in the mysterious Aperture Science Laboratories, Portal has been called one of the most innovative new games on the horizon and offers gamers hours of unique gameplay. The game is designed to change the way players approach, manipulate, and surmise the possibilities in a given environment; similar to how Half-Life 2's Gravity Gun innovated new ways to leverage an object in any given situation. Players must solve physical puzzles and challenges by opening portals to maneuvering objects, and themselves, through space. ",
+        genre: "Puzzle",
+        year: 2007,
+        platforms: "PC",
+        metacritic: 90,
+        votes: 11,
+        victory: true,
+        wonByPatreonVote: true,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Brad Ellis",
+        game: "God of War (2018)",
+        hallOfGreat: 8,
+        votes: 11,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Kyle Bosman",
+        game: "The Legend of Zelda: Link's Awakening",
+        hallOfGreat: 8,
+        votes: 8,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Don Casanova",
+        game: "Trials Fusion",
+        hallOfGreat: 8,
+        votes: 6,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Michael Huber",
+        game: "The Last of Us",
+        hallOfGreat: 8,
+        votes: 3,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Ben Moore",
+        game: "Pikmin",
+        hallOfGreat: 8,
+        votes: 2,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Daniel Bloodworth",
+        game: "Deus Ex",
+        hallOfGreat: 8,
+        votes: 0,
+        victory: false,
+        banned: true,
+      },
+    ],
+    games: [
+      {
+        ally: "Michael Damiani",
+        game: "FTL: Faster Than Light",
+        hallOfGreat: 8,
         votes: 0,
         victory: false,
         banned: true,
