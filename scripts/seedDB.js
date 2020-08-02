@@ -11,50 +11,94 @@ mongoose.connect(
   }
 );
 
+// Ally variables
+const bradEllis = 'Brad Ellis';
+const brandonJones = 'Brandon Jones';
+const donCasanova = 'Don Casanova';
+const benMoore = 'Ben Moore';
+const michaelHuber = 'Michael Huber';
+const michaelDamiani = 'Michael Damiani';
+const danielBloodworth = 'Daniel Bloodworth';
+const ianHinck = 'Ian Hinck';
+const kyleBosman = 'Kyle Bosman';
+const ellisAndDamiani = bradEllis && michaelDamiani;
+
+// Multiple Nominated Game Variables
+const megaManLegends = 'Mega Man Legends';
+const linksAwakening = `The Legend of Zelda: Link's Awakening`;
+const haloOne = 'Halo: Combat Evolved';
+const ff7 = 'Final Fantasy VII';
+const ff9 = 'Final Fantasy IX';
+const simCity4 = 'Sim City 4';
+const goldenEye007 = 'GoldenEye 007';
+const portal = 'Portal';
+const journey = 'Journey';
+const worldOfWarcraft = 'World of Warcraft';
+const dkTropicalFreeze = 'Donkey Kong Country: Tropical Freeze';
+const darkSouls = 'Dark Souls';
+const bloodBorne = 'Bloodborne';
+const dq8 = 'Dragon Quest VIII: Journey of the Cursed King';
+const witcher3 = 'The Witcher III: Wild Hunt';
+const lastOfUs = 'The Last of Us';
+const symphony = 'Castlevania: Symphony of the Night';
+const silentHillTwo = 'Silent Hill 2';
+const dungeonsAndDragons = 'Dungeons & Dragons';
+
+// Ally seed to compile data for all Allies.
 const allySeed = [
   {
-    ally: "Brandon Jones",
+    ally: brandonJones,
     victories: 3,
+    bans: 2
   },
   {
-    ally: "Don Casanova",
+    ally: donCasanova,
     victories: 0,
+    bans: 4
   },
   {
-    ally: "Ben Moore",
+    ally: benMoore,
     victories: 4,
+    bans: 0
   },
   {
-    ally: "Brad Ellis",
+    ally: bradEllis,
     victories: 5,
+    bans: 1
   },
   {
-    ally: "Michael Huber",
+    ally: michaelHuber,
     victories: 2,
+    bans: 0
   },
   {
-    ally: "Michael Damiani",
+    ally: michaelDamiani,
     victories: 5,
+    bans: 2
   },
   {
-    ally: "Daniel Bloodworth",
+    ally: danielBloodworth,
     victories: 3,
+    bans: 2
   },
   {
-    ally: "Ian Hinck",
+    ally: ianHinck,
     victories: 2,
+    bans: 2
   },
   {
-    ally: "Kyle Bosman",
+    ally: kyleBosman,
     victories: 3,
+    bans: 1
   },
 ];
 
+// All data compiled for each Hall of Greats and the nominated games.
 const gameSeed = [
   {
     games: [
       {
-        ally: "Michael Damiani",
+        ally: michaelDamiani,
         game: "Metal Gear Solid",
         hallOfGreat: 1,
         image: "../images/metal_gear_solid.jpg",
@@ -71,7 +115,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Daniel Bloodworth",
+        ally: danielBloodworth,
         game: "Super Metroid",
         hallOfGreat: 1,
         image: "../images/super_metroid.jpg",
@@ -89,7 +133,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ben Moore",
+        ally: benMoore,
         game: "Super Street Fighter II Turbo",
         hallOfGreat: 1,
         votes: 9,
@@ -99,8 +143,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ian Hinck",
-        game: "Bloodborne",
+        ally: ianHinck,
+        game: bloodBorne,
         hallOfGreat: 1,
         votes: 3,
         victory: false,
@@ -109,7 +153,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Don Casanova",
+        ally: donCasanova,
         game: "Assassin's Creed IV: Black Flag",
         hallOfGreat: 1,
         votes: 2,
@@ -119,8 +163,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brad Ellis",
-        game: "Dark Souls",
+        ally: bradEllis,
+        game: darkSouls,
         hallOfGreat: 1,
         votes: 1,
         victory: false,
@@ -129,8 +173,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brandon Jones",
-        game: "GoldenEye 007",
+        ally: brandonJones,
+        game: goldenEye007,
         hallOfGreat: 1,
         votes: 1,
         victory: false,
@@ -139,8 +183,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Kyle Bosman",
-        game: "Mega Man Legends",
+        ally: kyleBosman,
+        game: megaManLegends,
         hallOfGreat: 1,
         votes: 1,
         victory: false,
@@ -149,7 +193,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Huber",
+        ally: michaelHuber,
         game: "Resident Evil Remake",
         hallOfGreat: 1,
         votes: 0,
@@ -159,7 +203,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brad Ellis & Michael Damiani",
+        ally: ellisAndDamiani,
         game: "Super Mario 64",
         hallOfGreat: 2,
         image: "../images/super_mario_64.jpg",
@@ -176,7 +220,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Daniel Bloodworth",
+        ally: danielBloodworth,
         game: "Street Fighter II",
         hallOfGreat: 2,
         image: "../images/street_fighter_two.jpg",
@@ -186,15 +230,15 @@ const gameSeed = [
         year: 1992,
         platforms: "Arcade & Super NES",
         metacritic: 0,
-        nominatedBy: "Daniel Bloodworth",
+        nominatedBy: danielBloodworth,
         votes: 14,
         banned: false,
       },
     ],
     games: [
       {
-        ally: "Ian Hinck",
-        game: "Castlevania: Symphony of the Night",
+        ally: ianHinck,
+        game: symphony,
         hallOfGreat: 2,
         votes: 12,
         victory: false,
@@ -203,8 +247,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Huber",
-        game: "Dragon Quest VIII: Journey of the Cursed King",
+        ally: michaelHuber,
+        game: dq8,
         hallOfGreat: 2,
         votes: 5,
         victory: false,
@@ -213,8 +257,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Kyle Bosman",
-        game: "The Legend of Zelda: Link's Awakening DX",
+        ally: kyleBosman,
+        game: linksAwakening,
         hallOfGreate: 2,
         votes: 5,
         victory: false,
@@ -223,8 +267,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brandon Jones",
-        game: "World of Warcraft",
+        ally: brandonJones,
+        game: worldOfWarcraft,
         hallOfGreat: 2,
         votes: 1,
         victory: false,
@@ -233,8 +277,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Don Casanova",
-        game: "Sim City 4",
+        ally: donCasanova,
+        game: simCity4,
         hallOfGreat: 2,
         votes: 1,
         victory: false,
@@ -243,7 +287,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ben Moore",
+        ally: benMoore,
         game: "Valkyria Chronicles",
         hallOfGreat: 2,
         votes: 1,
@@ -253,7 +297,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Damiani",
+        ally: michaelDamiani,
         game: "The Legend of Zelda: Ocarina of Time",
         image: "../images/ocarina_of_time.jpg",
         hallOfGreat: 3,
@@ -270,8 +314,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ian Hinck",
-        game: "Castlevania: Symphony of the Night",
+        ally: ianHinck,
+        game: symphony,
         hallOfGreat: 3,
         image: "../images/symphony_of_the_night.jpg",
         description:
@@ -287,8 +331,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Kyle Bosman",
-        game: "Final Fantasy IX",
+        ally: kyleBosman,
+        game: ff9,
         hallOfGreat: 3,
         votes: 9,
         victory: false,
@@ -297,7 +341,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brandon Jones",
+        ally: brandonJones,
         game: "Half-Life 2",
         hallOfGreat: 3,
         votes: 5,
@@ -307,8 +351,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Daniel Bloodworth",
-        game: "Portal",
+        ally: danielBloodworth,
+        game: portal,
         hallOfGreat: 3,
         votes: 4,
         victory: false,
@@ -317,8 +361,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Huber",
-        game: "The Last of Us",
+        ally: michaelHuber,
+        game: lastOfUs,
         hallOfGreat: 3,
         votes: 4,
         victory: false,
@@ -327,7 +371,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ben Moore",
+        ally: benMoore,
         game: "Xenoblade Chronicles",
         hallOfGreat: 2,
         votes: 3,
@@ -337,7 +381,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Don Casanova",
+        ally: donCasanova,
         game: "Jurassic Park: Operation Genesis",
         hallOfGreat: 3,
         votes: 2,
@@ -347,7 +391,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brad Ellis",
+        ally: bradEllis,
         game: "Doom (2016)",
         hallOfGreat: 3,
         votes: 0,
@@ -357,7 +401,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brad Ellis",
+        ally: bradEllis,
         game: "Chrono Trigger",
         hallOfGreat: 4,
         image: "../images/chrono_trigger.jpg",
@@ -374,7 +418,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Kyle Bosman",
+        ally: kyleBosman,
         game: "Pokemon Red & Blue",
         hallOfGreat: 4,
         image: "../images/pokemon_red.jpg",
@@ -391,7 +435,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ben Moore",
+        ally: benMoore,
         game: "Mega Man X",
         hallOfGreat: 4,
         votes: 7,
@@ -401,7 +445,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brandon Jones",
+        ally: brandonJones,
         game: "Grand Theft Auto III",
         hallOfGreat: 4,
         votes: 7,
@@ -411,7 +455,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Huber",
+        ally: michaelHuber,
         game: "Streets of Rage 2",
         hallOfGreat: 4,
         votes: 4,
@@ -421,7 +465,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Don Casanova",
+        ally: donCasanova,
         game: "Super Mario Maker",
         hallOfGreat: 4,
         votes: 3,
@@ -431,8 +475,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Daniel Bloodworth",
-        game: "Journey",
+        ally: danielBloodworth,
+        game: journey,
         hallOfGreat: 4,
         votes: 2,
         victory: false,
@@ -441,7 +485,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ian Hinck",
+        ally: ianHinck,
         game: "Myst",
         hallOfGreat: 4,
         votes: 2,
@@ -451,7 +495,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Damiani",
+        ally: michaelDamiani,
         game: "Skyrim",
         hallOfGreat: 4,
         votes: 0,
@@ -461,7 +505,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brad Ellis",
+        ally: bradEllis,
         game: "Resident Evil 4",
         hallOfGreat: 5,
         image: "../images/resident_evil_four.jpg",
@@ -478,7 +522,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ben Moore",
+        ally: benMoore,
         game: "Resident Evil Remake",
         hallOfGreat: 5,
         image: "../images/resident_evil_remake.jpg",
@@ -495,8 +539,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Huber",
-        game: "The Witcher III: Wild Hunt",
+        ally: michaelHuber,
+        game: witcher3,
         hallOfGreat: 5,
         votes: 9,
         victory: false,
@@ -505,8 +549,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Daniel Bloodworth",
-        game: "Dark Souls",
+        ally: danielBloodworth,
+        game: darkSouls,
         hallOfGreat: 5,
         votes: 7,
         victory: false,
@@ -515,7 +559,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Don Casanova",
+        ally: donCasanova,
         game: "Pandemonium",
         hallOfGreat: 5,
         votes: 4,
@@ -525,7 +569,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brandon Joens",
+        ally: brandonJones,
         game: "Pong",
         hallOfGreat: 5,
         votes: 2,
@@ -535,7 +579,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Damiani",
+        ally: michaelDamiani,
         game: "Shadow of the Colossus (2018)",
         hallOfGreat: 5,
         votes: 1,
@@ -545,8 +589,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Kyle Bosman",
-        game: "Mega Man Legends",
+        ally: kyleBosman,
+        game: megaManLegends,
         hallOfGreat: 5,
         votes: 1,
         victory: false,
@@ -555,8 +599,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ian Hinck",
-        game: "Dungeons & Dragons",
+        ally: ianHinck,
+        game: dungeonsAndDragons,
         hallOfGreat: 5,
         votes: 0,
         victory: false,
@@ -565,7 +609,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Damiani",
+        ally: michaelDamiani,
         game: "Metroid Prime",
         hallOfGreat: 6,
         image: "../images/metroid_prime.jpg",
@@ -582,7 +626,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ben Moore",
+        ally: benMoore,
         game: "Paper Mario & The Thousand-Year Door",
         hallOfGreat: 6,
         image: "../images/paper_mario_thousand.jpg",
@@ -599,8 +643,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ian Hinck",
-        game: "Silent Hill 2",
+        ally: ianHinck,
+        game: silentHillTwo,
         hallOfGreat: 6,
         votes: 8,
         victory: false,
@@ -609,8 +653,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Daniel Bloodworth",
-        game: "Dragon Quest VIII: Journey of the Cursed King",
+        ally: danielBloodworth,
+        game: dq8,
         hallOfGreat: 6,
         votes: 7,
         victory: false,
@@ -619,8 +663,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Don Casanova",
-        game: "Sim City 4",
+        ally: donCasanova,
+        game: simCity4,
         hallOfGreat: 6,
         votes: 3,
         victory: false,
@@ -629,8 +673,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brad Ellis",
-        game: "Donkey Kong Country: Tropical Freeze",
+        ally: bradEllis,
+        game: dkTropicalFreeze,
         hallOfGreat: 6,
         votes: 2,
         victory: false,
@@ -639,7 +683,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brandon Jones",
+        ally: brandonJones,
         game: "Grand Theft Auto V",
         hallOfGreat: 6,
         votes: 1,
@@ -649,8 +693,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Kyle Bosman",
-        game: "Mega Man Legends",
+        ally: kyleBosman,
+        game: megaManLegends,
         hallOfGreat: 6,
         votes: 1,
         victory: false,
@@ -659,7 +703,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Huber",
+        ally: michaelHuber,
         game: "Time Crisis 2",
         hallOfGreat: 6,
         votes: 1,
@@ -669,7 +713,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brandon Jones",
+        ally: brandonJones,
         game: "Final Fantasy VI",
         hallOfGreat: 7,
         image: "../images/ff_six.jp",
@@ -686,7 +730,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Kyle Bosman",
+        ally: kyleBosman,
         game: "Tetris",
         hallOfGreat: 7,
         image: "../images/tetris.jpg",
@@ -703,8 +747,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brad Ellis",
-        game: "Bloodborne",
+        ally: bradEllis,
+        game: bloodBorne,
         hallOfGreat: 7,
         votes: 9,
         victory: false,
@@ -713,7 +757,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Don Casanova",
+        ally: donCasanova,
         game: "Mortal kombat (2011)",
         hallOfGreat: 7,
         votes: 8,
@@ -723,8 +767,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ben Moore",
-        game: "Halo: Combat Evolved",
+        ally: benMoore,
+        game: haloOne,
         hallOfGreat: 7,
         votes: 3,
         victory: false,
@@ -733,7 +777,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Huber",
+        ally: michaelHuber,
         game: "Batman: Arkham City",
         hallOfGreat: 7,
         votes: 3,
@@ -743,8 +787,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ian Hinck",
-        game: "Silent Hill 2",
+        ally: ianHinck,
+        game: silentHillTwo,
         hallOfGreat: 7,
         votes: 3,
         victory: false,
@@ -753,7 +797,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Damiani",
+        ally: michaelDamiani,
         game: "Super Mario RPG",
         hallOfGreat: 7,
         votes: 2,
@@ -763,7 +807,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Daniel Bloodworth",
+        ally: danielBloodworth,
         game: "Ms. Pac-Man",
         hallOfGreat: 7,
         votes: 0,
@@ -773,8 +817,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ian Hinck",
-        game: "Bloodborne",
+        ally: ianHinck,
+        game: bloodBorne,
         hallOfGreat: 8,
         image: "../images/bloodborne.jpg",
         description:
@@ -790,8 +834,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brandon Jones",
-        game: "Portal",
+        ally: brandonJones,
+        game: portal,
         hallOfGreat: 8,
         image: "../images/portal.jpg",
         description:
@@ -808,7 +852,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brad Ellis",
+        ally: bradEllis,
         game: "God of War (2018)",
         hallOfGreat: 8,
         votes: 11,
@@ -818,8 +862,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Kyle Bosman",
-        game: "The Legend of Zelda: Link's Awakening",
+        ally: kyleBosman,
+        game: linksAwakening,
         hallOfGreat: 8,
         votes: 8,
         victory: false,
@@ -828,7 +872,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Don Casanova",
+        ally: donCasanova,
         game: "Trials Fusion",
         hallOfGreat: 8,
         votes: 6,
@@ -838,8 +882,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Huber",
-        game: "The Last of Us",
+        ally: michaelHuber,
+        game: lastOfUs,
         hallOfGreat: 8,
         votes: 3,
         victory: false,
@@ -848,7 +892,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ben Moore",
+        ally: benMoore,
         game: "Pikmin",
         hallOfGreat: 8,
         votes: 2,
@@ -858,7 +902,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Daniel Bloodworth",
+        ally: danielBloodworth,
         game: "Deus Ex",
         hallOfGreat: 8,
         votes: 0,
@@ -868,7 +912,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Damiani",
+        ally: michaelDamiani,
         game: "FTL: Faster Than Light",
         hallOfGreat: 8,
         votes: 0,
@@ -878,7 +922,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Damiani",
+        ally: michaelDamiani,
         game: "The Legend of Zelda: A Link to the Past",
         hallOfGreat: 9,
         image: "../images/link_past.jpg",
@@ -895,7 +939,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Kyle Bosman",
+        ally: kyleBosman,
         game: "Super Mario Bros. 3",
         hallOfGreat: 9,
         image: "../images/super_mario_bros_three.jpg",
@@ -912,8 +956,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ben Moore",
-        game: "Final Fantasy IX",
+        ally: benMoore,
+        game: ff9,
         hallOfGreat: 9,
         votes: 11,
         victory: false,
@@ -922,7 +966,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brad Ellis",
+        ally: bradEllis,
         game: "The Legend of Zelda: Twilight Princess",
         hallOfGreat: 9,
         votes: 6,
@@ -932,7 +976,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Don Casanova",
+        ally: donCasanova,
         game: "WaveRace 64",
         hallOfGreat: 9,
         votes: 3,
@@ -942,7 +986,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Huber",
+        ally: michaelHuber,
         game: "Sekiro: Shadows Die Twice",
         hallOfGreat: 9,
         votes: 3,
@@ -952,8 +996,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brandon Jones",
-        game: "GoldenEye 007",
+        ally: brandonJones,
+        game: goldenEye007,
         hallOfGreat: 9,
         votes: 0,
         victory: false,
@@ -962,7 +1006,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ian Hinck",
+        ally: ianHinck,
         game: "Dark Souls: Remastered",
         hallOfGreat: 9,
         votes: 0,
@@ -972,8 +1016,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Huber",
-        game: "The Last of Us",
+        ally: michaelHuber,
+        game: lastOfUs,
         hallOfGreat: 10,
         image: "../images/the_last_of_us.jpg",
         description:
@@ -990,8 +1034,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Daniel Bloodworth",
-        game: "The Witcher III: Wild Hunt",
+        ally: danielBloodworth,
+        game: witcher3,
         hallOfGreat: 10,
         image: "../images/the_witcher_three.jpg",
         description:
@@ -1008,7 +1052,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ben Moore",
+        ally: benMoore,
         game: "Phantasy Star Online",
         hallOfGreat: 10,
         votes: 8,
@@ -1018,8 +1062,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Kyle Bosman",
-        game: "Halo: Combat Evolved",
+        ally: kyleBosman,
+        game: haloOne,
         hallOfGreat: 10,
         votes: 6,
         victory: false,
@@ -1028,7 +1072,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Damiani",
+        ally: michaelDamiani,
         game: "BioShock",
         hallOfGreat: 10,
         votes: 6,
@@ -1038,7 +1082,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Don Casanova",
+        ally: donCasanova,
         game: "Burnout 3: Takedown",
         hallOfGreat: 10,
         votes: 5,
@@ -1048,8 +1092,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ian Hinck",
-        game: "Final Fantasy VII",
+        ally: ianHinck,
+        game: ff7,
         hallOfGreat: 10,
         votes: 1,
         victory: false,
@@ -1058,7 +1102,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ben Moore",
+        ally: benMoore,
         game: "Counter-Strike",
         hallOfGreat: 11,
         image: "../images/counter_strike.jpg",
@@ -1075,8 +1119,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brad Ellis",
-        game: "Final Fantasy VII",
+        ally: bradEllis,
+        game: ff7,
         hallOfGreat: 11,
         image: "../images/ff_seven.jpg",
         description:
@@ -1092,7 +1136,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Don Casanova",
+        ally: donCasanova,
         game: "Alien Vs. Predator",
         hallOfGreat: 11,
         votes: 12,
@@ -1102,7 +1146,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Daniel Bloodworth",
+        ally: danielBloodworth,
         game: "Animal Crossing",
         hallOfGreat: 11,
         votes: 3,
@@ -1112,7 +1156,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Huber",
+        ally: michaelHuber,
         game: "Marvel's Spider-Man",
         hallOfGreat: 11,
         votes: 2,
@@ -1122,7 +1166,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ian Hinck",
+        ally: ianHinck,
         game: "Metal Gear Solid 3: Snake Eater",
         hallOfGreat: 11,
         votes: 2,
@@ -1132,7 +1176,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brandon Jones",
+        ally: brandonJones,
         game: "Plants vs. Zombies",
         hallOfGreat: 11,
         votes: 1,
@@ -1142,8 +1186,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Kyle Bosman",
-        game: "Dungeons & Dragons",
+        ally: kyleBosman,
+        game: dungeonsAndDragons,
         hallOfGreat: 11,
         votes: 0,
         victory: false,
@@ -1152,8 +1196,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brandon Jones",
-        game: "World of Warcraft",
+        ally: brandonJones,
+        game: worldOfWarcraft,
         hallOfGreat: 12,
         image: "../images/world_of_warcraft.jpg",
         description:
@@ -1169,7 +1213,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ben Moore",
+        ally: benMoore,
         game: "Doom",
         hallOfGreat: 12,
         image: "../images/doom.jpg",
@@ -1186,7 +1230,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Huber",
+        ally: michaelHuber,
         game: "Super Smash Bros. Ultimate",
         hallOfGreat: 12,
         votes: 6,
@@ -1196,8 +1240,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Kyle Bosman",
-        game: "Mega Man Legends",
+        ally: kyleBosman,
+        game: megaManLegends,
         hallOfGreat: 12,
         votes: 5,
         victory: false,
@@ -1206,7 +1250,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brad Ellis",
+        ally: bradEllis,
         game: "Shovel Knight: Treasure Trove",
         hallOfGreat: 12,
         votes: 4,
@@ -1216,7 +1260,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Damiani",
+        ally: michaelDamiani,
         game: "Teenage Mutant Ninja Turtles: Turtles in Time",
         hallOfGreat: 12,
         votes: 3,
@@ -1226,8 +1270,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ian Hinck",
-        game: "Silent Hill 2",
+        ally: ianHinck,
+        game: silentHillTwo,
         hallOfGreat: 12,
         votes: 3,
         victory: false,
@@ -1236,7 +1280,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Daniel Bloodworth",
+        ally: danielBloodworth,
         game: "Guitar Hero II",
         hallOfGreat: 12,
         votes: 2,
@@ -1246,8 +1290,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brad Ellis",
-        game: "Donkey Kong Country: Tropical Freeze",
+        ally: bradEllis,
+        game: dkTropicalFreeze,
         hallOfGreat: 13,
         image: "../images/dk_tropical_freeze.jpg",
         description:
@@ -1263,7 +1307,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Huber",
+        ally: michaelHuber,
         game: "Yakuza 0",
         hallOfGreat: 13,
         image: "../images/yakuza_zero.jpg",
@@ -1280,7 +1324,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ben Moore",
+        ally: benMoore,
         game: "Bayonetta",
         hallOfGreat: 13,
         votes: 9,
@@ -1290,8 +1334,8 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Brandon Jones",
-        game: "Journey",
+        ally: brandonJones,
+        game: journey,
         hallOfGreat: 13,
         votes: 6,
         victory: false,
@@ -1300,7 +1344,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Daniel Bloodworth",
+        ally: danielBloodworth,
         game: "Katamari Damacy",
         hallOfGreat: 13,
         votes: 4,
@@ -1310,7 +1354,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Michael Damiani",
+        ally: michaelDamiani,
         game: "Metal Gear Rising: Revengeance",
         hallOfGreat: 13,
         votes: 2,
@@ -1320,7 +1364,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Ian Hinck",
+        ally: ianHinck,
         game: "The Stanley Parable",
         hallOfGreat: 13,
         votes: 1,
@@ -1330,7 +1374,7 @@ const gameSeed = [
     ],
     games: [
       {
-        ally: "Don Casanova",
+        ally: donCasanova,
         game: "Huntdown",
         hallOfGreat: 13,
         votes: 0,
