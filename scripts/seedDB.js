@@ -563,6 +563,110 @@ const gameSeed = [
         banned: true,
       },
     ],
+    games: [
+      {
+        ally: "Michael Damiani",
+        game: "Metroid Prime",
+        hallOfGreat: 6,
+        image: "../images/metroid_prime.jpg",
+        description:
+          "Samus returns in a new mission to unravel the mystery behind the ruined walls scattered across Tallon IV. In Metroid Prime, you'll play the role of this bounty hunter and view the world through her visor, which displays information ranging from current energy levels to ammunition. Equipped with a Power Beam and Gravity Suit, you must shoot locked switches, solve puzzles, and eliminate enemies. It's up to you to explore the world and recover more power-ups and weapons, which gradually open more gameplay areas.",
+        genre: "Metroidvania",
+        year: 2002,
+        platforms: "Nintendo Gamecube",
+        metacritic: 97,
+        votes: 19,
+        victory: true,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Ben Moore",
+        game: "Paper Mario & The Thousand-Year Door",
+        hallOfGreat: 6,
+        image: "../images/paper_mario_thousand.jpg",
+        description:
+          "Time passes, the pages turn… and a new chapter unfolds in an unfamiliar land! Get ready for a two-dimensional role-playing adventure for the ages as Mario returns to paper form to discover a mystery that sleeps behind an ancient, legendary portal called the Thousand-Year Door. The quest is long, the dangers many, and this time, Mario will have to make full use of his papery qualities just to survive.",
+        genre: "Role-Playing Game",
+        year: 2004,
+        platforms: "Nintendo Gamecube",
+        metacritic: 87,
+        votes: 12,
+        victory: true,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Ian Hinck",
+        game: "Silent Hill 2",
+        hallOfGreat: 6,
+        votes: 8,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Daniel Bloodworth",
+        game: "Dragon Quest VIII: Journey of the Cursed King",
+        hallOfGreat: 6,
+        votes: 7,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Don Casanova",
+        game: "Sim City 4",
+        hallOfGreat: 6,
+        votes: 3,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Brad Ellis",
+        game: "Donkey Kong Country: Tropical Freeze",
+        hallOfGreat: 6,
+        votes: 2,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Brandon Jones",
+        game: "Grand Theft Auto V",
+        hallOfGreat: 6,
+        votes: 1,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Kyle Bosman",
+        game: "Mega Man Legends",
+        hallOfGreat: 6,
+        votes: 1,
+        victory: false,
+        banned: false,
+      },
+    ],
+    games: [
+      {
+        ally: "Michael Huber",
+        game: "Time Crisis 2",
+        hallOfGreat: 6,
+        votes: 1,
+        victory: false,
+        banned: false,
+      },
+    ],
 
   },
 ];
