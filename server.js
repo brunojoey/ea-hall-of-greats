@@ -12,9 +12,7 @@ app.use(express.json());
 // Add routes, both API and view
 app.use(routes);
 
-
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/hallOfGreatsDB');
-
 
 app.listen(PORT, function() {
   console.log(`server listening on Port: ${PORT}`);

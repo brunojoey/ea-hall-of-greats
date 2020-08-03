@@ -12,92 +12,91 @@ mongoose.connect(
 );
 
 // Ally variables
-const bradEllis = 'Brad Ellis';
-const brandonJones = 'Brandon Jones';
-const donCasanova = 'Don Casanova';
-const benMoore = 'Ben Moore';
-const michaelHuber = 'Michael Huber';
-const michaelDamiani = 'Michael Damiani';
-const danielBloodworth = 'Daniel Bloodworth';
-const ianHinck = 'Ian Hinck';
-const kyleBosman = 'Kyle Bosman';
+const bradEllis = "Brad Ellis";
+const brandonJones = "Brandon Jones";
+const donCasanova = "Don Casanova";
+const benMoore = "Ben Moore";
+const michaelHuber = "Michael Huber";
+const michaelDamiani = "Michael Damiani";
+const danielBloodworth = "Daniel Bloodworth";
+const ianHinck = "Ian Hinck";
+const kyleBosman = "Kyle Bosman";
 const ellisAndDamiani = bradEllis && michaelDamiani;
 
 // Multiple Nominated Game Variables
-const megaManLegends = 'Mega Man Legends';
+const residentEvil = "Resident Evil";
+const megaManLegends = "Mega Man Legends";
 const linksAwakening = `The Legend of Zelda: Link's Awakening DX`;
-const haloOne = 'Halo: Combat Evolved';
-const ff7 = 'Final Fantasy VII';
-const ff9 = 'Final Fantasy IX';
-const simCity4 = 'Sim City 4';
-const goldenEye007 = 'GoldenEye 007';
-const portal = 'Portal';
-const journey = 'Journey';
-const worldOfWarcraft = 'World of Warcraft';
-const dkTropicalFreeze = 'Donkey Kong Country: Tropical Freeze';
-const darkSouls = 'Dark Souls';
-const bloodBorne = 'Bloodborne';
-const dq8 = 'Dragon Quest VIII: Journey of the Cursed King';
-const witcher3 = 'The Witcher III: Wild Hunt';
-const lastOfUs = 'The Last of Us';
-const symphony = 'Castlevania: Symphony of the Night';
-const silentHillTwo = 'Silent Hill 2';
-const dungeonsAndDragons = 'Dungeons & Dragons';
-
+const haloOne = "Halo: Combat Evolved";
+const ff7 = "Final Fantasy VII";
+const ff9 = "Final Fantasy IX";
+const simCity4 = "Sim City 4";
+const goldenEye007 = "GoldenEye 007";
+const portal = "Portal";
+const journey = "Journey";
+const worldOfWarcraft = "World of Warcraft";
+const dkTropicalFreeze = "Donkey Kong Country: Tropical Freeze";
+const darkSouls = "Dark Souls";
+const bloodBorne = "Bloodborne";
+const dq8 = "Dragon Quest VIII: Journey of the Cursed King";
+const witcher3 = "The Witcher III: Wild Hunt";
+const lastOfUs = "The Last of Us";
+const symphony = "Castlevania: Symphony of the Night";
+const silentHillTwo = "Silent Hill 2";
+const dungeonsAndDragons = "Dungeons & Dragons";
 
 // Ally seed to compile data for all Allies.
 const allySeed = [
-  {
-    ally: brandonJones,
-    victories: 3,
-    bans: 2
-  },
-  {
-    ally: donCasanova,
-    victories: 0,
-    bans: 4
-  },
-  {
-    ally: benMoore,
-    victories: 4,
-    bans: 0
-  },
-  {
-    ally: bradEllis,
-    victories: 5,
-    bans: 1
-  },
-  {
-    ally: michaelHuber,
-    victories: 2,
-    bans: 0
-  },
-  {
-    ally: michaelDamiani,
-    victories: 5,
-    bans: 2
-  },
-  {
-    ally: danielBloodworth,
-    victories: 3,
-    bans: 2
-  },
-  {
-    ally: ianHinck,
-    victories: 2,
-    bans: 2
-  },
-  {
-    ally: kyleBosman,
-    victories: 3,
-    bans: 1
-  },
-];
+      {
+        ally: brandonJones,
+        victories: 3,
+        bans: 2,
+      },
+      {
+        ally: donCasanova,
+        victories: 0,
+        bans: 4,
+      },
+      {
+        ally: benMoore,
+        victories: 4,
+        bans: 0,
+      },
+      {
+        ally: bradEllis,
+        victories: 5,
+        bans: 1,
+      },
+      {
+        ally: michaelHuber,
+        victories: 2,
+        bans: 0,
+      },
+      {
+        ally: michaelDamiani,
+        victories: 5,
+        bans: 2,
+      },
+      {
+        ally: danielBloodworth,
+        victories: 3,
+        bans: 2,
+      },
+      {
+        ally: ianHinck,
+        victories: 2,
+        bans: 2,
+      },
+      {
+        ally: kyleBosman,
+        victories: 3,
+        bans: 1,
+      },
+    ];
+
 
 // All data compiled for each Hall of Greats and the nominated games.
 const gameSeed = [
-  {
-    games: [
       {
         ally: michaelDamiani,
         game: "Metal Gear Solid",
@@ -113,8 +112,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: danielBloodworth,
         game: "Super Metroid",
@@ -131,8 +128,6 @@ const gameSeed = [
         wonByPatreonVote: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: benMoore,
         game: "Super Street Fighter II Turbo",
@@ -141,8 +136,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: ianHinck,
         game: bloodBorne,
@@ -151,8 +144,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: donCasanova,
         game: "Assassin's Creed IV: Black Flag",
@@ -161,8 +152,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: bradEllis,
         game: darkSouls,
@@ -171,8 +160,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: brandonJones,
         game: goldenEye007,
@@ -181,8 +168,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: kyleBosman,
         game: megaManLegends,
@@ -191,18 +176,14 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelHuber,
-        game: "Resident Evil Remake",
+        game: residentEvil,
         hallOfGreat: 1,
         votes: 0,
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: ellisAndDamiani,
         game: "Super Mario 64",
@@ -218,8 +199,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: danielBloodworth,
         game: "Street Fighter II",
@@ -231,12 +210,9 @@ const gameSeed = [
         year: 1992,
         platforms: "Arcade & Super NES",
         metacritic: 0,
-        nominatedBy: danielBloodworth,
         votes: 14,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: ianHinck,
         game: symphony,
@@ -245,8 +221,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelHuber,
         game: dq8,
@@ -255,8 +229,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: kyleBosman,
         game: linksAwakening,
@@ -265,8 +237,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: brandonJones,
         game: worldOfWarcraft,
@@ -275,8 +245,6 @@ const gameSeed = [
         victory: false,
         banned: true,
       },
-    ],
-    games: [
       {
         ally: donCasanova,
         game: simCity4,
@@ -285,8 +253,6 @@ const gameSeed = [
         victory: false,
         banned: true,
       },
-    ],
-    games: [
       {
         ally: benMoore,
         game: "Valkyria Chronicles",
@@ -295,8 +261,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelDamiani,
         game: "The Legend of Zelda: Ocarina of Time",
@@ -312,8 +276,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: ianHinck,
         game: symphony,
@@ -329,8 +291,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: kyleBosman,
         game: ff9,
@@ -339,8 +299,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: brandonJones,
         game: "Half-Life 2",
@@ -349,8 +307,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: danielBloodworth,
         game: portal,
@@ -359,8 +315,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelHuber,
         game: lastOfUs,
@@ -369,18 +323,14 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: benMoore,
         game: "Xenoblade Chronicles",
-        hallOfGreat: 2,
+        hallOfGreat: 3,
         votes: 3,
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: donCasanova,
         game: "Jurassic Park: Operation Genesis",
@@ -389,8 +339,6 @@ const gameSeed = [
         victory: false,
         banned: true,
       },
-    ],
-    games: [
       {
         ally: bradEllis,
         game: "Doom (2016)",
@@ -399,8 +347,6 @@ const gameSeed = [
         victory: false,
         banned: true,
       },
-    ],
-    games: [
       {
         ally: bradEllis,
         game: "Chrono Trigger",
@@ -416,8 +362,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: kyleBosman,
         game: "Pokemon Red & Blue",
@@ -433,8 +377,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: benMoore,
         game: "Mega Man X",
@@ -443,8 +385,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: brandonJones,
         game: "Grand Theft Auto III",
@@ -453,8 +393,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelHuber,
         game: "Streets of Rage 2",
@@ -463,8 +401,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: donCasanova,
         game: "Super Mario Maker",
@@ -473,8 +409,6 @@ const gameSeed = [
         victory: false,
         banned: true,
       },
-    ],
-    games: [
       {
         ally: danielBloodworth,
         game: journey,
@@ -483,8 +417,6 @@ const gameSeed = [
         victory: false,
         banned: true,
       },
-    ],
-    games: [
       {
         ally: ianHinck,
         game: "Myst",
@@ -493,8 +425,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelDamiani,
         game: "Skyrim",
@@ -503,8 +433,6 @@ const gameSeed = [
         victory: false,
         banned: true,
       },
-    ],
-    games: [
       {
         ally: bradEllis,
         game: "Resident Evil 4",
@@ -520,11 +448,9 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: benMoore,
-        game: "Resident Evil Remake",
+        game: residentEvil,
         hallOfGreat: 5,
         image: "../images/resident_evil_remake.jpg",
         description:
@@ -537,8 +463,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelHuber,
         game: witcher3,
@@ -547,8 +471,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: danielBloodworth,
         game: darkSouls,
@@ -557,8 +479,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: donCasanova,
         game: "Pandemonium",
@@ -567,8 +487,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: brandonJones,
         game: "Pong",
@@ -577,8 +495,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelDamiani,
         game: "Shadow of the Colossus (2018)",
@@ -587,8 +503,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: kyleBosman,
         game: megaManLegends,
@@ -597,8 +511,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: ianHinck,
         game: dungeonsAndDragons,
@@ -607,8 +519,6 @@ const gameSeed = [
         victory: false,
         banned: true,
       },
-    ],
-    games: [
       {
         ally: michaelDamiani,
         game: "Metroid Prime",
@@ -624,8 +534,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: benMoore,
         game: "Paper Mario & The Thousand-Year Door",
@@ -641,8 +549,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: ianHinck,
         game: silentHillTwo,
@@ -651,8 +557,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: danielBloodworth,
         game: dq8,
@@ -661,8 +565,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: donCasanova,
         game: simCity4,
@@ -671,8 +573,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: bradEllis,
         game: dkTropicalFreeze,
@@ -681,8 +581,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: brandonJones,
         game: "Grand Theft Auto V",
@@ -691,8 +589,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: kyleBosman,
         game: megaManLegends,
@@ -701,8 +597,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelHuber,
         game: "Time Crisis 2",
@@ -711,8 +605,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: brandonJones,
         game: "Final Fantasy VI",
@@ -728,8 +620,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: kyleBosman,
         game: "Tetris",
@@ -745,8 +635,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: bradEllis,
         game: bloodBorne,
@@ -755,8 +643,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: donCasanova,
         game: "Mortal kombat (2011)",
@@ -765,8 +651,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: benMoore,
         game: haloOne,
@@ -775,8 +659,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelHuber,
         game: "Batman: Arkham City",
@@ -785,8 +667,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: ianHinck,
         game: silentHillTwo,
@@ -795,8 +675,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelDamiani,
         game: "Super Mario RPG",
@@ -805,8 +683,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: danielBloodworth,
         game: "Ms. Pac-Man",
@@ -815,8 +691,6 @@ const gameSeed = [
         victory: false,
         banned: true,
       },
-    ],
-    games: [
       {
         ally: ianHinck,
         game: bloodBorne,
@@ -832,8 +706,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: brandonJones,
         game: portal,
@@ -850,8 +722,6 @@ const gameSeed = [
         wonByPatreonVote: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: bradEllis,
         game: "God of War (2018)",
@@ -860,8 +730,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: kyleBosman,
         game: linksAwakening,
@@ -870,8 +738,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: donCasanova,
         game: "Trials Fusion",
@@ -880,8 +746,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelHuber,
         game: lastOfUs,
@@ -890,8 +754,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: benMoore,
         game: "Pikmin",
@@ -900,8 +762,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: danielBloodworth,
         game: "Deus Ex",
@@ -910,8 +770,6 @@ const gameSeed = [
         victory: false,
         banned: true,
       },
-    ],
-    games: [
       {
         ally: michaelDamiani,
         game: "FTL: Faster Than Light",
@@ -920,8 +778,6 @@ const gameSeed = [
         victory: false,
         banned: true,
       },
-    ],
-    games: [
       {
         ally: michaelDamiani,
         game: "The Legend of Zelda: A Link to the Past",
@@ -937,8 +793,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: kyleBosman,
         game: "Super Mario Bros. 3",
@@ -954,8 +808,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: benMoore,
         game: ff9,
@@ -964,8 +816,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: bradEllis,
         game: "The Legend of Zelda: Twilight Princess",
@@ -974,8 +824,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: donCasanova,
         game: "WaveRace 64",
@@ -984,8 +832,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelHuber,
         game: "Sekiro: Shadows Die Twice",
@@ -994,8 +840,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: brandonJones,
         game: goldenEye007,
@@ -1004,8 +848,6 @@ const gameSeed = [
         victory: false,
         banned: true,
       },
-    ],
-    games: [
       {
         ally: ianHinck,
         game: "Dark Souls: Remastered",
@@ -1014,8 +856,6 @@ const gameSeed = [
         victory: false,
         banned: true,
       },
-    ],
-    games: [
       {
         ally: michaelHuber,
         game: lastOfUs,
@@ -1032,8 +872,6 @@ const gameSeed = [
         wonByPatreonVote: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: danielBloodworth,
         game: witcher3,
@@ -1050,8 +888,6 @@ const gameSeed = [
         wonByPatreonVote: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: benMoore,
         game: "Phantasy Star Online",
@@ -1060,8 +896,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: kyleBosman,
         game: haloOne,
@@ -1070,8 +904,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelDamiani,
         game: "BioShock",
@@ -1080,8 +912,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: donCasanova,
         game: "Burnout 3: Takedown",
@@ -1090,8 +920,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: ianHinck,
         game: ff7,
@@ -1100,8 +928,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: benMoore,
         game: "Counter-Strike",
@@ -1117,8 +943,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: bradEllis,
         game: ff7,
@@ -1134,8 +958,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: donCasanova,
         game: "Alien Vs. Predator",
@@ -1144,8 +966,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: danielBloodworth,
         game: "Animal Crossing",
@@ -1154,8 +974,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelHuber,
         game: "Marvel's Spider-Man",
@@ -1164,8 +982,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: ianHinck,
         game: "Metal Gear Solid 3: Snake Eater",
@@ -1174,8 +990,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: brandonJones,
         game: "Plants vs. Zombies",
@@ -1184,8 +998,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: kyleBosman,
         game: dungeonsAndDragons,
@@ -1194,8 +1006,6 @@ const gameSeed = [
         victory: false,
         banned: true,
       },
-    ],
-    games: [
       {
         ally: brandonJones,
         game: worldOfWarcraft,
@@ -1211,8 +1021,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: benMoore,
         game: "Doom",
@@ -1228,8 +1036,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelHuber,
         game: "Super Smash Bros. Ultimate",
@@ -1238,8 +1044,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: kyleBosman,
         game: megaManLegends,
@@ -1248,8 +1052,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: bradEllis,
         game: "Shovel Knight: Treasure Trove",
@@ -1258,8 +1060,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelDamiani,
         game: "Teenage Mutant Ninja Turtles: Turtles in Time",
@@ -1268,8 +1068,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: ianHinck,
         game: silentHillTwo,
@@ -1278,8 +1076,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: danielBloodworth,
         game: "Guitar Hero II",
@@ -1288,8 +1084,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: bradEllis,
         game: dkTropicalFreeze,
@@ -1305,8 +1099,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelHuber,
         game: "Yakuza 0",
@@ -1322,8 +1114,6 @@ const gameSeed = [
         victory: true,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: benMoore,
         game: "Bayonetta",
@@ -1332,8 +1122,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: brandonJones,
         game: journey,
@@ -1342,8 +1130,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: danielBloodworth,
         game: "Katamari Damacy",
@@ -1352,8 +1138,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: michaelDamiani,
         game: "Metal Gear Rising: Revengeance",
@@ -1362,8 +1146,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: ianHinck,
         game: "The Stanley Parable",
@@ -1372,8 +1154,6 @@ const gameSeed = [
         victory: false,
         banned: false,
       },
-    ],
-    games: [
       {
         ally: donCasanova,
         game: "Huntdown",
@@ -1382,9 +1162,7 @@ const gameSeed = [
         victory: false,
         banned: true,
       },
-    ],
-  },
-];
+    ];
 
 db.Allies.deleteMany({})
   .then(() => db.Allies.collection.insertMany(allySeed))

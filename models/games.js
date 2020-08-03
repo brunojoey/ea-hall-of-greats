@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const GamesSchema = new Schema({
-  ally: { type: Schema.Types.ObjectId, ref: "Allies" },
-  game: { type: String, required: true },
+  ally: { type: String, ref: "Allies" },
+  game: { type: String, required: true, ref: 'Games' },
   hallOfGreat: { type: Number, required: true },
   image: { type: Buffer, contentType: String, required: false },
   description: { type: String, required: false },
@@ -14,11 +14,7 @@ const GamesSchema = new Schema({
   votes: { type: Number, required: false },
   victory: { type: Boolean, required: false },
   banned: { type: Boolean, required: false, default: false },
-  wonByPatreonVote: { type: Boolean, required: false},
-  games: [{
-    type: Schema.Types.ObjectId,
-    ref: 'Games'
-  }]
+  wonByPatreonVote: { type: Boolean, required: false}
 });
 
 const Games = mongoose.model("Games", GamesSchema);
