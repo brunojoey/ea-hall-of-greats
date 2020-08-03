@@ -23,14 +23,6 @@ const ianHinck = 'Ian Hinck';
 const kyleBosman = 'Kyle Bosman';
 const ellisAndDamiani = bradEllis && michaelDamiani;
 
-const hallOfGreatsOne = {
-  hallOfGreat: 1
-}
-
-const hallOfGreatsTwo = {
-  
-}
-
 // Multiple Nominated Game Variables
 const megaManLegends = 'Mega Man Legends';
 const linksAwakening = `The Legend of Zelda: Link's Awakening DX`;
