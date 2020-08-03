@@ -23,9 +23,17 @@ const ianHinck = 'Ian Hinck';
 const kyleBosman = 'Kyle Bosman';
 const ellisAndDamiani = bradEllis && michaelDamiani;
 
+const hallOfGreatsOne = {
+  hallOfGreat: 1
+}
+
+const hallOfGreatsTwo = {
+  
+}
+
 // Multiple Nominated Game Variables
 const megaManLegends = 'Mega Man Legends';
-const linksAwakening = `The Legend of Zelda: Link's Awakening`;
+const linksAwakening = `The Legend of Zelda: Link's Awakening DX`;
 const haloOne = 'Halo: Combat Evolved';
 const ff7 = 'Final Fantasy VII';
 const ff9 = 'Final Fantasy IX';
@@ -43,6 +51,7 @@ const lastOfUs = 'The Last of Us';
 const symphony = 'Castlevania: Symphony of the Night';
 const silentHillTwo = 'Silent Hill 2';
 const dungeonsAndDragons = 'Dungeons & Dragons';
+
 
 // Ally seed to compile data for all Allies.
 const allySeed = [
@@ -1381,7 +1390,7 @@ const gameSeed = [
         victory: false,
         banned: true,
       },
-    ]
+    ],
   },
 ];
 
