@@ -21,7 +21,6 @@ const michaelDamiani = "Michael Damiani";
 const danielBloodworth = "Daniel Bloodworth";
 const ianHinck = "Ian Hinck";
 const kyleBosman = "Kyle Bosman";
-const ellisAndDamiani = bradEllis && michaelDamiani;
 
 // Multiple Nominated Game Variables
 const residentEvil = "Resident Evil";
@@ -185,7 +184,7 @@ const gameSeed = [
         banned: false,
       },
       {
-        ally: ellisAndDamiani,
+        ally: 'Brad Ellis & Michael Damiani',
         game: "Super Mario 64",
         hallOfGreat: 2,
         image: "../images/super_mario_64.jpg",
@@ -1023,7 +1022,7 @@ const gameSeed = [
       },
       {
         ally: benMoore,
-        game: "Doom",
+        game: "Doom (1993)",
         hallOfGreat: 12,
         image: "../images/doom.jpg",
         description:

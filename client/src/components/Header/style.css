@@ -1,12 +1,28 @@
 .hallOfGreatsHeader {
+  margin: 0 auto;
+  font-size: xx-large;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center;  */
 }
-.hallOfGreatsHeader a {
+
+.nav-links-div {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.nav-links {
   color: white;
   font-size: large;
   padding: 1em 0 1em .5em;
-  /* margin: 0 0 1em 0; */
+  /* display: flex;
+  justify-content: space-between;
+  align-content: right; */
+  /* margin: 1 0 1em 0; */
+}
 
+.nav-links:hover {
+  color: red;
 }

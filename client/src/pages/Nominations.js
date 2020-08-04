@@ -11,7 +11,7 @@ function Nominations() {
             variant="h2"
             style={{ marginTop: "1em", textAlign: "center" }}
           >
-            The Nominees!
+            The Nominees
           </Typography>
         </Grid>
         <Grid item xs={12}>
@@ -19,11 +19,11 @@ function Nominations() {
             variant="h6"
             style={{ marginTop: "1em", textAlign: "center" }}
           >
-            Here you can sort by Hall of Great Ceremony, by Platform, by Votes,
-            and by Name of the Games
+            Here you can sort by Hall of Great Ceremony, by Platform, by Year, by Genre, by Votes, by Ally,
+            or by Name of the Games
           </Typography>
         </Grid>
-        <Grid item xs={10} style={{alignItems: 'center' }}>
+        <Grid item xs={12} style={{alignItems: 'center', margin: '0 2em 0 2em' }}>
           <EnhancedTable />
         </Grid>
       </Grid>
