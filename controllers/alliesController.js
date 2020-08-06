@@ -2,9 +2,8 @@ const db = require("../models");
 
 module.exports = {
   findAll: function (req, res) {
-    db.Allies.find()
+    db.Allies.find(req.query)
       .then((dbModel) => {
-        console.log("DBMODEL", dbModel);
         res.json(dbModel);
       })
       .catch((err) => res.status(422).json(err));

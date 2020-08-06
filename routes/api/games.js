@@ -3,10 +3,10 @@ const gamesController = require('../../controllers/gamesController');
 
 // Matches with '/api/games'
 router.route('/')
-  .get(gamesController.findAll)
+  .get(gamesController.findAll);
 
 // Matches with '/api/games/:id'
 router.route('/:id')
-  .get(gamesController.findById)
+  .get(gamesController.findById);
 
   module.exports = router;
