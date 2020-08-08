@@ -1,0 +1,109 @@
+[
+  {
+    "image": "../images/metal_gear_solid.jpg",
+    "alt": "Metal Gear Solid"
+  },
+  {
+    "image": "../images/super_metroid.jpg",
+    "alt": "Super Metroid"
+  },
+
+  {
+    "image": "../images/super_mario_64.jpg",
+    "alt": "Super Mario 64"
+  },
+  {
+    "image": "../images/street_fighter_two.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../images/ocarina_of_time.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../images/symphony_of_the_night.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../images/chrono_trigger.jpg",
+    "alt": ""
+  },
+
+  {
+    "image": "../images/pokemon_red.jpg",
+    "alt": ""
+  },
+
+  {
+    "image": "../images/resident_evil_four.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../../images/resident_evil_remake.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../images/metroid_prime.jpg",
+    "alt": ""
+  },
+  {
+    "image": "/images/paper_mario_thousand.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../images/ff_six.jp",
+    "alt": ""
+  },
+  {
+    "image": "../images/tetris.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../images/bloodborne.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../images/portal.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../images/link_past.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../images/super_mario_bros_three.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../images/the_last_of_us.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../images/the_witcher_three.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../images/counter_strike.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../images/ff_seven.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../images/world_of_warcraft.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../images/doom.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../images/dk_tropical_freeze.jpg",
+    "alt": ""
+  },
+  {
+    "image": "../images/yakuza_zero.jpg",
+    "alt": ""
+  }
+]

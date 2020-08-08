@@ -1,0 +1,12 @@
+/* body {
+  position: absolute;
+  height: 100%
+} */
+
+.allyAndGame {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin: 0 1em 0 1em;
+}
