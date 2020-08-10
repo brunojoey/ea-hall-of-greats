@@ -12,9 +12,9 @@ const GamesSchema = new Schema({
   platforms: { type: String, required: false },
   metacritic: { type: Number, required: false },
   votes: { type: Number, required: false },
-  victory: { type: Boolean, required: false },
-  banned: { type: Boolean, required: false, default: false },
-  wonByPatreonVote: { type: Boolean, required: false},
+  victory: { type: String, required: false },
+  banned: { type: String, required: false, default: false },
+  wonByPatreonVote: { type: String, required: false},
 });
 
 const Games = mongoose.model("Games", GamesSchema);

@@ -1,0 +1,27 @@
+.table-striped {
+  border: solid .25em black;
+  padding: 1em;
+  margin: 0 auto;
+  /* display: flex;
+  align-self: center;
+ */
+}
+
+/* td {
+  /* display: flex;
+  justify-content: space-between; */
+  /* margin-bottom: 100em; */
+/* } */
+
+/* tr { */
+  /* display: flex;
+  flex-direction: column; */
+  /* padding-bottom: 1em; */
+/* } */
+
+tbody {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: solid .25em red;
+};
+

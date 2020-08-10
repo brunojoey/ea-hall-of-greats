@@ -19,7 +19,7 @@ function Winners() {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
       console.log("DATA", data);
-      data = data.filter((games) => games.victory === true);
+      data = data.filter((games) => games.victory === 'True');
       console.log("NEW DATA", data);
       setGameState(data);
     }
@@ -67,15 +67,17 @@ function Winners() {
   }
 
   return (
+    <>
     <div>
       <Typography
         variant="h2"
-        style={{ marginTop: "1em", textAlign: "center" }}
+        style={{ marginTop: ".25em", textAlign: "center" }}
       >
         The Illustrious Inductees
       </Typography>
       {gamesToRender}
     </div>
+    </>
   );
 }
 

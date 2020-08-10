@@ -4,7 +4,7 @@ import './style.css';
 
 function Home() {
   return (
-      <div style={{textAlign: 'center'}}>
+      <div style={{textAlign: 'center', marginBottom: '11.5em'}}>
         <Grid container spacing={3}>
           <Grid item xs={12}>
             <Typography variant='h2' style={{marginTop: '1em'}}>The Hall of Greats</Typography>
