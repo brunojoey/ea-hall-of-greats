@@ -631,7 +631,7 @@ const gameSeed = [
   },
   {
     ally: donCasanova,
-    game: "Mortal kombat (2011)",
+    game: "Mortal Kombat (2011)",
     hallOfGreat: 7,
     votes: 8,
     victory: 'False',

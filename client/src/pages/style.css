@@ -12,9 +12,8 @@
 }
 
 .tab-bar {
-  display: flex;
-  align-items: center;
   margin-left: 3em;
+  padding-top: 10;
 }
 
 .tab-bar-one {

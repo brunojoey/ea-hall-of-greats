@@ -2,7 +2,8 @@ import React from "react";
 import TableNominees from "../components/Table";
 import { Grid, Typography } from "@material-ui/core";
 
-function Nominations() {
+function Nominations( ) {
+
   return (
     <div>
       <Grid container spacing={3}>
@@ -23,7 +24,7 @@ function Nominations() {
           </Typography>
         </Grid>
         <Grid item xs={12} style={{alignItems: 'center', margin: '0 2em 0 2em' }}>
-          <TableNominees style={{placeItems: 'center'}}/>
+          <TableNominees style={{placeItems: 'center'}} />
         </Grid>
       </Grid>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Tabs, Tab, Typography, AppBar } from "@material-ui/core";
+import { Tabs, Tab, Typography } from "@material-ui/core";
 import BenMoore from '../components/AllyFilters/benMoore';
 import BradEllis from '../components/AllyFilters/bradEllis';
 import BrandonJones from '../components/AllyFilters/brandonJones';
@@ -10,6 +10,12 @@ import KyleBosman from '../components/AllyFilters/kyleBosman';
 import MichaelDamiani from '../components/AllyFilters/michaelDamiani';
 import MichaelHuber from '../components/AllyFilters/michaelHuber';
 import './style.css'
+
+// const useStyles = makeStyles((theme) => ({
+//   tab: {
+//     paddingTop: 10,
+//   },
+// }));
 
 const Allies = props => {
   const { match, history } = props;
@@ -60,12 +66,12 @@ const Allies = props => {
         <Tab label="Michael Damiani" />
         <Tab label="Michael Huber" />
       </Tabs>
-      <Typography
+      {/* <Typography
       variant="h2"
         style={{ margin: ".25em 0 .25em 0", textAlign: "center" }}
       >
         The Allies Picks
-      </Typography>
+      </Typography> */}
       {selectedTab === 0 && <BenMoore />}
       {selectedTab === 1 && <BradEllis />}
       {selectedTab === 2 && <BrandonJones />}

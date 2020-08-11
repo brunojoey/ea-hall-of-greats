@@ -86,6 +86,7 @@ function BenMoore() {
 
   return (
     <div>
+      <h2 style={{textAlign: 'center'}}>Ben Moore's Picks</h2>
       <Table striped>
         <thead>
           <tr>

@@ -18,6 +18,7 @@ import HallOfGreatThirteen from "../components/CeremonyFilters/hallOfGreatThirte
 
 const useStyles = makeStyles((theme) => ({
   tab: {
+    paddingTop: 10,
     minWidth: 50, // a number of your choice
     width: 123, // a number of your choice
   },
@@ -85,12 +86,12 @@ const Ceremonies = (props) => {
         <Tab classes={{ root: classes.tab }}  label="Hall of Greats 12" />
         <Tab classes={{ root: classes.tab }}  label="Hall of Greats 13" />
       </Tabs>
-      <Typography
+      {/* <Typography
         variant="h2"
         style={{ margin: ".5em 0 .5em 0", textAlign: "center" }}
       >
         The Coveted Ceremonies
-      </Typography>
+      </Typography> */}
       {selectedTab === 0 && <HallOfGreatOne />}
       {selectedTab === 1 && <HallOfGreatTwo />}
       {selectedTab === 2 && <HallOfGreatThree />}

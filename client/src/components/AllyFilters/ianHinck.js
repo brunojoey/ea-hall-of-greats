@@ -86,6 +86,7 @@ function IanHinck() {
 
   return (
     <div>
+      <h2 style={{textAlign: 'center'}}>Ian Hinck's Picks</h2>
       <Table striped>
         <thead>
           <tr>

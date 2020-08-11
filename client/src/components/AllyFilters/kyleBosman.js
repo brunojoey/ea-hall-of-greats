@@ -86,6 +86,7 @@ function KyleBosman() {
 
   return (
     <div>
+      <h2 style={{textAlign: 'center'}}>Kyle Bosman's Picks</h2>
       <Table striped>
         <thead>
           <tr>

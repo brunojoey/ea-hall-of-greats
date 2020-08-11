@@ -166,6 +166,7 @@ function BradEllis() {
 
   return (
     <div>
+      <h2 style={{textAlign: 'center'}}>Brad Ellis' Picks</h2>
       <Table striped>
         <thead>
           <tr>

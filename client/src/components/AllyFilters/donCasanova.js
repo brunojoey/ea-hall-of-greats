@@ -86,6 +86,7 @@ function DonCasanova() {
 
   return (
     <div>
+      <h2 style={{textAlign: 'center'}}>Don Casanova's Picks</h2>
       <Table striped>
         <thead>
           <tr>

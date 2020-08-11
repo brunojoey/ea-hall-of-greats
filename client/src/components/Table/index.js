@@ -5,21 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSort } from '@fortawesome/free-solid-svg-icons';
 import "./style.css";
 
-function TableNominees(props) {
+function TableNominees() {
   const [games, setGames] = useState([]);
-  const [sortedField, setSortedField] = useState(null);
-
-  const { nominees } = props;
-  let sortedNominees = [...nominees];
-  sortedNominees.sort((a, b) => {
-    if (a.hallOfGreat < b.hallOfGreat) {
-      return -1;
-    }
-    if (a.hallOfGreat > b.hallOfGreat) {
-      return 1;
-    } 
-    return 0;
-  });
 
   useEffect(() => {
     async function fetchData() {

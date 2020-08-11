@@ -96,6 +96,7 @@ function DanielBloodworth() {
 
   return (
     <div>
+      <h2 style={{textAlign: 'center'}}>Daniel Bloodworth's Picks</h2>
       <Table striped>
         <thead>
           <tr>

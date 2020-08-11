@@ -95,7 +95,8 @@ function MichaelHuber() {
   }
 
   return (
-    <div>
+    <div>      
+      <h2 style={{textAlign: 'center'}}>Michael Huber's Picks</h2>
       <Table striped>
         <thead>
           <tr>

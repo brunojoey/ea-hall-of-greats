@@ -86,6 +86,7 @@ function HallOfGreatOne() {
 
   return (
     <div>
+      <h2 style={{textAlign: 'center'}}>The Fourth Hall of Greats</h2>
       <Table striped>
         <thead>
           <tr>

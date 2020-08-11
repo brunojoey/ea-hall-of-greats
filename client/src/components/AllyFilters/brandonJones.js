@@ -96,6 +96,7 @@ function BrandonJones() {
 
   return (
     <div>
+      <h2 style={{textAlign: 'center'}}>Brandon Jones' Picks</h2>
       <Table striped>
         <thead>
           <tr>

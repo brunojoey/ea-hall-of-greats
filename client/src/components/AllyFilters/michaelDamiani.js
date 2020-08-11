@@ -158,6 +158,7 @@ function MichaelDamiani() {
 
   return (
     <div>
+      <h2 style={{textAlign: 'center'}}>Michael Damiani's Picks</h2>
       <Table striped>
         <thead>
           <tr>
