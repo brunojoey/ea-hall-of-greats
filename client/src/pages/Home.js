@@ -4,10 +4,10 @@ import './style.css';
 
 function Home() {
   return (
-      <div style={{textAlign: 'center', marginBottom: '11.5em'}}>
+      <div style={{textAlign: 'center', marginBottom: '16.15em'}}>
         <Grid container spacing={3}>
           <Grid item xs={12}>
-            <Typography variant='h2' style={{marginTop: '1em'}}>The Hall of Greats</Typography>
+            <Typography variant='h2' style={{marginTop: '.5em'}}>The Hall of Greats</Typography>
             </Grid>
           <Grid item xs={12}>
               <p>The Easy Allies have been conducting their own Hall of Fame for video games they like to call 'THE HALL OF GREATS'!</p>

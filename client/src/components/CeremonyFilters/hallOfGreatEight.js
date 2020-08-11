@@ -29,7 +29,7 @@ function HallOfGreatOne() {
   if (games) {
     hallOneToRender = games.map((gamesHOG1) => {
       return (
-        <tbody key={gamesHOG1._id}>
+        <tbody key={gamesHOG1._id} >
           <tr>
             <td
               style={{
@@ -86,7 +86,7 @@ function HallOfGreatOne() {
 
   return (
     <div>
-      <Table striped>
+      <Table striped style={{marginBottom: '3.5em'}}>
         <thead>
           <tr>
             <th

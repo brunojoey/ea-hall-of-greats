@@ -16,3 +16,8 @@
   align-items: center;
   margin-left: 3em;
 }
+
+.tab-bar-one {
+  display: flex;
+  align-items: space-around;
+}

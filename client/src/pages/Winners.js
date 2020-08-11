@@ -71,7 +71,7 @@ function Winners() {
     <div>
       <Typography
         variant="h2"
-        style={{ marginTop: ".25em", textAlign: "center" }}
+        style={{ marginTop: ".5em", textAlign: "center" }}
       >
         The Illustrious Inductees
       </Typography>

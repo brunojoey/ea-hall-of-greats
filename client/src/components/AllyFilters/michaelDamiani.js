@@ -6,6 +6,7 @@ import { faSort } from '@fortawesome/free-solid-svg-icons';
 
 function MichaelDamiani() {
   const [ally, setAlly] = useState([]);
+  const [bradDamiani, setBradDamiani] = useState([]);
 
   // function renderImages({ image, alt }) {
   //   imageJson.map((images) => {
@@ -23,6 +24,17 @@ function MichaelDamiani() {
     }
 
     fetchData();
+  }, []);
+
+  useEffect(() => {
+    async function fetchNewData() {
+      let { data } = await gamesAPI.getGames();
+      let newData = data.filter((games) => games.ally === 'Brad Ellis and Michael Damiani');
+      console.log('New Data', newData)
+      setBradDamiani(newData);
+    }
+
+    fetchNewData();
   }, []);
 
   let allyToRender;
@@ -82,7 +94,67 @@ function MichaelDamiani() {
         </tbody>
       );
     });
-  }
+  };
+
+  let bradDamianiRender;
+  if (bradDamiani) {
+    bradDamianiRender = bradDamiani.map((bDamiani) => {
+      return (
+        <tbody key={bradDamiani._id}>
+          <tr>
+          <td
+              style={{
+                textAlign: "center",
+                padding: "1em",
+                borderBottom: "1px solid black",
+              }}
+            >
+              {bDamiani.hallOfGreat}
+            </td>
+            <td
+              style={{
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+              {bDamiani.game}
+            </td>
+            <td
+              style={{
+                textAlign: "center",
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+              }}
+            >
+              {bDamiani.votes}
+            </td>
+            <td
+              style={{
+                textAlign: "center",
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+              {bDamiani.victory}
+            </td>
+            <td
+              style={{
+                textAlign: "center",
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+              {bDamiani.banned}
+            </td>
+          </tr>
+        </tbody>
+      );
+    });
+  };
+
 
   return (
     <div>
@@ -161,6 +233,7 @@ function MichaelDamiani() {
             </th>
           </tr>
         </thead>
+        {bradDamianiRender}
         {allyToRender}
       </Table>
     </div>

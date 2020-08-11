@@ -6,6 +6,7 @@ import { faSort } from '@fortawesome/free-solid-svg-icons';
 
 function BradEllis() {
   const [ally, setAlly] = useState([]);
+  const [bradDamiani, setBradDamiani] = useState([]);
 
   // function renderImages({ image, alt }) {
   //   imageJson.map((images) => {
@@ -16,17 +17,34 @@ function BradEllis() {
   useEffect(() => {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
-      console.log("DATA", data);
       data = data.filter((games) => games.ally === 'Brad Ellis');
-      let complicatedData = await gamesAPI.getGames();
-      complicatedData = data.filter((games) => games.game == 'Super Mario 64');
-      console.log('COMPLICATED', complicatedData);
-      console.log("NEW DATA", data);
+      console.log("DATA", data);
       setAlly(data);
     }
 
     fetchData();
   }, []);
+
+  useEffect(() => {
+    async function fetchNewData() {
+      let { data } = await gamesAPI.getGames();
+      let newData = data.filter((games) => games.ally === 'Brad Ellis and Michael Damiani');
+      console.log('New Data', newData)
+      setBradDamiani(newData);
+    }
+
+    fetchNewData();
+  }, []);
+
+
+  // async function fetchSuperMario64() {
+  //   let { data } = await gamesAPI.getGames();
+  //   let gameData = data.filter((games) => games.ally === 'Brad Ellis and Michael Damiani');
+  //   console.log('gameData', gameData);
+  //   setBradDamiani(gameData);
+  // };
+
+  // fetchSuperMario64();
 
   let allyToRender;
   if (ally) {
@@ -85,7 +103,66 @@ function BradEllis() {
         </tbody>
       );
     });
-  }
+  };
+
+  let bradDamianiRender;
+  if (bradDamiani) {
+    bradDamianiRender = bradDamiani.map((bDamiani) => {
+      return (
+        <tbody key={bradDamiani._id}>
+          <tr>
+          <td
+              style={{
+                textAlign: "center",
+                padding: "1em",
+                borderBottom: "1px solid black",
+              }}
+            >
+              {bDamiani.hallOfGreat}
+            </td>
+            <td
+              style={{
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+              {bDamiani.game}
+            </td>
+            <td
+              style={{
+                textAlign: "center",
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+              }}
+            >
+              {bDamiani.votes}
+            </td>
+            <td
+              style={{
+                textAlign: "center",
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+              {bDamiani.victory}
+            </td>
+            <td
+              style={{
+                textAlign: "center",
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+              {bDamiani.banned}
+            </td>
+          </tr>
+        </tbody>
+      );
+    });
+  };
 
   return (
     <div>
@@ -165,6 +242,7 @@ function BradEllis() {
           </tr>
         </thead>
         {allyToRender}
+        {bradDamianiRender}
       </Table>
     </div>
   );

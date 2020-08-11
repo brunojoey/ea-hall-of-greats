@@ -9,7 +9,7 @@ function Nominations() {
         <Grid item xs={12}>
           <Typography
             variant="h2"
-            style={{ marginTop: "1em", textAlign: "center" }}
+            style={{ marginTop: ".5em", textAlign: "center" }}
           >
             The Nominees
           </Typography>

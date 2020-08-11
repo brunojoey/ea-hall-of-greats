@@ -1,20 +1,30 @@
 import React, { useState } from "react";
 import { Tabs, Tab, Typography } from "@material-ui/core";
-import HallOfGreatOne from '../components/CeremonyFilters/hallOfGreatOne';
-import HallOfGreatTwo from '../components/CeremonyFilters/hallOfGreatTwo';
-import HallOfGreatThree from '../components/CeremonyFilters/hallOfGreatThree';
-import HallOfGreatFour from '../components/CeremonyFilters/hallOfGreatFour';
-import HallOfGreatFive from '../components/CeremonyFilters/hallOfGreatFive';
-import HallOfGreatSix from '../components/CeremonyFilters/hallOfGreatSix';
-import HallOfGreatSeven from '../components/CeremonyFilters/hallOfGreatSeven';
-import HallOfGreatEight from '../components/CeremonyFilters/hallOfGreatEight';
-import HallOfGreatNine from '../components/CeremonyFilters/hallOfGreatNine';
-import HallOfGreatTen from '../components/CeremonyFilters/hallOfGreatTen';
-import HallOfGreatEleven from '../components/CeremonyFilters/hallOfGreatEleven';
-import HallOfGreatTwelve from '../components/CeremonyFilters/hallOfGreatTwelve';
-import HallOfGreatThirteen from '../components/CeremonyFilters/hallOfGreatThirteen';
+import { makeStyles } from "@material-ui/core/styles";
 
-const Ceremonies = props => {
+import HallOfGreatOne from "../components/CeremonyFilters/hallOfGreatOne";
+import HallOfGreatTwo from "../components/CeremonyFilters/hallOfGreatTwo";
+import HallOfGreatThree from "../components/CeremonyFilters/hallOfGreatThree";
+import HallOfGreatFour from "../components/CeremonyFilters/hallOfGreatFour";
+import HallOfGreatFive from "../components/CeremonyFilters/hallOfGreatFive";
+import HallOfGreatSix from "../components/CeremonyFilters/hallOfGreatSix";
+import HallOfGreatSeven from "../components/CeremonyFilters/hallOfGreatSeven";
+import HallOfGreatEight from "../components/CeremonyFilters/hallOfGreatEight";
+import HallOfGreatNine from "../components/CeremonyFilters/hallOfGreatNine";
+import HallOfGreatTen from "../components/CeremonyFilters/hallOfGreatTen";
+import HallOfGreatEleven from "../components/CeremonyFilters/hallOfGreatEleven";
+import HallOfGreatTwelve from "../components/CeremonyFilters/hallOfGreatTwelve";
+import HallOfGreatThirteen from "../components/CeremonyFilters/hallOfGreatThirteen";
+
+const useStyles = makeStyles((theme) => ({
+  tab: {
+    minWidth: 50, // a number of your choice
+    width: 123, // a number of your choice
+  },
+}));
+
+const Ceremonies = (props) => {
+  const classes = useStyles();
   const { match, history } = props;
   const { params } = match;
   const { page } = params;
@@ -32,7 +42,7 @@ const Ceremonies = props => {
     9: "hall_great_ten",
     10: "hall_great_eleven",
     11: "hall_great_twelve",
-    12: "hall_great_thirteen"
+    12: "hall_great_thirteen",
   };
 
   const indexToTabName = {
@@ -48,7 +58,7 @@ const Ceremonies = props => {
     hall_great_ten: 9,
     hall_great_eleven: 10,
     hall_great_twelve: 11,
-    hall_great_thirteen: 12
+    hall_great_thirteen: 12,
   };
 
   const [selectedTab, setSelectedTab] = useState(indexToTabName[page]);
@@ -61,23 +71,23 @@ const Ceremonies = props => {
   return (
     <>
       <Tabs value={selectedTab} onChange={handleChange} className='tab-bar-one' indicatorColor="primary">
-        <Tab label="Hall of Greats 1" />
-        <Tab label="Hall of Greats 2" />
-        <Tab label="Hall of Greats 3" />
-        <Tab label="Hall of Greats 4" />
-        <Tab label="Hall of Greats 5" />
-        <Tab label="Hall of Greats 6" />
-        <Tab label="Hall of Greats 7" />
-        <Tab label="Hall of Greats 8" />
-        <Tab label="Hall of Greats 9" />
-        <Tab label="Hall of Greats 10" />
-        <Tab label="Hall of Greats 11" />
-        <Tab label="Hall of Greats 12" />
-        <Tab label="Hall of Greats 13" />
+        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 1" />
+        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 2" />
+        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 3" />
+        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 4" />
+        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 5" />
+        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 6" />
+        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 7" />
+        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 8" />
+        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 9" />
+        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 10" />
+        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 11" />
+        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 12" />
+        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 13" />
       </Tabs>
       <Typography
-      variant="h2"
-        style={{ margin: ".25em 0 .25em 0", textAlign: "center" }}
+        variant="h2"
+        style={{ margin: ".5em 0 .5em 0", textAlign: "center" }}
       >
         The Coveted Ceremonies
       </Typography>
@@ -96,6 +106,6 @@ const Ceremonies = props => {
       {selectedTab === 12 && <HallOfGreatThirteen />}
     </>
   );
-}
+};
 
 export default Ceremonies;

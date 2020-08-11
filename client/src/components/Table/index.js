@@ -5,34 +5,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSort } from '@fortawesome/free-solid-svg-icons';
 import "./style.css";
 
-function TableNominees() {
+function TableNominees(props) {
   const [games, setGames] = useState([]);
+  const [sortedField, setSortedField] = useState(null);
 
-  function descendingComparator(a, b, orderBy) {
-    if (b[orderBy] < a[orderBy]) {
+  const { nominees } = props;
+  let sortedNominees = [...nominees];
+  sortedNominees.sort((a, b) => {
+    if (a.hallOfGreat < b.hallOfGreat) {
       return -1;
     }
-    if (b[orderBy] > a[orderBy]) {
+    if (a.hallOfGreat > b.hallOfGreat) {
       return 1;
-    }
+    } 
     return 0;
-  }
-  
-  function getComparator(order, orderBy) {
-    return order === 'desc'
-      ? (a, b) => descendingComparator(a, b, orderBy)
-      : (a, b) => -descendingComparator(a, b, orderBy);
-  }
-  
-  function stableSort(array, comparator) {
-    const stabilizedThis = array.map((el, index) => [el, index]);
-    stabilizedThis.sort((a, b) => {
-      const order = comparator(a[0], b[0]);
-      if (order !== 0) return order;
-      return a[1] - b[1];
-    });
-    return stabilizedThis.map((el) => el[0]);
-  }
+  });
 
   useEffect(() => {
     async function fetchData() {

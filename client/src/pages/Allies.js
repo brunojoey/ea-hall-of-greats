@@ -49,8 +49,7 @@ const Allies = props => {
 
   return (
     <>
-    <AppBar position='static'>
-      <Tabs value={selectedTab} onChange={handleChange} className='tab-bar' indicatorColor="primary" >
+      <Tabs value={selectedTab} onChange={handleChange} className='tab-bar' >
         <Tab label="Ben Moore" />
         <Tab label="Brad Ellis" />
         <Tab label="Brandon Jones" />
@@ -61,7 +60,6 @@ const Allies = props => {
         <Tab label="Michael Damiani" />
         <Tab label="Michael Huber" />
       </Tabs>
-      </AppBar>
       <Typography
       variant="h2"
         style={{ margin: ".25em 0 .25em 0", textAlign: "center" }}

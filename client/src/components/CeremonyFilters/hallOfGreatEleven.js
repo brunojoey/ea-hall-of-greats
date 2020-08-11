@@ -86,7 +86,7 @@ function HallOfGreatOne() {
 
   return (
     <div>
-      <Table striped>
+      <Table striped style={{marginBottom: '5.6em'}}>
         <thead>
           <tr>
             <th
