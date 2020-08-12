@@ -78,6 +78,16 @@ function HallOfGreatOne() {
             >
               {gamesHOG1.banned}
             </td>
+            <td
+              style={{
+                textAlign: "center",
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+              {gamesHOG1.wonByPatreonVote}
+            </td>
           </tr>
         </tbody>
       );
@@ -155,7 +165,20 @@ function HallOfGreatOne() {
                 className="feed-user-icon"
                 icon={faSort}
               ></FontAwesomeIcon>
-
+            </th>
+            <th
+              style={{
+                borderBottom: "1px solid black",
+                padding: "0 1em 1em 1em",
+              }}
+            >
+              Won By Patreon Vote
+              <FontAwesomeIcon
+                size="1x"
+                style={{marginLeft: '.25em'}}
+                className="feed-user-icon"
+                icon={faSort}
+              ></FontAwesomeIcon>
             </th>
           </tr>
         </thead>

@@ -6,8 +6,9 @@ import buildRoutes from "../utils/buildRoutes";
 import imageJson from "../utils/images.json";
 import "./style.css";
 
-function Winners() {
+function Winners(props) {
   const [gameState, setGameState] = useState([]);
+  const { history } = props;
 
   // function renderImages({ image, alt }) {
   //   imageJson.map((images) => {
@@ -34,7 +35,7 @@ function Winners() {
         <Container fluid key={gameHOG._id}>
           <Row>
             <Col lg={6} className="allyAndGame">
-              <h3>{gameHOG.game} |</h3>
+              <h3 onClick={() => history.push(`/games/${gameHOG._id}`)}>{gameHOG.game} |</h3>
               <h4 style={{ marginLeft: "1em" }}>Brought By: {gameHOG.ally}</h4>
             </Col>
           </Row>

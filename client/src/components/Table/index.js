@@ -7,13 +7,16 @@ import "./style.css";
 
 function TableNominees() {
   const [games, setGames] = useState([]);
+  const [sortedField, setSortedField] = useState(null);
+
+  
 
   useEffect(() => {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
       console.log("DATA", data);
       setGames(data);
-    }
+    };
 
     fetchData();
   }, []);
@@ -103,6 +106,7 @@ function TableNominees() {
                 style={{marginLeft: '.25em'}}
                 className="feed-user-icon"
                 icon={faSort}
+                onClick={() => setSortedField()}
               ></FontAwesomeIcon>
             </th>
             <th
