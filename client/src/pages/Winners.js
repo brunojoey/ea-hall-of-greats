@@ -6,15 +6,18 @@ import buildRoutes from "../utils/buildRoutes";
 import imageJson from "../utils/images.json";
 import "./style.css";
 
+function renderImages() {
+  imageJson.map((images) => {
+    return(
+      <Image src={buildRoutes(images.image)} alt={images.alt} />
+    )
+  })
+};
+
 function Winners(props) {
   const [gameState, setGameState] = useState([]);
   const { history } = props;
 
-  // function renderImages({ image, alt }) {
-  //   imageJson.map((images) => {
-  //     <Image src={buildRoutes(imageJson.image)} alt={imageJson.alt} />
-  //   })
-  // };
 
   useEffect(() => {
     async function fetchData() {
@@ -34,9 +37,11 @@ function Winners(props) {
       return (
         <Container fluid key={gameHOG._id}>
           <Row>
+          {/* onClick={() => history.push(`/games/${gameHOG._id}`)} */}
             <Col lg={6} className="allyAndGame">
-              <h3 onClick={() => history.push(`/games/${gameHOG._id}`)}>{gameHOG.game} |</h3>
+              <h3 >{gameHOG.game} |</h3>
               <h4 style={{ marginLeft: "1em" }}>Brought By: {gameHOG.ally}</h4>
+              {renderImages()}
             </Col>
           </Row>
           <Row>
