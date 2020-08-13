@@ -1,0 +1,12 @@
+{
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "*.js", "use": "@vercel/node" }
+  ], 
+  "routes": [
+    { "src": "/ceremonies", "dest": "/Ceremonies.js"},
+    { "src": "/winners", "dest": "/Winners.js"},
+    { "src": "/nominations", "dest": "/Nominations.js"},
+    { "src": "/allies", "dest": "/Allies.js"}
+  ]
+}
