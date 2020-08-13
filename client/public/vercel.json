@@ -7,6 +7,7 @@
     { "src": "/ceremonies", "dest": "/Ceremonies.js"},
     { "src": "/winners", "dest": "/Winners.js"},
     { "src": "/nominations", "dest": "/Nominations.js"},
-    { "src": "/allies", "dest": "/Allies.js"}
+    { "src": "/allies", "dest": "/Allies.js"},
+    { "src": "/", "dest": "/Home.js"}
   ]
 }
