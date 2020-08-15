@@ -4,8 +4,10 @@ import gamesAPI from "../../utils/gamesAPI";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSort } from '@fortawesome/free-solid-svg-icons';
 
-function BenMoore() {
+function BenMoore(props) {
   const [ally, setAlly] = useState([]);
+  const { history } = props;
+  console.log('props', props);
 
   // function renderImages({ image, alt }) {
   //   imageJson.map((images) => {

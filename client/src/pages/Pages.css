@@ -11,6 +11,12 @@
   margin: 0 1em 0 1em;
 }
 
+.allyImageGame {
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+}
+
 .tab-bar {
   margin-left: 3em;
   padding-top: 10;
@@ -19,4 +25,13 @@
 .tab-bar-one {
   display: flex;
   align-items: space-around;
+}
+
+.gameLink:hover {
+  color: red;
+}
+
+.gameTitle {
+  font-size: 5em;
+  /* font-weight: bold; */
 }

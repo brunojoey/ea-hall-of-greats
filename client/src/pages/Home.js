@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Typography } from "@material-ui/core";
-import "./style.css";
+import "./Pages.css";
 
 function Home() {
   return (

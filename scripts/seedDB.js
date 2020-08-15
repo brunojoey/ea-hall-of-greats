@@ -102,13 +102,15 @@ const gameSeed = [
     hallOfGreat: 1,
     description:
       "You are Snake, a government agent on a mission to regain control of a secret nuclear weapons base from terrorist hands. Lightly armed and facing an army of foes, Snake must avoid firefights in order to survive. If Snake can locate them he can utilize advanced hardware, ranging from silenced pistols to ground-to-air missiles. Enemies react to sight and sound - so stay quiet and stay in the shadows. State-of-the-art graphics: textures, transparencies, models and explosions. Taut, gripping story with multiple endings - a truly cinematic experience.",
-    genre: "Action Adventure",
+    genre: "Action-Adventure",
     year: 1998,
-    platforms: "Playstation One",
+    platforms: "PlayStation One",
     metacritic: 94,
     votes: 10,
     victory: 'True',
     banned: 'False',
+    image: "../images/metal_gear_solid.jpg",
+    alt: "Metal Gear Solid"
   },
   {
     ally: danielBloodworth,
@@ -124,6 +126,8 @@ const gameSeed = [
     victory: 'True',
     wonByPatreonVote: 'True',
     banned: 'False',
+    image: "../images/super_metroid.jpg",
+    alt: "Super Metroid"
   },
   {
     ally: benMoore,
@@ -194,6 +198,8 @@ const gameSeed = [
     votes: 15,
     victory: 'True',
     banned: 'False',
+    image: "../images/super_mario_64.jpg",
+    alt: "Super Mario 64å"
   },
   {
     ally: danielBloodworth,
@@ -208,6 +214,8 @@ const gameSeed = [
     votes: 14,
     victory: 'True',
     banned: 'False',
+    image: "../images/street_fighter_two.jpg",
+    alt: "Street Fighter II"
   },
   {
     ally: ianHinck,
@@ -270,6 +278,8 @@ const gameSeed = [
     votes: 16,
     victory: 'True',
     banned: 'False',
+    image: "../images/ocarina_of_time.jpg",
+    alt: "The Legend of Zelda: Ocarina of Time"
   },
   {
     ally: ianHinck,
@@ -279,11 +289,13 @@ const gameSeed = [
       "As a descendant of Dracula, you must end the vampire bloodline. Can you rid the world of this unspeakable terror? Uncover the mystery of Castlevania and challenge an adventure as legendary as its name. Over 140 different enemies, bosses, and ghastly creatures. Awesome magical spells - transform into a bat, a wolf, or etheral mist. Hidden weapons, secrets, and characters...the largest Castlevania ever!",
     genre: "Metroidvania",
     year: 1997,
-    platforms: "Playstation One",
+    platforms: "PlayStation One",
     metacritic: 93,
     votes: 11,
     victory: 'True',
     banned: 'False',
+    image: "../images/symphony_of_the_night.jpg",
+    alt: "Castlevania: Symphony of the Night"
   },
   {
     ally: kyleBosman,
@@ -354,6 +366,8 @@ const gameSeed = [
     votes: 21,
     victory: 'True',
     banned: 'False',
+    image: "../images/chrono_trigger.jpg",
+    alt: "Chrono Trigger"
   },
   {
     ally: kyleBosman,
@@ -363,11 +377,13 @@ const gameSeed = [
       "You've finally been granted your Pokémon Trainer's license. Now, it's time to head out to become the world's greatest Pokémon Trainer. It's going to take all you've got to collect 150 Pokémon in this enormous world. Catch and train monsters like the shockingly-cute Pikachu. Face off against Blastoise's torrential water cannons. Stand strong when facing Pidgeot's stormy Gust. Trade with friends and watch your Pokémon evolve. Important—no single Pokémon can win at all. Can you develop the ultimate Pokémon strategy to defeat the eight Gym Leaders and become the greatest Pokémon Master of all time?",
     genre: "Role-Playing Game",
     year: 1998,
-    platforms: "Gameboy",
+    platforms: "Game Boy",
     metacritic: 88,
     votes: 8,
     victory: 'True',
     banned: 'False',
+    image: "../images/popkemon_red.jpg",
+    alt: "Pokemon Red & Blue"
   },
   {
     ally: benMoore,
@@ -438,6 +454,8 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
+    image: "../images/resident_evil_four.jpg",
+    alt: "Resident Evil 4"
   },
   {
     ally: benMoore,
@@ -452,6 +470,8 @@ const gameSeed = [
     votes: 11,
     victory: 'True',
     banned: 'False',
+    image: "../images/resident_evil_remake.jpg",
+    alt: "Resident Evil Remake"
   },
   {
     ally: michaelHuber,
@@ -522,6 +542,8 @@ const gameSeed = [
     votes: 19,
     victory: 'True',
     banned: 'False',
+    image: "../images/metroid_prime.jpg",
+    alt: "Metroid Prime"
   },
   {
     ally: benMoore,
@@ -536,6 +558,8 @@ const gameSeed = [
     votes: 12,
     victory: 'True',
     banned: 'False',
+    image: "../images/paper_mario_thousand.jpg",
+    alt: "Paper Mario & The Thousand-Year Door"
   },
   {
     ally: ianHinck,
@@ -606,6 +630,8 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
+    image: "../images/ff_six.jpg",
+    alt: "Final Fantasy VI"
   },
   {
     ally: kyleBosman,
@@ -615,11 +641,13 @@ const gameSeed = [
       "Tetris is a puzzle video game for the Game Boy released in 1989. It is a portable version of Alexey Pajitnov's original Tetris and it was bundled in the North American and European releases of the Game Boy itself. It was the first game compatible with the Game Link Cable, a pack-in accessory that allowed two Game Boys to link together for multiplayer purposes.",
     genre: "Puzzle",
     year: 1989,
-    platforms: "Gameboy",
+    platforms: "Game Boy",
     metacritic: 0,
     votes: 13,
     victory: 'True',
     banned: 'False',
+    image: "../images/tetris.jpg",
+    alt: "Tetris"
   },
   {
     ally: bradEllis,
@@ -685,11 +713,13 @@ const gameSeed = [
       "Bloodborne is an action RPG in which you hunt for answers in the ancient city of Yharnam, now cursed with a strange endemic illness spreading through the streets like a disease. Peril, death and madness infest this dark world, and you're tasked with uncovering its darkest secrets which will be necessary for you to survive. Armed with a singular arsenal of weaponry, including guns and saw cleavers, you'll require wits, strategy and reflexes to dispatch the agile and intelligent enemies that guard the city's underbelly. You will utility holy chalices to access an array of vast underground ruins, chock full of traps, beasts, and rewards, to explore and conquer on your own or with other people.",
     genre: "Action Role-Playing Game",
     year: 2015,
-    platforms: "Playstation 4",
+    platforms: "PlayStation 4",
     metacritic: 92,
     votes: 13,
     victory: 'True',
     banned: 'False',
+    image: "../images/bloodborne.jpg",
+    alt: "Bloodborne"
   },
   {
     ally: brandonJones,
@@ -705,6 +735,8 @@ const gameSeed = [
     victory: 'True',
     wonByPatreonVote: 'True',
     banned: 'False',
+    image: "../images/portal.jpg",
+    alt: "Portal"
   },
   {
     ally: bradEllis,
@@ -775,6 +807,8 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
+    image: "../images/link_past.jpg",
+    alt: "The Legend of Zelda: A Link to the Past"
   },
   {
     ally: kyleBosman,
@@ -789,6 +823,8 @@ const gameSeed = [
     votes: 12,
     victory: 'True',
     banned: 'False',
+    image: "../images/super_mario_bros_three.jpg",
+    alt: "Super Mario Bros. 3"
   },
   {
     ally: benMoore,
@@ -846,12 +882,14 @@ const gameSeed = [
       "Twenty years after a pandemic radically transformed known civilization, infected humans run amuck and survivors kill one another for sustenance and weapons - literally whatever they can get their hands on. Joel, a salty survivor, is hired to smuggle a fourteen-year-old girl, Ellie, out of a rough military quarantine, but what begins as a simple job quickly turns into a brutal journey across the country.",
     genre: "Action-Adventure",
     year: 2013,
-    platforms: "Playstation 3",
+    platforms: "PlayStation 3",
     metacritic: 95,
     votes: 8,
     victory: 'True',
     wonByPatreonVote: 'True',
     banned: 'False',
+    image: "../images/the_last_of_us.jpg",
+    alt: "The Last of Us"
   },
   {
     ally: danielBloodworth,
@@ -861,12 +899,14 @@ const gameSeed = [
       "With the Empire attacking the Kingdoms of the North and the Wild Hunt, a cavalcade of ghastly riders, breathing down your neck, the only way to survive is to fight back. As Geralt of Rivia, a master swordsman and monster hunter, leave none of your enemies standing. Explore a gigantic open world, slay beasts and decide the fates of whole communities with your actions, all in a genuine next generation format.",
     genre: "Action Role-Playing Game",
     year: 2015,
-    platforms: "Playstation 4, Xbox One, PC",
+    platforms: "PlayStation 4, Xbox One, PC",
     metacritic: 92,
     votes: 8,
     victory: 'True',
     wonByPatreonVote: 'True',
     banned: 'False',
+    image: "../images/the_witcher_three.jpg",
+    alt: "The Witcher III: Wild Hunt"
   },
   {
     ally: benMoore,
@@ -921,6 +961,8 @@ const gameSeed = [
     votes: 15,
     victory: 'True',
     banned: 'False',
+    image: "../images/counter_strike.jpg",
+    alt: "Counter-Strike"
   },
   {
     ally: bradEllis,
@@ -930,11 +972,13 @@ const gameSeed = [
       "What begins as a rebellion against an evil corporation becomes much more. And what erupts goes beyond imagination. With vivid landscapes, lush 3D animation and environments, Square Soft's multi-million dollar masterpiece is like nothing ever seen before.",
     genre: "Role-Playing Game",
     year: 1997,
-    platforms: "Playstation One",
+    platforms: "PlayStation One",
     metacritic: 92,
     votes: 13,
     victory: 'True',
     banned: 'False',
+    image: "../images/ff_seven.jpg",
+    alt: "Final Fantasy VII"
   },
   {
     ally: donCasanova,
@@ -997,6 +1041,8 @@ const gameSeed = [
     votes: 14,
     victory: 'True',
     banned: 'False',
+    image: "../images/world_of_warcraft.jpg",
+    alt: "World of Warcraft"
   },
   {
     ally: benMoore,
@@ -1011,6 +1057,8 @@ const gameSeed = [
     votes: 11,
     victory: 'True',
     banned: 'False',
+    image: "../images/doom.jpg",
+    alt: "Doom (1993)"
   },
   {
     ally: michaelHuber,
@@ -1073,6 +1121,8 @@ const gameSeed = [
     votes: 14,
     victory: 'True',
     banned: 'False',
+    image: "../images/dk_tropical_freeze.jpg",
+    alt: "Donkey Kong Country: Tropical Freeze"
   },
   {
     ally: michaelHuber,
@@ -1082,11 +1132,13 @@ const gameSeed = [
       "Tokyo 1988. Getting rich is easy, the women are beautiful, and everyone wants in on the action. It's time to become Yakuza. The glitz, glamour, and unbridled decadence of the 80s are back in Yakuza 0! Fight like hell through Tokyo and Osaka with protagonist Kazuma Kiryu and series regular Goro Majima. Play as Kazuma Kiryu and discover how he finds himself in a world of trouble when a simple debt collection goes wrong and his mark winds up murdered. Then, step into the silver-toed shoes of Goro Majima and explore his normal life as the proprietor of a cabaret club.",
     genre: "Action-Adventure",
     year: 2017,
-    platforms: "Playstation 4, Xbox One, PC",
+    platforms: "PlayStation 4, Xbox One, PC",
     metacritic: 85,
     votes: 12,
     victory: 'True',
     banned: 'False',
+    image: "../images/yakuza_zero.jpg",
+    alt: "Yakuza 0"
   },
   {
     ally: benMoore,

@@ -1,68 +1,65 @@
-import React, { useState, useEffect } from 'react';
-import gamesAPI from '../utils/gamesAPI';
-import { Typography } from "@material-ui/core";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import gamesAPI from "../utils/gamesAPI";
+import allyAPI from "../utils/allyAPI";
+import { Image, Container, Row, Col } from "react-bootstrap";
+
+import placeholder from '../200.png';
 
 function GamePage(props) {
-  const [gamePage, setGamePage] = useState();
+  const [gamePage, setGamePage] = useState([]);
   const { match, history } = props;
   const { params } = match;
-  const { _id } = params;
+  const { id } = params;
 
   useEffect(() => {
     async function fetchData() {
-      let { data } = await gamesAPI.getGame();
+      let { data } = await gamesAPI.getGame(id);
       console.log("DATA", data);
-      setGamePage({data});
+      setGamePage(data);
     }
 
     fetchData();
-  }, []);
+  }, [id]);
 
-  let gameToRender;
-  if (gamePage) {
-    gameToRender = gamePage.map((game) => {
-      return (
-        <Container fluid key={game._id}>
-          <Row>
-            <Col lg={6} className="allyAndGame">
-              <h3>{game.game} |</h3>
-              <h4 style={{ marginLeft: "1em" }}>Brought By: {game.ally}</h4>
-            </Col>
-          </Row>
-          <Row>
-            <Col style={{ marginTop: "-2em " }}>
-              <p style={{ marginLeft: "1em" }}>
-                {" "}
-                <span style={{ textDecoration: "underline" }}>
-                  Platforms
-                </span>: {game.platforms} |{" "}
-                <span style={{ textDecoration: "underline" }}>Genre</span>:{" "}
-                {game.genre} | {" "}
-                <span style={{textDecoration: 'underline'}}>Metacritic</span>:{" "}
-                {game.metacritic} | {" "}
-                <span style={{textDecoration: 'underline'}}>Year</span>:{" "}
-                {game.year} | {" "}
-                <span style={{textDecoration: 'underline'}}>Votes Received</span>:{" "}
-                {game.votes}
-              </p>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={12} style={{ margin: "0 1em 0 1em" }}>
-              <p>{game.description}</p>
-            </Col>
-          </Row>
-        </Container>
-      );
-    });
-  }
+  async function onClick() {
+    if (gamePage) {
+      let { data } = await allyAPI.getAlly(gamePage.ally); 
+      console.log('data', data)   
+    }
+  };
 
-  return  (
-    <div>
-      {gameToRender}
-    </div>
-  )
-};
+  return (
+    <Container fluid key={gamePage.id}>
+      <h1 className='gameTitle' style={{margin: '0 auto', marginTop: '.3em', textAlign: 'center'}}>{gamePage.game}</h1>
+      <Row className="allyImageGame" style={{marginTop: '1em'}}> 
+          <Image src={placeholder} alt={gamePage.alt} />
+      </Row>
+      <Row>
+        <Col>
+          <h3 style={{marginLeft: '1em'}}>Brought By: <span onClick={() => history.push(`/allies/${gamePage.ally}`)}>{gamePage.ally}</span> </h3>
+          <p style={{ marginLeft: "1em" }}>
+            {" "}
+            <span style={{ textDecoration: "underline" }}>Ceremony</span>:{" "}
+            Hall of Great {gamePage.hallOfGreat} ||{" "}
+            <span style={{ textDecoration: "underline" }}>Platforms</span>:{" "}
+            {gamePage.platforms} ||{" "}
+            <span style={{ textDecoration: "underline" }}>Genre</span>:{" "}
+            {gamePage.genre} ||{" "}
+            <span style={{ textDecoration: "underline" }}>Metacritic</span>:{" "}
+            {gamePage.metacritic} ||{" "}
+            <span style={{ textDecoration: "underline" }}>Year</span>:{" "}
+            {gamePage.year} ||{" "}
+            <span style={{ textDecoration: "underline" }}>Votes Received</span>:{" "}
+            {gamePage.votes}
+          </p>
+        </Col>
+      </Row>
+      <Row>
+          <h4 style={{marginLeft: '1em'}}>Description: </h4>
+          <p style={{ margin: "0 1em 1em 1em" }}>{gamePage.description}</p>
+      </Row>
+    </Container>
+  );
+}
 
 export default GamePage;

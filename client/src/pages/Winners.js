@@ -1,90 +1,225 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
+import { Table } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSort } from '@fortawesome/free-solid-svg-icons';
 import { Typography } from "@material-ui/core";
-import { Image, Container, Row, Col } from "react-bootstrap";
-import buildRoutes from "../utils/buildRoutes";
-import imageJson from "../utils/images.json";
-import "./style.css";
+import "./Pages.css";
 
-function renderImages() {
-  imageJson.map((images) => {
-    return(
-      <Image src={buildRoutes(images.image)} alt={images.alt} />
-    )
-  })
-};
+// function renderImages() {
+//   imageJson.map((images) => {
+//     return(
+//       <Image src={buildRoutes(images.image)} alt={images.alt} />
+//     )
+//   })
+// };
 
 function Winners(props) {
-  const [gameState, setGameState] = useState([]);
+  const [games, setGames] = useState([]);
+  const [sortedField, setSortedField] = useState(null);
   const { history } = props;
 
+  
 
   useEffect(() => {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
-      console.log("DATA", data);
       data = data.filter((games) => games.victory === 'True');
-      console.log("NEW DATA", data);
-      setGameState(data);
-    }
+      setGames(data);
+    };
 
     fetchData();
   }, []);
 
-  let gamesToRender;
-  if (gameState) {
-    gamesToRender = gameState.map((gameHOG) => {
+  let winnersToRender;
+  if (games) {
+    winnersToRender = games.map((winner) => {
       return (
-        <Container fluid key={gameHOG._id}>
-          <Row>
-          {/* onClick={() => history.push(`/games/${gameHOG._id}`)} */}
-            <Col lg={6} className="allyAndGame">
-              <h3 >{gameHOG.game} |</h3>
-              <h4 style={{ marginLeft: "1em" }}>Brought By: {gameHOG.ally}</h4>
-              {renderImages()}
-            </Col>
-          </Row>
-          <Row>
-            <Col style={{ marginTop: "-2em " }}>
-              <p style={{ marginLeft: "1em" }}>
-                {" "}
-                <span style={{ textDecoration: "underline" }}>
-                  Platforms
-                </span>: {gameHOG.platforms} |{" "}
-                <span style={{ textDecoration: "underline" }}>Genre</span>:{" "}
-                {gameHOG.genre} | {" "}
-                <span style={{textDecoration: 'underline'}}>Metacritic</span>:{" "}
-                {gameHOG.metacritic} | {" "}
-                <span style={{textDecoration: 'underline'}}>Year</span>:{" "}
-                {gameHOG.year} | {" "}
-                <span style={{textDecoration: 'underline'}}>Votes Received</span>:{" "}
-                {gameHOG.votes}
-              </p>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={12} style={{ margin: "0 1em 0 1em" }}>
-              <p>{gameHOG.description}</p>
-            </Col>
-          </Row>
-        </Container>
+        <tbody key={winner._id}>
+          <tr>
+            <td
+              style={{
+                textAlign: "center",
+                padding: "1em",
+                borderBottom: "1px solid black",
+              }}
+            >
+              {winner.hallOfGreat}
+            </td>
+            <td
+              style={{
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+              <span onClick={() => history.push(`/allies/${winner.ally}`)} className='gameLink'>{winner.ally}</span>
+            </td>
+            <td
+              style={{
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+              <span onClick={() => history.push(`/games/${winner._id}`)} className='gameLink'>{winner.game}</span>
+            </td>
+            <td
+              style={{
+                textAlign: "center",
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+              {winner.genre}
+            </td>
+            <td
+              style={{
+                textAlign: "center",
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+              {winner.platforms}
+            </td>
+            <td
+              style={{
+                textAlign: "center",
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+              {winner.metacritic}
+            </td>
+            <td
+              style={{
+                textAlign: "center",
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+              }}
+            >
+              {winner.votes}
+            </td>
+          </tr>
+        </tbody>
       );
     });
   }
 
+  
   return (
-    <>
     <div>
       <Typography
         variant="h2"
-        style={{ marginTop: ".5em", textAlign: "center" }}
+        style={{ margin: ".5em 0 .5em 0", textAlign: "center" }}
       >
         The Illustrious Inductees
       </Typography>
-      {gamesToRender}
+      <Table striped>
+        <thead>
+          <tr>
+            <th
+              style={{
+                borderBottom: "1px solid black",
+                padding: "0 1em 1em 1em",
+              }}
+            >
+              Ceremony
+              <FontAwesomeIcon
+                size="1x"
+                style={{marginLeft: '.25em'}}
+                className="feed-user-icon"
+                icon={faSort}
+                onClick={() => setSortedField()}
+              ></FontAwesomeIcon>
+            </th>
+            <th
+              style={{ borderBottom: "1px solid black", paddingBottom: "1em" }}
+            >
+              Nominated By
+              <FontAwesomeIcon
+                size="1x"
+                style={{marginLeft: '.25em'}}
+                className="feed-user-icon"
+                icon={faSort}
+              ></FontAwesomeIcon>
+            </th>
+            <th
+              style={{ borderBottom: "1px solid black", paddingBottom: "1em" }}
+            >
+              Game
+              <FontAwesomeIcon
+                size="1x"
+                style={{marginLeft: '.25em'}}
+                className="feed-user-icon"
+                icon={faSort}
+              ></FontAwesomeIcon>
+            </th>
+            <th
+              style={{
+                borderBottom: "1px solid black",
+                padding: "0 1em 1em 1em",
+              }}
+            >
+              Genre
+              <FontAwesomeIcon
+                size="1x"
+                style={{marginLeft: '.25em'}}
+                className="feed-user-icon"
+                icon={faSort}
+              ></FontAwesomeIcon>
+            </th>
+            <th
+              style={{
+                borderBottom: "1px solid black",
+                padding: "0 1em 1em 1em",
+              }}
+            >
+              Platforms
+              <FontAwesomeIcon
+                size="1x"
+                style={{marginLeft: '.25em'}}
+                className="feed-user-icon"
+                icon={faSort}
+              ></FontAwesomeIcon>
+            </th>
+            <th
+              style={{
+                borderBottom: "1px solid black",
+                padding: "0 1em 1em 1em",
+              }}
+            >
+              Metacritic
+              <FontAwesomeIcon
+                size="1x"
+                style={{marginLeft: '.25em'}}
+                className="feed-user-icon"
+                icon={faSort}
+              ></FontAwesomeIcon>
+            </th>
+            <th
+              style={{
+                borderBottom: "1px solid black",
+                padding: "0 1em 1em 1em",
+              }}
+            >
+              Votes Received
+              <FontAwesomeIcon
+                size="1x"
+                style={{marginLeft: '.25em'}}
+                className="feed-user-icon"
+                icon={faSort}
+              ></FontAwesomeIcon>
+            </th>
+          </tr>
+        </thead>
+        {winnersToRender}
+      </Table>
     </div>
-    </>
   );
-}
+};
 
 export default Winners;

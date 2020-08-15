@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Tabs, Tab, Typography } from "@material-ui/core";
+import { Tabs, Tab } from "@material-ui/core";
 import BenMoore from '../components/AllyFilters/benMoore';
 import BradEllis from '../components/AllyFilters/bradEllis';
 import BrandonJones from '../components/AllyFilters/brandonJones';
@@ -9,7 +9,7 @@ import IanHinck from '../components/AllyFilters/ianHinck';
 import KyleBosman from '../components/AllyFilters/kyleBosman';
 import MichaelDamiani from '../components/AllyFilters/michaelDamiani';
 import MichaelHuber from '../components/AllyFilters/michaelHuber';
-import './style.css'
+import './Pages.css'
 
 // const useStyles = makeStyles((theme) => ({
 //   tab: {
@@ -23,27 +23,27 @@ const Allies = props => {
   const { page } = params;
 
   const tabNameToIndex = {
-    0: "ben_moore",
-    1: "brad_ellis",
-    2: "brandon_jones",
-    3: "daniel_bloodworth",
-    4: "don_casanova",
-    5: "ian_hinck",
-    6: "kyle_bosman",
-    7: "michael_damiani",
-    8: "michael_huber",
+    0: "Ben%20Moore",
+    1: "Brad%20Ellis",
+    2: "Brandon%20Jones",
+    3: "Daniel%20Bloodworth",
+    4: "Don%20Casanova",
+    5: "Ian%20Hinck",
+    6: "Kyle%20Bosman",
+    7: "Michael%20Damiani",
+    8: "Michael%20Huber",
   };
 
   const indexToTabName = {
-    ben_moore: 0,
-    brad_ellis: 1,
-    brandon_jones: 2,
-    daniel_bloodworth: 3,
-    don_casanova: 4,
-    ian_hinck: 5,
-    kyle_bosman: 6,
-    michael_damiani: 7,
-    michael_huber: 8
+    "Ben%20Moore": 0,
+    "Brad%20Ellis": 1,
+    "Brandon%20Jones": 2,
+    "Daniel%20Bloodworth": 3,
+    "Don%20Casanova": 4,
+    "Ian%20Hinck": 5,
+    "Kyle%20Bosman": 6,
+    "Michael%20Damiani": 7,
+    "Michael%20Huber": 8
   };
 
   const [selectedTab, setSelectedTab] = useState(indexToTabName[page]);
@@ -72,7 +72,7 @@ const Allies = props => {
       >
         The Allies Picks
       </Typography> */}
-      {selectedTab === 0 && <BenMoore />}
+      {selectedTab === 0 && <BenMoore render={props}/>}
       {selectedTab === 1 && <BradEllis />}
       {selectedTab === 2 && <BrandonJones />}
       {selectedTab === 3 && <DanielBloodworth />}

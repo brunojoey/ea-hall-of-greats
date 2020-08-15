@@ -8,6 +8,6 @@
     { "src": "/winners", "dest": "/Winners.js"},
     { "src": "/nominations", "dest": "/Nominations.js"},
     { "src": "/allies", "dest": "/Allies.js"},
-    { "src": "/", "dest": "/Home.js"}
+    { "src": "/(.*)", "dest": "/Home.js"}
   ]
 }
