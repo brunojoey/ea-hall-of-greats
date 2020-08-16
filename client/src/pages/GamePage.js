@@ -32,7 +32,7 @@ function GamePage(props) {
     <Container fluid key={gamePage.id}>
       <h1 className='gameTitle' style={{margin: '0 auto', marginTop: '.3em', textAlign: 'center'}}>{gamePage.game}</h1>
       <Row className="allyImageGame" style={{marginTop: '1em'}}> 
-          <Image src={placeholder} alt={gamePage.alt} />
+          <Image src={gamePage.image} alt={gamePage.alt} />
       </Row>
       <Row>
         <Col>
