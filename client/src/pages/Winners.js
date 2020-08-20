@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
+// import GamesDB from '../utils/database.json';
 import { Table } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSort } from '@fortawesome/free-solid-svg-icons';
 import { Typography } from "@material-ui/core";
 import "./Pages.css";
+import '../components/Table/style.css';
 
 // function renderImages() {
 //   imageJson.map((images) => {
@@ -16,10 +18,8 @@ import "./Pages.css";
 
 function Winners(props) {
   const [games, setGames] = useState([]);
-  const [sortedField, setSortedField] = useState(null);
+  // const [sortedField, setSortedField] = useState(null);
   const { history } = props;
-
-  
 
   useEffect(() => {
     async function fetchData() {
@@ -31,6 +31,15 @@ function Winners(props) {
     fetchData();
   }, []);
 
+  // useEffect(() => {
+  //   async function fetchData() {
+  //   let { data } = await GamesDB.ally;
+  //   console.log("DATA", data);
+  //   };
+
+  //   fetchData();
+  // }, [])
+
   let winnersToRender;
   if (games) {
     winnersToRender = games.map((winner) => {
@@ -40,7 +49,7 @@ function Winners(props) {
             <td
               style={{
                 textAlign: "center",
-                padding: "1em",
+                padding: ".5em",
                 borderBottom: "1px solid black",
               }}
             >
@@ -59,7 +68,7 @@ function Winners(props) {
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
-                padding: ".5em",
+                paddingRight: "2em",
               }}
             >
               <span onClick={() => history.push(`/games/${winner._id}`)} className='gameLink'>{winner.game}</span>
@@ -69,7 +78,7 @@ function Winners(props) {
                 textAlign: "center",
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
-                padding: ".5em",
+                // padding: ".5em",
               }}
             >
               {winner.genre}
@@ -118,13 +127,12 @@ function Winners(props) {
       >
         The Illustrious Inductees
       </Typography>
-      <Table striped>
+      <Table striped style={{margin: '0 auto' }}>
         <thead>
           <tr>
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
               }}
             >
               Ceremony
@@ -133,11 +141,11 @@ function Winners(props) {
                 style={{marginLeft: '.25em'}}
                 className="feed-user-icon"
                 icon={faSort}
-                onClick={() => setSortedField()}
+                // onClick={() => setSortedField()}
               ></FontAwesomeIcon>
             </th>
             <th
-              style={{ borderBottom: "1px solid black", paddingBottom: "1em" }}
+              style={{ borderBottom: "1px solid black" }}
             >
               Nominated By
               <FontAwesomeIcon
@@ -148,7 +156,7 @@ function Winners(props) {
               ></FontAwesomeIcon>
             </th>
             <th
-              style={{ borderBottom: "1px solid black", paddingBottom: "1em" }}
+              style={{ borderBottom: "1px solid black" }}
             >
               Game
               <FontAwesomeIcon
@@ -161,7 +169,6 @@ function Winners(props) {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
               }}
             >
               Genre
@@ -175,7 +182,6 @@ function Winners(props) {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
               }}
             >
               Platforms
@@ -189,7 +195,6 @@ function Winners(props) {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
               }}
             >
               Metacritic
@@ -203,7 +208,6 @@ function Winners(props) {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
               }}
             >
               Votes Received

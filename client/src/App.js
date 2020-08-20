@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
 import Winners from './pages/Winners';
@@ -11,18 +11,21 @@ import Footer from './components/Footer';
 import './App.css';
 
 function App() {
+  // const [path, setPath] = useState(window.location.pathname);
+
   return (
     <div>
     <Router>
+    {/* <Header path={path} setPath={setPath}/> */}
     <Header />
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/winners' render={(props) => <Winners {...props} />}/>
-        <Route exact path='/nominations' component={Nominations}/>
+        <Route exact path='/nominations' render={(props) => <Nominations {...props} />} />
         <Route exact path='/games/:id' render={(props) => <GamePage {...props} />} />
         <Redirect exact from="/ceremonies" to="/ceremonies/hall_great_one" />
         <Route exact path="/ceremonies/:page?" component={Ceremonies} />
-        <Redirect exact from="/allies" to="/allies/Ben%20Moore" />
+        <Redirect exact from="/allies" to="/allies/ben_moore" />
         <Route exact path='/allies/:page?' component={Allies} />
       </Switch>
       <Footer />

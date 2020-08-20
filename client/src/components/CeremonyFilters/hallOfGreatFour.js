@@ -87,11 +87,11 @@ function HallOfGreatOne() {
   return (
     <div>
       <h2 style={{textAlign: 'center'}}>The Fourth Hall of Greats</h2>
-      <Table striped>
+      <Table striped style={{margin: '0 auto'}}>
         <thead>
           <tr>
             <th
-              style={{ borderBottom: "1px solid black", paddingBottom: "1em" }}
+              style={{ borderBottom: "1px solid black" }}
             >
               Nominated By
               <FontAwesomeIcon
@@ -102,7 +102,7 @@ function HallOfGreatOne() {
               ></FontAwesomeIcon>
             </th>
             <th
-              style={{ borderBottom: "1px solid black", paddingBottom: "1em" }}
+              style={{ borderBottom: "1px solid black" }}
             >
               Game
               <FontAwesomeIcon
@@ -115,7 +115,6 @@ function HallOfGreatOne() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
               }}
             >
               Votes Received
@@ -130,7 +129,6 @@ function HallOfGreatOne() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
               }}
             >
               Inducted
@@ -145,7 +143,6 @@ function HallOfGreatOne() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
               }}
             >
               Banned

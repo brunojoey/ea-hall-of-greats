@@ -2,7 +2,7 @@ import React from "react";
 import NomineeTable from "../components/Table/nomineeTable";
 import { Grid, Typography } from "@material-ui/core";
 
-function Nominations( ) {
+function Nominations() {
 
   return (
     <div>
@@ -23,7 +23,7 @@ function Nominations( ) {
             Here you can sort by Hall of Great Ceremony, by Votes, by Ally, if it was Banned or Victorius, or by their Name.
           </Typography>
         </Grid>
-        <Grid item xs={12} style={{alignItems: 'center', margin: '0 2em 0 2em' }}>
+        <Grid item xs={12} style={{ margin: '0 2em 0 2em' }}>
           <NomineeTable style={{placeItems: 'center'}} />
         </Grid>
       </Grid>

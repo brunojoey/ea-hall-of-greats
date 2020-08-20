@@ -109,7 +109,7 @@ const gameSeed = [
     votes: 10,
     victory: 'True',
     banned: 'False',
-    image: "../images/metal_gear_solid.jpg",
+    image: "./images/metal_gear_solid.jpg",
     alt: "Metal Gear Solid"
   },
   {
@@ -126,7 +126,7 @@ const gameSeed = [
     victory: 'True',
     wonByPatreonVote: 'True',
     banned: 'False',
-    image: "../images/super_metroid.jpg",
+    image: "./images/super_metroid.jpg",
     alt: "Super Metroid"
   },
   {

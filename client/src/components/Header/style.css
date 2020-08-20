@@ -26,3 +26,12 @@
 .nav-links:hover {
   color: red;
 }
+
+nav select {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  nav a { display: none; }
+  nav select { display: inline-block; }
+}

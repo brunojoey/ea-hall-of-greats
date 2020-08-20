@@ -27,9 +27,9 @@ function BenMoore(props) {
     fetchData();
   }, []);
 
-  let allyToRender;
+  let renderAlly;
   if (ally) {
-    allyToRender = ally.map((ally) => {
+    renderAlly = ally.map((ally) => {
       return (
         <tbody key={ally._id}>
           <tr>
@@ -86,9 +86,10 @@ function BenMoore(props) {
     });
   }
 
+  if (ally) {
   return (
-    <div>
-      <h2 style={{textAlign: 'center'}}>Ben Moore's Picks</h2>
+    <div key={ally._id}>
+      <h2 style={{textAlign: 'center'}}>{ally.ally}'s Picks</h2>
       <Table striped>
         <thead>
           <tr>
@@ -164,10 +165,10 @@ function BenMoore(props) {
             </th>
           </tr>
         </thead>
-        {allyToRender}
+        {renderAlly}
       </Table>
     </div>
   );
-}
+}};
 
 export default BenMoore;
