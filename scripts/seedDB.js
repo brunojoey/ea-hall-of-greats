@@ -109,7 +109,7 @@ const gameSeed = [
     votes: 10,
     victory: 'True',
     banned: 'False',
-    image: "./images/metal_gear_solid.jpg",
+    image: "metal_gear_solid.jpg",
     alt: "Metal Gear Solid"
   },
   {
@@ -214,7 +214,7 @@ const gameSeed = [
     votes: 14,
     victory: 'True',
     banned: 'False',
-    image: "../images/street_fighter_two.jpg",
+    image: "./street_fighter_two.jpg",
     alt: "Street Fighter II"
   },
   {

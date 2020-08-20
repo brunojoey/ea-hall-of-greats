@@ -16,7 +16,7 @@ function GamePage(props) {
       let { data } = await gamesAPI.getGame(id);
       console.log("DATA", data);
       setGamePage(data);
-    }
+    };
 
     fetchData();
   }, [id]);

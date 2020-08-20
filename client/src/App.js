@@ -11,13 +11,13 @@ import Footer from './components/Footer';
 import './App.css';
 
 function App() {
-  // const [path, setPath] = useState(window.location.pathname);
+  const [path, setPath] = useState(window.location.pathname);
 
   return (
     <div>
     <Router>
-    {/* <Header path={path} setPath={setPath}/> */}
-    <Header />
+    <Header path={path} setPath={setPath}/>
+    {/* <Header /> */}
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/winners' render={(props) => <Winners {...props} />}/>

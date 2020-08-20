@@ -2,7 +2,11 @@ import React from "react";
 import NomineeTable from "../components/Table/nomineeTable";
 import { Grid, Typography } from "@material-ui/core";
 
-function Nominations() {
+function Nominations(props) {
+  const { history } = props;
+
+
+  console.log('Props', props);
 
   return (
     <div>
@@ -24,7 +28,7 @@ function Nominations() {
           </Typography>
         </Grid>
         <Grid item xs={12} style={{ margin: '0 2em 0 2em' }}>
-          <NomineeTable style={{placeItems: 'center'}} />
+          <NomineeTable history={history} style={{placeItems: 'center'}} />
         </Grid>
       </Grid>
     </div>

@@ -9,8 +9,12 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+const clientDir = require('path').join(__dirname, './client/public/images/');
+app.use(express.static(clientDir));
+
 // Add routes, both API and view
 app.use(routes);
+// /Users/josephbruno/ea-hall-of-greats/client/public/images/metal_gear_solid.jpg
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/hallOfGreatsDB');
   

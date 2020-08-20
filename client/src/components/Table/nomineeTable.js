@@ -6,6 +6,9 @@ import "./style.css";
 
 
 function NomineeTable(props) {
+  const { history } = props;
+  console.log('props', props)
+  console.log('history', history)
   const [games, setGames] = useState([]);
   // const [rows, setRows] = useState({nomineesToRender})
   const [onSort, setOnSort] = useState();
@@ -61,7 +64,8 @@ function NomineeTable(props) {
                 padding: ".5em",
               }}
             >
-              {nominee.game}
+              {/* {nominee.game} */}
+              <span onClick={() => history.push(`/games/${nominee._id}`)} className='gameLink'>{nominee.game}</span>
             </td>
             <td
               style={{
