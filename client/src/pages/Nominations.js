@@ -5,9 +5,6 @@ import { Grid, Typography } from "@material-ui/core";
 function Nominations(props) {
   const { history } = props;
 
-
-  console.log('Props', props);
-
   return (
     <div>
       <Grid container spacing={3}>
