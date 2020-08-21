@@ -159,13 +159,13 @@ function MichaelDamiani() {
   return (
     <div>
       <h2 style={{textAlign: 'center'}}>Michael Damiani's Picks</h2>
-      <Table striped>
+      <Table striped style={{margin: '0 auto'}}>
         <thead>
           <tr>
           <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Ceremony
@@ -177,7 +177,7 @@ function MichaelDamiani() {
               ></FontAwesomeIcon>
             </th>
             <th
-              style={{ borderBottom: "1px solid black", paddingBottom: "1em" }}
+              style={{ borderBottom: "1px solid black" }}
             >
               Game
               <FontAwesomeIcon
@@ -190,7 +190,7 @@ function MichaelDamiani() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Votes Received
@@ -205,7 +205,7 @@ function MichaelDamiani() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Inducted
@@ -220,7 +220,7 @@ function MichaelDamiani() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Banned

@@ -89,14 +89,14 @@ function BenMoore(props) {
   if (ally) {
   return (
     <div key={ally._id}>
-      <h2 style={{textAlign: 'center'}}>{ally.ally}'s Picks</h2>
-      <Table striped>
+      <h2 style={{textAlign: 'center'}}>Ben Moore's Picks</h2>
+      <Table striped style={{margin: '0 auto'}}>
         <thead>
           <tr>
           <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Ceremony
@@ -108,7 +108,7 @@ function BenMoore(props) {
               ></FontAwesomeIcon>
             </th>
             <th
-              style={{ borderBottom: "1px solid black", paddingBottom: "1em" }}
+              style={{ borderBottom: "1px solid black" }}
             >
               Game
               <FontAwesomeIcon
@@ -121,7 +121,7 @@ function BenMoore(props) {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Votes Received
@@ -136,7 +136,7 @@ function BenMoore(props) {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Inducted
@@ -151,7 +151,7 @@ function BenMoore(props) {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Banned

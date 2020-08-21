@@ -97,13 +97,13 @@ function DanielBloodworth() {
   return (
     <div>
       <h2 style={{textAlign: 'center'}}>Daniel Bloodworth's Picks</h2>
-      <Table striped>
+      <Table striped style={{margin: '0 auto'}}>
         <thead>
           <tr>
           <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Ceremony
@@ -115,7 +115,7 @@ function DanielBloodworth() {
               ></FontAwesomeIcon>
             </th>
             <th
-              style={{ borderBottom: "1px solid black", paddingBottom: "1em" }}
+              style={{ borderBottom: "1px solid black" }}
             >
               Game
               <FontAwesomeIcon
@@ -128,7 +128,7 @@ function DanielBloodworth() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Votes Received
@@ -143,7 +143,7 @@ function DanielBloodworth() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Inducted
@@ -158,7 +158,7 @@ function DanielBloodworth() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Banned
@@ -173,7 +173,7 @@ function DanielBloodworth() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Won By Patreon Vote

@@ -167,13 +167,13 @@ function BradEllis() {
   return (
     <div>
       <h2 style={{textAlign: 'center'}}>Brad Ellis' Picks</h2>
-      <Table striped>
+      <Table striped style={{margin: '0 auto'}}>
         <thead>
           <tr>
           <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Ceremony
@@ -185,7 +185,7 @@ function BradEllis() {
               ></FontAwesomeIcon>
             </th>
             <th
-              style={{ borderBottom: "1px solid black", paddingBottom: "1em" }}
+              style={{ borderBottom: "1px solid black" }}
             >
               Game
               <FontAwesomeIcon
@@ -198,7 +198,7 @@ function BradEllis() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Votes Received
@@ -213,7 +213,7 @@ function BradEllis() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Inducted
@@ -228,7 +228,7 @@ function BradEllis() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Banned
