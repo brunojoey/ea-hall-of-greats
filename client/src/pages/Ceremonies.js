@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
 const Ceremonies = (props) => {
   const classes = useStyles();
   const { match, history } = props;
+  console.log('History', history);
   const { params } = match;
   const { page } = params;
 
@@ -92,19 +93,19 @@ const Ceremonies = (props) => {
       >
         The Coveted Ceremonies
       </Typography> */}
-      {selectedTab === 0 && <HallOfGreatOne />}
-      {selectedTab === 1 && <HallOfGreatTwo />}
-      {selectedTab === 2 && <HallOfGreatThree />}
-      {selectedTab === 3 && <HallOfGreatFour />}
-      {selectedTab === 4 && <HallOfGreatFive />}
-      {selectedTab === 5 && <HallOfGreatSix />}
-      {selectedTab === 6 && <HallOfGreatSeven />}
-      {selectedTab === 7 && <HallOfGreatEight />}
-      {selectedTab === 8 && <HallOfGreatNine />}
-      {selectedTab === 9 && <HallOfGreatTen />}
-      {selectedTab === 10 && <HallOfGreatEleven />}
-      {selectedTab === 11 && <HallOfGreatTwelve />}
-      {selectedTab === 12 && <HallOfGreatThirteen />}
+      {selectedTab === 0 && <HallOfGreatOne history={history} />}
+      {selectedTab === 1 && <HallOfGreatTwo history={history} />}
+      {selectedTab === 2 && <HallOfGreatThree history={history} />}
+      {selectedTab === 3 && <HallOfGreatFour history={history} />}
+      {selectedTab === 4 && <HallOfGreatFive history={history} />}
+      {selectedTab === 5 && <HallOfGreatSix history={history} />}
+      {selectedTab === 6 && <HallOfGreatSeven history={history} />}
+      {selectedTab === 7 && <HallOfGreatEight history={history} />}
+      {selectedTab === 8 && <HallOfGreatNine history={history} />}
+      {selectedTab === 9 && <HallOfGreatTen history={history} />}
+      {selectedTab === 10 && <HallOfGreatEleven history={history} />}
+      {selectedTab === 11 && <HallOfGreatTwelve history={history} />}
+      {selectedTab === 12 && <HallOfGreatThirteen history={history} />}
     </>
   );
 };

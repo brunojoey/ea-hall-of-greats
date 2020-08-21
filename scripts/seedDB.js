@@ -199,7 +199,7 @@ const gameSeed = [
     victory: 'True',
     banned: 'False',
     image: "../images/super_mario_64.jpg",
-    alt: "Super Mario 64å"
+    alt: "Super Mario 64"
   },
   {
     ally: danielBloodworth,

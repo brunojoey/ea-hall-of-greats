@@ -4,8 +4,9 @@ import gamesAPI from "../../utils/gamesAPI";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSort } from '@fortawesome/free-solid-svg-icons';
 
-function DanielBloodworth() {
+function DanielBloodworth(props) {
   const [ally, setAlly] = useState([]);
+  const { history } = props;
 
   // function renderImages({ image, alt }) {
   //   imageJson.map((images) => {
@@ -47,7 +48,7 @@ function DanielBloodworth() {
                 padding: ".5em",
               }}
             >
-              {ally.game}
+              <span onClick={() => history.push(`/games/${ally._id}`)} className='gameLink'>{ally.game}</span>
             </td>
             <td
               style={{

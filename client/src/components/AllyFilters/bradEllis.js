@@ -4,9 +4,10 @@ import gamesAPI from "../../utils/gamesAPI";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSort } from '@fortawesome/free-solid-svg-icons';
 
-function BradEllis() {
+function BradEllis(props) {
   const [ally, setAlly] = useState([]);
   const [bradDamiani, setBradDamiani] = useState([]);
+  const { history } = props;
 
   // function renderImages({ image, alt }) {
   //   imageJson.map((images) => {
@@ -68,7 +69,7 @@ function BradEllis() {
                 padding: ".5em",
               }}
             >
-              {ally.game}
+              <span onClick={() => history.push(`/games/${ally._id}`)} className='gameLink'>{ally.game}</span>
             </td>
             <td
               style={{
@@ -127,7 +128,7 @@ function BradEllis() {
                 padding: ".5em",
               }}
             >
-              {bDamiani.game}
+              <span onClick={() => history.push(`/games/${bDamiani._id}`)} className='gameLink'>{bDamiani.game}</span>
             </td>
             <td
               style={{
@@ -242,8 +243,8 @@ function BradEllis() {
             </th>
           </tr>
         </thead>
-        {allyToRender}
         {bradDamianiRender}
+        {allyToRender}
       </Table>
     </div>
   );

@@ -4,8 +4,9 @@ import gamesAPI from "../../utils/gamesAPI";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSort } from '@fortawesome/free-solid-svg-icons';
 
-function HallOfGreatOne() {
+function HallOfGreatOne(props) {
   const [games, setGames] = useState([]);
+  const { history } = props;
 
   // function renderImages({ image, alt }) {
   //   imageJson.map((images) => {
@@ -38,7 +39,7 @@ function HallOfGreatOne() {
                 padding: ".5em",
               }}
             >
-              {gamesHOG1.ally}
+              <span onClick={() => history.push(`/allies/${gamesHOG1.ally}`)} className='gameLink'>{gamesHOG1.ally}</span>
             </td>
             <td
               style={{
@@ -47,7 +48,7 @@ function HallOfGreatOne() {
                 padding: ".5em",
               }}
             >
-              {gamesHOG1.game}
+              <span onClick={() => history.push(`/games/${gamesHOG1._id}`)} className='gameLink'>{gamesHOG1.game}</span>
             </td>
             <td
               style={{
@@ -91,7 +92,7 @@ function HallOfGreatOne() {
         <thead>
           <tr>
             <th
-              style={{ borderBottom: "1px solid black", paddingBottom: "1em" }}
+              style={{ borderBottom: "1px solid black" }}
             >
               Nominated By
               <FontAwesomeIcon
@@ -102,7 +103,7 @@ function HallOfGreatOne() {
               ></FontAwesomeIcon>
             </th>
             <th
-              style={{ borderBottom: "1px solid black", paddingBottom: "1em" }}
+              style={{ borderBottom: "1px solid black" }}
             >
               Game
               <FontAwesomeIcon
@@ -115,7 +116,7 @@ function HallOfGreatOne() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Votes Received
@@ -130,7 +131,7 @@ function HallOfGreatOne() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Inducted
@@ -145,7 +146,7 @@ function HallOfGreatOne() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Banned

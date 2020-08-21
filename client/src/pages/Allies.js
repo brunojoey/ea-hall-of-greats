@@ -73,15 +73,15 @@ const Allies = props => {
       >
         The Allies Picks
       </Typography> */}
-      {selectedTab === 0 && <BenMoore />}
-      {selectedTab === 1 && <BradEllis />}
-      {selectedTab === 2 && <BrandonJones />}
-      {selectedTab === 3 && <DanielBloodworth />}
-      {selectedTab === 4 && <DonCasanova />}
-      {selectedTab === 5 && <IanHinck />}
-      {selectedTab === 6 && <KyleBosman />}
-      {selectedTab === 7 && <MichaelDamiani />}
-      {selectedTab === 8 && <MichaelHuber />}
+      {selectedTab === 0 && <BenMoore history={history} />}
+      {selectedTab === 1 && <BradEllis history={history} />}
+      {selectedTab === 2 && <BrandonJones history={history} />}
+      {selectedTab === 3 && <DanielBloodworth history={history} />}
+      {selectedTab === 4 && <DonCasanova history={history} />}
+      {selectedTab === 5 && <IanHinck history={history} />}
+      {selectedTab === 6 && <KyleBosman history={history} />}
+      {selectedTab === 7 && <MichaelDamiani history={history} />}
+      {selectedTab === 8 && <MichaelHuber history={history} />}
     </nav>
 
     </>

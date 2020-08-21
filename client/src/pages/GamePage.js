@@ -40,7 +40,7 @@ function GamePage(props) {
           <p style={{ marginLeft: "1em" }}>
             {" "}
             <span style={{ textDecoration: "underline" }}>Ceremony</span>:{" "}
-            Hall of Great {gamePage.hallOfGreat} ||{" "}
+            <span onClick={() => history.push(`/ceremonies/${gamePage.hallOfGreat}`)} className='gameLink'>Hall of Great {gamePage.hallOfGreat} </span>||{" "}
             <span style={{ textDecoration: "underline" }}>Platforms</span>:{" "}
             {gamePage.platforms} ||{" "} 
             <span style={{ textDecoration: "underline" }}>Genre</span>:{" "}

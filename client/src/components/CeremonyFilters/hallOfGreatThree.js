@@ -4,8 +4,9 @@ import gamesAPI from "../../utils/gamesAPI";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSort } from '@fortawesome/free-solid-svg-icons';
 
-function HallOfGreatOne() {
+function HallOfGreatOne(props) {
   const [games, setGames] = useState([]);
+  const { history } = props;
 
   // function renderImages({ image, alt }) {
   //   imageJson.map((images) => {
@@ -38,7 +39,7 @@ function HallOfGreatOne() {
                 padding: ".5em",
               }}
             >
-              {gamesHOG1.ally}
+              <span onClick={() => history.push(`/allies/${gamesHOG1.ally}`)} className='gameLink'>{gamesHOG1.ally}</span>
             </td>
             <td
               style={{
@@ -47,7 +48,7 @@ function HallOfGreatOne() {
                 padding: ".5em",
               }}
             >
-              {gamesHOG1.game}
+              <span onClick={() => history.push(`/games/${gamesHOG1._id}`)} className='gameLink'>{gamesHOG1.game}</span>
             </td>
             <td
               style={{

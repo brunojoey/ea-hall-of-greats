@@ -55,7 +55,7 @@ function NomineeTable(props) {
                 padding: ".5em",
               }}
             >
-              {nominee.ally}
+              <span onClick={() => history.push(`/allies/${nominee.ally}`)} className='gameLink'>{nominee.ally}</span>
             </td>
             <td
               style={{
@@ -64,7 +64,6 @@ function NomineeTable(props) {
                 padding: ".5em",
               }}
             >
-              {/* {nominee.game} */}
               <span onClick={() => history.push(`/games/${nominee._id}`)} className='gameLink'>{nominee.game}</span>
             </td>
             <td

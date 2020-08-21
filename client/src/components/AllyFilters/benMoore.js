@@ -49,7 +49,7 @@ function BenMoore(props) {
                 padding: ".5em",
               }}
             >
-              {ally.game}
+              <span onClick={() => history.push(`/games/${ally._id}`)} className='gameLink'>{ally.game}</span>
             </td>
             <td
               style={{
