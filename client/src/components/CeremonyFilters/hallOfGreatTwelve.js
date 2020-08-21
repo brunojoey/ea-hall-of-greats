@@ -87,7 +87,7 @@ function HallOfGreatOne() {
   return (
     <div>
       <h2 style={{textAlign: 'center'}}>The Twelfth Hall of Greats</h2>
-      <Table striped>
+      <Table striped style={{margin: '0 auto'}}>
         <thead>
           <tr>
             <th

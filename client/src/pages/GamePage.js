@@ -42,7 +42,7 @@ function GamePage(props) {
             <span style={{ textDecoration: "underline" }}>Ceremony</span>:{" "}
             Hall of Great {gamePage.hallOfGreat} ||{" "}
             <span style={{ textDecoration: "underline" }}>Platforms</span>:{" "}
-            {gamePage.platforms} ||{" "}
+            {gamePage.platforms} ||{" "} 
             <span style={{ textDecoration: "underline" }}>Genre</span>:{" "}
             {gamePage.genre} ||{" "}
             <span style={{ textDecoration: "underline" }}>Metacritic</span>:{" "}

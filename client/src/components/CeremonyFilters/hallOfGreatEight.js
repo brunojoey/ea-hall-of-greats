@@ -97,11 +97,11 @@ function HallOfGreatOne() {
   return (
     <div>
       <h2 style={{textAlign: 'center'}}>The Eighth Hall of Greats</h2>
-      <Table striped style={{marginBottom: '3.5em'}}>
+      <Table striped style={{margin: '0 auto'}}>
         <thead>
           <tr>
             <th
-              style={{ borderBottom: "1px solid black", paddingBottom: "1em" }}
+              style={{ borderBottom: "1px solid black" }}
             >
               Nominated By
               <FontAwesomeIcon
@@ -112,7 +112,7 @@ function HallOfGreatOne() {
               ></FontAwesomeIcon>
             </th>
             <th
-              style={{ borderBottom: "1px solid black", paddingBottom: "1em" }}
+              style={{ borderBottom: "1px solid black" }}
             >
               Game
               <FontAwesomeIcon
@@ -125,7 +125,7 @@ function HallOfGreatOne() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Votes Received
@@ -140,7 +140,7 @@ function HallOfGreatOne() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Inducted
@@ -155,7 +155,7 @@ function HallOfGreatOne() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Banned
@@ -169,7 +169,7 @@ function HallOfGreatOne() {
             <th
               style={{
                 borderBottom: "1px solid black",
-                padding: "0 1em 1em 1em",
+                padding: "0 1em 0 1em",
               }}
             >
               Won By Patreon Vote
