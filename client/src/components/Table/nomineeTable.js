@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import gamesAPI from "../../utils/gamesAPI";
+import { Table } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
@@ -103,7 +104,7 @@ function NomineeTable(props) {
 
   return (
     <div>
-      <table striped style={{margin: '0 auto'}} className='table-sortable'>
+      <table style={{margin: '0 auto'}} className='table-sortable'>
         <thead>
           <tr>
             <th style={{ borderBottom: "1px solid black" }}>

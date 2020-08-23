@@ -45,6 +45,114 @@ const symphony = "Castlevania: Symphony of the Night";
 const witcher3 = "The Witcher III: Wild Hunt";
 const worldOfWarcraft = "World of Warcraft";
 
+const imageSeed = [
+  {
+    image: "../images/metal_gear_solid.jpg",
+    alt: "Metal Gear Solid"
+  },
+  {
+    image: "../images/super_metroid.jpg",
+    alt: "Super Metroid"
+  },
+  {
+    image: "../images/super_mario_64.jpg",
+    alt: "Super Mario 64"
+  },
+  {
+    image: "../images/street_fighter_two.jpg",
+    alt: "Street Fighter II"
+  },
+  {
+    image: "../images/ocarina_of_time.jpg",
+    alt: "The Legend of Zelda: Ocarina of Time"
+  },
+  {
+    image: "../images/symphony_of_the_night.jpg",
+    alt: "Castlevania: Symphony of the Night"
+  },
+  {
+    image: "../images/chrono_trigger.jpg",
+    alt: "Chrono Trigger"
+  },
+  {
+    image: "../images/pokemon_red.jpg",
+    alt: "Pokemon Red & Blue"
+  },
+  {
+    image: "../images/resident_evil_four.jpg",
+    alt: "Resident Evil 4"
+  },
+  {
+    image: "../images/resident_evil_remake.jpg",
+    alt: "Resident Evil Remake"
+  },
+  {
+    image: "../images/metroid_prime.jpg",
+    alt: "Metroid Prime"
+  },
+  {
+    image: "../images/paper_mario_thousand.jpg",
+    alt: "Paper Mario & The Thousand-Year Door"
+  },
+  {
+    image: "../images/ff_six.jpg",
+    alt: "Final Fantasy VI"
+  },
+  {
+    image: "../images/tetris.jpg",
+    alt: "Tetris"
+  },
+  {
+    // _id: '5f42c68addc7798fc2321025',
+    image: "../images/bloodborne.jpg",
+    alt: "Bloodborne"
+  },
+  {
+    image: "../images/portal.jpg",
+    alt: "Portal"
+  },
+  {
+    image: "../images/link_past.jpg",
+    alt: "The Legend of Zelda: A Link to the Past"
+  },
+  {
+    image: "../images/super_mario_bros_three.jpg",
+    alt: "Super Mario Bros. 3"
+  },
+  {
+    image: "../images/the_last_of_us.jpg",
+    alt: "The Last of Us"
+  },
+  {
+    image: "../images/the_witcher_three.jpg",
+    alt: "The Witcher III: Wild Hunt"
+  },
+  {
+    image: "../images/counter_strike.jpg",
+    alt: "Counter-Strike"
+  },
+  {
+    image: "../images/ff_seven.jpg",
+    alt: "Final Fantasy VII"
+  },
+  {
+    image: "../images/world_of_warcraft.jpg",
+    alt: "World of Warcraft"
+  },
+  {
+    image: "../images/doom.jpg",
+    alt: "Doom (1993)"
+  },
+  {
+    image: "../images/dk_tropical_freeze.jpg",
+    alt: "Donkey Kong Country: Tropical Freeze"
+  },
+  {
+    image: "../images/yakuza_zero.jpg",
+    alt: "Yakuza 0"
+  },
+];
+
 // Ally seed to compile data for all Allies.
 const allySeed = [
   {
@@ -109,8 +217,7 @@ const gameSeed = [
     votes: 10,
     victory: 'True',
     banned: 'False',
-    image: "metal_gear_solid.jpg",
-    alt: "Metal Gear Solid"
+    image: imageSeed[0]
   },
   {
     ally: danielBloodworth,
@@ -126,8 +233,7 @@ const gameSeed = [
     victory: 'True',
     wonByPatreonVote: 'True',
     banned: 'False',
-    image: "./images/super_metroid.jpg",
-    alt: "Super Metroid"
+    image: imageSeed[1]
   },
   {
     ally: benMoore,
@@ -198,8 +304,6 @@ const gameSeed = [
     votes: 15,
     victory: 'True',
     banned: 'False',
-    image: "../images/super_mario_64.jpg",
-    alt: "Super Mario 64"
   },
   {
     ally: danielBloodworth,
@@ -214,8 +318,6 @@ const gameSeed = [
     votes: 14,
     victory: 'True',
     banned: 'False',
-    image: "./street_fighter_two.jpg",
-    alt: "Street Fighter II"
   },
   {
     ally: ianHinck,
@@ -278,8 +380,6 @@ const gameSeed = [
     votes: 16,
     victory: 'True',
     banned: 'False',
-    image: "../images/ocarina_of_time.jpg",
-    alt: "The Legend of Zelda: Ocarina of Time"
   },
   {
     ally: ianHinck,
@@ -294,8 +394,6 @@ const gameSeed = [
     votes: 11,
     victory: 'True',
     banned: 'False',
-    image: "../images/symphony_of_the_night.jpg",
-    alt: "Castlevania: Symphony of the Night"
   },
   {
     ally: kyleBosman,
@@ -366,8 +464,6 @@ const gameSeed = [
     votes: 21,
     victory: 'True',
     banned: 'False',
-    image: "../images/chrono_trigger.jpg",
-    alt: "Chrono Trigger"
   },
   {
     ally: kyleBosman,
@@ -382,8 +478,6 @@ const gameSeed = [
     votes: 8,
     victory: 'True',
     banned: 'False',
-    image: "../images/popkemon_red.jpg",
-    alt: "Pokemon Red & Blue"
   },
   {
     ally: benMoore,
@@ -454,8 +548,6 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
-    image: "../images/resident_evil_four.jpg",
-    alt: "Resident Evil 4"
   },
   {
     ally: benMoore,
@@ -470,8 +562,6 @@ const gameSeed = [
     votes: 11,
     victory: 'True',
     banned: 'False',
-    image: "../images/resident_evil_remake.jpg",
-    alt: "Resident Evil Remake"
   },
   {
     ally: michaelHuber,
@@ -542,8 +632,6 @@ const gameSeed = [
     votes: 19,
     victory: 'True',
     banned: 'False',
-    image: "../images/metroid_prime.jpg",
-    alt: "Metroid Prime"
   },
   {
     ally: benMoore,
@@ -558,8 +646,6 @@ const gameSeed = [
     votes: 12,
     victory: 'True',
     banned: 'False',
-    image: "../images/paper_mario_thousand.jpg",
-    alt: "Paper Mario & The Thousand-Year Door"
   },
   {
     ally: ianHinck,
@@ -630,8 +716,6 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
-    image: "../images/ff_six.jpg",
-    alt: "Final Fantasy VI"
   },
   {
     ally: kyleBosman,
@@ -646,8 +730,6 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
-    image: "../images/tetris.jpg",
-    alt: "Tetris"
   },
   {
     ally: bradEllis,
@@ -718,8 +800,6 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
-    image: "../images/bloodborne.jpg",
-    alt: "Bloodborne"
   },
   {
     ally: brandonJones,
@@ -735,8 +815,6 @@ const gameSeed = [
     victory: 'True',
     wonByPatreonVote: 'True',
     banned: 'False',
-    image: "../images/portal.jpg",
-    alt: "Portal"
   },
   {
     ally: bradEllis,
@@ -807,8 +885,6 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
-    image: "../images/link_past.jpg",
-    alt: "The Legend of Zelda: A Link to the Past"
   },
   {
     ally: kyleBosman,
@@ -823,8 +899,6 @@ const gameSeed = [
     votes: 12,
     victory: 'True',
     banned: 'False',
-    image: "../images/super_mario_bros_three.jpg",
-    alt: "Super Mario Bros. 3"
   },
   {
     ally: benMoore,
@@ -888,8 +962,6 @@ const gameSeed = [
     victory: 'True',
     wonByPatreonVote: 'True',
     banned: 'False',
-    image: "../images/the_last_of_us.jpg",
-    alt: "The Last of Us"
   },
   {
     ally: danielBloodworth,
@@ -905,8 +977,6 @@ const gameSeed = [
     victory: 'True',
     wonByPatreonVote: 'True',
     banned: 'False',
-    image: "../images/the_witcher_three.jpg",
-    alt: "The Witcher III: Wild Hunt"
   },
   {
     ally: benMoore,
@@ -961,8 +1031,6 @@ const gameSeed = [
     votes: 15,
     victory: 'True',
     banned: 'False',
-    image: "../images/counter_strike.jpg",
-    alt: "Counter-Strike"
   },
   {
     ally: bradEllis,
@@ -977,8 +1045,6 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
-    image: "../images/ff_seven.jpg",
-    alt: "Final Fantasy VII"
   },
   {
     ally: donCasanova,
@@ -1041,8 +1107,7 @@ const gameSeed = [
     votes: 14,
     victory: 'True',
     banned: 'False',
-    image: "../images/world_of_warcraft.jpg",
-    alt: "World of Warcraft"
+    image: imageSeed[22]
   },
   {
     ally: benMoore,
@@ -1057,8 +1122,7 @@ const gameSeed = [
     votes: 11,
     victory: 'True',
     banned: 'False',
-    image: "../images/doom.jpg",
-    alt: "Doom (1993)"
+    image: imageSeed[23]
   },
   {
     ally: michaelHuber,
@@ -1121,8 +1185,6 @@ const gameSeed = [
     votes: 14,
     victory: 'True',
     banned: 'False',
-    image: "../images/dk_tropical_freeze.jpg",
-    alt: "Donkey Kong Country: Tropical Freeze"
   },
   {
     ally: michaelHuber,
@@ -1137,8 +1199,6 @@ const gameSeed = [
     votes: 12,
     victory: 'True',
     banned: 'False',
-    image: "../images/yakuza_zero.jpg",
-    alt: "Yakuza 0"
   },
   {
     ally: benMoore,
@@ -1211,3 +1271,14 @@ db.Games.deleteMany({})
     console.error(err);
     process.exit(1);
   });
+
+db.Images.deleteMany({})
+  .then(() => db.Images.collection.insertMany(imageSeed))
+  .then((data) => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  })

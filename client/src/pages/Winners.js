@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
-// import GamesDB from '../utils/database.json';
 import { Table } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSort } from '@fortawesome/free-solid-svg-icons';
@@ -24,8 +23,10 @@ function Winners(props) {
   useEffect(() => {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
+      console.log('data', data);
       data = data.filter((games) => games.victory === 'True');
       setGames(data);
+      console.log('data', data)
     };
 
     fetchData();

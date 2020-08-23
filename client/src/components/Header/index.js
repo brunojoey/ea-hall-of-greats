@@ -85,7 +85,7 @@ export default function Header() {
                 The Allies
               </Link>
           </div>
-              {SimpleMenu}
+              {/* {SimpleMenu} */}
         </Toolbar>
       </AppBar>
     </div>

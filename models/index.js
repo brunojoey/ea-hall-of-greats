@@ -1,4 +1,5 @@
 module.exports = {
     Games: require('./games'),
-    Allies: require('./allies')
+    Allies: require('./allies'),
+    Images: require('./images')
 };

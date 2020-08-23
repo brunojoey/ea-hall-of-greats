@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
-import allyAPI from "../utils/allyAPI";
+import imagesAPI from '../utils/imagesAPI';
 import { Image, Container, Row, Col } from "react-bootstrap";
 
 import placeholder from '../200.png';
 
 function GamePage(props) {
   const [gamePage, setGamePage] = useState([]);
+  const [gameImage, setGameImage] = useState([]);
   const { match, history } = props;
   const { params } = match;
   const { id } = params;
@@ -14,25 +15,30 @@ function GamePage(props) {
   useEffect(() => {
     async function fetchData() {
       let { data } = await gamesAPI.getGame(id);
-      console.log("DATA", data);
       setGamePage(data);
     };
 
     fetchData();
   }, [id]);
-
-  async function onClick() {
-    if (gamePage) {
-      let { data } = await allyAPI.getAlly(gamePage.ally); 
-      console.log('data', data)   
-    }
-  };
+  
+  useEffect(() => {
+    async function fetchImage() {
+        let { data } = await imagesAPI.getImages();
+        console.log('IMAGES', data);
+        console.log('IMAGE ALT', data[1].alt);
+        // data = data.filter((gameImage) => (gameImage.alt === gamePage.game));
+        console.log('Image', data[1].image);
+        setGameImage(data[1].image);
+      };
+      fetchImage();
+    
+  }, []);
 
   return (
-    <Container fluid key={gamePage._id}>
+    <Container fluid key={gamePage.id}>
       <h1 className='gameTitle' style={{margin: '0 auto', marginTop: '.3em', textAlign: 'center'}}>{gamePage.game}</h1>
       <Row className="allyImageGame" style={{marginTop: '1em'}}> 
-          <Image src={gamePage.image} alt={gamePage.alt} />
+          <Image src={gameImage}></Image>
       </Row>
       <Row>
         <Col>

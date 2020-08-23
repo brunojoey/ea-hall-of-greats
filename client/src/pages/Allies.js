@@ -9,6 +9,7 @@ import IanHinck from '../components/AllyFilters/ianHinck';
 import KyleBosman from '../components/AllyFilters/kyleBosman';
 import MichaelDamiani from '../components/AllyFilters/michaelDamiani';
 import MichaelHuber from '../components/AllyFilters/michaelHuber';
+// import AllyFilter from '../components/AllyFilters/allyFilter';
 import './Pages.css'
 
 // const useStyles = makeStyles((theme) => ({
@@ -67,12 +68,7 @@ const Allies = props => {
         <Tab label="Michael Damiani" />
         <Tab label="Michael Huber" />
       </Tabs>
-      {/* <Typography
-      variant="h2"
-        style={{ margin: ".25em 0 .25em 0", textAlign: "center" }}
-      >
-        The Allies Picks
-      </Typography> */}
+      
       {selectedTab === 0 && <BenMoore history={history} />}
       {selectedTab === 1 && <BradEllis history={history} />}
       {selectedTab === 2 && <BrandonJones history={history} />}
