@@ -9,12 +9,6 @@ function BenMoore(props) {
   const { history } = props;
   console.log('props', props);
 
-  // function renderImages({ image, alt }) {
-  //   imageJson.map((images) => {
-  //     <Image src={buildRoutes(imageJson.image)} alt={imageJson.alt} />
-  //   })
-  // };
-
   useEffect(() => {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
@@ -84,7 +78,7 @@ function BenMoore(props) {
         </tbody>
       );
     });
-  }
+  };
 
   if (ally) {
   return (
