@@ -3,7 +3,7 @@ import gamesAPI from "../utils/gamesAPI";
 import imagesAPI from '../utils/imagesAPI';
 import { Image, Container, Row, Col } from "react-bootstrap";
 
-import placeholder from '../200.png';
+// import placeholder from '../200.png';
 
 function GamePage(props) {
   const [gamePage, setGamePage] = useState([]);

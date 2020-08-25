@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { Dropdown } from "react-materialize";
+// import { Dropdown } from "react-materialize";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   AppBar,
   Toolbar,
   Typography,
-  Button
 } from "@material-ui/core/";
 import './style.css';
 

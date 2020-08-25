@@ -1,33 +1,45 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import gamesAPI from "../../utils/gamesAPI";
-import { Table } from "react-bootstrap";
+// import useSortableData from "../../utils/useSortableData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
 
-
 function NomineeTable(props) {
   const { history } = props;
-  console.log('props', props)
-  console.log('history', history)
   const [games, setGames] = useState([]);
-  // const [rows, setRows] = useState({nomineesToRender})
-  const [onSort, setOnSort] = useState();
+  const [sortConfig, setSortConfig] = useState(null);
 
   // Sorts the Table
-  async function sortOn(event, sortKey) {
-    if (games) {
-      let { data } = await gamesAPI.getGames();
-      console.log('dataSort', data);
-      data.sort((a, b) => (a.hallOfGreat, sortKey) > (b.hallOfGreat, sortKey));
-      setOnSort({data});
-    };
-  };
+  useMemo(() => {
+    let sortedItems = [...games];
+    console.log("sortItems", sortedItems);
+
+    if (sortConfig !== null) {
+      sortedItems.sort((a, b) => {
+        if (a[sortConfig] < b[sortConfig]) {
+          return -1;
+        }
+        if (a[sortConfig] > b[sortConfig]) {
+          return 1;
+        }
+        return 0;
+      });
+    }
+  }, [sortConfig, games]);
+
+  // const requestSort = (key) => {
+  //   console.log("key", key);
+  //   let direction = "ascending";
+  //   if (sortConfig.key === key && sortConfig.direction === "ascending") {
+  //     direction = "descending";
+  //   }
+  //   setSortConfig({ key, direction });
+  // };
 
   useEffect(() => {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
-      console.log("DATA", data);
       setGames(data);
     }
 
@@ -56,7 +68,12 @@ function NomineeTable(props) {
                 padding: ".5em",
               }}
             >
-              <span onClick={() => history.push(`/allies/${nominee.ally}`)} className='gameLink'>{nominee.ally}</span>
+              <span
+                onClick={() => history.push(`/allies/${nominee.ally}`)}
+                className="gameLink"
+              >
+                {nominee.ally}
+              </span>
             </td>
             <td
               style={{
@@ -65,7 +82,12 @@ function NomineeTable(props) {
                 padding: ".5em",
               }}
             >
-              <span onClick={() => history.push(`/games/${nominee._id}`)} className='gameLink'>{nominee.game}</span>
+              <span
+                onClick={() => history.push(`/games/${nominee._id}`)}
+                className="gameLink"
+              >
+                {nominee.game}
+              </span>
             </td>
             <td
               style={{
@@ -104,7 +126,7 @@ function NomineeTable(props) {
 
   return (
     <div>
-      <table style={{margin: '0 auto'}} className='table-sortable'>
+      <table style={{ margin: "0 auto" }} className="table-sortable">
         <thead>
           <tr>
             <th style={{ borderBottom: "1px solid black" }}>
@@ -114,7 +136,7 @@ function NomineeTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                onClick={(event) => sortOn(event, 'ceremonies')}
+                onClick={() => setSortConfig("hallOfGreat")}
               ></FontAwesomeIcon>
             </th>
             <th style={{ borderBottom: "1px solid black" }}>
@@ -124,6 +146,7 @@ function NomineeTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
+                onClick={(key) => setSortConfig("ally")}
               ></FontAwesomeIcon>
             </th>
             <th style={{ borderBottom: "1px solid black" }}>
@@ -133,6 +156,7 @@ function NomineeTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
+                onClick={() => setSortConfig("game")}
               ></FontAwesomeIcon>
             </th>
             <th
@@ -146,6 +170,7 @@ function NomineeTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
+                onClick={() => setSortConfig("votes")}
               ></FontAwesomeIcon>
             </th>
             <th
@@ -159,6 +184,7 @@ function NomineeTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
+                onClick={() => setSortConfig("victory")}
               ></FontAwesomeIcon>
             </th>
             <th
@@ -172,6 +198,7 @@ function NomineeTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
+                onClick={() => setSortConfig("banned")}
               ></FontAwesomeIcon>
             </th>
           </tr>
