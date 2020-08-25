@@ -11,22 +11,99 @@ function NomineeTable(props) {
   const [sortConfig, setSortConfig] = useState(null);
 
   // Sorts the Table
-  useMemo(() => {
-    let sortedItems = [...games];
-    console.log("sortItems", sortedItems);
+  let sortedItems = [...games];
+  console.log("sortItems", sortedItems);
 
-    if (sortConfig !== null) {
-      sortedItems.sort((a, b) => {
-        if (a[sortConfig] < b[sortConfig]) {
-          return -1;
-        }
-        if (a[sortConfig] > b[sortConfig]) {
-          return 1;
-        }
-        return 0;
-      });
-    }
-  }, [sortConfig, games]);
+  if (sortConfig !== null) {
+    sortedItems.sort((a, b) => {
+      if (a[sortConfig] < b[sortConfig]) {
+        return -1;
+      }
+      if (a[sortConfig] > b[sortConfig]) {
+        return 1;
+      }
+      return 0;
+    });
+  }
+
+  let newSortedItems;
+  if (sortConfig) {
+    newSortedItems = sortedItems.map((sorted) => {
+      return (
+        <tbody key={sorted._id}>
+          <tr>
+            <td
+              style={{
+                textAlign: "center",
+                padding: "1em",
+                borderBottom: "1px solid black",
+              }}
+            >
+              {sorted.hallOfGreat}
+            </td>
+            <td
+              style={{
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+              <span
+                onClick={() => history.push(`/allies/${sorted.ally}`)}
+                className="gameLink"
+              >
+                {sorted.ally}
+              </span>
+            </td>
+            <td
+              style={{
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+              <span
+                onClick={() => history.push(`/games/${sorted._id}`)}
+                className="gameLink"
+              >
+                {sorted.game}
+              </span>
+            </td>
+            <td
+              style={{
+                textAlign: "center",
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+              }}
+            >
+              {sorted.votes}
+            </td>
+            <td
+              style={{
+                textAlign: "center",
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+              {sorted.victory}
+            </td>
+            <td
+              style={{
+                textAlign: "center",
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+              {sorted.banned}
+            </td>
+          </tr>
+        </tbody>
+      );
+
+    })
+  }
 
   // const requestSort = (key) => {
   //   console.log("key", key);
@@ -203,7 +280,9 @@ function NomineeTable(props) {
             </th>
           </tr>
         </thead>
-        {nomineesToRender}
+            {/* {sortConfig} ? {sortedItems} : {nomineesToRender} */}
+            {newSortedItems}
+            {/* {nomineesToRender} */}
       </table>
     </div>
   );

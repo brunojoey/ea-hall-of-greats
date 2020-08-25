@@ -19,12 +19,12 @@ const useSortableData = (items = [], config = null) => {
     return sortableItems;
   }, [items, sortConfig]);
 
-  const requestSort = () => {
+  const requestSort = (key) => {
     let direction = 'ascending';
-    if (sortConfig === sortConfig.direction === 'ascending') {
+    if (sortConfig && sortConfig.key === key && sortConfig.direction === 'ascending') {
       direction = 'descending';
     }
-    setSortConfig({ direction });
+    setSortConfig({ key, direction });
   }
 
   return { items: sortedItems, requestSort };
