@@ -93,7 +93,7 @@ function MichaelHuber(props) {
         </tbody>
       );
     });
-  }
+  };
 
   return (
     <div>      

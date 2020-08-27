@@ -49,7 +49,7 @@ function Winners(props) {
       >
         The Illustrious Inductees
       </Typography>
-      <SortedTable games={games} />
+      <SortedTable games={games} history={history} />
     </div>
   );
 };
