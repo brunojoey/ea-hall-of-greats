@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import SortedTable from "../Table/sortedTable";
+import CeremonyTable from "../Table/ceremonyTable";
 import gamesAPI from "../../utils/gamesAPI";
 
 function HallOfGreatOne(props) {
@@ -27,7 +27,7 @@ function HallOfGreatOne(props) {
   return (
     <div>
       <h2 style={{textAlign: 'center'}}>The First Hall of Greats</h2>
-      <SortedTable games={games} history={history} />
+      <CeremonyTable games={games} history={history} />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import SortedTable from '../Table/sortedTable';
+import AllyTable from '../Table/allyTable';
 import gamesAPI from "../../utils/gamesAPI";
 
 function MichaelDamiani(props) {
@@ -17,7 +17,7 @@ function MichaelDamiani(props) {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
       console.log("DATA", data);
-      data = data.filter((games) => games.ally === 'Michael Damiani' && 'Brad Ellis and Michael Damiani');
+      data = data.filter((games) => games.ally === 'Michael Damiani');
       console.log("NEW DATA", data);
       setAlly(data);
     }
@@ -25,23 +25,14 @@ function MichaelDamiani(props) {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    async function fetchNewData() {
-      let { data } = await gamesAPI.getGames();
-      let newData = data.filter((games) => games.ally === 'Brad Ellis and Michael Damiani');
-      console.log('New Data', newData)
-      setBradDamiani(newData);
-    }
-
-    fetchNewData();
-  }, []);
-
-  return (
-    <div>
-      <h2 style={{textAlign: 'center'}}>Michael Damiani's Picks</h2>
-      <SortedTable games={ally, bradDamiani} history={history} />
-    </div>
-  );
+  if (ally) {
+    return (
+      <div>
+        <h2 style={{textAlign: 'center'}}>Michael Damiani's Picks</h2>
+        <AllyTable games={ally} history={history} />
+      </div>
+    );
+  }
 }
 
 export default MichaelDamiani;
