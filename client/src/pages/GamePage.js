@@ -60,6 +60,7 @@ function GamePage(props) {
           </p>
         </Col>
       </Row>
+      {gamePage.victory === 'True'}
       <Row>
           <h4 style={{marginLeft: '1em'}}>Description: </h4>
           <p style={{ margin: "0 1em 1em 1em" }}>{gamePage.description}</p>

@@ -20,9 +20,20 @@ function AllyTable(props) {
   //     return 0;
   //   });
   // };
+  let direction = "ascending";
+  
+  const requestSort = (key, a) => {
+    console.log('Key', key)
+    if (sortConfig.key === key && sortConfig.direction === "ascending") {
+      console.log('key', sortConfig.key);
+      direction = "descending";
+    }
+    setSortConfig({ key, direction });
+    console.log('key again', key);
+    console.log('direction again', direction);
+  };
 
   if (sortConfig !== null) {
-    let direction;
     sortedItems.sort((a, b) => {
       if (a[sortConfig] < b[sortConfig]) {
         return direction === "ascending" ? 1 : -1;
@@ -30,18 +41,11 @@ function AllyTable(props) {
       if (a[sortConfig] > b[sortConfig]) {
         return direction === "ascending" ? -1 : 1;
       }
+      console.log('direction', direction)
       return 0;
     });
-  }
+  };
 
-  // const requestSort = (key) => {
-  //   let direction = "ascending";
-  //   if (sortConfig.key === key && sortConfig.direction === "ascending") {
-  //     console.log('key', sortConfig.key);
-  //     direction = "descending";
-  //   }
-  //   setSortConfig({ key, direction });
-  // };
 
   let newSortedItems;
   if (games) {
@@ -119,8 +123,8 @@ function AllyTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                onClick={() => setSortConfig("ally")}
-                // onClick={() => requestSort("ally")}
+                // onClick={() => setSortConfig("ceremonies")}
+                onClick={() => requestSort("ceremonies")}
               ></FontAwesomeIcon>
             </th>
             <th style={{ borderBottom: "1px solid black" }}>

@@ -1,4 +1,5 @@
 const express = require('express');
+const router = require('express').Router();
 const mongoose = require('mongoose');
 const routes = require('./routes');
 const path = require('path');
@@ -10,6 +11,11 @@ const app = express();
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+// app.use('./images', express.static('images'));
+
+// router.get('./images/:filename',(req,res) => {
+//   res.sendFile(__dirname,"./images/" + req.param('filename'));
+//   });
 
 const imageFolder = './images'; // Name of the folder based on the root directory of your project
 fs.readdir(path.join(__dirname, imageFolder), (err, files) => {
@@ -23,7 +29,7 @@ fs.readdir(path.join(__dirname, imageFolder), (err, files) => {
 app.use(routes);
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/hallOfGreatsDB');
-  
+
 app.listen(PORT, function() {
   console.log(`🌎  ==> server listening on Port: ${PORT}`);
 });
