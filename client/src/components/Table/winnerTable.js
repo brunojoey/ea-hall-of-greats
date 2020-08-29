@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
 
-function SortedTable(props) {
+function WinnerTable(props) {
   const { history, games } = props;
   const [sortConfig, setSortConfig] = useState(null);
 
@@ -81,19 +81,19 @@ function SortedTable(props) {
                 textAlign: "center",
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
+                padding: ".5em",
               }}
             >
-              {sorted.votes}
+              {sorted.metacritic}
             </td>
             <td
               style={{
                 textAlign: "center",
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
-                padding: ".5em",
               }}
             >
-              {sorted.victory}
+              {sorted.votes}
             </td>
             <td
               style={{
@@ -133,7 +133,6 @@ function SortedTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                // onClick={() => setSortConfig("ally")}
                 onClick={() => requestSort("ally")}
               ></FontAwesomeIcon>
             </th>
@@ -144,8 +143,21 @@ function SortedTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                // onClick={() => setSortConfig("game")}
                 onClick={() => requestSort("game")}
+              ></FontAwesomeIcon>
+            </th>
+            <th
+              style={{
+                borderBottom: "1px solid black",
+              }}
+            >
+              Metacritic
+              <FontAwesomeIcon
+                size="1x"
+                style={{ marginLeft: ".25em" }}
+                className="feed-user-icon"
+                icon={faSort}
+                onClick={() => requestSort("metacritic")}
               ></FontAwesomeIcon>
             </th>
             <th
@@ -159,23 +171,7 @@ function SortedTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                // onClick={() => setSortConfig("votes")}
                 onClick={() => requestSort("votes")}
-              ></FontAwesomeIcon>
-            </th>
-            <th
-              style={{
-                borderBottom: "1px solid black",
-              }}
-            >
-              Inducted
-              <FontAwesomeIcon
-                size="1x"
-                style={{ marginLeft: ".25em" }}
-                className="feed-user-icon"
-                icon={faSort}
-                // onClick={() => setSortConfig("victory")}
-                onClick={() => requestSort("victory")}
               ></FontAwesomeIcon>
             </th>
             <th
@@ -189,7 +185,6 @@ function SortedTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                // onClick={() => setSortConfig("banned")}
                 onClick={() => requestSort("banned")}
               ></FontAwesomeIcon>
             </th>
@@ -202,4 +197,4 @@ function SortedTable(props) {
   )
 };
 
-export default SortedTable;
+export default WinnerTable;

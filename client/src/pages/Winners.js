@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
-import SortedTable from '../components/Table/sortedTable';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSort } from '@fortawesome/free-solid-svg-icons';
+import WinnerTable from '../components/Table/winnerTable';
 import { Typography } from "@material-ui/core";
 import "./Pages.css";
 import '../components/Table/style.css';
@@ -17,7 +15,6 @@ import '../components/Table/style.css';
 
 function Winners(props) {
   const [games, setGames] = useState([]);
-  // const [sortedField, setSortedField] = useState(null);
   const { history } = props;
 
   useEffect(() => {
@@ -49,7 +46,7 @@ function Winners(props) {
       >
         The Illustrious Inductees
       </Typography>
-      <SortedTable games={games} history={history} />
+      <WinnerTable games={games} history={history} />
     </div>
   );
 };

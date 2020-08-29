@@ -32,6 +32,6 @@ function DonCasanova(props) {
       <AllyTable games={ally} history={history} />
     </div>
   );
-}
+};
 
 export default DonCasanova;

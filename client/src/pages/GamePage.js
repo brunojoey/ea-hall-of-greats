@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
 import imagesAPI from '../utils/imagesAPI';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { Image, Container, Row, Col } from "react-bootstrap";
+import './Pages.css'
 
 // import placeholder from '../200.png';
+const starElement = <FontAwesomeIcon icon={['fas', 'star']} />
 
 function GamePage(props) {
   const [gamePage, setGamePage] = useState([]);
@@ -36,7 +40,16 @@ function GamePage(props) {
 
   return (
     <Container fluid key={gamePage.id}>
+      {(gamePage.victory === 'True') 
+      ?
+      <>
+      <Row className='starAndGame'>
+        <h1 className='gameTitle' style={{margin: '0 auto', marginTop: '.3em', textAlign: 'center'}}>{gamePage.game} <FontAwesomeIcon icon={faStar} className='fa-star' /> </h1>
+      </Row>
+      </>
+      :
       <h1 className='gameTitle' style={{margin: '0 auto', marginTop: '.3em', textAlign: 'center'}}>{gamePage.game}</h1>
+      }
       <Row className="allyImageGame" style={{marginTop: '1em'}}> 
           <Image src={gameImage}></Image>
       </Row>

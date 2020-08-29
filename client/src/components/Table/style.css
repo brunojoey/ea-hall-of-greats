@@ -24,6 +24,10 @@ td {
   text-align: left;
 }
 
+.feed-user-icon:hover {
+	color: grey;
+}
+
 /* 
 Max width before this PARTICULAR table gets nasty
 This query will take effect for any screen smaller than 760px

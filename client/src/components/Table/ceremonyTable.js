@@ -22,26 +22,24 @@ function CeremonyTable(props) {
   // };
 
   if (sortConfig !== null) {
-    let direction;
     sortedItems.sort((a, b) => {
-      if (a[sortConfig] < b[sortConfig]) {
-        return direction === "ascending" ? 1 : -1;
+      if (a[sortConfig.key] < b[sortConfig.key]) {
+        return sortConfig.direction === "ascending" ? 1 : -1;
       }
-      if (a[sortConfig] > b[sortConfig]) {
-        return direction === "ascending" ? -1 : 1;
+      if (a[sortConfig.key] > b[sortConfig.key]) {
+        return sortConfig.direction === "ascending" ? -1 : 1;
       }
       return 0;
     });
   }
 
-  // const requestSort = (key) => {
-  //   let direction = "ascending";
-  //   if (sortConfig.key === key && sortConfig.direction === "ascending") {
-  //     console.log('key', sortConfig.key);
-  //     direction = "descending";
-  //   }
-  //   setSortConfig({ key, direction });
-  // };
+  const requestSort = (key) => {
+    let direction = 'ascending'
+    if (sortConfig && sortConfig.key === key && sortConfig.direction === "ascending") {
+      direction = "descending";
+    }
+    setSortConfig({ key, direction });
+  };
 
   let newSortedItems;
   if (games) {
@@ -124,8 +122,7 @@ function CeremonyTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                onClick={() => setSortConfig("ally")}
-                // onClick={() => requestSort("ally")}
+                onClick={() => requestSort("ally")}
               ></FontAwesomeIcon>
             </th>
             <th style={{ borderBottom: "1px solid black" }}>
@@ -135,8 +132,7 @@ function CeremonyTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                onClick={() => setSortConfig("game")}
-                // onClick={() => requestSort("game")}
+                onClick={() => requestSort("game")}
               ></FontAwesomeIcon>
             </th>
             <th
@@ -150,8 +146,7 @@ function CeremonyTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                onClick={() => setSortConfig("votes")}
-                // onClick={() => requestSort("votes")}
+                onClick={() => requestSort("votes")}
               ></FontAwesomeIcon>
             </th>
             <th
@@ -165,8 +160,7 @@ function CeremonyTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                onClick={() => setSortConfig("victory")}
-                // onClick={() => requestSort("victory")}
+                onClick={() => requestSort("victory")}
               ></FontAwesomeIcon>
             </th>
             <th
@@ -180,8 +174,7 @@ function CeremonyTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                onClick={() => setSortConfig("banned")}
-                // onClick={() => requestSort("banned")}
+                onClick={() => requestSort("banned")}
               ></FontAwesomeIcon>
             </th>
           </tr>
