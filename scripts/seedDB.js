@@ -310,7 +310,7 @@ const gameSeed = [
     game: megaManLegends,
     hallOfGreat: 1,
     description:
-      "Mega Man Legends is an action-adventure shooter game released by Capcom. It is the first game in the Mega Man Legends sub-series of Mega Man games from Capcom, and the second major 3D polygonal Mega Man title released in the franchise, following Mega Man: Battle & Chase.[1] It was released on the PlayStation in 1997 in Japan and in 1998 in North America. A Nintendo 64 port was released in 2000 with the same title, but it was renamed Mega Man 64 for the English release in 2001. Another port was released for Microsoft Windows in 2001, and PlayStation Portable in 2005, with the latter only in Japan.",
+      "Mega Man Legends is an action-adventure shooter game released by Capcom. It is the first game in the Mega Man Legends sub-series of Mega Man games from Capcom, and the second major 3D polygonal Mega Man title released in the franchise, following Mega Man: Battle & Chase. It was released on the PlayStation in 1997 in Japan and in 1998 in North America. A Nintendo 64 port was released in 2000 with the same title, but it was renamed Mega Man 64 for the English release in 2001. Another port was released for Microsoft Windows in 2001, and PlayStation Portable in 2005, with the latter only in Japan.",
     genre: "Action Adventure",
     year: 1997,
     platforms: "PlayStation",
@@ -801,7 +801,7 @@ const gameSeed = [
     game: megaManLegends,
     hallOfGreat: 5,
     description:
-      "Mega Man Legends is an action-adventure shooter game released by Capcom. It is the first game in the Mega Man Legends sub-series of Mega Man games from Capcom, and the second major 3D polygonal Mega Man title released in the franchise, following Mega Man: Battle & Chase.[1] It was released on the PlayStation in 1997 in Japan and in 1998 in North America. A Nintendo 64 port was released in 2000 with the same title, but it was renamed Mega Man 64 for the English release in 2001. Another port was released for Microsoft Windows in 2001, and PlayStation Portable in 2005, with the latter only in Japan.",
+      "Mega Man Legends is an action-adventure shooter game released by Capcom. It is the first game in the Mega Man Legends sub-series of Mega Man games from Capcom, and the second major 3D polygonal Mega Man title released in the franchise, following Mega Man: Battle & Chase. It was released on the PlayStation in 1997 in Japan and in 1998 in North America. A Nintendo 64 port was released in 2000 with the same title, but it was renamed Mega Man 64 for the English release in 2001. Another port was released for Microsoft Windows in 2001, and PlayStation Portable in 2005, with the latter only in Japan.",
     genre: "Action Adventure",
     year: 1997,
     platforms: "PlayStation",
@@ -921,7 +921,7 @@ const gameSeed = [
     game: megaManLegends,
     hallOfGreat: 6,
     description:
-      "Mega Man Legends is an action-adventure shooter game released by Capcom. It is the first game in the Mega Man Legends sub-series of Mega Man games from Capcom, and the second major 3D polygonal Mega Man title released in the franchise, following Mega Man: Battle & Chase.[1] It was released on the PlayStation in 1997 in Japan and in 1998 in North America. A Nintendo 64 port was released in 2000 with the same title, but it was renamed Mega Man 64 for the English release in 2001. Another port was released for Microsoft Windows in 2001, and PlayStation Portable in 2005, with the latter only in Japan.",
+      "Mega Man Legends is an action-adventure shooter game released by Capcom. It is the first game in the Mega Man Legends sub-series of Mega Man games from Capcom, and the second major 3D polygonal Mega Man title released in the franchise, following Mega Man: Battle & Chase. It was released on the PlayStation in 1997 in Japan and in 1998 in North America. A Nintendo 64 port was released in 2000 with the same title, but it was renamed Mega Man 64 for the English release in 2001. Another port was released for Microsoft Windows in 2001, and PlayStation Portable in 2005, with the latter only in Japan.",
     genre: "Action Adventure",
     year: 1997,
     platforms: "PlayStation",
@@ -1562,7 +1562,7 @@ const gameSeed = [
     game: megaManLegends,
     hallOfGreat: 12,
     description:
-      "Mega Man Legends is an action-adventure shooter game released by Capcom. It is the first game in the Mega Man Legends sub-series of Mega Man games from Capcom, and the second major 3D polygonal Mega Man title released in the franchise, following Mega Man: Battle & Chase.[1] It was released on the PlayStation in 1997 in Japan and in 1998 in North America. A Nintendo 64 port was released in 2000 with the same title, but it was renamed Mega Man 64 for the English release in 2001. Another port was released for Microsoft Windows in 2001, and PlayStation Portable in 2005, with the latter only in Japan.",
+      "Mega Man Legends is an action-adventure shooter game released by Capcom. It is the first game in the Mega Man Legends sub-series of Mega Man games from Capcom, and the second major 3D polygonal Mega Man title released in the franchise, following Mega Man: Battle & Chase. It was released on the PlayStation in 1997 in Japan and in 1998 in North America. A Nintendo 64 port was released in 2000 with the same title, but it was renamed Mega Man 64 for the English release in 2001. Another port was released for Microsoft Windows in 2001, and PlayStation Portable in 2005, with the latter only in Japan.",
     genre: "Action Adventure",
     year: 1997,
     platforms: "PlayStation",
