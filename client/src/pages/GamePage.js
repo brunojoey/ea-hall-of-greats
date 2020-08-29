@@ -44,7 +44,7 @@ function GamePage(props) {
       ?
       <>
       <Row className='starAndGame'>
-        <h1 className='gameTitle' style={{margin: '0 auto', marginTop: '.3em', textAlign: 'center'}}>{gamePage.game} <FontAwesomeIcon icon={faStar} className='fa-star' /> </h1>
+        <h1 className='gameTitle' style={{margin: '0 auto', marginTop: '.3em', textAlign: 'center'}}><FontAwesomeIcon icon={faStar} className='fa-star' /> {gamePage.game} <FontAwesomeIcon icon={faStar} className='fa-star' /> </h1>
       </Row>
       </>
       :
