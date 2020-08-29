@@ -756,10 +756,10 @@ const gameSeed = [
   },
   {
     ally: donCasanova,
-    game: "Pandemonium",
+    game: "Pandemonium!",
     hallOfGreat: 5,
     description:
-      "Enter the mysterious world of Halo, an alien planet shaped like a ring. As mankind's super soldier Master Chief, you must uncover the secrets of Halo and fend off the attacking Covenant. During your missions, you'll battle on foot, in vehicles, inside, and outside with alien and human weaponry. Your objectives include attacking enemy outposts, raiding underground labs for advanced technology, rescuing fallen comrades, and sniping enemy forces. Halo also lets you battle three other players via intense split screen combat or fight cooperatively with a friend through the single-player missions.",
+      "Pandemonium! is a 1996 platform video game developed by Toys for Bob and published by Crystal Dynamics for the PlayStation and Sega Saturn. Pandemonium! features Fargus, a joker, and Nikki, a sorceress, who unwittingly casts a spell that destroys the town. The goal of the game is to reach the Wishing Engine, where they can wish the town back to normal. For each level, the player can choose which character to be. Each has a special move – Fargus can deliver a special spinning attack, and Nikki can double jump. The game consists of a great variety of unique gameplay objects, such as watermelons, clouds, spider webs and logs.",
     genre: "Platformer",
     year: 1996,
     platforms: "PlayStation, Sega Saturn",
