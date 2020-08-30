@@ -11,7 +11,6 @@ import Allies from "./pages/Allies";
 import Nominations from "./pages/Nominations";
 import Ceremonies from "./pages/Ceremonies";
 import GamePage from "./pages/GamePage";
-// import ImagePage from './pages/ImagePage';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -26,7 +25,6 @@ function App() {
         {/* <Header /> */}
         <Switch>
           <Route exact path="/" component={Home} />
-          {/* <Route exact path="/image/:id" component={ImagePage} /> */}
           <Route
             exact
             path="/winners"

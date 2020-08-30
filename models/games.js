@@ -14,8 +14,8 @@ const GamesSchema = new Schema({
   victory: { type: String, required: false },
   banned: { type: String, required: false, default: false },
   wonByPatreonVote: { type: String, required: false},
-  image: { type: Buffer, contentType: String, ref: 'Images' },
-  alt: { type: String, required: false, ref: 'Images' },
+  image: { type: String, required: false },
+  alt: { type: String, required: false },
   allyLink: { type: String, required: true },
   hallLink: { type: String, required: true }
 });

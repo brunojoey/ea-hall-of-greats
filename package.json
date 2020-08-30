@@ -10,6 +10,7 @@
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "seed": "node scripts/seedDB.js",
+    "deploy": "npm run deploy",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
@@ -25,15 +26,16 @@
   },
   "homepage": "https://github.com/brunojoey/ea-hall-of-greats#readme",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-solid-svg-icons": "^5.14.0",
-    "@fortawesome/react-fontawesome": "^0.1.11",
     "concurrently": "^5.2.0",
     "express": "^4.17.1",
-    "fs": "0.0.1-security",
     "if-env": "^1.0.4",
     "mongoose": "^5.9.25",
     "nodemon": "^2.0.4",
     "path": "^0.12.7"
-  }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
 }

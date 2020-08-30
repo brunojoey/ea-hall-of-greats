@@ -45,165 +45,6 @@ const symphony = "Castlevania: Symphony of the Night";
 const witcher3 = "The Witcher III: Wild Hunt";
 const worldOfWarcraft = "World of Warcraft";
 
-
-
-const imageSeed = [
-  {
-    image: "../images/metal_gear_solid.jpg",
-    alt: "Metal Gear Solid"
-  },
-  {
-    image: "/images/super_metroid.jpg",
-    alt: "Super Metroid"
-  },
-  {
-    image: "../images/super_mario_64.jpg",
-    alt: "Super Mario 64"
-  },
-  {
-    image: "../images/street_fighter_two.jpg",
-    alt: "Street Fighter II"
-  },
-  {
-    image: "../images/ocarina_of_time.jpg",
-    alt: "The Legend of Zelda: Ocarina of Time"
-  },
-  {
-    image: "../images/symphony_of_the_night.jpg",
-    alt: "Castlevania: Symphony of the Night"
-  },
-  {
-    image: "../images/chrono_trigger.jpg",
-    alt: "Chrono Trigger"
-  },
-  {
-    image: "../images/pokemon_red.jpg",
-    alt: "Pokemon Red & Blue"
-  },
-  {
-    image: "../images/resident_evil_four.jpg",
-    alt: "Resident Evil 4"
-  },
-  {
-    image: "../images/resident_evil_remake.jpg",
-    alt: "Resident Evil Remake"
-  },
-  {
-    image: "../images/metroid_prime.jpg",
-    alt: "Metroid Prime"
-  },
-  {
-    image: "../images/paper_mario_thousand.jpg",
-    alt: "Paper Mario & The Thousand-Year Door"
-  },
-  {
-    image: "../images/ff_six.jpg",
-    alt: "Final Fantasy VI"
-  },
-  {
-    image: "../images/tetris.jpg",
-    alt: "Tetris"
-  },
-  {
-    // _id: '5f42c68addc7798fc2321025',
-    image: "../images/bloodborne.jpg",
-    alt: "Bloodborne"
-  },
-  {
-    image: "../images/portal.jpg",
-    alt: "Portal"
-  },
-  {
-    image: "../images/link_past.jpg",
-    alt: "The Legend of Zelda: A Link to the Past"
-  },
-  {
-    image: "../images/super_mario_bros_three.jpg",
-    alt: "Super Mario Bros. 3"
-  },
-  {
-    image: "../images/the_last_of_us.jpg",
-    alt: "The Last of Us"
-  },
-  {
-    image: "../images/the_witcher_three.jpg",
-    alt: "The Witcher III: Wild Hunt"
-  },
-  {
-    image: "../images/counter_strike.jpg",
-    alt: "Counter-Strike"
-  },
-  {
-    image: "../images/ff_seven.jpg",
-    alt: "Final Fantasy VII"
-  },
-  {
-    image: "../images/world_of_warcraft.jpg",
-    alt: "World of Warcraft"
-  },
-  {
-    image: "../images/doom.jpg",
-    alt: "Doom (1993)"
-  },
-  {
-    image: "../images/dk_tropical_freeze.jpg",
-    alt: "Donkey Kong Country: Tropical Freeze"
-  },
-  {
-    image: "../images/yakuza_zero.jpg",
-    alt: "Yakuza 0"
-  },
-];
-
-// Ally seed to compile data for all Allies.
-const allySeed = [
-  {
-    ally: brandonJones,
-    victories: 3,
-    bans: 2,
-  },
-  {
-    ally: donCasanova,
-    victories: 0,
-    bans: 4,
-  },
-  {
-    ally: benMoore,
-    victories: 4,
-    bans: 0,
-  },
-  {
-    ally: bradEllis,
-    victories: 5,
-    bans: 1,
-  },
-  {
-    ally: michaelHuber,
-    victories: 2,
-    bans: 0,
-  },
-  {
-    ally: michaelDamiani,
-    victories: 5,
-    bans: 2,
-  },
-  {
-    ally: danielBloodworth,
-    victories: 3,
-    bans: 2,
-  },
-  {
-    ally: ianHinck,
-    victories: 2,
-    bans: 2,
-  },
-  {
-    ally: kyleBosman,
-    victories: 3,
-    bans: 1,
-  },
-];
-
 // All data compiled for each Hall of Greats and the nominated games.
 const gameSeed = [
   {
@@ -219,7 +60,8 @@ const gameSeed = [
     votes: 10,
     victory: 'True',
     banned: 'False',
-    image: imageSeed[0],
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1v82.jpg",
+    alt: "Metal Gear Solid",
     allyLink: 'michael_damiani',
     hallLink: 'hall_great_one'
   },
@@ -237,7 +79,8 @@ const gameSeed = [
     victory: 'True',
     wonByPatreonVote: 'True',
     banned: 'False',
-    image: imageSeed[1],
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1o11.jpg",
+    alt: "Super Metroid",    
     allyLink: 'daniel_bloodworth',
     hallLink: 'hall_great_one'
   },
@@ -364,6 +207,8 @@ const gameSeed = [
     votes: 15,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co21mm.jpg",
+    alt: "Super Mario 64",
     allyLink: '',
     hallLink: 'hall_great_two'
   },
@@ -380,6 +225,8 @@ const gameSeed = [
     votes: 14,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co26fz.jpg",
+    alt: "Street Fighter II",
     allyLink: 'daniel_bloodworth',
     hallLink: 'hall_great_two'
   },
@@ -493,6 +340,8 @@ const gameSeed = [
     votes: 16,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1n6b.jpg",
+    alt: "The Legend of Zelda: Ocarina of Time",
     allyLink: 'michael_damiani',
     hallLink: 'hall_great_three'
   },
@@ -509,6 +358,8 @@ const gameSeed = [
     votes: 11,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nh3.jpg",
+    alt: "Castlevania: Symphony of the Night",
     allyLink: 'ian_hinck',
     hallLink: 'hall_great_three'
   },
@@ -637,6 +488,8 @@ const gameSeed = [
     votes: 21,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2eqc.jpg",
+    alt: "Chrono Trigger",
     allyLink: 'brad_ellis',
     hallLink: 'hall_great_four'
   },
@@ -653,6 +506,8 @@ const gameSeed = [
     votes: 8,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1zhl.jpg",
+    alt: "Pokemon Red & Blue",
     allyLink: 'kyle_bosman',
     hallLink: 'hall_great_four'
   },
@@ -776,11 +631,13 @@ const gameSeed = [
       "Resident Evil 4 marks a new chapter in the Resident Evil series. You'll rejoin Leon S. Kennedy six years after his first mission as a rookie cop from Resident Evil 2. Now a US agent, Leon is on a top secret mission to investigate the disappearance of the president's daughter. As Leon, you must make your way to a mysterious location in Europe, where new enemies await. Take them down by using enhanced aim-and-shoot features and a new action button.",
     genre: "Survival Horror",
     year: 2005,
-    platforms: "Nintendo GameCube",
+    platforms: "Nintendo GameCube, Nintendo Wii, Nintendo Switch, PlayStation 2, PlayStation 3, PlayStation 4, Xbox 360, Xbox One",
     metacritic: 96,
     votes: 13,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co20cg.jpg",
+    alt: "Resident Evil 4",
     allyLink: 'brad_ellis',
     hallLink: 'hall_great_five'
   },
@@ -797,6 +654,8 @@ const gameSeed = [
     votes: 11,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pe8.jpg",
+    alt: "Resident Evil",
     allyLink: 'ben_moore',
     hallLink: 'hall_great_five'
   },
@@ -925,6 +784,8 @@ const gameSeed = [
     votes: 19,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1o28.jpg",
+    alt: "Metroid Prime",
     allyLink: 'michael_damiani',
     hallLink: 'hall_great_six'
   },
@@ -941,6 +802,8 @@ const gameSeed = [
     votes: 12,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co25us.jpg",
+    alt: "Paper Mario & The Thousand-Year Door",
     allyLink: 'ben_moore',
     hallLink: 'hall_great_six'
   },
@@ -1069,6 +932,8 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co25ps.jpg",
+    alt: "Final Fantasy VI",
     allyLink: 'brandon_jones',
     hallLink: 'hall_great_seven'
   },
@@ -1085,6 +950,8 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tnp.jpg",
+    alt: "Tetris",
     allyLink: 'kyle_bosman',
     hallLink: 'hall_great_seven'
   },
@@ -1213,6 +1080,8 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rba.jpg",
+    alt: "Bloodborne",
     allyLink: 'ian_hinck',
     hallLink: 'hall_great_eight'
   },
@@ -1230,6 +1099,8 @@ const gameSeed = [
     victory: 'True',
     wonByPatreonVote: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7d.jpg",
+    alt: "Portal",
     allyLink: 'brandon_jones',
     hallLink: 'hall_great_eight'
   },
@@ -1357,6 +1228,8 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nqk.jpg",
+    alt: "The Legend of Zelda: A Link to the Past",
     allyLink: 'michael_damiani',
     hallLink: 'hall_great_nine'
   },
@@ -1373,6 +1246,8 @@ const gameSeed = [
     votes: 12,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co23jw.jpg",
+    alt: "Super Mario Bros. 3",
     allyLink: 'kyle_bosman',
     hallLink: 'hall_great_nine'
   },
@@ -1486,6 +1361,8 @@ const gameSeed = [
     victory: 'True',
     wonByPatreonVote: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7f.jpg",
+    alt: "The Last of Us",
     allyLink: 'michael_huber',
     hallLink: 'hall_great_ten'
   },
@@ -1503,6 +1380,8 @@ const gameSeed = [
     victory: 'True',
     wonByPatreonVote: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wyy.jpg",
+    alt: "The Witcher III: Wild Hunt",
     allyLink: 'daniel_bloodworth',
     hallLink: 'hall_great_ten'
   },
@@ -1598,6 +1477,8 @@ const gameSeed = [
     votes: 15,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/y0vlsy3mxlkxnfafvsnk.jpg",
+    alt: "Counter-Strike",
     allyLink: 'ben_moore',
     hallLink: 'hall_great_eleven'
   },
@@ -1614,6 +1495,8 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2evn.jpg",
+    alt: "Final Fantasy 7",
     allyLink: 'brad_ellis',
     hallLink: 'hall_great_eleven'
   },
@@ -1726,7 +1609,8 @@ const gameSeed = [
     votes: 14,
     victory: 'True',
     banned: 'False',
-    image: imageSeed[22],
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co254y.jpg",
+    alt: "World of Warcraft",    
     allyLink: 'brandon_jones',
     hallLink: 'hall_great_twelve'
   },
@@ -1743,7 +1627,8 @@ const gameSeed = [
     votes: 11,
     victory: 'True',
     banned: 'False',
-    image: imageSeed[23],
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1v7j.jpg",
+    alt: "Doom",    
     allyLink: 'ben_moore',
     hallLink: 'hall_great_twelve'
   },
@@ -1856,6 +1741,8 @@ const gameSeed = [
     votes: 14,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wf2.jpg",
+    alt: "Donkey Kong Country: Tropical Freeze",
     allyLink: 'brad_ellis',
     hallLink: 'hall_great_thirteen'
   },
@@ -1872,6 +1759,8 @@ const gameSeed = [
     votes: 12,
     victory: 'True',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co252x.jpg",
+    alt: "Yakuza 0",
     allyLink: 'michael_huber',
     hallLink: 'hall_great_thirteen'
   },
@@ -1973,30 +1862,8 @@ const gameSeed = [
   },
 ];
 
-db.Allies.deleteMany({})
-  .then(() => db.Allies.collection.insertMany(allySeed))
-  .then((data) => {
-    console.log(data.result.n + " records inserted!");
-    process.exit(0);
-  })
-  .catch((err) => {
-    console.error(err);
-    process.exit(1);
-  });
-
 db.Games.deleteMany({})
   .then(() => db.Games.collection.insertMany(gameSeed))
-  .then((data) => {
-    console.log(data.result.n + " records inserted!");
-    process.exit(0);
-  })
-  .catch((err) => {
-    console.error(err);
-    process.exit(1);
-  });
-
-db.Images.deleteMany({})
-  .then(() => db.Images.collection.insertMany(imageSeed))
   .then((data) => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
