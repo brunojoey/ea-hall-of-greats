@@ -48,7 +48,7 @@ function GamePage(props) {
         <Col>
           <h3 style={{ marginLeft: "1em" }}>
             Brought By:{" "}
-            <span onClick={() => history.push(`/allies/${gamePage.allyLink}`)}>
+            <span onClick={() => history.push(`/allies/${gamePage.allyLink}`)} className='gameLink'>
               {gamePage.ally}
             </span>{" "}
           </h3>
