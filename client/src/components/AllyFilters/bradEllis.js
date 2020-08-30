@@ -4,7 +4,6 @@ import AllyTable from '../Table/allyTable';
 
 function BradEllis(props) {
   const [ally, setAlly] = useState([]);
-  const [bradDamiani, setBradDamiani] = useState([]);
   const { history } = props;
 
   // function renderImages({ image, alt }) {

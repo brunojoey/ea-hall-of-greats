@@ -4,7 +4,6 @@ import gamesAPI from "../../utils/gamesAPI";
 
 function MichaelDamiani(props) {
   const [ally, setAlly] = useState([]);
-  const [bradDamiani, setBradDamiani] = useState([]);
   const { history } = props;
 
   // function renderImages({ image, alt }) {

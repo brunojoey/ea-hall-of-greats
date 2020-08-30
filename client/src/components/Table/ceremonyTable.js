@@ -55,7 +55,7 @@ function CeremonyTable(props) {
               }}
             >
               <span
-                onClick={() => history.push(`/allies/${sorted.ally}`)}
+                onClick={() => history.push(`/allies/${sorted.allyLink}`)}
                 className="gameLink"
               >
                 {sorted.ally}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
@@ -56,7 +56,7 @@ function SortedTable(props) {
               }}
             >
               <span
-                onClick={() => history.push(`/allies/${sorted.ally}`)}
+                onClick={() => history.push(`/allies/${sorted.allyLink}`)}
                 className="gameLink"
               >
                 {sorted.ally}
@@ -75,6 +75,35 @@ function SortedTable(props) {
               >
                 {sorted.game}
               </span>
+            </td>
+            <td
+              style={{
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+              {sorted.genre}
+            </td>
+            <td
+              style={{
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+                textAlign: 'center'
+              }}
+            >
+              {sorted.year}
+            </td>
+            <td
+              style={{
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+                textAlign: 'center'
+              }}
+            >
+              {sorted.metacritic}
             </td>
             <td
               style={{
@@ -144,8 +173,37 @@ function SortedTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                // onClick={() => setSortConfig("game")}
                 onClick={() => requestSort("game")}
+              ></FontAwesomeIcon>
+            </th>
+            <th style={{ borderBottom: "1px solid black" }}>
+              Genre
+              <FontAwesomeIcon
+                size="1x"
+                style={{ marginLeft: ".25em" }}
+                className="feed-user-icon"
+                icon={faSort}
+                onClick={() => requestSort("genre")}
+              ></FontAwesomeIcon>
+            </th>
+            <th style={{ borderBottom: "1px solid black" }}>
+              Year
+              <FontAwesomeIcon
+                size="1x"
+                style={{ marginLeft: ".25em" }}
+                className="feed-user-icon"
+                icon={faSort}
+                onClick={() => requestSort("year")}
+              ></FontAwesomeIcon>
+            </th>
+            <th style={{ borderBottom: "1px solid black" }}>
+              Metacritic
+              <FontAwesomeIcon
+                size="1x"
+                style={{ marginLeft: ".25em" }}
+                className="feed-user-icon"
+                icon={faSort}
+                onClick={() => requestSort("metacritic")}
               ></FontAwesomeIcon>
             </th>
             <th

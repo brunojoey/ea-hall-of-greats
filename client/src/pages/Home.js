@@ -4,7 +4,7 @@ import "./Pages.css";
 
 function Home() {
   return (
-    <div style={{ textAlign: "center", marginBottom: "15em" }}>
+    <div style={{ textAlign: "center" }}>
       <Grid container spacing={3} style={{ margin: "0 auto" }}>
         <Grid item xs={12}>
           <Typography variant="h2" style={{ marginTop: ".5em" }}>

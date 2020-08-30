@@ -2,13 +2,11 @@ import React, { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
 import imagesAPI from '../utils/imagesAPI';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faCrown } from "@fortawesome/free-solid-svg-icons";
 import { Image, Container, Row, Col } from "react-bootstrap";
 import './Pages.css'
 
 // import placeholder from '../200.png';
-const starElement = <FontAwesomeIcon icon={['fas', 'star']} />
-
 function GamePage(props) {
   const [gamePage, setGamePage] = useState([]);
   const [gameImage, setGameImage] = useState([]);
@@ -43,8 +41,10 @@ function GamePage(props) {
       {(gamePage.victory === 'True') 
       ?
       <>
-      <Row className='starAndGame'>
-        <h1 className='gameTitle' style={{margin: '0 auto', marginTop: '.3em', textAlign: 'center'}}><FontAwesomeIcon icon={faStar} className='fa-star' /> {gamePage.game} <FontAwesomeIcon icon={faStar} className='fa-star' /> </h1>
+      <Row className='starAndGame' style={{ textAlign: 'center'}}>
+        <h1><FontAwesomeIcon icon={faCrown} className='fa-star' size='2em'/></h1>
+        <h1 className='gameTitle'> {gamePage.game} </h1>
+        {/* <h1 className='gameTitle' style={{margin: '0 auto', marginTop: '.3em', textAlign: 'center'}}><FontAwesomeIcon icon={faCrown} className='fa-star' /> {gamePage.game} <FontAwesomeIcon icon={faCrown} className='fa-star' /> </h1> */}
       </Row>
       </>
       :
@@ -55,11 +55,11 @@ function GamePage(props) {
       </Row>
       <Row>
         <Col>
-          <h3 style={{marginLeft: '1em'}}>Brought By: <span onClick={() => history.push(`/allies/${gamePage.ally}`)}>{gamePage.ally}</span> </h3>
+          <h3 style={{marginLeft: '1em'}}>Brought By: <span onClick={() => history.push(`/allies/${gamePage.allyLink}`)}>{gamePage.ally}</span> </h3>
           <p style={{ marginLeft: "1em" }}>
             {" "}
             <span style={{ textDecoration: "underline" }}>Ceremony</span>:{" "}
-            <span onClick={() => history.push(`/ceremonies/${gamePage.hallOfGreat}`)} className='gameLink'>Hall of Great {gamePage.hallOfGreat} </span>||{" "}
+            <span onClick={() => history.push(`/ceremonies/${gamePage.hallLink}`)} className='gameLink'>Hall of Great {gamePage.hallOfGreat} </span>||{" "}
             <span style={{ textDecoration: "underline" }}>Platforms</span>:{" "}
             {gamePage.platforms} ||{" "} 
             <span style={{ textDecoration: "underline" }}>Genre</span>:{" "}

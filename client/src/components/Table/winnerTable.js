@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
@@ -56,7 +56,7 @@ function WinnerTable(props) {
               }}
             >
               <span
-                onClick={() => history.push(`/allies/${sorted.ally}`)}
+                onClick={() => history.push(`/allies/${sorted.allyLink}`)}
                 className="gameLink"
               >
                 {sorted.ally}

@@ -219,7 +219,9 @@ const gameSeed = [
     votes: 10,
     victory: 'True',
     banned: 'False',
-    image: imageSeed[0]
+    image: imageSeed[0],
+    allyLink: 'michael_damiani',
+    hallLink: 'hall_great_one'
   },
   {
     ally: danielBloodworth,
@@ -235,7 +237,9 @@ const gameSeed = [
     victory: 'True',
     wonByPatreonVote: 'True',
     banned: 'False',
-    image: imageSeed[1]
+    image: imageSeed[1],
+    allyLink: 'daniel_bloodworth',
+    hallLink: 'hall_great_one'
   },
   {
     ally: benMoore,
@@ -248,6 +252,8 @@ const gameSeed = [
     votes: 9,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ben_moore',
+    hallLink: 'hall_great_one'
   },
   {
     ally: ianHinck,
@@ -262,6 +268,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ian_hinck',
+    hallLink: 'hall_great_one'
   },
   {
     ally: donCasanova,
@@ -270,12 +278,14 @@ const gameSeed = [
     votes: 2,
     description:
       "The year is 1715. Pirates rule the waters of the Caribbean and have established a lawless Republic. Among these outlaws is a lethal young captain named Edward Kenway. His notorious exploits earn the respect of legends like Blackbeard, but draw him into an ancient war that may destroy everything the pirates have built for themselves.",
-    genre: "Action Adventure",
+    genre: "Action-Adventure",
     year: 2015,
     platforms: "PlayStation 4, PlayStation 3, Xbox One, Xbox 360",
     metacritic: 83,
     victory: 'False',
     banned: 'False',
+    allyLink: 'don_casanova',
+    hallLink: 'hall_great_one'
   },
   {
     ally: bradEllis,
@@ -290,6 +300,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    allyLink: 'brad_ellis',
+    hallLink: 'hall_great_one'
   },
   {
     ally: brandonJones,
@@ -304,6 +316,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    allyLink: 'brandon_jones',
+    hallLink: 'hall_great_one'
   },
   {
     ally: kyleBosman,
@@ -311,13 +325,15 @@ const gameSeed = [
     hallOfGreat: 1,
     description:
       "Mega Man Legends is an action-adventure shooter game released by Capcom. It is the first game in the Mega Man Legends sub-series of Mega Man games from Capcom, and the second major 3D polygonal Mega Man title released in the franchise, following Mega Man: Battle & Chase. It was released on the PlayStation in 1997 in Japan and in 1998 in North America. A Nintendo 64 port was released in 2000 with the same title, but it was renamed Mega Man 64 for the English release in 2001. Another port was released for Microsoft Windows in 2001, and PlayStation Portable in 2005, with the latter only in Japan.",
-    genre: "Action Adventure",
+    genre: "Action-Adventure",
     year: 1997,
     platforms: "PlayStation",
     metacritic: 73,
     votes: 1,
     victory: 'False',
     banned: 'False',
+    allyLink: 'kyle_bosman',
+    hallLink: 'hall_great_one'
   },
   {
     ally: michaelHuber,
@@ -332,6 +348,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'False',
+    allyLink: 'michael_huber',
+    hallLink: 'hall_great_one'
   },
   {
     ally: `${bradEllis}` + ' ' + '&' + ' ' + `${michaelDamiani}`,
@@ -346,6 +364,8 @@ const gameSeed = [
     votes: 15,
     victory: 'True',
     banned: 'False',
+    allyLink: '',
+    hallLink: 'hall_great_two'
   },
   {
     ally: danielBloodworth,
@@ -360,6 +380,8 @@ const gameSeed = [
     votes: 14,
     victory: 'True',
     banned: 'False',
+    allyLink: 'daniel_bloodworth',
+    hallLink: 'hall_great_two'
   },
   {
     ally: ianHinck,
@@ -374,6 +396,8 @@ const gameSeed = [
     votes: 12,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ian_hinck',
+    hallLink: 'hall_great_two'
   },
   {
     ally: michaelHuber,
@@ -388,6 +412,8 @@ const gameSeed = [
     votes: 5,
     victory: 'False',
     banned: 'False',
+    allyLink: 'michael_huber',
+    hallLink: 'hall_great_two'
   },
   {
     ally: kyleBosman,
@@ -402,6 +428,8 @@ const gameSeed = [
     votes: 5,
     victory: 'False',
     banned: 'False',
+    allyLink: 'kyle_bosman',
+    hallLink: 'hall_great_two'
   },
   {
     ally: brandonJones,
@@ -417,6 +445,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'True',
+    allyLink: 'brandon_jones',
+    hallLink: 'hall_great_two'
   },
   {
     ally: donCasanova,
@@ -431,6 +461,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'True',
+    allyLink: 'don_casanova',
+    hallLink: 'hall_great_two'
   },
   {
     ally: benMoore,
@@ -445,6 +477,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ben_moore',
+    hallLink: 'hall_great_two'
   },
   {
     ally: michaelDamiani,
@@ -459,6 +493,8 @@ const gameSeed = [
     votes: 16,
     victory: 'True',
     banned: 'False',
+    allyLink: 'michael_damiani',
+    hallLink: 'hall_great_three'
   },
   {
     ally: ianHinck,
@@ -473,6 +509,8 @@ const gameSeed = [
     votes: 11,
     victory: 'True',
     banned: 'False',
+    allyLink: 'ian_hinck',
+    hallLink: 'hall_great_three'
   },
   {
     ally: kyleBosman,
@@ -487,6 +525,8 @@ const gameSeed = [
     votes: 9,
     victory: 'False',
     banned: 'False',
+    allyLink: 'kyle_bosman',
+    hallLink: 'hall_great_three'
   },
   {
     ally: brandonJones,
@@ -501,6 +541,8 @@ const gameSeed = [
     votes: 5,
     victory: 'False',
     banned: 'False',
+    allyLink: 'brandon_jones',
+    hallLink: 'hall_great_three'
   },
   {
     ally: danielBloodworth,
@@ -515,6 +557,8 @@ const gameSeed = [
     votes: 4,
     victory: 'False',
     banned: 'False',
+    allyLink: 'daniel_bloodworth',
+    hallLink: 'hall_great_three'
   },
   {
     ally: michaelHuber,
@@ -529,6 +573,8 @@ const gameSeed = [
     votes: 4,
     victory: 'False',
     banned: 'False',
+    allyLink: 'michael_huber',
+    hallLink: 'hall_great_three'
   },
   {
     ally: benMoore,
@@ -543,6 +589,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ben_moore',
+    hallLink: 'hall_great_three'
   },
   {
     ally: donCasanova,
@@ -557,6 +605,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'True',
+    allyLink: 'don_casanova',
+    hallLink: 'hall_great_three'
   },
   {
     ally: bradEllis,
@@ -571,6 +621,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    allyLink: 'brad_ellis',
+    hallLink: 'hall_great_three'
   },
   {
     ally: bradEllis,
@@ -585,6 +637,8 @@ const gameSeed = [
     votes: 21,
     victory: 'True',
     banned: 'False',
+    allyLink: 'brad_ellis',
+    hallLink: 'hall_great_four'
   },
   {
     ally: kyleBosman,
@@ -599,6 +653,8 @@ const gameSeed = [
     votes: 8,
     victory: 'True',
     banned: 'False',
+    allyLink: 'kyle_bosman',
+    hallLink: 'hall_great_four'
   },
   {
     ally: benMoore,
@@ -613,6 +669,8 @@ const gameSeed = [
     votes: 7,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ben_moore',
+    hallLink: 'hall_great_four'
   },
   {
     ally: brandonJones,
@@ -627,6 +685,8 @@ const gameSeed = [
     votes: 7,
     victory: 'False',
     banned: 'False',
+    allyLink: 'brandon_jones',
+    hallLink: 'hall_great_four'
   },
   {
     ally: michaelHuber,
@@ -641,6 +701,8 @@ const gameSeed = [
     votes: 4,
     victory: 'False',
     banned: 'False',
+    allyLink: 'michael_huber',
+    hallLink: 'hall_great_four'
   },
   {
     ally: donCasanova,
@@ -650,11 +712,13 @@ const gameSeed = [
       "Play a countless number of intensely creative Super Mario levels from players around the globe. It’s easy enough to create your own levels with the Wii U GamePad controller that it may feel like you’re simply sketching out your ideas on paper, but you can now bring enemies and objects into a playable course in ways you could only consider before. Violate the conventions of traditional Super Mario gameplay by blending enemies, traps and items into unexpected twists, like Piranha Plant-shooting cannons, power-up-tossing Lakitus, or even Hammer Bros. riding on Bowser while bouncing on trampolines.",
     genre: "Platformer",
     year: 2015,
-    platforms: "Nintendo WiiU",
+    platforms: "Nintendo Wii U",
     metacritic: 88,
     votes: 3,
     victory: 'False',
     banned: 'True',
+    allyLink: 'don_casanova',
+    hallLink: 'hall_great_four'
   },
   {
     ally: danielBloodworth,
@@ -669,6 +733,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'True',
+    allyLink: 'daniel_bloodworth',
+    hallLink: 'hall_great_four'
   },
   {
     ally: ianHinck,
@@ -683,6 +749,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ian_hinck',
+    hallLink: 'hall_great_four'
   },
   {
     ally: michaelDamiani,
@@ -697,6 +765,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    allyLink: 'michael_damiani',
+    hallLink: 'hall_great_four'
   },
   {
     ally: bradEllis,
@@ -711,6 +781,8 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
+    allyLink: 'brad_ellis',
+    hallLink: 'hall_great_five'
   },
   {
     ally: benMoore,
@@ -725,6 +797,8 @@ const gameSeed = [
     votes: 11,
     victory: 'True',
     banned: 'False',
+    allyLink: 'ben_moore',
+    hallLink: 'hall_great_five'
   },
   {
     ally: michaelHuber,
@@ -739,6 +813,8 @@ const gameSeed = [
     votes: 9,
     victory: 'False',
     banned: 'False',
+    allyLink: 'michael_huber',
+    hallLink: 'hall_great_five'
   },
   {
     ally: danielBloodworth,
@@ -753,6 +829,8 @@ const gameSeed = [
     votes: 7,
     victory: 'False',
     banned: 'False',
+    allyLink: 'daniel_bloodworth',
+    hallLink: 'hall_great_five'
   },
   {
     ally: donCasanova,
@@ -767,6 +845,8 @@ const gameSeed = [
     votes: 4,
     victory: 'False',
     banned: 'False',
+    allyLink: 'don_casanova',
+    hallLink: 'hall_great_five'
   },
   {
     ally: brandonJones,
@@ -781,6 +861,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'False',
+    allyLink: 'brandon_jones',
+    hallLink: 'hall_great_five'
   },
   {
     ally: michaelDamiani,
@@ -788,13 +870,15 @@ const gameSeed = [
     hallOfGreat: 5,
     description:
       "Tales speak of an ancient realm where Colossi roam the majestic landscape. Bound to the land, these creatures hold a key to a mystical power of revival – a power you must obtain to bring a loved one back to life.",
-    genre: "First-Person Shooter",
+    genre: "Action-Adventure",
     year: 2018,
     platforms: "PlayStation 4",
     metacritic: 91,
     votes: 1,
     victory: 'False',
     banned: 'False',
+    allyLink: 'michael_damiani',
+    hallLink: 'hall_great_five'
   },
   {
     ally: kyleBosman,
@@ -802,21 +886,31 @@ const gameSeed = [
     hallOfGreat: 5,
     description:
       "Mega Man Legends is an action-adventure shooter game released by Capcom. It is the first game in the Mega Man Legends sub-series of Mega Man games from Capcom, and the second major 3D polygonal Mega Man title released in the franchise, following Mega Man: Battle & Chase. It was released on the PlayStation in 1997 in Japan and in 1998 in North America. A Nintendo 64 port was released in 2000 with the same title, but it was renamed Mega Man 64 for the English release in 2001. Another port was released for Microsoft Windows in 2001, and PlayStation Portable in 2005, with the latter only in Japan.",
-    genre: "Action Adventure",
+    genre: "Action-Adventure",
     year: 1997,
     platforms: "PlayStation",
     metacritic: 73,
     votes: 1,
     victory: 'False',
     banned: 'False',
+    allyLink: 'kyle_bosman',
+    hallLink: 'hall_great_five'
   },
   {
     ally: ianHinck,
     game: dungeonsAndDragons,
     hallOfGreat: 5,
+    description:
+      "Dungeons & Dragons (commonly abbreviated as D&D or DnD) is a fantasy tabletop role-playing game (RPG) originally designed by Gary Gygax and Dave Arneson. It was first published in 1974 by Tactical Studies Rules, Inc. (TSR). The game has been published by Wizards of the Coast (now a subsidiary of Hasbro) since 1997. It was derived from miniature wargames, with a variation of the 1971 game Chainmail serving as the initial rule system. D&D's publication is commonly recognized as the beginning of modern role-playing games and the role-playing game industry.",
+    genre: "Fantasy",
+    year: 1974,
+    platforms: "N/A",
+    metacritic: 0,
     votes: 0,
     victory: 'False',
     banned: 'True',
+    allyLink: 'ian_hinck',
+    hallLink: 'hall_great_five'
   },
   {
     ally: michaelDamiani,
@@ -831,6 +925,8 @@ const gameSeed = [
     votes: 19,
     victory: 'True',
     banned: 'False',
+    allyLink: 'michael_damiani',
+    hallLink: 'hall_great_six'
   },
   {
     ally: benMoore,
@@ -845,6 +941,8 @@ const gameSeed = [
     votes: 12,
     victory: 'True',
     banned: 'False',
+    allyLink: 'ben_moore',
+    hallLink: 'hall_great_six'
   },
   {
     ally: ianHinck,
@@ -859,6 +957,8 @@ const gameSeed = [
     votes: 8,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ian_hinck',
+    hallLink: 'hall_great_six'
   },
   {
     ally: danielBloodworth,
@@ -873,6 +973,8 @@ const gameSeed = [
     votes: 7,
     victory: 'False',
     banned: 'False',
+    allyLink: 'daniel_bloodworth',
+    hallLink: 'hall_great_six'
   },
   {
     ally: donCasanova,
@@ -887,6 +989,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    allyLink: 'don_casanova',
+    hallLink: 'hall_great_six'
   },
   {
     ally: bradEllis,
@@ -901,6 +1005,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'False',
+    allyLink: 'brad_ellis',
+    hallLink: 'hall_great_six'
   },
   {
     ally: brandonJones,
@@ -915,6 +1021,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    allyLink: 'brandon_jones',
+    hallLink: 'hall_great_six'
   },
   {
     ally: kyleBosman,
@@ -922,13 +1030,15 @@ const gameSeed = [
     hallOfGreat: 6,
     description:
       "Mega Man Legends is an action-adventure shooter game released by Capcom. It is the first game in the Mega Man Legends sub-series of Mega Man games from Capcom, and the second major 3D polygonal Mega Man title released in the franchise, following Mega Man: Battle & Chase. It was released on the PlayStation in 1997 in Japan and in 1998 in North America. A Nintendo 64 port was released in 2000 with the same title, but it was renamed Mega Man 64 for the English release in 2001. Another port was released for Microsoft Windows in 2001, and PlayStation Portable in 2005, with the latter only in Japan.",
-    genre: "Action Adventure",
+    genre: "Action-Adventure",
     year: 1997,
     platforms: "PlayStation",
     metacritic: 73,
     votes: 1,
     victory: 'False',
     banned: 'False',
+    allyLink: 'kyle_bosman',
+    hallLink: 'hall_great_six'
   },
   {
     ally: michaelHuber,
@@ -943,6 +1053,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    allyLink: 'michael_huber',
+    hallLink: 'hall_great_six'
   },
   {
     ally: brandonJones,
@@ -957,6 +1069,8 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
+    allyLink: 'brandon_jones',
+    hallLink: 'hall_great_seven'
   },
   {
     ally: kyleBosman,
@@ -971,6 +1085,8 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
+    allyLink: 'kyle_bosman',
+    hallLink: 'hall_great_seven'
   },
   {
     ally: bradEllis,
@@ -985,6 +1101,8 @@ const gameSeed = [
     votes: 9,
     victory: 'False',
     banned: 'False',
+    allyLink: 'brad_ellis',
+    hallLink: 'hall_great_seven'
   },
   {
     ally: donCasanova,
@@ -999,6 +1117,8 @@ const gameSeed = [
     votes: 8,
     victory: 'False',
     banned: 'False',
+    allyLink: 'don_casanova',
+    hallLink: 'hall_great_seven'
   },
   {
     ally: benMoore,
@@ -1013,6 +1133,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ben_moore',
+    hallLink: 'hall_great_seven'
   },
   {
     ally: michaelHuber,
@@ -1027,6 +1149,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    allyLink: 'michael_huber',
+    hallLink: 'hall_great_seven'
   },
   {
     ally: ianHinck,
@@ -1041,6 +1165,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ian_hinck',
+    hallLink: 'hall_great_seven'
   },
   {
     ally: michaelDamiani,
@@ -1048,13 +1174,15 @@ const gameSeed = [
     hallOfGreat: 7,
     description:
       "Super Mario RPG: Legend of the Seven Stars is a role-playing video game (RPG) developed by Square and published by Nintendo for the Super Nintendo Entertainment System in 1996. It was directed by Yoshihiko Maekawa and Chihiro Fujioka and produced by Mario creator Shigeru Miyamoto. Yoko Shimomura composed the score, which was released on a soundtrack album in Japan.",
-    genre: "Role-Playing",
+    genre: "Role-Playing Game",
     year: 1996,
     platforms: "Super NES",
     metacritic: 89,
     votes: 2,
     victory: 'False',
     banned: 'False',
+    allyLink: 'michael_damiani',
+    hallLink: 'hall_great_seven'
   },
   {
     ally: danielBloodworth,
@@ -1069,6 +1197,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    allyLink: 'daniel_bloodworth',
+    hallLink: 'hall_great_seven'
   },
   {
     ally: ianHinck,
@@ -1083,6 +1213,8 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
+    allyLink: 'ian_hinck',
+    hallLink: 'hall_great_eight'
   },
   {
     ally: brandonJones,
@@ -1098,6 +1230,8 @@ const gameSeed = [
     victory: 'True',
     wonByPatreonVote: 'True',
     banned: 'False',
+    allyLink: 'brandon_jones',
+    hallLink: 'hall_great_eight'
   },
   {
     ally: bradEllis,
@@ -1111,6 +1245,8 @@ const gameSeed = [
     votes: 11,
     victory: 'False',
     banned: 'False',
+    allyLink: 'brad_ellis',
+    hallLink: 'hall_great_eight'
   },
   {
     ally: kyleBosman,
@@ -1125,6 +1261,8 @@ const gameSeed = [
     votes: 8,
     victory: 'False',
     banned: 'False',
+    allyLink: 'kyle_bosman',
+    hallLink: 'hall_great_eight'
   },
   {
     ally: donCasanova,
@@ -1139,6 +1277,8 @@ const gameSeed = [
     votes: 6,
     victory: 'False',
     banned: 'False',
+    allyLink: 'don_casanova',
+    hallLink: 'hall_great_eight'
   },
   {
     ally: michaelHuber,
@@ -1153,6 +1293,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    allyLink: 'michael_huber',
+    hallLink: 'hall_great_eight'
   },
   {
     ally: benMoore,
@@ -1167,6 +1309,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ben_moore',
+    hallLink: 'hall_great_eight'
   },
   {
     ally: danielBloodworth,
@@ -1181,6 +1325,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    allyLink: 'daniel_bloodworth',
+    hallLink: 'hall_great_eight'
   },
   {
     ally: michaelDamiani,
@@ -1195,6 +1341,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    allyLink: 'michael_damiani',
+    hallLink: 'hall_great_eight'
   },
   {
     ally: michaelDamiani,
@@ -1209,6 +1357,8 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
+    allyLink: 'michael_damiani',
+    hallLink: 'hall_great_nine'
   },
   {
     ally: kyleBosman,
@@ -1223,6 +1373,8 @@ const gameSeed = [
     votes: 12,
     victory: 'True',
     banned: 'False',
+    allyLink: 'kyle_bosman',
+    hallLink: 'hall_great_nine'
   },
   {
     ally: benMoore,
@@ -1237,6 +1389,8 @@ const gameSeed = [
     votes: 11,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ben_moore',
+    hallLink: 'hall_great_nine'
   },
   {
     ally: bradEllis,
@@ -1251,6 +1405,8 @@ const gameSeed = [
     votes: 6,
     victory: 'False',
     banned: 'False',
+    allyLink: 'brad_ellis',
+    hallLink: 'hall_great_nine'
   },
   {
     ally: donCasanova,
@@ -1265,6 +1421,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    allyLink: 'don_casanova',
+    hallLink: 'hall_great_nine'
   },
   {
     ally: michaelHuber,
@@ -1279,6 +1437,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    allyLink: 'michael_huber',
+    hallLink: 'hall_great_nine'
   },
   {
     ally: brandonJones,
@@ -1293,6 +1453,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    allyLink: 'brandon_jones',
+    hallLink: 'hall_great_nine'
   },
   {
     ally: ianHinck,
@@ -1307,6 +1469,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    allyLink: 'ian_hinck',
+    hallLink: 'hall_great_nine'
   },
   {
     ally: michaelHuber,
@@ -1322,6 +1486,8 @@ const gameSeed = [
     victory: 'True',
     wonByPatreonVote: 'True',
     banned: 'False',
+    allyLink: 'michael_huber',
+    hallLink: 'hall_great_ten'
   },
   {
     ally: danielBloodworth,
@@ -1337,6 +1503,8 @@ const gameSeed = [
     victory: 'True',
     wonByPatreonVote: 'True',
     banned: 'False',
+    allyLink: 'daniel_bloodworth',
+    hallLink: 'hall_great_ten'
   },
   {
     ally: benMoore,
@@ -1351,6 +1519,8 @@ const gameSeed = [
     votes: 8,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ben_moore',
+    hallLink: 'hall_great_ten'
   },
   {
     ally: kyleBosman,
@@ -1365,19 +1535,23 @@ const gameSeed = [
     votes: 6,
     victory: 'False',
     banned: 'False',
+    allyLink: 'kyle_bosman',
+    hallLink: 'hall_great_ten'
   },
   {
     ally: michaelDamiani,
     game: "BioShock",
     hallOfGreat: 10,
     description: 'Going beyond "run and gun corridors," "monster-closet AIs" and static worlds, BioShock creates a living, unique and unpredictable FPS experience. After your plane crashes into icy uncharted waters, you discover a rusted bathysphere and descend into Rapture, a city hidden beneath the sea. Constructed as an idealistic society for a hand picked group of scientists, artists and industrialists, the idealism is no more.',
-    genre: 'Action',
+    genre: "Action",
     year: 2007,
     platforms: 'PlayStation 3, Xbox 360',
     metacritic: 96,
     votes: 6,
     victory: 'False',
     banned: 'False',
+    allyLink: 'michael_damiani',
+    hallLink: 'hall_great_ten'
   },
   {
     ally: donCasanova,
@@ -1392,6 +1566,8 @@ const gameSeed = [
     votes: 5,
     victory: 'False',
     banned: 'False',
+    allyLink: 'don_casanova',
+    hallLink: 'hall_great_ten'
   },
   {
     ally: ianHinck,
@@ -1406,6 +1582,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ian_hinck',
+    hallLink: 'hall_great_ten'
   },
   {
     ally: benMoore,
@@ -1420,6 +1598,8 @@ const gameSeed = [
     votes: 15,
     victory: 'True',
     banned: 'False',
+    allyLink: 'ben_moore',
+    hallLink: 'hall_great_eleven'
   },
   {
     ally: bradEllis,
@@ -1434,6 +1614,8 @@ const gameSeed = [
     votes: 13,
     victory: 'True',
     banned: 'False',
+    allyLink: 'brad_ellis',
+    hallLink: 'hall_great_eleven'
   },
   {
     ally: donCasanova,
@@ -1448,6 +1630,8 @@ const gameSeed = [
     votes: 12,
     victory: 'False',
     banned: 'False',
+    allyLink: 'don_casanova',
+    hallLink: 'hall_great_eleven'
   },
   {
     ally: danielBloodworth,
@@ -1462,6 +1646,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    allyLink: 'daniel_bloodworth',
+    hallLink: 'hall_great_eleven'
   },
   {
     ally: michaelHuber,
@@ -1476,6 +1662,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'False',
+    allyLink: 'michael_huber',
+    hallLink: 'hall_great_eleven'
   },
   {
     ally: ianHinck,
@@ -1490,6 +1678,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ian_hinck',
+    hallLink: 'hall_great_eleven'
   },
   {
     ally: brandonJones,
@@ -1504,14 +1694,24 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    allyLink: 'brandon_jones',
+    hallLink: 'hall_great_eleven'
   },
   {
     ally: kyleBosman,
     game: dungeonsAndDragons,
     hallOfGreat: 11,
+    description:
+      "Dungeons & Dragons (commonly abbreviated as D&D or DnD) is a fantasy tabletop role-playing game (RPG) originally designed by Gary Gygax and Dave Arneson. It was first published in 1974 by Tactical Studies Rules, Inc. (TSR). The game has been published by Wizards of the Coast (now a subsidiary of Hasbro) since 1997. It was derived from miniature wargames, with a variation of the 1971 game Chainmail serving as the initial rule system. D&D's publication is commonly recognized as the beginning of modern role-playing games and the role-playing game industry.",
+    genre: "Fantasy",
+    year: 1974,
+    platforms: "N/A",
+    metacritic: 0,
     votes: 0,
     victory: 'False',
     banned: 'True',
+    allyLink: 'kyle_bosman',
+    hallLink: 'hall_great_eleven'
   },
   {
     ally: brandonJones,
@@ -1526,7 +1726,9 @@ const gameSeed = [
     votes: 14,
     victory: 'True',
     banned: 'False',
-    image: imageSeed[22]
+    image: imageSeed[22],
+    allyLink: 'brandon_jones',
+    hallLink: 'hall_great_twelve'
   },
   {
     ally: benMoore,
@@ -1541,7 +1743,9 @@ const gameSeed = [
     votes: 11,
     victory: 'True',
     banned: 'False',
-    image: imageSeed[23]
+    image: imageSeed[23],
+    allyLink: 'ben_moore',
+    hallLink: 'hall_great_twelve'
   },
   {
     ally: michaelHuber,
@@ -1556,6 +1760,8 @@ const gameSeed = [
     votes: 6,
     victory: 'False',
     banned: 'False',
+    allyLink: 'michael_huber',
+    hallLink: 'hall_great_twelve'
   },
   {
     ally: kyleBosman,
@@ -1563,13 +1769,15 @@ const gameSeed = [
     hallOfGreat: 12,
     description:
       "Mega Man Legends is an action-adventure shooter game released by Capcom. It is the first game in the Mega Man Legends sub-series of Mega Man games from Capcom, and the second major 3D polygonal Mega Man title released in the franchise, following Mega Man: Battle & Chase. It was released on the PlayStation in 1997 in Japan and in 1998 in North America. A Nintendo 64 port was released in 2000 with the same title, but it was renamed Mega Man 64 for the English release in 2001. Another port was released for Microsoft Windows in 2001, and PlayStation Portable in 2005, with the latter only in Japan.",
-    genre: "Action Adventure",
+    genre: "Action-Adventure",
     year: 1997,
     platforms: "PlayStation",
     metacritic: 73,
     votes: 5,
     victory: 'False',
     banned: 'False',
+    allyLink: 'kyle_bosman',
+    hallLink: 'hall_great_twelve'
   },
   {
     ally: bradEllis,
@@ -1584,6 +1792,8 @@ const gameSeed = [
     votes: 4,
     victory: 'False',
     banned: 'False',
+    allyLink: 'brad_ellis',
+    hallLink: 'hall_great_twelve'
   },
   {
     ally: michaelDamiani,
@@ -1598,6 +1808,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    allyLink: 'michael_damiani',
+    hallLink: 'hall_great_twelve'
   },
   {
     ally: ianHinck,
@@ -1612,6 +1824,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ian_hinck',
+    hallLink: 'hall_great_twelve'
   },
   {
     ally: danielBloodworth,
@@ -1626,6 +1840,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'False',
+    allyLink: 'daniel_bloodworth',
+    hallLink: 'hall_great_twelve'
   },
   {
     ally: bradEllis,
@@ -1640,6 +1856,8 @@ const gameSeed = [
     votes: 14,
     victory: 'True',
     banned: 'False',
+    allyLink: 'brad_ellis',
+    hallLink: 'hall_great_thirteen'
   },
   {
     ally: michaelHuber,
@@ -1654,6 +1872,8 @@ const gameSeed = [
     votes: 12,
     victory: 'True',
     banned: 'False',
+    allyLink: 'michael_huber',
+    hallLink: 'hall_great_thirteen'
   },
   {
     ally: benMoore,
@@ -1668,6 +1888,8 @@ const gameSeed = [
     votes: 9,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ben_moore',
+    hallLink: 'hall_great_thirteen'
   },
   {
     ally: brandonJones,
@@ -1682,6 +1904,8 @@ const gameSeed = [
     votes: 6,
     victory: 'False',
     banned: 'False',
+    allyLink: 'brandon_jones',
+    hallLink: 'hall_great_thirteen'
   },
   {
     ally: danielBloodworth,
@@ -1696,6 +1920,8 @@ const gameSeed = [
     votes: 4,
     victory: 'False',
     banned: 'False',
+    allyLink: 'daniel_bloodworth',
+    hallLink: 'hall_great_thirteen'
   },
   {
     ally: michaelDamiani,
@@ -1710,6 +1936,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'False',
+    allyLink: 'michael_damiani',
+    hallLink: 'hall_great_thirteen'
   },
   {
     ally: ianHinck,
@@ -1724,6 +1952,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    allyLink: 'ian_hinck',
+    hallLink: 'hall_great_thirteen'
   },
   {
     ally: donCasanova,
@@ -1738,6 +1968,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    allyLink: 'don_casanova',
+    hallLink: 'hall_great_thirteen'
   },
 ];
 

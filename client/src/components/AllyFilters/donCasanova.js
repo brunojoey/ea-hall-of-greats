@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AllyTable from '../Table/allyTable';
 import gamesAPI from "../../utils/gamesAPI";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSort } from '@fortawesome/free-solid-svg-icons';
 
 function DonCasanova(props) {
   const [ally, setAlly] = useState([]);
