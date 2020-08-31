@@ -113,8 +113,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
-    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co256y.jpg',
-    alt: "Assassin's Creed IV: Black Flag",
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rba.jpg",
+    alt: "Bloodborne",
     allyLink: 'ian_hinck',
     hallLink: 'hall_great_one'
   },
@@ -149,8 +149,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
-    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co256y.jpg',
-    alt: "Assassin's Creed IV: Black Flag",
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1x78.jpg',
+    alt: "Dark Souls",
     allyLink: 'brad_ellis',
     hallLink: 'hall_great_one'
   },
@@ -167,8 +167,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
-    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co256y.jpg',
-    alt: "Assassin's Creed IV: Black Flag",
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co25w8.jpg',
+    alt: "GoldenEye 007",
     allyLink: 'brandon_jones',
     hallLink: 'hall_great_one'
   },
@@ -185,8 +185,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
-    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co256y.jpg',
-    alt: "Assassin's Creed IV: Black Flag",
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co203x.jpg',
+    alt: "Mega Man Legends",
     allyLink: 'kyle_bosman',
     hallLink: 'hall_great_one'
   },
@@ -203,8 +203,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'False',
-    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co256y.jpg',
-    alt: "Assassin's Creed IV: Black Flag",
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pe8.jpg",
+    alt: "Resident Evil",
     allyLink: 'michael_huber',
     hallLink: 'hall_great_one'
   },
@@ -257,6 +257,8 @@ const gameSeed = [
     votes: 12,
     victory: 'False',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nh3.jpg",
+    alt: "Castlevania: Symphony of the Night",
     allyLink: 'ian_hinck',
     hallLink: 'hall_great_two'
   },
@@ -273,6 +275,8 @@ const gameSeed = [
     votes: 5,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1x9z.jpg',
+    alt: "Dragon Quest VIII: Journey of the Cursed King",
     allyLink: 'michael_huber',
     hallLink: 'hall_great_two'
   },
@@ -289,6 +293,8 @@ const gameSeed = [
     votes: 5,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2dwq.jpg',
+    alt: "The Legend of Zelda: Link's Awakening DX",
     allyLink: 'kyle_bosman',
     hallLink: 'hall_great_two'
   },
@@ -306,6 +312,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'True',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co254y.jpg",
+    alt: "World of Warcraft", 
     allyLink: 'brandon_jones',
     hallLink: 'hall_great_two'
   },
@@ -322,6 +330,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'True',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1o4h.jpg',
+    alt: 'Sim City 4',
     allyLink: 'don_casanova',
     hallLink: 'hall_great_two'
   },
@@ -338,6 +348,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/bvmjjiorjpcclmdorauw.jpg',
+    alt: 'Valkyria Chronicles',
     allyLink: 'ben_moore',
     hallLink: 'hall_great_two'
   },
@@ -390,6 +402,8 @@ const gameSeed = [
     votes: 9,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1sn3.jpg',
+    alt: 'Final Fantasy IX',
     allyLink: 'kyle_bosman',
     hallLink: 'hall_great_three'
   },
@@ -406,6 +420,8 @@ const gameSeed = [
     votes: 5,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1nmw.jpg',
+    alt: 'Half-Life 2',
     allyLink: 'brandon_jones',
     hallLink: 'hall_great_three'
   },
@@ -422,6 +438,8 @@ const gameSeed = [
     votes: 4,
     victory: 'False',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7d.jpg",
+    alt: "Portal",
     allyLink: 'daniel_bloodworth',
     hallLink: 'hall_great_three'
   },
@@ -438,6 +456,8 @@ const gameSeed = [
     votes: 4,
     victory: 'False',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7f.jpg",
+    alt: "The Last of Us",
     allyLink: 'michael_huber',
     hallLink: 'hall_great_three'
   },
@@ -454,6 +474,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2609.jpg',
+    alt: 'Xenoblade Chronicles',
     allyLink: 'ben_moore',
     hallLink: 'hall_great_three'
   },
@@ -470,6 +492,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'True',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1xve.jpg',
+    alt: 'Jurassic Park: Operation Genesis',
     allyLink: 'don_casanova',
     hallLink: 'hall_great_three'
   },
@@ -486,6 +510,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1nc7.jpg',
+    alt: 'Doom (2016)',
     allyLink: 'brad_ellis',
     hallLink: 'hall_great_three'
   },
@@ -538,6 +564,8 @@ const gameSeed = [
     votes: 7,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co201w.jpg',
+    alt: 'Mega Man X',
     allyLink: 'ben_moore',
     hallLink: 'hall_great_four'
   },
@@ -554,6 +582,8 @@ const gameSeed = [
     votes: 7,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1th0.jpg',
+    alt: 'Grand Theft Auto III',
     allyLink: 'brandon_jones',
     hallLink: 'hall_great_four'
   },
@@ -570,6 +600,8 @@ const gameSeed = [
     votes: 4,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2b8o.jpg',
+    alt: 'Streets of Rage 2',
     allyLink: 'michael_huber',
     hallLink: 'hall_great_four'
   },
@@ -586,6 +618,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'True',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co21vl.jpg',
+    alt: 'Super Mario Maker',
     allyLink: 'don_casanova',
     hallLink: 'hall_great_four'
   },
@@ -602,6 +636,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'True',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1q8q.jpg',
+    alt: 'Journey',
     allyLink: 'daniel_bloodworth',
     hallLink: 'hall_great_four'
   },
@@ -618,12 +654,14 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1y96.jpg',
+    alt: 'Myst',
     allyLink: 'ian_hinck',
     hallLink: 'hall_great_four'
   },
   {
     ally: michaelDamiani,
-    game: "Skyrim",
+    game: "The Elder Scrolls V: Skyrim",
     hallOfGreat: 4,
     description:
       "The next chapter in the Elder Scrolls saga arrives from the Bethesda Game Studios. Skyrim reimagines the open-world fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose. Play any type of character you can imagine, and do whatever you want; the legendary freedom of choice, storytelling, and adventure of The Elder Scrolls is realized like never before. Skyrim's new game engine brings to life a complete virtual world with rolling clouds, rugged mountains, bustling cities, lush fields, and ancient dungeons. Choose from hundreds of weapons, spells, and abilities. The new character system allows you to play any way you want and define yourself through your actions. Battle ancient dragons like you've never seen. As Dragonborn, learn their secrets and harness their power for yourself.",
@@ -634,6 +672,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1tnw.jpg',
+    alt: 'The Elder Scrolls V: Skyrim',
     allyLink: 'michael_damiani',
     hallLink: 'hall_great_four'
   },
@@ -686,6 +726,8 @@ const gameSeed = [
     votes: 9,
     victory: 'False',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wyy.jpg",
+    alt: "The Witcher III: Wild Hunt",
     allyLink: 'michael_huber',
     hallLink: 'hall_great_five'
   },
@@ -702,6 +744,8 @@ const gameSeed = [
     votes: 7,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1x78.jpg',
+    alt: "Dark Souls",
     allyLink: 'daniel_bloodworth',
     hallLink: 'hall_great_five'
   },
@@ -718,6 +762,8 @@ const gameSeed = [
     votes: 4,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1y7g.jpg',
+    alt: 'Pandemonium!',
     allyLink: 'don_casanova',
     hallLink: 'hall_great_five'
   },
@@ -734,6 +780,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2erg.jpg',
+    alt: 'Pong',
     allyLink: 'brandon_jones',
     hallLink: 'hall_great_five'
   },
@@ -750,6 +798,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co272w.jpg',
+    alt: 'Shadow of the Colossus (2018)',
     allyLink: 'michael_damiani',
     hallLink: 'hall_great_five'
   },
@@ -766,6 +816,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co203x.jpg',
+    alt: "Mega Man Legends",
     allyLink: 'kyle_bosman',
     hallLink: 'hall_great_five'
   },
@@ -782,6 +834,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Dungeons_%26_Dragons_5th_Edition_logo.svg/250px-Dungeons_%26_Dragons_5th_Edition_logo.svg.png',
+    alt: 'Dungeons & Dragons',
     allyLink: 'ian_hinck',
     hallLink: 'hall_great_five'
   },
@@ -834,6 +888,8 @@ const gameSeed = [
     votes: 8,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2edz.jpg',
+    alt: 'Silent Hill 2',
     allyLink: 'ian_hinck',
     hallLink: 'hall_great_six'
   },
@@ -850,6 +906,8 @@ const gameSeed = [
     votes: 7,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1x9z.jpg',
+    alt: "Dragon Quest VIII: Journey of the Cursed King",
     allyLink: 'daniel_bloodworth',
     hallLink: 'hall_great_six'
   },
@@ -866,6 +924,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1o4h.jpg',
+    alt: 'Sim City 4',
     allyLink: 'don_casanova',
     hallLink: 'hall_great_six'
   },
@@ -882,6 +942,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wf2.jpg",
+    alt: "Donkey Kong Country: Tropical Freeze",
     allyLink: 'brad_ellis',
     hallLink: 'hall_great_six'
   },
@@ -898,6 +960,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1tgt.jpg',
+    alt: 'Grand Theft Auto V',
     allyLink: 'brandon_jones',
     hallLink: 'hall_great_six'
   },
@@ -914,6 +978,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co203x.jpg',
+    alt: "Mega Man Legends",
     allyLink: 'kyle_bosman',
     hallLink: 'hall_great_six'
   },
@@ -930,6 +996,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1p35.jpg',
+    alt: 'Time Crisis II',
     allyLink: 'michael_huber',
     hallLink: 'hall_great_six'
   },
@@ -982,6 +1050,8 @@ const gameSeed = [
     votes: 9,
     victory: 'False',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rba.jpg",
+    alt: "Bloodborne",
     allyLink: 'brad_ellis',
     hallLink: 'hall_great_seven'
   },
@@ -998,6 +1068,8 @@ const gameSeed = [
     votes: 8,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co20mc.jpg',
+    alt: 'Mortal Kombat (2011)',
     allyLink: 'don_casanova',
     hallLink: 'hall_great_seven'
   },
@@ -1014,6 +1086,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7i.jpg',
+    alt: 'Halo: Combat Evolved',
     allyLink: 'ben_moore',
     hallLink: 'hall_great_seven'
   },
@@ -1030,6 +1104,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1voh.jpg',
+    alt: 'Batman: Arkham City',
     allyLink: 'michael_huber',
     hallLink: 'hall_great_seven'
   },
@@ -1046,12 +1122,14 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2edz.jpg',
+    alt: 'Silent Hill 2',
     allyLink: 'ian_hinck',
     hallLink: 'hall_great_seven'
   },
   {
     ally: michaelDamiani,
-    game: "Super Mario RPG",
+    game: "Super Mario RPG: Legend of the Seven Stars",
     hallOfGreat: 7,
     description:
       "Super Mario RPG: Legend of the Seven Stars is a role-playing video game (RPG) developed by Square and published by Nintendo for the Super Nintendo Entertainment System in 1996. It was directed by Yoshihiko Maekawa and Chihiro Fujioka and produced by Mario creator Shigeru Miyamoto. Yoko Shimomura composed the score, which was released on a soundtrack album in Japan.",
@@ -1062,6 +1140,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2ete.jpg',
+    alt: 'Super Mario RPG: Legend of the Seven Stars',
     allyLink: 'michael_damiani',
     hallLink: 'hall_great_seven'
   },
@@ -1078,6 +1158,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1y4v.jpg',
+    alt: 'Ms. Pac-Man',
     allyLink: 'daniel_bloodworth',
     hallLink: 'hall_great_seven'
   },
@@ -1130,6 +1212,8 @@ const gameSeed = [
     votes: 11,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1tmu.jpg',
+    alt: 'God of War (2018)',
     allyLink: 'brad_ellis',
     hallLink: 'hall_great_eight'
   },
@@ -1146,6 +1230,8 @@ const gameSeed = [
     votes: 8,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2dwq.jpg',
+    alt: "The Legend of Zelda: Link's Awakening DX",
     allyLink: 'kyle_bosman',
     hallLink: 'hall_great_eight'
   },
@@ -1162,6 +1248,8 @@ const gameSeed = [
     votes: 6,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2b6x.jpg',
+    alt: 'Trials Fusion',
     allyLink: 'don_casanova',
     hallLink: 'hall_great_eight'
   },
@@ -1178,6 +1266,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7f.jpg",
+    alt: "The Last of Us",
     allyLink: 'michael_huber',
     hallLink: 'hall_great_eight'
   },
@@ -1194,6 +1284,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2eph.jpg',
+    alt: 'Pikmin',
     allyLink: 'ben_moore',
     hallLink: 'hall_great_eight'
   },
@@ -1210,6 +1302,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7n.jpg',
+    alt: 'Deus Ex',
     allyLink: 'daniel_bloodworth',
     hallLink: 'hall_great_eight'
   },
@@ -1226,6 +1320,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/hu3vbtczuus3yfetdnqs.jpg',
+    alt: 'FTL: Faster Than Light',
     allyLink: 'michael_damiani',
     hallLink: 'hall_great_eight'
   },
@@ -1278,6 +1374,8 @@ const gameSeed = [
     votes: 11,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1sn3.jpg',
+    alt: 'Final Fantasy IX',
     allyLink: 'ben_moore',
     hallLink: 'hall_great_nine'
   },
@@ -1294,6 +1392,8 @@ const gameSeed = [
     votes: 6,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1uij.jpg',
+    alt: 'The Legend of Zelda: Twilight Princess',
     allyLink: 'brad_ellis',
     hallLink: 'hall_great_nine'
   },
@@ -1310,6 +1410,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2602.jpg',
+    alt: 'Wave Race 64',
     allyLink: 'don_casanova',
     hallLink: 'hall_great_nine'
   },
@@ -1326,6 +1428,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2a23.jpg',
+    alt: 'Sekiro: Shadows Die Twice',
     allyLink: 'michael_huber',
     hallLink: 'hall_great_nine'
   },
@@ -1342,6 +1446,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co25w8.jpg',
+    alt: "GoldenEye 007",
     allyLink: 'brandon_jones',
     hallLink: 'hall_great_nine'
   },
@@ -1358,6 +1464,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/kvr6upeqbsvt7nunhlf4.jpg',
+    alt: 'Dark Souls Remastered',
     allyLink: 'ian_hinck',
     hallLink: 'hall_great_nine'
   },
@@ -1412,6 +1520,8 @@ const gameSeed = [
     votes: 8,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co27js.jpg',
+    alt: 'Phantasy Star Online',
     allyLink: 'ben_moore',
     hallLink: 'hall_great_ten'
   },
@@ -1428,6 +1538,8 @@ const gameSeed = [
     votes: 6,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7i.jpg',
+    alt: 'Halo: Combat Evolved',
     allyLink: 'kyle_bosman',
     hallLink: 'hall_great_ten'
   },
@@ -1443,6 +1555,8 @@ const gameSeed = [
     votes: 6,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1rs0.jpg',
+    alt: 'BioShock',
     allyLink: 'michael_damiani',
     hallLink: 'hall_great_ten'
   },
@@ -1459,6 +1573,8 @@ const gameSeed = [
     votes: 5,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1y53.jpg',
+    alt: 'Burnout 3: Takedown',
     allyLink: 'don_casanova',
     hallLink: 'hall_great_ten'
   },
@@ -1475,6 +1591,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2evn.jpg",
+    alt: "Final Fantasy 7",
     allyLink: 'ian_hinck',
     hallLink: 'hall_great_ten'
   },
@@ -1527,6 +1645,8 @@ const gameSeed = [
     votes: 12,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/vpxn7wejf7voactkrrat.jpg',
+    alt: 'Alien vs. Predator',
     allyLink: 'don_casanova',
     hallLink: 'hall_great_eleven'
   },
@@ -1543,6 +1663,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1nyn.jpg',
+    alt: 'Animal Crossing',
     allyLink: 'daniel_bloodworth',
     hallLink: 'hall_great_eleven'
   },
@@ -1559,6 +1681,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1r77.jpg',
+    alt: "Marvel's Spider-Man",
     allyLink: 'michael_huber',
     hallLink: 'hall_great_eleven'
   },
@@ -1575,6 +1699,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co29pn.jpg',
+    alt: 'Metal Gear Solid 3: Snake Eater',
     allyLink: 'ian_hinck',
     hallLink: 'hall_great_eleven'
   },
@@ -1591,6 +1717,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co25v8.jpg',
+    alt: 'Plants vs. Zombies',
     allyLink: 'brandon_jones',
     hallLink: 'hall_great_eleven'
   },
@@ -1607,6 +1735,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Dungeons_%26_Dragons_5th_Edition_logo.svg/250px-Dungeons_%26_Dragons_5th_Edition_logo.svg.png',
+    alt: 'Dungeons & Dragons',
     allyLink: 'kyle_bosman',
     hallLink: 'hall_great_eleven'
   },
@@ -1659,6 +1789,8 @@ const gameSeed = [
     votes: 6,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2255.jpg',
+    alt: 'Super Smash Bros. Ultimate',
     allyLink: 'michael_huber',
     hallLink: 'hall_great_twelve'
   },
@@ -1675,6 +1807,8 @@ const gameSeed = [
     votes: 5,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co203x.jpg',
+    alt: "Mega Man Legends",
     allyLink: 'kyle_bosman',
     hallLink: 'hall_great_twelve'
   },
@@ -1691,6 +1825,8 @@ const gameSeed = [
     votes: 4,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co24sw.jpg',
+    alt: 'Shovel Knight: Treasure Trove',
     allyLink: 'brad_ellis',
     hallLink: 'hall_great_twelve'
   },
@@ -1707,6 +1843,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2611.jpg',
+    alt: "Teenage Mutant Ninja Turtles: Turtles in Time",
     allyLink: 'michael_damiani',
     hallLink: 'hall_great_twelve'
   },
@@ -1723,6 +1861,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2edz.jpg',
+    alt: 'Silent Hill 2',
     allyLink: 'ian_hinck',
     hallLink: 'hall_great_twelve'
   },
@@ -1739,6 +1879,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1we2.jpg',
+    alt: 'Guitar Hero II',
     allyLink: 'daniel_bloodworth',
     hallLink: 'hall_great_twelve'
   },
@@ -1791,6 +1933,8 @@ const gameSeed = [
     votes: 9,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1p92.jpg',
+    alt: 'Bayonetta',
     allyLink: 'ben_moore',
     hallLink: 'hall_great_thirteen'
   },
@@ -1807,6 +1951,8 @@ const gameSeed = [
     votes: 6,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1q8q.jpg',
+    alt: 'Journey',
     allyLink: 'brandon_jones',
     hallLink: 'hall_great_thirteen'
   },
@@ -1823,6 +1969,8 @@ const gameSeed = [
     votes: 4,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1ow6.jpg',
+    alt: 'Katamari Damacy',
     allyLink: 'daniel_bloodworth',
     hallLink: 'hall_great_thirteen'
   },
@@ -1839,6 +1987,8 @@ const gameSeed = [
     votes: 2,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1v83.jpg',
+    alt: 'Metal Gear Rising: Revengeance',
     allyLink: 'michael_damiani',
     hallLink: 'hall_great_thirteen'
   },
@@ -1855,6 +2005,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1rc9.jpg',
+    alt: 'The Stanley Parable',
     allyLink: 'ian_hinck',
     hallLink: 'hall_great_thirteen'
   },
@@ -1871,6 +2023,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'True',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co26jr.jpg',
+    alt: 'Huntdown',
     allyLink: 'don_casanova',
     hallLink: 'hall_great_thirteen'
   },

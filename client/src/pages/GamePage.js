@@ -5,7 +5,6 @@ import { faCrown } from "@fortawesome/free-solid-svg-icons";
 import { Image, Container, Row, Col } from "react-bootstrap";
 import "./Pages.css";
 
-// import placeholder from '../200.png';
 function GamePage(props) {
   const [gamePage, setGamePage] = useState([]);
   const { match, history } = props;
@@ -30,16 +29,18 @@ function GamePage(props) {
               <FontAwesomeIcon icon={faCrown} className="fa-star" />
             </h1>
             <h1 className="gameTitle"> {gamePage.game} </h1>
-            <Image src={gamePage.image} alt={gamePage.alt} style={{border: '4px solid red'}}></Image>
           </Row>
         </>
       ) : (
+        <div style={{textAlign: 'center'}}>
         <h1
-          className="gameTitle"
-          style={{ margin: "0 auto", marginTop: ".3em", textAlign: "center" }}
+        className="gameTitle"
+        style={{ margin: "0 auto", marginTop: ".3em", textAlign: "center" }}
         >
           {gamePage.game}
         </h1>
+        <Image src={gamePage.image} alt={gamePage.alt} style={{border: '4px solid red'}} />
+        </div>
       )}
       <Row>
         <Col>
