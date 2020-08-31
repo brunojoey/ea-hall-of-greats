@@ -6,12 +6,6 @@ function HallOfGreatOne(props) {
   const [games, setGames] = useState([]);
   const { history } = props; 
 
-  // function renderImages({ image, alt }) {
-  //   imageJson.map((images) => {
-  //     <Image src={buildRoutes(imageJson.image)} alt={imageJson.alt} />
-  //   })
-  // };
-
   useEffect(() => {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();

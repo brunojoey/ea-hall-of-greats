@@ -9,18 +9,6 @@ function CeremonyTable(props) {
   // Sorts the Table
   let sortedItems = [...games];
 
-  // if (sortConfig !== null) {
-  //   sortedItems.sort((a, b) => {
-  //     if (a[sortConfig] < b[sortConfig]) {
-  //       return -1;
-  //     }
-  //     if (a[sortConfig] > b[sortConfig]) {
-  //       return 1;
-  //     }
-  //     return 0;
-  //   });
-  // };
-
   if (sortConfig !== null) {
     sortedItems.sort((a, b) => {
       if (a[sortConfig.key] < b[sortConfig.key]) {

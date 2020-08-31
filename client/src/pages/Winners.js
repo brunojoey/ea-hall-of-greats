@@ -5,14 +5,6 @@ import { Typography } from "@material-ui/core";
 import "./Pages.css";
 import '../components/Table/style.css';
 
-// function renderImages() {
-//   imageJson.map((images) => {
-//     return(
-//       <Image src={buildRoutes(images.image)} alt={images.alt} />
-//     )
-//   })
-// };
-
 function Winners(props) {
   const [games, setGames] = useState([]);
   const { history } = props;
@@ -29,15 +21,6 @@ function Winners(props) {
     fetchData();
   }, []);
 
-  // useEffect(() => {
-  //   async function fetchData() {
-  //   let { data } = await GamesDB.ally;
-  //   console.log("DATA", data);
-  //   };
-
-  //   fetchData();
-  // }, [])
-  
   return (
     <div>
       <Typography

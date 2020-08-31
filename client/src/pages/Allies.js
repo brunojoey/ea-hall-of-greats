@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Tabs, Tab } from "@material-ui/core";
+import './Pages.css'
+
 import BenMoore from '../components/AllyFilters/benMoore';
 import BradEllis from '../components/AllyFilters/bradEllis';
 import BrandonJones from '../components/AllyFilters/brandonJones';
@@ -9,8 +11,6 @@ import IanHinck from '../components/AllyFilters/ianHinck';
 import KyleBosman from '../components/AllyFilters/kyleBosman';
 import MichaelDamiani from '../components/AllyFilters/michaelDamiani';
 import MichaelHuber from '../components/AllyFilters/michaelHuber';
-// import AllyFilter from '../components/AllyFilters/allyFilter';
-import './Pages.css'
 
 // const useStyles = makeStyles((theme) => ({
 //   tab: {
