@@ -95,6 +95,8 @@ const gameSeed = [
     votes: 9,
     victory: 'False',
     banned: 'False',
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co26fz.jpg",
+    alt: "Street Fighter II",
     allyLink: 'ben_moore',
     hallLink: 'hall_great_one'
   },
@@ -111,6 +113,8 @@ const gameSeed = [
     votes: 3,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co256y.jpg',
+    alt: "Assassin's Creed IV: Black Flag",
     allyLink: 'ian_hinck',
     hallLink: 'hall_great_one'
   },
@@ -127,6 +131,8 @@ const gameSeed = [
     metacritic: 83,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co256y.jpg',
+    alt: "Assassin's Creed IV: Black Flag",
     allyLink: 'don_casanova',
     hallLink: 'hall_great_one'
   },
@@ -143,6 +149,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co256y.jpg',
+    alt: "Assassin's Creed IV: Black Flag",
     allyLink: 'brad_ellis',
     hallLink: 'hall_great_one'
   },
@@ -159,6 +167,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co256y.jpg',
+    alt: "Assassin's Creed IV: Black Flag",
     allyLink: 'brandon_jones',
     hallLink: 'hall_great_one'
   },
@@ -175,6 +185,8 @@ const gameSeed = [
     votes: 1,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co256y.jpg',
+    alt: "Assassin's Creed IV: Black Flag",
     allyLink: 'kyle_bosman',
     hallLink: 'hall_great_one'
   },
@@ -191,6 +203,8 @@ const gameSeed = [
     votes: 0,
     victory: 'False',
     banned: 'False',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co256y.jpg',
+    alt: "Assassin's Creed IV: Black Flag",
     allyLink: 'michael_huber',
     hallLink: 'hall_great_one'
   },
