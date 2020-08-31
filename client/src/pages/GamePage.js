@@ -27,10 +27,10 @@ function GamePage(props) {
         <>
           <Row className="starAndGame" style={{ textAlign: "center", marginTop: '-2em' }}>
             <h1>
-              <FontAwesomeIcon icon={faCrown} className="fa-star" size="2px" />
+              <FontAwesomeIcon icon={faCrown} className="fa-star" />
             </h1>
             <h1 className="gameTitle"> {gamePage.game} </h1>
-            {/* <h1 className='gameTitle' style={{margin: '0 auto', marginTop: '.3em', textAlign: 'center'}}><FontAwesomeIcon icon={faCrown} className='fa-star' /> {gamePage.game} <FontAwesomeIcon icon={faCrown} className='fa-star' /> </h1> */}
+            <Image src={gamePage.image} alt={gamePage.alt} style={{border: '4px solid red'}}></Image>
           </Row>
         </>
       ) : (
@@ -41,9 +41,6 @@ function GamePage(props) {
           {gamePage.game}
         </h1>
       )}
-      <Row className="allyImageGame">
-        <Image src={gamePage.image} alt={gamePage.alt}></Image>
-      </Row>
       <Row>
         <Col>
           <h3 style={{ marginLeft: "1em" }}>

@@ -12,7 +12,14 @@ app.use(express.json());
 // Add routes, both API and view
 app.use(routes);
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/hallOfGreatsDB');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/hallOfGreatsDB', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'))
+};
 
 app.listen(PORT, function() {
   console.log(`🌎  ==> server listening on Port: ${PORT}`);
