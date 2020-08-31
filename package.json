@@ -25,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/brunojoey/ea-hall-of-greats/issues"
   },
-  "homepage": "https://young-castle-27992.herokuapp.com/",
+  "homepage": "https://hall-of-greats.herokuapp.com/",
   "dependencies": {
     "concurrently": "^5.2.0",
     "express": "^4.17.1",
