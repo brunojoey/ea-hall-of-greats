@@ -7,11 +7,11 @@ function Home() {
     <div style={{ textAlign: "center" }}>
       <Grid container style={{ margin: "0 auto" }}>
         <Grid item xs={12}>
-          <Typography variant="h2" style={{ marginTop: "1em" }}>
+          <Typography variant="h1" style={{ marginTop: ".5em", textShadow: '2px 2px 7px #888888'}}>
             The Hall of Greats
           </Typography>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} style={{marginBottom: '2em'}}>
           <p>
             The Easy Allies have been conducting their own Hall of Fame for
             video games they like to call 'THE HALL OF GREATS'!
@@ -23,9 +23,9 @@ function Home() {
           </p>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="h4" style={{marginBottom: '.4em'}}>The Rules!</Typography>
+          <Typography variant="h3" style={{marginBottom: '.4em'}}>The Rules!</Typography>
         </Grid>
-        <Grid item xs={12} style={{marginBottom: '1em'}}>
+        <Grid item xs={12} style={{marginBottom: '2em'}}>
           <Typography>
             <li>
               Starting with the eighth Hall of Greats, alliances were banned.
@@ -47,6 +47,15 @@ function Home() {
               receive three points, the second choice will receive two points,
               and their last choice will receive one.
             </li>
+          </Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Typography variant="h3" style={{marginBottom: '.4em'}}>The Current Bans</Typography>
+        </Grid>
+        <Grid item xs={12} style={{marginBottom: '1em'}}>
+          <Typography>
+            <li>Dungeons &#38; Dragons (Until Q4 2020)</li>
+            <li>Huntdown (Until Q2 2021)</li>
           </Typography>
         </Grid>
       </Grid>
