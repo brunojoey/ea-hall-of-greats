@@ -19,10 +19,10 @@ function App() {
   const [path, setPath] = useState(window.location.pathname);
 
   return (
-    <div>
+    <div className='page-container'>
+    <div className='content-wrap'>
       <Router>
         <Header path={path} setPath={setPath} />
-        {/* <Header /> */}
         <Switch>
           <Route exact path="/" component={Home} />
           <Route
@@ -54,8 +54,9 @@ function App() {
             render={(props) => <Allies {...props} />}
           />
         </Switch>
-        <Footer />
       </Router>
+      </div>
+      <Footer />
     </div>
   );
 }

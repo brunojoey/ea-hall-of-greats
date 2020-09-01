@@ -12,13 +12,7 @@ import KyleBosman from '../components/AllyFilters/kyleBosman';
 import MichaelDamiani from '../components/AllyFilters/michaelDamiani';
 import MichaelHuber from '../components/AllyFilters/michaelHuber';
 
-// const useStyles = makeStyles((theme) => ({
-//   tab: {
-//     paddingTop: 10,
-//   },
-// }));
-
-const Allies = props => {
+function Allies (props) {
   const { match, history } = props;
   const { params } = match;
   const { page } = params;
@@ -82,6 +76,6 @@ const Allies = props => {
 
     </>
   );
-}
+};
 
 export default Allies;

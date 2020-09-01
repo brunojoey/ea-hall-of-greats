@@ -15,7 +15,7 @@
 Joey Bruno
 
 ## Description
-Every three to four months the Easy Allies compete against each other to try and get their own nominated game into the coveted Hall of Greats. Here you can see each Ceremony, Winners, Nominations, and Allies. 
+Every three to four months the Easy Allies compete against each other to try and get their own nominated game into the coveted Hall of Greats. Here you can see each Ceremony, Winners, Nominations, a page for each Nominated Page, and Allies. 
 
 ## Technologies Used
 * React

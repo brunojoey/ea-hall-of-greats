@@ -91,6 +91,7 @@ const gameSeed = [
     description: 'Super Turbo introduced several new gameplay mechanics not present in previous versions of Street Fighter II, including the addition of combination moves called super combos and air combos. It also introduced the secret character Akuma, who would go on to become a recurring character in later Street Fighter installments and other Capcom fighting games.',
     genre: 'Fighting',
     year: 1994,
+    platforms: 'Arcade',
     metacritic: 84,
     votes: 9,
     victory: 'False',

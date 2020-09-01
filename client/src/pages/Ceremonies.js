@@ -15,13 +15,16 @@ import HallOfGreatTen from "../components/CeremonyFilters/hallOfGreatTen";
 import HallOfGreatEleven from "../components/CeremonyFilters/hallOfGreatEleven";
 import HallOfGreatTwelve from "../components/CeremonyFilters/hallOfGreatTwelve";
 import HallOfGreatThirteen from "../components/CeremonyFilters/hallOfGreatThirteen";
+import { Media } from "react-bootstrap";
 
 const useStyles = makeStyles((theme) => ({
   tab: {
     paddingTop: 10,
-    minWidth: 50, // a number of your choice
-    width: 123, // a number of your choice
+    minWidth: 10, // a number of your choice
+    width: 110, // a number of your choice
+    margin: '0 auto',
   },
+
 }));
 
 const Ceremonies = (props) => {
@@ -72,7 +75,7 @@ const Ceremonies = (props) => {
 
   return (
     <>
-      <Tabs value={selectedTab} onChange={handleChange} className='tab-bar-one' indicatorColor="primary">
+      <Tabs value={selectedTab} onChange={handleChange} className='tab-bar-one' indicatorColor="primary" >
         <Tab classes={{ root: classes.tab }}  label="Hall of Greats 1" />
         <Tab classes={{ root: classes.tab }}  label="Hall of Greats 2" />
         <Tab classes={{ root: classes.tab }}  label="Hall of Greats 3" />
@@ -87,12 +90,6 @@ const Ceremonies = (props) => {
         <Tab classes={{ root: classes.tab }}  label="Hall of Greats 12" />
         <Tab classes={{ root: classes.tab }}  label="Hall of Greats 13" />
       </Tabs>
-      {/* <Typography
-        variant="h2"
-        style={{ margin: ".5em 0 .5em 0", textAlign: "center" }}
-      >
-        The Coveted Ceremonies
-      </Typography> */}
       {selectedTab === 0 && <HallOfGreatOne history={history} />}
       {selectedTab === 1 && <HallOfGreatTwo history={history} />}
       {selectedTab === 2 && <HallOfGreatThree history={history} />}

@@ -5,9 +5,9 @@ import "./Pages.css";
 function Home() {
   return (
     <div style={{ textAlign: "center" }}>
-      <Grid container spacing={3} style={{ margin: "0 auto" }}>
+      <Grid container style={{ margin: "0 auto" }}>
         <Grid item xs={12}>
-          <Typography variant="h2" style={{ marginTop: ".5em" }}>
+          <Typography variant="h2" style={{ marginTop: "1em" }}>
             The Hall of Greats
           </Typography>
         </Grid>
@@ -23,9 +23,9 @@ function Home() {
           </p>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="h4">The Rules!</Typography>
+          <Typography variant="h4" style={{marginBottom: '.4em'}}>The Rules!</Typography>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} style={{marginBottom: '1em'}}>
           <Typography>
             <li>
               Starting with the eighth Hall of Greats, alliances were banned.
