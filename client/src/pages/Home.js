@@ -39,8 +39,8 @@ function Home() {
               votes from other Allies are banned for one year.{" "}
             </li>
             <li>
-              If the first, second, and/or third games are tied Patreon will
-              choose the game, or games, between the tied games to be inducted.{" "}
+              If the second and third games are tied, Patreon will
+              choose the game between the tied games to be inducted.{" "}
             </li>
             <li>
               Each Ally has six votes. Their first choice for induction will
