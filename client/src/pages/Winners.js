@@ -22,7 +22,7 @@ function Winners(props) {
   }, []);
 
   return (
-    <div>
+    <div style={{ marginBottom: '3em'}}>
       <Typography
         variant="h2"
         style={{ margin: ".5em 0 .5em 0", textAlign: "center" }}

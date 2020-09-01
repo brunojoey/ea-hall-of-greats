@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Typography } from "@material-ui/core";
 import gamesAPI from "../../utils/gamesAPI";
 import AllyTable from '../Table/allyTable';
 
@@ -25,7 +26,7 @@ function BradEllis(props) {
 
   return (
     <div>
-      <h2 style={{textAlign: 'center'}}>Brad Ellis' Picks</h2>
+      <Typography variant='h4' style={{textAlign: 'center', margin: '.5em 0 .5em 0'}}>Brad Ellis' Picks</Typography>
       <AllyTable games={ally} history={history} />
     </div>
   );

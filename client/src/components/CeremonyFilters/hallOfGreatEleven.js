@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Typography } from "@material-ui/core";
 import CeremonyTable from "../Table/ceremonyTable";
 import gamesAPI from "../../utils/gamesAPI";
 
@@ -20,7 +21,7 @@ function HallOfGreatOne(props) {
 
   return (
     <div>
-      <h2 style={{textAlign: 'center'}}>The Eleventh Hall of Greats</h2>
+      <Typography variant='h3' style={{textAlign: 'center', margin: '.5em 0 .5em 0'}}>The Eleventh Hall of Greats</Typography>
       <CeremonyTable games={games} history={history} />
     </div>
   );

@@ -15,7 +15,6 @@ import HallOfGreatTen from "../components/CeremonyFilters/hallOfGreatTen";
 import HallOfGreatEleven from "../components/CeremonyFilters/hallOfGreatEleven";
 import HallOfGreatTwelve from "../components/CeremonyFilters/hallOfGreatTwelve";
 import HallOfGreatThirteen from "../components/CeremonyFilters/hallOfGreatThirteen";
-import { Media } from "react-bootstrap";
 
 const useStyles = makeStyles((theme) => ({
   tab: {
@@ -75,7 +74,7 @@ const Ceremonies = (props) => {
 
   return (
     <>
-      <Tabs value={selectedTab} onChange={handleChange} className='tab-bar-one' indicatorColor="primary" >
+      <Tabs value={selectedTab} onChange={handleChange} className='tab-bar-one' >
         <Tab classes={{ root: classes.tab }}  label="Hall of Greats 1" />
         <Tab classes={{ root: classes.tab }}  label="Hall of Greats 2" />
         <Tab classes={{ root: classes.tab }}  label="Hall of Greats 3" />

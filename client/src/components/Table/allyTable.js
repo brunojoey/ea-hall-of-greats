@@ -96,7 +96,7 @@ function AllyTable(props) {
   }
 
   return (
-    <div>
+    <div style={{ marginBottom: '3em'}}>
       <table style={{ margin: "0 auto" }} className="table-sortable">
         <thead>
           <tr>
