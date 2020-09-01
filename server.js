@@ -17,9 +17,9 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/hallOfGreatsDB'
   useUnifiedTopology: true
 });
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'))
-};
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static('client/build'))
+// };
 
 app.listen(PORT, function() {
   console.log(`🌎  ==> server listening on Port: ${PORT}`);
