@@ -13,11 +13,14 @@
     "deploy": "npm run deploy",
     "build": "cd client && npm run build",
     "install-client": "cd client && npm install",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "cd client/ && npm install --only=dev && NODE_ENV=development npm install --no-shrinkwrap && npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brunojoey/ea-hall-of-greats.git"
+  },
+  "engines": {
+    "node": "12.9.1"
   },
   "keywords": [],
   "author": "",
