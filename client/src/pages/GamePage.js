@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCrown } from "@fortawesome/free-solid-svg-icons";
+import StarDecoration from '../components/StarDecoration';
+import { Grid } from "@material-ui/core";
 import { Image, Container, Row, Col } from "react-bootstrap";
 import "./Pages.css";
 
@@ -25,9 +25,7 @@ function GamePage(props) {
       {gamePage.victory === "True" ? (
         <>
           <Row className="starAndGame" style={{ textAlign: "center", marginTop: '-2em' }}>
-            <h1>
-              <FontAwesomeIcon icon={faCrown} className="fa-star" />
-            </h1>
+            <StarDecoration />
             <h1 className="gameTitle" style={{marginBottom: '.25em'}}> {gamePage.game} </h1>
             <Image src={gamePage.image} alt={gamePage.alt} style={{border: '4px solid red'}} />
           </Row>
@@ -78,6 +76,9 @@ function GamePage(props) {
         <h4 style={{ marginLeft: "1em", marginBottom: '-.1em' }}>Description: </h4>
         <p style={{ margin: "0 1em 1em 1em" }}>{gamePage.description}</p>
       </Row>
+      <Grid item xs={12} style={{ marginTop: "-3em", marginBottom: '4em' }}>
+          <StarDecoration />
+        </Grid>
     </Container>
   );
 }

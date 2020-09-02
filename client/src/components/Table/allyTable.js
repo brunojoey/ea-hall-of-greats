@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import StarDecoration from '../StarDecoration';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
+import { Grid } from "@material-ui/core";
 import './style.css';
 
 function AllyTable(props) {
@@ -166,6 +168,9 @@ function AllyTable(props) {
         </thead>
         {newSortedItems}
       </table>
+      <Grid item xs={12} style={{ marginTop: "-2em" }}>
+          <StarDecoration />
+        </Grid>
     </div>
   );
 };

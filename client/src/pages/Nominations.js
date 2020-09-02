@@ -1,13 +1,15 @@
 import React from "react";
 import NomineeTable from "../components/Table/nomineeTable";
+import StarDecoration from "../components/StarDecoration";
 import { Grid, Typography } from "@material-ui/core";
 
 function Nominations(props) {
   const { history } = props;
 
   return (
-    <div style={{ marginBottom: '3em'}}>
-      <Grid container >
+    <div style={{ marginBottom: "3em", marginTop: "-3em" }}>
+      <Grid container>
+        <StarDecoration />
         <Grid item xs={12}>
           <Typography
             variant="h2"
@@ -16,16 +18,11 @@ function Nominations(props) {
             The Notorious Nominees
           </Typography>
         </Grid>
-        {/* <Grid item xs={12}>
-          <Typography
-            variant="h6"
-            style={{textAlign: "center", marginBottom: '.5em' }}
-          >
-            Here you can sort by Hall of Great Ceremony, by Votes, by Ally, if it was Banned or Victorius, or by their Name.
-          </Typography>
-        </Grid> */}
-        <Grid item xs={12} style={{ margin: '0 2em 0 2em' }}>
-          <NomineeTable history={history} style={{placeItems: 'center'}} />
+        <Grid item xs={12} style={{ margin: "0 2em 0 2em" }}>
+          <NomineeTable history={history} style={{ placeItems: "center" }} />
+        </Grid>
+        <Grid item xs={12} style={{ marginTop: "-2em" }}>
+          <StarDecoration />
         </Grid>
       </Grid>
     </div>
