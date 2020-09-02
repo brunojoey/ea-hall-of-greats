@@ -21,8 +21,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/hallOfGreatsDB'
   useUnifiedTopology: true
 });
 
-
-
 app.listen(PORT, function() {
   console.log(`🌎  ==> server listening on Port: ${PORT}`);
 });
