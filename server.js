@@ -9,6 +9,10 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
+};
+
 // Add routes, both API and view
 app.use(routes);
 
@@ -17,9 +21,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/hallOfGreatsDB'
   useUnifiedTopology: true
 });
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'))
-};
 
 
 app.listen(PORT, function() {
