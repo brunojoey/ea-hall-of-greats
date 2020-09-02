@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Allies (props) {
+  const classes = useStyles();
   const { match, history } = props;
   const { params } = match;
   const { page } = params;
