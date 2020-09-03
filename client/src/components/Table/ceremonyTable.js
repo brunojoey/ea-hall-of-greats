@@ -172,7 +172,7 @@ function CeremonyTable(props) {
         </thead>
         {newSortedItems}
       </table>
-      <Grid item xs={12} style={{ marginTop: "-4em", marginBottom: '3em' }}>
+      <Grid item xs={12} style={{ marginTop: "-3em", marginBottom: '3em' }}>
           <StarDecoration />
         </Grid>
     </div>
