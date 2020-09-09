@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
-import WinnerTable from "../components/WinnerTable/winnerTable";
+import WinnerTable from "../components/Table/winnerTable";
 import StarDecoration from '../components/StarDecoration';
 import { Grid, Typography } from "@material-ui/core";
 import "./Pages.css";
-// import "../components/WinnerTable/style.css";
 
 function Winners(props) {
   const [games, setGames] = useState([]);

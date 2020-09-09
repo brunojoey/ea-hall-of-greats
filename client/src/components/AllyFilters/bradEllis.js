@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Typography } from "@material-ui/core";
 import gamesAPI from "../../utils/gamesAPI";
-import AllyTable from '../AllyTable/allyTable';
+import AllyTable from '../Table/allyTable';
 
 function BradEllis(props) {
   const [ally, setAlly] = useState([]);

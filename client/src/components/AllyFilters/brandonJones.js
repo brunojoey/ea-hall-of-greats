@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Typography } from "@material-ui/core";
-import AllyTable from '../AllyTable/allyTable';
+import AllyTable from '../Table/allyTable';
 import gamesAPI from "../../utils/gamesAPI";
 
 function BrandonJones(props) {

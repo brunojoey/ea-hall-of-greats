@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import StarDecoration from '../StarDecoration';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
-import "./style.css";
+import { Grid } from "@material-ui/core";
+import './styles.css';
 
-function WinnerTable(props) {
+function CeremonyTable(props) {
   const { history, games } = props;
   const [sortConfig, setSortConfig] = useState(null);
 
-  // Returns a copy of games.
+  // Sorts the Table
   let sortedItems = [...games];
 
-  // Sorts table
   if (sortConfig !== null) {
     sortedItems.sort((a, b) => {
       if (a[sortConfig.key] < b[sortConfig.key]) {
@@ -21,9 +22,8 @@ function WinnerTable(props) {
       }
       return 0;
     });
-  };
+  }
 
-  // Returns sorted data ascending or descending
   const requestSort = (key) => {
     let direction = 'ascending'
     if (sortConfig && sortConfig.key === key && sortConfig.direction === "ascending") {
@@ -32,23 +32,12 @@ function WinnerTable(props) {
     setSortConfig({ key, direction });
   };
 
-  // Puts data in a table sorted at first by Ceremony
   let newSortedItems;
   if (games) {
     newSortedItems = sortedItems.map((sorted) => {
       return (
         <tbody key={sorted._id}>
           <tr>
-            <td
-              className='tableHeadsE'
-              style={{
-                padding: "1em",
-                borderBottom: "1px solid black",
-                backgroundColor: 'light-grey'
-              }}
-            >
-              {sorted.hallOfGreat}
-            </td>
             <td
               style={{
                 borderBottom: "1px solid black",
@@ -78,49 +67,45 @@ function WinnerTable(props) {
               </span>
             </td>
             <td
-              className='tableHeadsE'
+            className='tableInfoE'
+              style={{
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+              }}
+            >
+              {sorted.votes}
+            </td>
+            <td
+            className='tableInfoE'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
                 padding: ".5em",
               }}
             >
-              <span>
-                {sorted.metacritic}
-              </span>
+              {sorted.victory}
             </td>
             <td
-              className='tableHeadsE'
+            className='tableInfoE'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
-                padding: '.5em'
+                padding: ".5em",
               }}
             >
-              {sorted.votes}
+              {sorted.banned}
             </td>
-
           </tr>
         </tbody>
       );
     });
-  };
+  }
 
   return (
     <div>
       <table style={{ margin: "0 auto" }} className="table-sortable">
         <thead>
           <tr>
-            <th style={{ borderBottom: "1px solid black" }}>
-              Ceremony
-              <FontAwesomeIcon
-                size="1x"
-                style={{ marginLeft: ".25em" }}
-                className="feed-user-icon"
-                icon={faSort}
-                onClick={() => requestSort("hallOfGreat")}
-              ></FontAwesomeIcon>
-            </th>
             <th style={{ borderBottom: "1px solid black" }}>
               Nominated By
               <FontAwesomeIcon
@@ -146,20 +131,6 @@ function WinnerTable(props) {
                 borderBottom: "1px solid black",
               }}
             >
-              Metacritic
-              <FontAwesomeIcon
-                size="1x"
-                style={{ marginLeft: ".25em" }}
-                className="feed-user-icon"
-                icon={faSort}
-                onClick={() => requestSort("metacritic")}
-              ></FontAwesomeIcon>
-            </th>
-            <th
-              style={{
-                borderBottom: "1px solid black",
-              }}
-            >
               Votes Received
               <FontAwesomeIcon
                 size="1x"
@@ -169,13 +140,43 @@ function WinnerTable(props) {
                 onClick={() => requestSort("votes")}
               ></FontAwesomeIcon>
             </th>
+            <th
+              style={{
+                borderBottom: "1px solid black",
+              }}
+            >
+              Inducted
+              <FontAwesomeIcon
+                size="1x"
+                style={{ marginLeft: ".25em" }}
+                className="feed-user-icon"
+                icon={faSort}
+                onClick={() => requestSort("victory")}
+              ></FontAwesomeIcon>
+            </th>
+            <th
+              style={{
+                borderBottom: "1px solid black",
+              }}
+            >
+              Banned
+              <FontAwesomeIcon
+                size="1x"
+                style={{ marginLeft: ".25em" }}
+                className="feed-user-icon"
+                icon={faSort}
+                onClick={() => requestSort("banned")}
+              ></FontAwesomeIcon>
+            </th>
           </tr>
         </thead>
         {newSortedItems}
-        </table>
+      </table>
+      <Grid item xs={12} style={{ marginTop: "-3em", marginBottom: '3em' }}>
+          <StarDecoration />
+        </Grid>
     </div>
-
-  )
+  );
 };
 
-export default WinnerTable;
+export default CeremonyTable;

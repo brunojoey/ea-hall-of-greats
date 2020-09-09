@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Typography } from "@material-ui/core";
-import CeremonyTable from "../CeremonyTable/ceremonyTable";
+import CeremonyTable from "../Table/ceremonyTable";
 import gamesAPI from "../../utils/gamesAPI";
 
 function HallOfGreatOne(props) {
