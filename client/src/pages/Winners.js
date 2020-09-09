@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
-import WinnerTable from "../components/Table/winnerTable";
+import WinnerTable from "../components/WinnerTable/winnerTable";
 import StarDecoration from '../components/StarDecoration';
 import { Grid, Typography } from "@material-ui/core";
 import "./Pages.css";
-import "../components/Table/style.css";
+// import "../components/WinnerTable/style.css";
 
 function Winners(props) {
   const [games, setGames] = useState([]);
@@ -13,10 +13,8 @@ function Winners(props) {
   useEffect(() => {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
-      console.log("data", data);
       data = data.filter((games) => games.victory === "True");
       setGames(data);
-      console.log("data", data);
     }
 
     fetchData();

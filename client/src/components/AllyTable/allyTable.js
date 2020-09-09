@@ -3,7 +3,7 @@ import StarDecoration from '../StarDecoration';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
 import { Grid } from "@material-ui/core";
-import './style.css';
+import './styles.css';
 
 function AllyTable(props) {
   const { history, games } = props;

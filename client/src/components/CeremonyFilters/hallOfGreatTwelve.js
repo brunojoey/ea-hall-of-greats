@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Typography } from "@material-ui/core";
 import gamesAPI from "../../utils/gamesAPI";
-import CeremonyTable from "../Table/ceremonyTable";
+import CeremonyTable from "../CeremonyTable/ceremonyTable";
 
 function HallOfGreatOne(props) {
   const [games, setGames] = useState([]);
@@ -10,9 +10,7 @@ function HallOfGreatOne(props) {
   useEffect(() => {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
-      console.log("DATA", data);
       data = data.filter((games) => games.hallOfGreat === 12);
-      console.log("NEW DATA", data);
       setGames(data);
     }
 

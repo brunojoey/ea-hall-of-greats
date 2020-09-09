@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
 
-function SortedTable(props) {
+function WinnerTable(props) {
   const { history, games } = props;
   const [sortConfig, setSortConfig] = useState(null);
 
@@ -40,10 +40,11 @@ function SortedTable(props) {
         <tbody key={sorted._id}>
           <tr>
             <td
+              className='tableHeadsE'
               style={{
-                textAlign: "center",
                 padding: "1em",
                 borderBottom: "1px solid black",
+                backgroundColor: 'light-grey'
               }}
             >
               {sorted.hallOfGreat}
@@ -77,63 +78,28 @@ function SortedTable(props) {
               </span>
             </td>
             <td
+              className='tableHeadsE'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
                 padding: ".5em",
               }}
             >
-              {sorted.genre}
+              <span>
+                {sorted.metacritic}
+              </span>
             </td>
             <td
+              className='tableHeadsE'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
-                padding: ".5em",
-                textAlign: 'center'
-              }}
-            >
-              {sorted.year}
-            </td>
-            <td
-              style={{
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
-                padding: ".5em",
-                textAlign: 'center'
-              }}
-            >
-              {sorted.metacritic}
-            </td>
-            <td
-              style={{
-                textAlign: "center",
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
+                padding: '.5em'
               }}
             >
               {sorted.votes}
             </td>
-            <td
-              style={{
-                textAlign: "center",
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
-                padding: ".5em",
-              }}
-            >
-              {sorted.victory}
-            </td>
-            <td
-              style={{
-                textAlign: "center",
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
-                padding: ".5em",
-              }}
-            >
-              {sorted.banned}
-            </td>
+
           </tr>
         </tbody>
       );
@@ -162,7 +128,6 @@ function SortedTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                // onClick={() => setSortConfig("ally")}
                 onClick={() => requestSort("ally")}
               ></FontAwesomeIcon>
             </th>
@@ -176,27 +141,11 @@ function SortedTable(props) {
                 onClick={() => requestSort("game")}
               ></FontAwesomeIcon>
             </th>
-            <th style={{ borderBottom: "1px solid black" }}>
-              Genre
-              <FontAwesomeIcon
-                size="1x"
-                style={{ marginLeft: ".25em" }}
-                className="feed-user-icon"
-                icon={faSort}
-                onClick={() => requestSort("genre")}
-              ></FontAwesomeIcon>
-            </th>
-            <th style={{ borderBottom: "1px solid black" }}>
-              Year
-              <FontAwesomeIcon
-                size="1x"
-                style={{ marginLeft: ".25em" }}
-                className="feed-user-icon"
-                icon={faSort}
-                onClick={() => requestSort("year")}
-              ></FontAwesomeIcon>
-            </th>
-            <th style={{ borderBottom: "1px solid black" }}>
+            <th
+              style={{
+                borderBottom: "1px solid black",
+              }}
+            >
               Metacritic
               <FontAwesomeIcon
                 size="1x"
@@ -217,38 +166,7 @@ function SortedTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                // onClick={() => setSortConfig("votes")}
                 onClick={() => requestSort("votes")}
-              ></FontAwesomeIcon>
-            </th>
-            <th
-              style={{
-                borderBottom: "1px solid black",
-              }}
-            >
-              Inducted
-              <FontAwesomeIcon
-                size="1x"
-                style={{ marginLeft: ".25em" }}
-                className="feed-user-icon"
-                icon={faSort}
-                // onClick={() => setSortConfig("victory")}
-                onClick={() => requestSort("victory")}
-              ></FontAwesomeIcon>
-            </th>
-            <th
-              style={{
-                borderBottom: "1px solid black",
-              }}
-            >
-              Banned
-              <FontAwesomeIcon
-                size="1x"
-                style={{ marginLeft: ".25em" }}
-                className="feed-user-icon"
-                icon={faSort}
-                // onClick={() => setSortConfig("banned")}
-                onClick={() => requestSort("banned")}
               ></FontAwesomeIcon>
             </th>
           </tr>
@@ -260,4 +178,4 @@ function SortedTable(props) {
   )
 };
 
-export default SortedTable;
+export default WinnerTable;

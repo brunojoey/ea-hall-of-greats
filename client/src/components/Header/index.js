@@ -1,12 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { Dropdown } from "react-materialize";
 import { makeStyles } from "@material-ui/core/styles";
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-} from "@material-ui/core/";
+import { AppBar, Toolbar, Typography } from "@material-ui/core/";
 import './style.css';
 
 const useStyles = makeStyles((theme) => ({
@@ -24,39 +19,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-// function SimpleMenu(props) {
-//   const [anchorEl, setAnchorEl] = useState(null);
-//   const path = props;
-
-//   const handleClick = (event) => {
-//     setAnchorEl(event.currentTarget);
-//   };
-
-//   const handleClose = () => {
-//     setAnchorEl(null);
-//   };
-
-//   return (
-//     <div>
-//       <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-//         Open Menu
-//       </Button>
-//       <Dropdown
-//         id="simple-menu"
-//         anchorEl={anchorEl}
-//         keepMounted
-//         open={Boolean(anchorEl)}
-//         onClose={handleClose}
-//       >
-//         <Link to='/' onClick={() => props.setPath('/')}>Home</Link>
-//         <Link to='/winners' onClick={() => props.setPath('/winners')}>The Inductees</Link>
-//         <Link to='/nominations' onClick={() => props.setPath('/nominations')}>The Nominees</Link>
-//         <Link to='/ceremonies' onClick={() => props.setPath('/ceremonies')}>The Ceremonies</Link>
-//         <Link to='/allies' onClick={() => props.setPath('/allies')}>The Allies</Link>
-//       </Dropdown>
-//     </div>
-//   );
-// }
 
 export default function Header() {
   const classes = useStyles();
@@ -84,7 +46,6 @@ export default function Header() {
                 The Allies
               </Link>
           </div>
-              {/* {SimpleMenu} */}
         </Toolbar>
       </AppBar>
     </div>

@@ -29,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
 const Ceremonies = (props) => {
   const classes = useStyles();
   const { match, history } = props;
-  console.log('History', history);
   const { params } = match;
   const { page } = params;
 

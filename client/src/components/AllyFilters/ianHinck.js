@@ -1,24 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Typography } from "@material-ui/core";
-import AllyTable from '../Table/allyTable';
+import AllyTable from '../AllyTable/allyTable';
 import gamesAPI from "../../utils/gamesAPI";
 
 function IanHinck(props) {
   const [ally, setAlly] = useState([]);
   const { history } = props;
 
-  // function renderImages({ image, alt }) {
-  //   imageJson.map((images) => {
-  //     <Image src={buildRoutes(imageJson.image)} alt={imageJson.alt} />
-  //   })
-  // };
-
   useEffect(() => {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
-      console.log("DATA", data);
       data = data.filter((games) => games.ally === 'Ian Hinck');
-      console.log("NEW DATA", data);
       setAlly(data);
     }
 
