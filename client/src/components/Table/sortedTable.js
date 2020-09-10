@@ -40,7 +40,7 @@ function SortedTable(props) {
         <tbody key={sorted._id}>
           <tr>
             <td
-              className='tableHeadsE'
+              className='tableInfoE'
               style={{
                 padding: "1em",
                 borderBottom: "1px solid black",
@@ -49,6 +49,7 @@ function SortedTable(props) {
               {sorted.hallOfGreat}
             </td>
             <td
+              className='tableInfoR'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -63,6 +64,7 @@ function SortedTable(props) {
               </span>
             </td>
             <td
+              className='tableInfoR'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -77,7 +79,7 @@ function SortedTable(props) {
               </span>
             </td>
             <td
-              className='TableInfoE'
+              className='tableInfoE'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -87,7 +89,7 @@ function SortedTable(props) {
               {sorted.genre}
             </td>
             <td
-              className='TableInfoE'
+              className='tableInfoE'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -163,7 +165,6 @@ function SortedTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                // onClick={() => setSortConfig("ally")}
                 onClick={() => requestSort("ally")}
               ></FontAwesomeIcon>
             </th>
@@ -218,7 +219,6 @@ function SortedTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                // onClick={() => setSortConfig("votes")}
                 onClick={() => requestSort("votes")}
               ></FontAwesomeIcon>
             </th>
@@ -233,7 +233,6 @@ function SortedTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                // onClick={() => setSortConfig("victory")}
                 onClick={() => requestSort("victory")}
               ></FontAwesomeIcon>
             </th>
@@ -248,7 +247,6 @@ function SortedTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                // onClick={() => setSortConfig("banned")}
                 onClick={() => requestSort("banned")}
               ></FontAwesomeIcon>
             </th>

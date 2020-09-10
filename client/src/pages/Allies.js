@@ -16,7 +16,7 @@ import MichaelHuber from '../components/AllyFilters/michaelHuber';
 const useStyles = makeStyles((theme) => ({
   tab: {
     paddingTop: 10,
-    minWidth: 10, // a number of your choice
+    minWidth: 50, // a number of your choice
     width: 110, // a number of your choice
     margin: '0 auto',
   },
@@ -64,15 +64,15 @@ function Allies (props) {
     <>
     <nav>
       <Tabs value={selectedTab} onChange={handleChange} className='tab-bar' >
-        <Tab classes={{ root: classes.tab }} label="Ben Moore" />
-        <Tab classes={{ root: classes.tab }} label="Brad Ellis" />
-        <Tab classes={{ root: classes.tab }} label="Brandon Jones" />
-        <Tab classes={{ root: classes.tab }} label="Daniel Bloodworth" />
-        <Tab classes={{ root: classes.tab }} label="Don Casanova" />
-        <Tab classes={{ root: classes.tab }} label="Ian Hinck" />
-        <Tab classes={{ root: classes.tab }} label="Kyle Bosman" />
-        <Tab classes={{ root: classes.tab }} label="Michael Damiani" />
-        <Tab classes={{ root: classes.tab }} label="Michael Huber" />
+        <Tab classes={{ root: classes.tab }} label="Ben Moore" className='tab-allies'/>
+        <Tab classes={{ root: classes.tab }} label="Brad Ellis" className='tab-allies' />
+        <Tab classes={{ root: classes.tab }} label="Brandon Jones" className='tab-allies' />
+        <Tab classes={{ root: classes.tab }} label="Daniel Bloodworth" className='tab-allies' />
+        <Tab classes={{ root: classes.tab }} label="Don Casanova" className='tab-allies' />
+        <Tab classes={{ root: classes.tab }} label="Ian Hinck" className='tab-allies' />
+        <Tab classes={{ root: classes.tab }} label="Kyle Bosman" className='tab-allies' />
+        <Tab classes={{ root: classes.tab }} label="Michael Damiani" className='tab-allies' />
+        <Tab classes={{ root: classes.tab }} label="Michael Huber" className='tab-allies' />
       </Tabs>
       
       {selectedTab === 0 && <BenMoore history={history} />}

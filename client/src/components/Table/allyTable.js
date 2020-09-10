@@ -40,8 +40,8 @@ function AllyTable(props) {
         <tbody key={sorted._id}>
           <tr>
           <td
+              className='tableInfoE'
               style={{
-                textAlign: "center",
                 padding: "1em",
                 borderBottom: "1px solid black",
               }}
@@ -49,6 +49,7 @@ function AllyTable(props) {
               {sorted.hallOfGreat}
             </td>
             <td
+              className='tableInfoR'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -63,8 +64,8 @@ function AllyTable(props) {
               </span>
             </td>
             <td
+              className='tableInfoE'
               style={{
-                textAlign: "center",
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
               }}
@@ -72,8 +73,8 @@ function AllyTable(props) {
               {sorted.votes}
             </td>
             <td
+              className='tableInfoE'
               style={{
-                textAlign: "center",
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
                 padding: ".5em",
@@ -82,8 +83,8 @@ function AllyTable(props) {
               {sorted.victory}
             </td>
             <td
+              className='tableInfoE'
               style={{
-                textAlign: "center",
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
                 padding: ".5em",

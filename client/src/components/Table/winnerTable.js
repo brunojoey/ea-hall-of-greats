@@ -50,6 +50,7 @@ function WinnerTable(props) {
               {sorted.hallOfGreat}
             </td>
             <td
+              className='tableInfoR'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -64,6 +65,7 @@ function WinnerTable(props) {
               </span>
             </td>
             <td
+              className='tableInfoR'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",

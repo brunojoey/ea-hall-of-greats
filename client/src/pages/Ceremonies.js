@@ -21,9 +21,8 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 10,
     minWidth: 10, // a number of your choice
     width: 110, // a number of your choice
-    margin: '0 auto',
-  },
-
+    margin: '0 auto'
+  }
 }));
 
 const Ceremonies = (props) => {
@@ -73,20 +72,20 @@ const Ceremonies = (props) => {
 
   return (
     <>
-      <Tabs value={selectedTab} onChange={handleChange} className='tab-bar-one' >
-        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 1" />
-        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 2" />
-        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 3" />
-        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 4" />
-        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 5" />
-        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 6" />
-        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 7" />
-        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 8" />
-        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 9" />
-        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 10" />
-        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 11" />
-        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 12" />
-        <Tab classes={{ root: classes.tab }}  label="Hall of Greats 13" />
+      <Tabs value={selectedTab} onChange={handleChange} className='tab-bar-one' scrollButtons="on">
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 1" />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 2" />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 3" />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 4" />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 5" />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 6" />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 7" />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 8" />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 9" />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 10" />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 11" />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 12" />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 13" />
       </Tabs>
       {selectedTab === 0 && <HallOfGreatOne history={history} />}
       {selectedTab === 1 && <HallOfGreatTwo history={history} />}

@@ -39,6 +39,7 @@ function CeremonyTable(props) {
         <tbody key={sorted._id}>
           <tr>
             <td
+              className='tableInfoR'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -53,6 +54,7 @@ function CeremonyTable(props) {
               </span>
             </td>
             <td
+              className='tableInfoR'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",

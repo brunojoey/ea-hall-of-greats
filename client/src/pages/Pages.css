@@ -3,15 +3,6 @@ body {
   height: 100%;
 }
 
-.tab-bar {
-  padding-top: 10;
-}
-
-.tab-bar-one {
-  display: flex;
-  align-items: space-around;
-}
-
 .gameLink:hover {
   color: red;
 }
@@ -27,4 +18,32 @@ body {
 .fa-star {
   color: gold;
   margin-bottom: -1.5em;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  .tab-allies[label] {
+    width: 1;
+  }
+
+  .tab-allies[label] { content: "Moore"; }
+  .tab-allies:nth-of-type(2) { content: "Moore"; }
+  .tab-allies:nth-of-type(3) { content: "Moore"; }
+  .tab-allies:nth-of-type(4) { content: "Moore"; }
+  .tab-allies:nth-of-type(5) { content: "Moore"; }
+  .tab-allies:nth-of-type(6) { content: "Moore"; }
+  .tab-allies:nth-of-type(7) { content: "Moore"; }
+  .tab-allies:nth-of-type(8) { content: "Moore"; }
+  .tab-allies:nth-of-type(9) { content: "Moore"; }
+	/* td:nth-of-type(3):before { content: "Game:"; }
+	td:nth-of-type(4):before { content: "Metacritic:"; }
+	td:nth-of-type(5):before { content: "Genre:"; }
+	td:nth-of-type(6):before { content: "Metacritic: "; }
+	td:nth-of-type(7):before { content: "Votes Received: "; }
+	td:nth-of-type(8):before { content: "Inducted: "; }
+	td:nth-of-type(9):before { content: "Banned: "; } */
+
+
 }
