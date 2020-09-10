@@ -27,7 +27,7 @@ function GamePage(props) {
           <Row className="starAndGame" style={{ textAlign: "center", marginTop: '-2em' }}>
             <StarDecoration />
             <h1 className="gameTitle" style={{marginBottom: '.25em'}}> {gamePage.game} </h1>
-            <Image src={gamePage.image} alt={gamePage.alt} style={{border: '4px solid red'}} />
+            <Image src={gamePage.image} alt={gamePage.alt} style={{border: '4px solid red'}} className='gameImage'/>
           </Row>
         </>
       ) : (

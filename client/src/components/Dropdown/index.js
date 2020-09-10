@@ -24,7 +24,7 @@ function Dropdown() {
         aria-haspopup="true"
         onClick={handleClick}
       >
-        Open Menu
+        Menu
       </Button>
       <Menu
         id="simple-menu"
@@ -33,7 +33,7 @@ function Dropdown() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <Link to="/" className="nav-links active">
+        <Link to="/" className="nav-links">
           Home
         </Link>
         <Link to="/winners" className="nav-links">
@@ -45,7 +45,7 @@ function Dropdown() {
         <Link to="/ceremonies" className="nav-links">
           The Ceremonies
         </Link>
-        <Link to="/allies" className="nav-links" style={{paddingRight: '.5em'}}>
+        <Link to="/allies" className="nav-links">
           The Allies
         </Link>
       </Menu>

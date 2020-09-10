@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   title: {
-    flexGrow: 1,
+    flexGrow: 1
   },
   menuBar: {
     backgroundColor: "black",
@@ -29,10 +29,12 @@ export default function Header() {
       <AppBar className={classes.menuBar} position="static">
         <Toolbar>
           <Typography variant="h4" className={classes.title}>
-            <strong style={{ color: "white" }}>EASY</strong>
-            <strong style={{ color: "red" }}>ALLIES</strong>{" "}
+            <a href="/" style={{textDecoration: 'none'}}>
+              <strong style={{ color: "white" }}>EASY</strong>
+              <strong style={{ color: "red" }}>ALLIES</strong>{" "}
+            </a>
           </Typography>
-          <div className="nav-links-div">
+          <div>
             <Dropdown />
           </div>
         </Toolbar>

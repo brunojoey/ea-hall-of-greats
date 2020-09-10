@@ -1,33 +1,16 @@
-.hallOfGreatsHeader {
-  margin: 0 auto;
-  font-size: xx-large;
-  display: flex;
-  justify-content: space-around;
-  /* align-items: center;  */
-}
-
-.nav-links-div {
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
-}
-
 .menu-title {
   color: white;
 }
 
 .nav-links {
   color: black;
-  font-size: large;
-  padding: 1em 0 1em .5em;
+  padding: 1em .5em 1em .5em;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-links:hover {
   color: red;
-}
-
-nav select {
-  display: none;
 }
 
 @media (max-width: 960px) {
