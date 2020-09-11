@@ -51,6 +51,6 @@ function Dropdown() {
       </Menu>
     </div>
   );
-}
+};
 
 export default Dropdown;
