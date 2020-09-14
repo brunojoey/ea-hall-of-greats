@@ -11,6 +11,13 @@ body {
   font-size: 5em;
 }
 
+.loader {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  color: red;
+}
+
 .gameImage {
   box-shadow: 2px 2px 9px #888888;
 }

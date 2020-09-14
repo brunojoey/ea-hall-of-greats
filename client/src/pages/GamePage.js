@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
 import StarDecoration from '../components/StarDecoration';
+import Loader from 'react-loader-spinner';
 import { Grid } from "@material-ui/core";
 import { Image, Container, Row, Col } from "react-bootstrap";
 import "./Pages.css";
@@ -21,6 +22,9 @@ function GamePage(props) {
   }, [id]);
 
   return (
+    <>
+    {(gamePage.game)
+    ?
     <Container fluid key={gamePage.id}>
       {gamePage.victory === "True" ? (
         <>
@@ -80,6 +84,10 @@ function GamePage(props) {
           <StarDecoration />
         </Grid>
     </Container>
+    :
+    <Loader className='loader' type='Circles' color='#FF0000' height={128} width={128} timeout={3000}/>
+    }
+    </>
   );
 }
 
