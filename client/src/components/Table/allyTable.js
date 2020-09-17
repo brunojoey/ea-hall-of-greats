@@ -53,7 +53,7 @@ function AllyTable(props) {
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
-                padding: ".5em",
+                padding: ".5em"
               }}
             >
               <span
