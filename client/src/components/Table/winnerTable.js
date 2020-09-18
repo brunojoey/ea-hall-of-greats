@@ -101,7 +101,6 @@ function WinnerTable(props) {
             >
               {sorted.votes}
             </td>
-
           </tr>
         </tbody>
       );

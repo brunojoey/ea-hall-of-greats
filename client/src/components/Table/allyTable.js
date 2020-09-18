@@ -39,7 +39,7 @@ function AllyTable(props) {
       return (
         <tbody key={sorted._id}>
           <tr>
-          <td
+            <td
               className='tableInfoE'
               style={{
                 padding: "1em",
@@ -96,7 +96,7 @@ function AllyTable(props) {
         </tbody>
       );
     });
-  }
+  };
 
   return (
     <div style={{ marginBottom: '3em'}}>
@@ -110,7 +110,7 @@ function AllyTable(props) {
                 style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
-                onClick={() => requestSort("ceremonies")}
+                onClick={() => requestSort("hallOfGreat")}
               ></FontAwesomeIcon>
             </th>
             <th style={{ borderBottom: "1px solid black" }}>
