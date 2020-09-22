@@ -26,6 +26,7 @@ Every three to four months the Easy Allies compete against each other to try and
 * Material-UI 
 
 ## Future Development
+* Figuring out why the deployed verison is showing tables in a random order.
 * Finding a way to deal with games that are nominated more than once.
 * Dealing with the Super Mario 64 issue where more than one person brought it in one ceremony.
 
