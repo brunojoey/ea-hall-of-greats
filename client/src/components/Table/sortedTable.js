@@ -46,7 +46,12 @@ function SortedTable(props) {
                 borderBottom: "1px solid black",
               }}
             >
-              {sorted.hallOfGreat}
+              <span
+                onClick={() => history.push(`/ceremonies/${sorted.hallLink}`)}
+                className="gameLink"
+              >
+                {sorted.hallOfGreat}
+              </span>
             </td>
             <td
               className='tableInfoR'

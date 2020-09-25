@@ -47,7 +47,12 @@ function WinnerTable(props) {
                 backgroundColor: 'light-grey'
               }}
             >
-              {sorted.hallOfGreat}
+              <span
+                onClick={() => history.push(`/ceremonies/${sorted.hallLink}`)}
+                className="gameLink"
+              >
+                {sorted.hallOfGreat}
+              </span>
             </td>
             <td
               className='tableInfoR'
