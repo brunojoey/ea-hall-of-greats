@@ -25,7 +25,7 @@ body {
 @keyframes moveStar {
   0% {
     opacity: 0;
-    transform: translateY(-30px); /* translateY because we want to move it in regards vertically. -30 to move from the top */
+    transform: translateX(-30px); /* translateY because we want to move it in regards vertically. -30 to move from the top */
   }
 
   100% {
