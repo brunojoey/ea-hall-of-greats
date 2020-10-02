@@ -22,9 +22,24 @@ body {
   box-shadow: 2px 2px 9px #888888;
 }
 
+@keyframes moveStar {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px); /* translateY because we want to move it in regards vertically. -30 to move from the top */
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
 .fa-star {
   color: gold;
   margin-bottom: -1.5em;
+
+  animation: moveStar 2s ease-out;
 }
 
 @media 
