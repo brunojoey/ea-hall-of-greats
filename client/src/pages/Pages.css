@@ -5,10 +5,12 @@ body {
 
 .gameLink:hover {
   color: red;
+  text-decoration: line-through;
 }
 
 .gameTitle {
   font-size: 5em;
+  animation: moveGameData 2s ease-out;
 }
 
 .loader {
@@ -20,6 +22,19 @@ body {
 
 .gameImage {
   box-shadow: 2px 2px 9px #888888;
+  animation: moveGameData 2s ease-out;
+}
+
+@keyframes moveGameData {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px); /* translateY because we want to move it in regards vertically. -30 to move from the top */
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 @keyframes moveStar {
