@@ -17,11 +17,11 @@ function Home() {
           </Typography>
         </Grid>
         <Grid item xs={12} style={{ marginBottom: "1em" }}>
-          <p>
+          <p className='description'>
             The Easy Allies have been conducting their own Hall of Fame for
             video games they like to call 'THE HALL OF GREATS'!
           </p>
-          <p>
+          <p className='description'>
             The inagural ceremony happened in February of 2017. Ever since,
             every three to four months the Allies gather to decide the best
             games of each ceremony to induct into the Hall of Greats!
@@ -33,7 +33,7 @@ function Home() {
           </Typography>
         </Grid>
         <Grid item xs={12} style={{ marginBottom: "1em" }}>
-          <Typography>
+          <Typography className='rules_list'>
             <li>
               Starting with the eighth Hall of Greats, alliances were banned.
             </li>
@@ -62,7 +62,7 @@ function Home() {
           </Typography>
         </Grid>
         <Grid item xs={12} style={{ marginBottom: "1em" }}>
-          <Typography>
+          <Typography className='current_bans'>
             <li>Dungeons &#38; Dragons (Until Q4 2020)</li>
             <li>Huntdown (Until Q2 2021)</li>
           </Typography>

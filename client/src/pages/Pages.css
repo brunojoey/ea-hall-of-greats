@@ -3,6 +3,22 @@ body {
   height: 100%;
 }
 
+.description, .current_bans, .rules_list {
+  animation: moveHomeParagraphs 1s ease-in;
+}
+
+@keyframes moveHomeParagraphs{
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: 0;
+  }
+}
+
 .gameLink:hover {
   color: red;
   text-decoration: line-through;
@@ -40,7 +56,7 @@ body {
 @keyframes moveStar {
   0% {
     opacity: 0;
-    transform: translateY(-30px); /* translateY because we want to move it in regards vertically. -30 to move from the top */
+    transform: translateX(-30px); /* translateY because we want to move it in regards vertically. -30 to move from the top */
   }
 
   100% {
@@ -53,7 +69,7 @@ body {
   color: gold;
   margin-bottom: -1.5em;
 
-  animation: moveStar 2s ease-out;
+  animation: moveStar 1s ease-out;
 }
 
 @media 
