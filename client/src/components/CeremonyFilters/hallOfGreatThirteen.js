@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ReactPlayer from 'react-player';
 import { Typography } from "@material-ui/core";
 import CeremonyTable from "../Table/ceremonyTable";
 import gamesAPI from "../../utils/gamesAPI";
@@ -20,6 +21,7 @@ function HallOfGreatOne(props) {
   return (
     <div>
       <Typography variant='h3' style={{textAlign: 'center', margin: '.5em 0 .5em 0'}}>The Thirteenth Hall of Greats</Typography>
+      <ReactPlayer url='https://www.youtube.com/watch?v=03jhRyoSUqQ' style={{margin: '0 auto', marginBottom: '1em'}}/>
       <CeremonyTable games={games} history={history} />
     </div>
   );
