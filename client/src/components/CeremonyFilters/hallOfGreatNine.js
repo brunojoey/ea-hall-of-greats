@@ -22,7 +22,7 @@ function HallOfGreatOne(props) {
   return (
     <div>
       <Typography variant='h3' style={{textAlign: 'center', margin: '.5em 0 .5em 0'}}>The Ninth Hall of Greats</Typography>
-      <ReactPlayer url='https://www.youtube.com/watch?v=SxhlPJK4J0g' style={{margin: '0 auto', marginBottom: '1em'}}/>
+      <ReactPlayer url='https://www.youtube.com/watch?v=SxhlPJK4J0g' style={{margin: '0 auto', marginBottom: '1em'}} alt='https://www.youtube.com/watch?v=SxhlPJK4J0g' />
       <CeremonyTable games={games} history={history} />
     </div>
   );

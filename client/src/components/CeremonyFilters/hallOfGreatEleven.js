@@ -21,7 +21,7 @@ function HallOfGreatOne(props) {
   return (
     <div>
       <Typography variant='h3' style={{textAlign: 'center', margin: '.5em 0 .5em 0'}}>The Eleventh Hall of Greats</Typography>
-      <ReactPlayer url='https://www.youtube.com/watch?v=fEJXc01mxGI' style={{margin: '0 auto', marginBottom: '1em'}}/>
+      <ReactPlayer url='https://www.youtube.com/watch?v=fEJXc01mxGI' style={{margin: '0 auto', marginBottom: '1em'}} alt='https://www.youtube.com/watch?v=fEJXc01mxGI' />
       <CeremonyTable games={games} history={history} />
     </div>
   );
