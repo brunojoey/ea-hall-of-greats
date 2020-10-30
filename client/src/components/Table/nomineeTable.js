@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import gamesAPI from "../../utils/gamesAPI";
 import SortedTable from './sortedTable';
-// import "./style.css";
 
 function NomineeTable(props) {
   const { history } = props;

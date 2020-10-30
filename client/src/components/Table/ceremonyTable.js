@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import StarDecoration from '../StarDecoration';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
-import { Grid } from "@material-ui/core";
 import './styles.css';
 
 function CeremonyTable(props) {
@@ -174,9 +172,6 @@ function CeremonyTable(props) {
         </thead>
         {newSortedItems}
       </table>
-      <Grid item xs={12} style={{ marginTop: "-3em", marginBottom: '3em' }}>
-          <StarDecoration />
-        </Grid>
     </div>
   );
 };

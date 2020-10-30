@@ -175,8 +175,8 @@ function AllyTable(props) {
         {newSortedItems}
       </table>
       <Grid item xs={12} style={{ marginTop: "-2em" }}>
-          <StarDecoration />
-        </Grid>
+        <StarDecoration />
+      </Grid>
     </div>
   );
 };

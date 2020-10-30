@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const gameRoutes = require('./games');
 
-// Catch games and allies routes.
+// Catch games routes.
 router.use('/games', gameRoutes);
 
 module.exports = router;

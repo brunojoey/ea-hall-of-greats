@@ -47,6 +47,12 @@ function App() {
             path="/ceremonies/:page?"
             render={(props) => <Ceremonies {...props} />}
           />
+          <Redirect exact from="/rundowns" to="/rundowns/hall_great_one" />
+          <Route
+            exact
+            path="/rundowns/:page?"
+            render={(props) => <Ceremonies {...props} />}
+          />
           <Redirect exact from="/allies" to="/allies/ben_moore" />
           <Route
             exact

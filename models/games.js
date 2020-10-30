@@ -17,7 +17,8 @@ const GamesSchema = new Schema({
   image: { type: String, required: false },
   alt: { type: String, required: false },
   allyLink: { type: String, required: true },
-  hallLink: { type: String, required: true }
+  hallLink: { type: String, required: true },
+  votingRundown: { type: String, required: true }
 });
 
 const Games = mongoose.model("Games", GamesSchema);

@@ -29,7 +29,7 @@ function Home() {
         </Grid>
         <Grid item xs={12}>
           <Typography variant="h3" style={{ marginBottom: ".4em" }}>
-            The Rules!
+            The Rules
           </Typography>
         </Grid>
         <Grid item xs={12} style={{ marginBottom: "1em" }}>
@@ -46,7 +46,7 @@ function Home() {
               votes from other Allies are banned for one year.{" "}
             </li>
             <li>
-              If the second and third games are tied, Patreon will choose the
+              If the second and third games are tied, the Patreon Easy Allies community will choose the
               game between the tied games to be inducted.{" "}
             </li>
             <li>

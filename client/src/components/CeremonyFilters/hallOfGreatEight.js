@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import ReactPlayer from 'react-player';
 import { Typography } from "@material-ui/core";
+import HallOfGreatEightRundown from '../RundownFilters/hallOfGreatsEight';
 import CeremonyTable from "../Table/ceremonyTable";
 import gamesAPI from "../../utils/gamesAPI";
 
@@ -21,8 +23,9 @@ function HallOfGreatOne(props) {
   return (
     <div>
       <Typography variant='h3' style={{textAlign: 'center', margin: '.5em 0 .5em 0'}}>The Eighth Hall of Greats</Typography>
-      <ReactPlayer url='https://www.youtube.com/watch?v=LKvBxu0tB0A' style={{margin: '0 auto', marginBottom: '1em'}} alt='https://www.youtube.com/watch?v=LKvBxu0tB0A' />
+      <ReactPlayer url='https://www.youtube.com/watch?v=LKvBxu0tB0A' className='hallOfGreatVideo' alt='Hall of Greats #8 https://www.youtube.com/watch?v=LKvBxu0tB0A' />
       <CeremonyTable games={games} history={history} />
+      <Link to="/rundowns/hall_great_eight" component={HallOfGreatEightRundown} />   
     </div>
   );
 };

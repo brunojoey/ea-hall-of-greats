@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Button, Menu } from "@material-ui/core/";
 import { Tabs, Tab } from "@material-ui/core";
+import StarDecoration from '../StarDecoration';
+import { Grid } from "@material-ui/core";
 import './styles.css';
 
 import HallOfGreatOne from "../CeremonyFilters/hallOfGreatOne";
@@ -118,6 +120,9 @@ function CeremonyDropdown(props) {
       {selectedLink === 10 && <HallOfGreatEleven history={history} />}
       {selectedLink === 11 && <HallOfGreatTwelve history={history} />}
       {selectedLink === 12 && <HallOfGreatThirteen history={history} />}
+      <Grid item xs={12} style={{ marginTop: "-3em", marginBottom: '3em' }}>
+        <StarDecoration />
+      </Grid>
     </div>
   );
 };

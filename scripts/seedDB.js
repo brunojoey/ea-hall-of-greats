@@ -63,7 +63,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1v82.jpg",
     alt: "Metal Gear Solid",
     allyLink: 'michael_damiani',
-    hallLink: 'hall_great_one'
+    hallLink: 'hall_great_one',
+    votingRundown: "Did Not Attend"
   },
   {
     ally: danielBloodworth,
@@ -82,7 +83,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1o11.jpg",
     alt: "Super Metroid",    
     allyLink: 'daniel_bloodworth',
-    hallLink: 'hall_great_one'
+    hallLink: 'hall_great_one',
+    votingRundown: "Super Metroid (3), Street Fighter II Turbo (2), Metal Gear Solid (1)"
   },
   {
     ally: benMoore,
@@ -99,7 +101,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co26fz.jpg",
     alt: "Street Fighter II",
     allyLink: 'ben_moore',
-    hallLink: 'hall_great_one'
+    hallLink: 'hall_great_one',
+    votingRundown: "Metal Gear Solid (4), Super Street Fighter II Turbo (4), Super Metroid (4)"
   },
   {
     ally: ianHinck,
@@ -117,7 +120,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rba.jpg",
     alt: "Bloodborne",
     allyLink: 'ian_hinck',
-    hallLink: 'hall_great_one'
+    hallLink: 'hall_great_one',
+    votingRundown: "Bloodborne (3), Super Metroid (6), Dark Souls (1)"
   },
   {
     ally: donCasanova,
@@ -135,7 +139,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co256y.jpg',
     alt: "Assassin's Creed IV: Black Flag",
     allyLink: 'don_casanova',
-    hallLink: 'hall_great_one'
+    hallLink: 'hall_great_one',
+    votingRundown: "Super Metroid (9), Assassin's Creed IV: Black Flag (2), Street Fighter II Turbo (5)"
   },
   {
     ally: bradEllis,
@@ -153,7 +158,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1x78.jpg',
     alt: "Dark Souls",
     allyLink: 'brad_ellis',
-    hallLink: 'hall_great_one'
+    hallLink: 'hall_great_one',
+    votingRundown: "Did Not Attend"
   },
   {
     ally: brandonJones,
@@ -171,7 +177,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co25w8.jpg',
     alt: "GoldenEye 007",
     allyLink: 'brandon_jones',
-    hallLink: 'hall_great_one'
+    hallLink: 'hall_great_one',
+    votingRundown: "Metal Gear Solid (7), Super Street Fighter II Turbo (7), GoldenEye007 (1)"
   },
   {
     ally: kyleBosman,
@@ -189,7 +196,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co203x.jpg',
     alt: "Mega Man Legends",
     allyLink: 'kyle_bosman',
-    hallLink: 'hall_great_one'
+    hallLink: 'hall_great_one',
+    votingRundown: "Metal Gear Solid (10), Super Street Fighter II Turbo (9), Mega Man Legends (1)"
   },
   {
     ally: michaelHuber,
@@ -207,7 +215,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pe8.jpg",
     alt: "Resident Evil",
     allyLink: 'michael_huber',
-    hallLink: 'hall_great_one'
+    hallLink: 'hall_great_one',
+    votingRundown: "Did Not Attend"
   },
   {
     ally: `${bradEllis}` + ' ' + '&' + ' ' + `${michaelDamiani}`,
@@ -694,7 +703,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co20cg.jpg",
     alt: "Resident Evil 4",
     allyLink: 'brad_ellis',
-    hallLink: 'hall_great_five'
+    hallLink: 'hall_great_five',
+    votingRundown: "Did Not Attend"
   },
   {
     ally: benMoore,

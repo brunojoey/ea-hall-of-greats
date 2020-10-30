@@ -3,10 +3,6 @@ body {
   height: 100%;
 }
 
-.description, .current_bans, .rules_list {
-  animation: moveHomeParagraphs 1s ease-in;
-}
-
 @keyframes moveHomeParagraphs{
   0% {
     opacity: 0;
@@ -19,15 +15,25 @@ body {
   }
 }
 
+.description, .current_bans, .rules_list {
+  animation: moveHomeParagraphs 1s ease-in;
+}
+
+
 .gameLink:hover {
   color: red;
   text-decoration: line-through;
 }
 
-.gameTitle {
-  font-size: 5em;
-  animation: moveGameData 2s ease-out;
+.hallOfGreatVideo {
+  margin: 0 auto;
+  margin-bottom: 1em;
+  /* padding: 1em;
+  box-shadow: 2px 2px 9px #888888;
+  border: 3px solid darkred;
+  border-radius: 1em; */
 }
+
 
 .loader {
   display: flex;
@@ -36,22 +42,29 @@ body {
   color: red;
 }
 
-.gameImage {
-  box-shadow: 2px 2px 9px #888888;
-  animation: moveGameData 2s ease-out;
-}
 
 @keyframes moveGameData {
   0% {
     opacity: 0;
     transform: translateX(-30px); /* translateY because we want to move it in regards vertically. -30 to move from the top */
   }
-
+  
   100% {
     opacity: 1;
     transform: translate(0);
   }
 }
+
+.gameTitle {
+  font-size: 5em;
+  animation: moveGameData 2s ease-out;
+}
+
+.gameImage {
+  box-shadow: 2px 2px 9px #888888;
+  animation: moveGameData 2s ease-out;
+}
+
 
 @keyframes moveStar {
   0% {

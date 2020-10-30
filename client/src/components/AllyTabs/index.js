@@ -18,8 +18,7 @@ const useStyles = makeStyles((theme) => ({
     minWidth: 50, // a number of your choice
     width: 110, // a number of your choice
     margin: '0 auto',
-  },
-
+  }
 }));
 
 function AllyTabs (props) {
