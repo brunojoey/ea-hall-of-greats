@@ -234,7 +234,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co21mm.jpg",
     alt: "Super Mario 64",
     allyLink: '',
-    hallLink: 'hall_great_two'
+    hallLink: 'hall_great_two',
+    votingRundown: "Brad: Castlevania: Symphony of the Night (3), Dragon Quest VIII: Journey of the Cursed King (2), Super Mario 64 (1). Damiani: Castlevania: Symphony of the Night (6), The Legend of Zelda: Link's Awakening DX (2), Super Mario 64 (2)"
   },
   {
     ally: danielBloodworth,
@@ -252,7 +253,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co26fz.jpg",
     alt: "Street Fighter II",
     allyLink: 'daniel_bloodworth',
-    hallLink: 'hall_great_two'
+    hallLink: 'hall_great_two',
+    votingRundown: "Street Fighter II (3), Super Mario 64 (4), Castlevania: Symphony of the Night (7)"
   },
   {
     ally: ianHinck,
@@ -270,7 +272,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nh3.jpg",
     alt: "Castlevania: Symphony of the Night",
     allyLink: 'ian_hinck',
-    hallLink: 'hall_great_two'
+    hallLink: 'hall_great_two',
+    votingRundown: "Castlevania: Symphony of the Night (10), Super Mario 64 (6), Valkyria Chronicles (1)"
   },
   {
     ally: michaelHuber,
@@ -288,7 +291,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1x9z.jpg',
     alt: "Dragon Quest VIII: Journey of the Cursed King",
     allyLink: 'michael_huber',
-    hallLink: 'hall_great_two'
+    hallLink: 'hall_great_two',
+    votingRundown: "Super Mario 64 (9), Dragon Quest VIII: Journey of the Cursed King (4), Street Fighter II (4)"
   },
   {
     ally: kyleBosman,
@@ -306,7 +310,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2dwq.jpg',
     alt: "The Legend of Zelda: Link's Awakening DX",
     allyLink: 'kyle_bosman',
-    hallLink: 'hall_great_two'
+    hallLink: 'hall_great_two',
+    votingRundown: "The Legend of Zelda: Link's Awakening DX (5), Street Fighter II (6), Super Mario 64 (10)"
   },
   {
     ally: brandonJones,
@@ -325,7 +330,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co254y.jpg",
     alt: "World of Warcraft", 
     allyLink: 'brandon_jones',
-    hallLink: 'hall_great_two'
+    hallLink: 'hall_great_two',
+    votingRundown: "Super Mario 64 (13), Street Fighter II (8), World of Warcraft (1)"
   },
   {
     ally: donCasanova,
@@ -343,7 +349,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1o4h.jpg',
     alt: 'Sim City 4',
     allyLink: 'don_casanova',
-    hallLink: 'hall_great_two'
+    hallLink: 'hall_great_two',
+    votingRundown: "Street Fighter II (11), Super Mario 64 (15), Sim City 4 (1)"
   },
   {
     ally: benMoore,
@@ -361,7 +368,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/bvmjjiorjpcclmdorauw.jpg',
     alt: 'Valkyria Chronicles',
     allyLink: 'ben_moore',
-    hallLink: 'hall_great_two'
+    hallLink: 'hall_great_two',
+    votingRundown: "Street Fighter II (14), Castlevania: Symphony of the Night (12), Dragon Quest VIII: Journey of the Cursed King (5)"
   },
   {
     ally: michaelDamiani,
@@ -379,7 +387,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1n6b.jpg",
     alt: "The Legend of Zelda: Ocarina of Time",
     allyLink: 'michael_damiani',
-    hallLink: 'hall_great_three'
+    hallLink: 'hall_great_three',
+    votingRundown: "The Legend of Zelda: Ocarina of Time (3), Castlevania: Symphony of the Night (2), Xenoblade Chronicles (1)"
   },
   {
     ally: ianHinck,
@@ -397,7 +406,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nh3.jpg",
     alt: "Castlevania: Symphony of the Night",
     allyLink: 'ian_hinck',
-    hallLink: 'hall_great_three'
+    hallLink: 'hall_great_three',
+    votingRundown: "Castlevania: Symphony of the Night (5), Portal (2), Xenoblade Chronicles (2)"
   },
   {
     ally: kyleBosman,
@@ -415,7 +425,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1sn3.jpg',
     alt: 'Final Fantasy IX',
     allyLink: 'kyle_bosman',
-    hallLink: 'hall_great_three'
+    hallLink: 'hall_great_three',
+    votingRundown: "Final Fantasy IX (3), The Legend of Zelda: Ocarina of Time (5), Half-Life 2 (1)"
   },
   {
     ally: brandonJones,
@@ -433,7 +444,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1nmw.jpg',
     alt: 'Half-Life 2',
     allyLink: 'brandon_jones',
-    hallLink: 'hall_great_three'
+    hallLink: 'hall_great_three',
+    votingRundown: "The Legend of Zelda: Ocarina of Time (8), Half-Life 2 (3), Final Fantasy IX (4)"
   },
   {
     ally: danielBloodworth,
@@ -451,7 +463,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7d.jpg",
     alt: "Portal",
     allyLink: 'daniel_bloodworth',
-    hallLink: 'hall_great_three'
+    hallLink: 'hall_great_three',
+    votingRundown: "The Legend of Zelda: Ocarina of Time (11), Portal (4), Castlevania: Symphony of the Night (6)"
   },
   {
     ally: michaelHuber,
@@ -469,7 +482,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7f.jpg",
     alt: "The Last of Us",
     allyLink: 'michael_huber',
-    hallLink: 'hall_great_three'
+    hallLink: 'hall_great_three',
+    votingRundown: "The Last of Us (3), Half-Life 2 (5), The Legend of Zelda: Ocarina of Time (12)"
   },
   {
     ally: benMoore,
@@ -487,7 +501,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2609.jpg',
     alt: 'Xenoblade Chronicles',
     allyLink: 'ben_moore',
-    hallLink: 'hall_great_three'
+    hallLink: 'hall_great_three',
+    votingRundown: "Final Fantasy IX (7), Castlevania: Symphony of the Night (8), Xenoblade Chonicles (3)"
   },
   {
     ally: donCasanova,
@@ -505,7 +520,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1xve.jpg',
     alt: 'Jurassic Park: Operation Genesis',
     allyLink: 'don_casanova',
-    hallLink: 'hall_great_three'
+    hallLink: 'hall_great_three',
+    votingRundown: "Castlevania: Symphony of the Night (11), Jurassic Park: Operation Genesis (2), The Legend of Zelda: Ocarina of Time (13)"
   },
   {
     ally: bradEllis,
@@ -523,7 +539,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1nc7.jpg',
     alt: 'Doom (2016)',
     allyLink: 'brad_ellis',
-    hallLink: 'hall_great_three'
+    hallLink: 'hall_great_three',
+    votingRundown: "The Legend of Zelda: Ocarina of Time (16), Final Fantasy IX (9), The Last of Us (3)"
   },
   {
     ally: bradEllis,
@@ -541,7 +558,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2eqc.jpg",
     alt: "Chrono Trigger",
     allyLink: 'brad_ellis',
-    hallLink: 'hall_great_four'
+    hallLink: 'hall_great_four',
+    votingRundown: 'Chrono Trigger (3), Mega Man X (2), Streets of Rage 2 (1)'
   },
   {
     ally: kyleBosman,
@@ -559,7 +577,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1zhl.jpg",
     alt: "Pokemon Red & Blue",
     allyLink: 'kyle_bosman',
-    hallLink: 'hall_great_four'
+    hallLink: 'hall_great_four',
+    votingRundown: 'Chrono Trigger (6), Pokemon: Red & Blue (2), Mega Man X (3)'
   },
   {
     ally: benMoore,
@@ -577,7 +596,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co201w.jpg',
     alt: 'Mega Man X',
     allyLink: 'ben_moore',
-    hallLink: 'hall_great_four'
+    hallLink: 'hall_great_four',
+    votingRundown: 'Chrono Trigger (9), Grand Theft Auto III (2), Myst (1)'
   },
   {
     ally: brandonJones,
@@ -595,7 +615,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1th0.jpg',
     alt: 'Grand Theft Auto III',
     allyLink: 'brandon_jones',
-    hallLink: 'hall_great_four'
+    hallLink: 'hall_great_four',
+    votingRundown: 'Pokemon: Red & Blue (5), Grand Theft Auto III (4), Chrono Trigger (10)'
   },
   {
     ally: michaelHuber,
@@ -613,7 +634,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2b8o.jpg',
     alt: 'Streets of Rage 2',
     allyLink: 'michael_huber',
-    hallLink: 'hall_great_four'
+    hallLink: 'hall_great_four',
+    votingRundown: 'Chrono Triggger (13), Streets of Rage 2 (3), Grand Theft Auto III (5)'
   },
   {
     ally: donCasanova,
@@ -631,7 +653,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co21vl.jpg',
     alt: 'Super Mario Maker',
     allyLink: 'don_casanova',
-    hallLink: 'hall_great_four'
+    hallLink: 'hall_great_four',
+    votingRundown: 'Super Mario Maker (3), Grand Theft Auto III (7), Streets of Rage 2 (4)'
   },
   {
     ally: danielBloodworth,
@@ -649,7 +672,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1q8q.jpg',
     alt: 'Journey',
     allyLink: 'daniel_bloodworth',
-    hallLink: 'hall_great_four'
+    hallLink: 'hall_great_four',
+    votingRundown: 'Chrono Trigger (16), Journey (2), Pokemon: Red & Blue (6)'
   },
   {
     ally: ianHinck,
@@ -667,7 +691,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1y96.jpg',
     alt: 'Myst',
     allyLink: 'ian_hinck',
-    hallLink: 'hall_great_four'
+    hallLink: 'hall_great_four',
+    votingRundown: 'Mega Man X (6), Chrono Trigger (18), Myst (2)'
   },
   {
     ally: michaelDamiani,
@@ -685,7 +710,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1tnw.jpg',
     alt: 'The Elder Scrolls V: Skyrim',
     allyLink: 'michael_damiani',
-    hallLink: 'hall_great_four'
+    hallLink: 'hall_great_four',
+    votingRundown: 'Chrono Trigger (21), Pokemon: Red & Blue (8), Mega Man X (7)'
   },
   {
     ally: bradEllis,
@@ -722,7 +748,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pe8.jpg",
     alt: "Resident Evil",
     allyLink: 'ben_moore',
-    hallLink: 'hall_great_five'
+    hallLink: 'hall_great_five',
+    votingRundown: 'Pandemonium (3), Resident Evil 4 (2), The Witcher III: Wild Hunt (1)'
   },
   {
     ally: michaelHuber,
@@ -740,7 +767,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wyy.jpg",
     alt: "The Witcher III: Wild Hunt",
     allyLink: 'michael_huber',
-    hallLink: 'hall_great_five'
+    hallLink: 'hall_great_five',
+    votingRundown: 'Resident Evil (3), Resident Evil 4 (4), Dark Souls (1)'
   },
   {
     ally: danielBloodworth,
@@ -758,7 +786,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1x78.jpg',
     alt: "Dark Souls",
     allyLink: 'daniel_bloodworth',
-    hallLink: 'hall_great_five'
+    hallLink: 'hall_great_five',
+    votingRundown: 'The Witcher III: Wild Hunt (4), Pong (2), Shadow of the Colossus (1)'
   },
   {
     ally: donCasanova,
@@ -776,7 +805,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1y7g.jpg',
     alt: 'Pandemonium!',
     allyLink: 'don_casanova',
-    hallLink: 'hall_great_five'
+    hallLink: 'hall_great_five',
+    votingRundown: 'Resident Evil 4 (7), The Witcher III: Wild Hunt (6), Mega Man Legends (1)'
   },
   {
     ally: brandonJones,
@@ -794,7 +824,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2erg.jpg',
     alt: 'Pong',
     allyLink: 'brandon_jones',
-    hallLink: 'hall_great_five'
+    hallLink: 'hall_great_five',
+    votingRundown: 'The Witcher III: Wild Hunt (9), Resident Evil (5), Resident Evil 4 (8)'
   },
   {
     ally: michaelDamiani,
@@ -812,7 +843,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co272w.jpg',
     alt: 'Shadow of the Colossus (2018)',
     allyLink: 'michael_damiani',
-    hallLink: 'hall_great_five'
+    hallLink: 'hall_great_five',
+    votingRundown: 'Resident Evil 4 (11), Resident Evil (7), Dark Souls (2)'
   },
   {
     ally: kyleBosman,
@@ -830,7 +862,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co203x.jpg',
     alt: "Mega Man Legends",
     allyLink: 'kyle_bosman',
-    hallLink: 'hall_great_five'
+    hallLink: 'hall_great_five',
+    votingRundown: 'Resident Evil (10), Dark Souls (4), Pandemonium (4)'
   },
   {
     ally: ianHinck,
@@ -848,7 +881,8 @@ const gameSeed = [
     image: 'https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Dungeons_%26_Dragons_5th_Edition_logo.svg/250px-Dungeons_%26_Dragons_5th_Edition_logo.svg.png',
     alt: 'Dungeons & Dragons',
     allyLink: 'ian_hinck',
-    hallLink: 'hall_great_five'
+    hallLink: 'hall_great_five',
+    votingRundown: 'Dark Souls (7), Resident Evil 4 (13), Resident Evil (11)'
   },
   {
     ally: michaelDamiani,
@@ -866,7 +900,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1o28.jpg",
     alt: "Metroid Prime",
     allyLink: 'michael_damiani',
-    hallLink: 'hall_great_six'
+    hallLink: 'hall_great_six',
+    votingRundown: 'Silent Hill 2 (3), Paper Mario & The Thousand-Year Door (2), Time Crisis II (1)'
   },
   {
     ally: benMoore,
@@ -884,7 +919,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co25us.jpg",
     alt: "Paper Mario & The Thousand-Year Door",
     allyLink: 'ben_moore',
-    hallLink: 'hall_great_six'
+    hallLink: 'hall_great_six',
+    votingRundown: 'Metroid Prime (3), Silent Hill 2 (5), Dragon Quest VIII: Journey of the Cursed King (1)'
   },
   {
     ally: ianHinck,
@@ -902,7 +938,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2edz.jpg',
     alt: 'Silent Hill 2',
     allyLink: 'ian_hinck',
-    hallLink: 'hall_great_six'
+    hallLink: 'hall_great_six',
+    votingRundown: 'Metroid Prime (6), Donkey Kong Country: Tropical Freeze (2), Sim City 4 (1)'
   },
   {
     ally: danielBloodworth,
@@ -920,7 +957,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1x9z.jpg',
     alt: "Dragon Quest VIII: Journey of the Cursed King",
     allyLink: 'daniel_bloodworth',
-    hallLink: 'hall_great_six'
+    hallLink: 'hall_great_six',
+    votingRundown: 'Paper Mario & The Thousand-Year Door (5), Metroid Prime (8), Silent Hill 2 (6)'
   },
   {
     ally: donCasanova,
@@ -938,7 +976,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1o4h.jpg',
     alt: 'Sim City 4',
     allyLink: 'don_casanova',
-    hallLink: 'hall_great_six'
+    hallLink: 'hall_great_six',
+    votingRundown: 'Metroid Prime (11), Paper Mario & The Thousand-Year Door (7), Mega Man Legends (1)'
   },
   {
     ally: bradEllis,
@@ -956,7 +995,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wf2.jpg",
     alt: "Donkey Kong Country: Tropical Freeze",
     allyLink: 'brad_ellis',
-    hallLink: 'hall_great_six'
+    hallLink: 'hall_great_six',
+    votingRundown: 'Dragon Quest VIII: Journey of the Cursed King (4), Metroid Prime (13), Paper Mario & The Thousand-Year Door (8)'
   },
   {
     ally: brandonJones,
@@ -974,7 +1014,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1tgt.jpg',
     alt: 'Grand Theft Auto V',
     allyLink: 'brandon_jones',
-    hallLink: 'hall_great_six'
+    hallLink: 'hall_great_six',
+    votingRundown: 'Metroid Prime (16), Paper Mario & The Thousand-Year Door (10), Sim City 4 (2)'
   },
   {
     ally: kyleBosman,
@@ -992,7 +1033,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co203x.jpg',
     alt: "Mega Man Legends",
     allyLink: 'kyle_bosman',
-    hallLink: 'hall_great_six'
+    hallLink: 'hall_great_six',
+    votingRundown: 'Metroid Prime (19), Paper Mario & The Thousand-Year Door (12), Sim City 4 (3)'
   },
   {
     ally: michaelHuber,
@@ -1010,7 +1052,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1p35.jpg',
     alt: 'Time Crisis II',
     allyLink: 'michael_huber',
-    hallLink: 'hall_great_six'
+    hallLink: 'hall_great_six',
+    votingRundown: 'Dragon Quest VIII: Journey of the Cursed King (7), Silent Hill 2 (8), Grand Theft Auto V (1)'
   },
   {
     ally: brandonJones,
@@ -1028,7 +1071,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co25ps.jpg",
     alt: "Final Fantasy VI",
     allyLink: 'brandon_jones',
-    hallLink: 'hall_great_seven'
+    hallLink: 'hall_great_seven',
+    votingRundown: 'Tetris (3), Bloodborne (2), Halo: Combat Evolved (1)'
   },
   {
     ally: kyleBosman,
@@ -1046,7 +1090,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tnp.jpg",
     alt: "Tetris",
     allyLink: 'kyle_bosman',
-    hallLink: 'hall_great_seven'
+    hallLink: 'hall_great_seven',
+    votingRundown: 'Mortal Kombat (3), Final Fantasy VI (2), Bloodborne (1)'
   },
   {
     ally: bradEllis,
@@ -1064,11 +1109,12 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rba.jpg",
     alt: "Bloodborne",
     allyLink: 'brad_ellis',
-    hallLink: 'hall_great_seven'
+    hallLink: 'hall_great_seven',
+    votingRundown: 'Final Fantasy VI (5), Super Mario RPG: Legend of the Seven Stars (2), Tetris (4)'
   },
   {
     ally: donCasanova,
-    game: "Mortal Kombat (2011)",
+    game: "Mortal Kombat",
     hallOfGreat: 7,
     description:
       "Mortal Kombat returns to consoles after a long hiatus featuring a return to the gruesome fatalities.",
@@ -1080,9 +1126,10 @@ const gameSeed = [
     victory: 'False',
     banned: 'False',
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co20mc.jpg',
-    alt: 'Mortal Kombat (2011)',
+    alt: 'Mortal Kombat',
     allyLink: 'don_casanova',
-    hallLink: 'hall_great_seven'
+    hallLink: 'hall_great_seven',
+    votingRundown: 'Batman: Arkham City (3), Tetris (6), Halo: Combat Evolved (2)'
   },
   {
     ally: benMoore,
@@ -1100,7 +1147,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7i.jpg',
     alt: 'Halo: Combat Evolved',
     allyLink: 'ben_moore',
-    hallLink: 'hall_great_seven'
+    hallLink: 'hall_great_seven',
+    votingRundown: 'Silent Hill 2 (3), Final Fantasy VI (7), Tetris (7)'
   },
   {
     ally: michaelHuber,
@@ -1118,7 +1166,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1voh.jpg',
     alt: 'Batman: Arkham City',
     allyLink: 'michael_huber',
-    hallLink: 'hall_great_seven'
+    hallLink: 'hall_great_seven',
+    votingRundown: 'Bloodborne (4), Mortal Kombat (5), Tetris (8)'
   },
   {
     ally: ianHinck,
@@ -1136,7 +1185,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2edz.jpg',
     alt: 'Silent Hill 2',
     allyLink: 'ian_hinck',
-    hallLink: 'hall_great_seven'
+    hallLink: 'hall_great_seven',
+    votingRundown: 'Bloodborne (7), Mortal Kombat (7), Tetris (9)'
   },
   {
     ally: michaelDamiani,
@@ -1154,7 +1204,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2ete.jpg',
     alt: 'Super Mario RPG: Legend of the Seven Stars',
     allyLink: 'michael_damiani',
-    hallLink: 'hall_great_seven'
+    hallLink: 'hall_great_seven',
+    votingRundown: 'Final Fantasy VI (10), Tetris (11), Mortal Kombat (8)'
   },
   {
     ally: danielBloodworth,
@@ -1172,7 +1223,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1y4v.jpg',
     alt: 'Ms. Pac-Man',
     allyLink: 'daniel_bloodworth',
-    hallLink: 'hall_great_seven'
+    hallLink: 'hall_great_seven',
+    votingRundown: 'Final Fantasy VI (13), Tetris (13), Halo: Combat Evolved (3)'
   },
   {
     ally: ianHinck,
@@ -1190,7 +1242,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rba.jpg",
     alt: "Bloodborne",
     allyLink: 'ian_hinck',
-    hallLink: 'hall_great_eight'
+    hallLink: 'hall_great_eight',
+    votingRundown: 'Portal (3), God of War (2), Trials Fusion (1)'
   },
   {
     ally: brandonJones,
@@ -1209,11 +1262,12 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7d.jpg",
     alt: "Portal",
     allyLink: 'brandon_jones',
-    hallLink: 'hall_great_eight'
+    hallLink: 'hall_great_eight',
+    votingRundown: 'God of War (5), Bloodborne (2), The Last of Us (1)'
   },
   {
     ally: bradEllis,
-    game: "God of War (2018)",
+    game: "God of War",
     hallOfGreat: 8,
     description: 'His vengeance against the gods of Olympus far behind him, Kratos now lives as a man in the lands of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same. As mentor and protector to a son determined to earn his respect, Kratos is faced with an unexpected opportunity to master the rage that has long defined him. Questioning the dark lineage he’s passed on to his son, he hopes to make amends for the shortcomings of his past. Set within the untamed forests, mountains, and realms of Norse lore, God of War features a distinctly new setting with its own pantheon of creatures, monsters, and gods.',
     genre: 'Action-Adventure',
@@ -1224,9 +1278,10 @@ const gameSeed = [
     victory: 'False',
     banned: 'False',
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1tmu.jpg',
-    alt: 'God of War (2018)',
+    alt: 'God of War',
     allyLink: 'brad_ellis',
-    hallLink: 'hall_great_eight'
+    hallLink: 'hall_great_eight',
+    votingRundown: "Bloodborne (5), The Last of Us (3), The Legend of Zelda: Link's Awakening DX (1)"
   },
   {
     ally: kyleBosman,
@@ -1244,7 +1299,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2dwq.jpg',
     alt: "The Legend of Zelda: Link's Awakening DX",
     allyLink: 'kyle_bosman',
-    hallLink: 'hall_great_eight'
+    hallLink: 'hall_great_eight',
+    votingRundown: 'Bloodborne (8), Portal (5), God of War (6)'
   },
   {
     ally: donCasanova,
@@ -1262,7 +1318,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2b6x.jpg',
     alt: 'Trials Fusion',
     allyLink: 'don_casanova',
-    hallLink: 'hall_great_eight'
+    hallLink: 'hall_great_eight',
+    votingRundown: "The Legend of Zelda: Link's Awakening DX (4), God of War (8), Portal (6)"
   },
   {
     ally: michaelHuber,
@@ -1280,7 +1337,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7f.jpg",
     alt: "The Last of Us",
     allyLink: 'michael_huber',
-    hallLink: 'hall_great_eight'
+    hallLink: 'hall_great_eight',
+    votingRundown: 'God of War (11), Trials Fusion (3), Bloodborne (9)'
   },
   {
     ally: benMoore,
@@ -1298,7 +1356,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2eph.jpg',
     alt: 'Pikmin',
     allyLink: 'ben_moore',
-    hallLink: 'hall_great_eight'
+    hallLink: 'hall_great_eight',
+    votingRundown: "Bloodborne (12), The Legend of Zelda: Link's Awakening DX (6), Portal (7)"
   },
   {
     ally: danielBloodworth,
@@ -1316,7 +1375,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7n.jpg',
     alt: 'Deus Ex',
     allyLink: 'daniel_bloodworth',
-    hallLink: 'hall_great_eight'
+    hallLink: 'hall_great_eight',
+    votingRundown: "Portal (10), The Legend of Zelda: Link's Awakening DX (8), Bloodborne (13)"
   },
   {
     ally: michaelDamiani,
@@ -1334,7 +1394,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/hu3vbtczuus3yfetdnqs.jpg',
     alt: 'FTL: Faster Than Light',
     allyLink: 'michael_damiani',
-    hallLink: 'hall_great_eight'
+    hallLink: 'hall_great_eight',
+    votingRundown: 'Trials Fusion (6), Pikmin (2), Portal (11)'
   },
   {
     ally: michaelDamiani,
@@ -1352,7 +1413,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nqk.jpg",
     alt: "The Legend of Zelda: A Link to the Past",
     allyLink: 'michael_damiani',
-    hallLink: 'hall_great_nine'
+    hallLink: 'hall_great_nine',
+    votingRundown: 'Final Fantasy IX (3), Wave Race 64 (2), The Legend of Zelda: Twilight Princess (1)'
   },
   {
     ally: kyleBosman,
@@ -1370,7 +1432,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co23jw.jpg",
     alt: "Super Mario Bros. 3",
     allyLink: 'kyle_bosman',
-    hallLink: 'hall_great_nine'
+    hallLink: 'hall_great_nine',
+    votingRundown: 'Final Fantasy IX (6), Sekiro: Shadows Die Twice (2), Wave Race 64 (3)'
   },
   {
     ally: benMoore,
@@ -1388,7 +1451,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1sn3.jpg',
     alt: 'Final Fantasy IX',
     allyLink: 'ben_moore',
-    hallLink: 'hall_great_nine'
+    hallLink: 'hall_great_nine',
+    votingRundown: 'The Legend of Zelda: A Link to the Past (3), Super Mario Bros. 3 (2), Sekiro: Shadows Die Twice (3)'
   },
   {
     ally: bradEllis,
@@ -1406,7 +1470,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1uij.jpg',
     alt: 'The Legend of Zelda: Twilight Princess',
     allyLink: 'brad_ellis',
-    hallLink: 'hall_great_nine'
+    hallLink: 'hall_great_nine',
+    votingRundown: 'The Legend of Zelda: A Link to the Past (6), Super Mario Bros. 3 (4), Final Fantasy IX (7)'
   },
   {
     ally: donCasanova,
@@ -1424,7 +1489,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2602.jpg',
     alt: 'Wave Race 64',
     allyLink: 'don_casanova',
-    hallLink: 'hall_great_nine'
+    hallLink: 'hall_great_nine',
+    votingRundown: 'The Legend of Zelda: A Link to the Past (9), Super Mario Bros. 3 (6), Final Fantasy IX (8)'
   },
   {
     ally: michaelHuber,
@@ -1442,7 +1508,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2a23.jpg',
     alt: 'Sekiro: Shadows Die Twice',
     allyLink: 'michael_huber',
-    hallLink: 'hall_great_nine'
+    hallLink: 'hall_great_nine',
+    votingRundown: 'Super Mario Bros. 3 (9), The Legend of Zelda: Twilight Princess (3), The Legend of Zelda: A Link to the Past (10)'
   },
   {
     ally: brandonJones,
@@ -1460,7 +1527,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co25w8.jpg',
     alt: "GoldenEye 007",
     allyLink: 'brandon_jones',
-    hallLink: 'hall_great_nine'
+    hallLink: 'hall_great_nine',
+    votingRundown: 'Final Fantasy IX (11), Super Mario Bros. 3 (11), The Legend of Zelda: A Link to the Past (11)'
   },
   {
     ally: ianHinck,
@@ -1478,7 +1546,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/kvr6upeqbsvt7nunhlf4.jpg',
     alt: 'Dark Souls Remastered',
     allyLink: 'ian_hinck',
-    hallLink: 'hall_great_nine'
+    hallLink: 'hall_great_nine',
+    votingRundown: 'The Legend of Zelda: Twilight Princess (6), The Legend of Zelda: A Link to the Past (13), Super Mario Bros. 3 (12)'
   },
   {
     ally: michaelHuber,
@@ -1497,7 +1566,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7f.jpg",
     alt: "The Last of Us",
     allyLink: 'michael_huber',
-    hallLink: 'hall_great_ten'
+    hallLink: 'hall_great_ten',
+    votingRundown: 'The Witcher III: Wild Hunt (3), Burnout 3: Takedown (2), Final Fantasy VII (1)'
   },
   {
     ally: danielBloodworth,
@@ -1516,7 +1586,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wyy.jpg",
     alt: "The Witcher III: Wild Hunt",
     allyLink: 'daniel_bloodworth',
-    hallLink: 'hall_great_ten'
+    hallLink: 'hall_great_ten',
+    votingRundown: 'Halo: Combat Evolved (3), Phantasy Star Online (2), Bioshock (1)'
   },
   {
     ally: benMoore,
@@ -1534,7 +1605,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co27js.jpg',
     alt: 'Phantasy Star Online',
     allyLink: 'ben_moore',
-    hallLink: 'hall_great_ten'
+    hallLink: 'hall_great_ten',
+    votingRundown: 'The Last of Us (3), The Witcher III: Wild Hunt (5), Halo: Combat Evolved (4)'
   },
   {
     ally: kyleBosman,
@@ -1552,7 +1624,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7i.jpg',
     alt: 'Halo: Combat Evolved',
     allyLink: 'kyle_bosman',
-    hallLink: 'hall_great_ten'
+    hallLink: 'hall_great_ten',
+    votingRundown: 'The Last of Us (6), Burnout 3: Takedown (4), Phantasy Star Online (3)'
   },
   {
     ally: michaelDamiani,
@@ -1569,7 +1642,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1rs0.jpg',
     alt: 'BioShock',
     allyLink: 'michael_damiani',
-    hallLink: 'hall_great_ten'
+    hallLink: 'hall_great_ten',
+    votingRundown: 'Phantasy Star Online (6), The Last of Us (8), Burnout 3: Takedown (5)'
   },
   {
     ally: donCasanova,
@@ -1587,7 +1661,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1y53.jpg',
     alt: 'Burnout 3: Takedown',
     allyLink: 'don_casanova',
-    hallLink: 'hall_great_ten'
+    hallLink: 'hall_great_ten',
+    votingRundown: 'The Witcher III: Wild Hunt (8), Bioshock (3), Phantasy Star Online (7)'
   },
   {
     ally: ianHinck,
@@ -1605,7 +1680,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2evn.jpg",
     alt: "Final Fantasy 7",
     allyLink: 'ian_hinck',
-    hallLink: 'hall_great_ten'
+    hallLink: 'hall_great_ten',
+    votingRundown: 'Bioshock (6), Halo: Combat Evolved (6), Phantasy Star Online (8)'
   },
   {
     ally: benMoore,
@@ -1623,7 +1699,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/y0vlsy3mxlkxnfafvsnk.jpg",
     alt: "Counter-Strike",
     allyLink: 'ben_moore',
-    hallLink: 'hall_great_eleven'
+    hallLink: 'hall_great_eleven',
+    votingRundown: 'Final Fantasy VII (3), Animal Crossing (2), Alien vs. Predator (1)'
   },
   {
     ally: bradEllis,
@@ -1641,7 +1718,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2evn.jpg",
     alt: "Final Fantasy 7",
     allyLink: 'brad_ellis',
-    hallLink: 'hall_great_eleven'
+    hallLink: 'hall_great_eleven',
+    votingRundown: "Counter-Strike (3), Marvel's Spider-Man (2), Alien vs. Predator (2)"
   },
   {
     ally: donCasanova,
@@ -1659,7 +1737,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/vpxn7wejf7voactkrrat.jpg',
     alt: 'Alien vs. Predator',
     allyLink: 'don_casanova',
-    hallLink: 'hall_great_eleven'
+    hallLink: 'hall_great_eleven',
+    votingRundown: 'Counter-Strike (6), Final Fantasy VII (5), Plants vs. Zombies (1)'
   },
   {
     ally: danielBloodworth,
@@ -1677,7 +1756,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1nyn.jpg',
     alt: 'Animal Crossing',
     allyLink: 'daniel_bloodworth',
-    hallLink: 'hall_great_eleven'
+    hallLink: 'hall_great_eleven',
+    votingRundown: 'Counter-Strike (9), Alien vs. Predator (4), Final Fantasy VII (6)'
   },
   {
     ally: michaelHuber,
@@ -1695,7 +1775,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1r77.jpg',
     alt: "Marvel's Spider-Man",
     allyLink: 'michael_huber',
-    hallLink: 'hall_great_eleven'
+    hallLink: 'hall_great_eleven',
+    votingRundown: 'Counter-Strike (12), Alien vs. Predator (6), Metal Gear Solid 3: Snake Eater (1)'
   },
   {
     ally: ianHinck,
@@ -1713,7 +1794,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co29pn.jpg',
     alt: 'Metal Gear Solid 3: Snake Eater',
     allyLink: 'ian_hinck',
-    hallLink: 'hall_great_eleven'
+    hallLink: 'hall_great_eleven',
+    votingRundown: 'Alien vs. Predator (9), Final Fantasy VII (8), Counter-Strike (13)'
   },
   {
     ally: brandonJones,
@@ -1731,7 +1813,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co25v8.jpg',
     alt: 'Plants vs. Zombies',
     allyLink: 'brandon_jones',
-    hallLink: 'hall_great_eleven'
+    hallLink: 'hall_great_eleven',
+    votingRundown: 'Final Fantasy VII (11), Counter-Strike (15), Metal Gear Solid 3: Snake Eater (2)'
   },
   {
     ally: kyleBosman,
@@ -1749,7 +1832,8 @@ const gameSeed = [
     image: 'https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Dungeons_%26_Dragons_5th_Edition_logo.svg/250px-Dungeons_%26_Dragons_5th_Edition_logo.svg.png',
     alt: 'Dungeons & Dragons',
     allyLink: 'kyle_bosman',
-    hallLink: 'hall_great_eleven'
+    hallLink: 'hall_great_eleven',
+    votingRundown: 'Alien vs. Predator (12), Final Fantasy VII (13), Animal Crossing (3)'
   },
   {
     ally: brandonJones,
@@ -1767,7 +1851,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co254y.jpg",
     alt: "World of Warcraft",    
     allyLink: 'brandon_jones',
-    hallLink: 'hall_great_twelve'
+    hallLink: 'hall_great_twelve',
+    votingRundown: 'Doom (3), Guitar Hero II (2), Super Smash Bros. Ultimate (1)'
   },
   {
     ally: benMoore,
@@ -1785,7 +1870,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1v7j.jpg",
     alt: "Doom",    
     allyLink: 'ben_moore',
-    hallLink: 'hall_great_twelve'
+    hallLink: 'hall_great_twelve',
+    votingRundown: 'World of Warcraft (3), Silent Hill 2 (2), Mega Man Legends (1)'
   },
   {
     ally: michaelHuber,
@@ -1803,7 +1889,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2255.jpg',
     alt: 'Super Smash Bros. Ultimate',
     allyLink: 'michael_huber',
-    hallLink: 'hall_great_twelve'
+    hallLink: 'hall_great_twelve',
+    votingRundown: 'World of Warcraft (6), Teenage Mutant Ninja Turtles: Turtles in Time (2), Doom (4)'
   },
   {
     ally: kyleBosman,
@@ -1821,7 +1908,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co203x.jpg',
     alt: "Mega Man Legends",
     allyLink: 'kyle_bosman',
-    hallLink: 'hall_great_twelve'
+    hallLink: 'hall_great_twelve',
+    votingRundown: 'Super Smash Bros. Ultimate (4), Doom (6), World of Warcraft (7)'
   },
   {
     ally: bradEllis,
@@ -1839,7 +1927,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co24sw.jpg',
     alt: 'Shovel Knight: Treasure Trove',
     allyLink: 'brad_ellis',
-    hallLink: 'hall_great_twelve'
+    hallLink: 'hall_great_twelve',
+    votingRundown: 'World of Warcraft (10), Super Smash Bros. Ultimate (6), Mega Man Legends (2)'
   },
   {
     ally: michaelDamiani,
@@ -1857,7 +1946,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2611.jpg',
     alt: "Teenage Mutant Ninja Turtles: Turtles in Time",
     allyLink: 'michael_damiani',
-    hallLink: 'hall_great_twelve'
+    hallLink: 'hall_great_twelve',
+    votingRundown: 'World of Warcraft (13), Shovel Knight: Treasure Trove (2), Silent Hill 2 (3)'
   },
   {
     ally: ianHinck,
@@ -1875,7 +1965,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co2edz.jpg',
     alt: 'Silent Hill 2',
     allyLink: 'ian_hinck',
-    hallLink: 'hall_great_twelve'
+    hallLink: 'hall_great_twelve',
+    votingRundown: 'Doom (9), Shovel Knight Treasure Trove (4), Teenage Mutant Ninja Turtles: Turtles in Time (3)'
   },
   {
     ally: danielBloodworth,
@@ -1893,7 +1984,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1we2.jpg',
     alt: 'Guitar Hero II',
     allyLink: 'daniel_bloodworth',
-    hallLink: 'hall_great_twelve'
+    hallLink: 'hall_great_twelve',
+    votingRundown: 'Mega Man Legends (5), Doom (11), World of Warcraft (14)'
   },
   {
     ally: bradEllis,
@@ -1911,7 +2003,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wf2.jpg",
     alt: "Donkey Kong Country: Tropical Freeze",
     allyLink: 'brad_ellis',
-    hallLink: 'hall_great_thirteen'
+    hallLink: 'hall_great_thirteen',
+    votingRundown: 'Yakuza 0 (3), Metal Gear Rising: Revengeance (2), Katamari Damacy (1)'
   },
   {
     ally: michaelHuber,
@@ -1929,7 +2022,8 @@ const gameSeed = [
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co252x.jpg",
     alt: "Yakuza 0",
     allyLink: 'michael_huber',
-    hallLink: 'hall_great_thirteen'
+    hallLink: 'hall_great_thirteen',
+    votingRundown: 'Donkey Kong Country: Tropical Freeze (3), Journey (2), Bayonetta (1)'
   },
   {
     ally: benMoore,
@@ -1947,7 +2041,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1p92.jpg',
     alt: 'Bayonetta',
     allyLink: 'ben_moore',
-    hallLink: 'hall_great_thirteen'
+    hallLink: 'hall_great_thirteen',
+    votingRundown: 'Yakuza 0 (6), Katamari Damacy (3), Donkey Kong Country: Tropical Freeze (4)'
   },
   {
     ally: brandonJones,
@@ -1965,7 +2060,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1q8q.jpg',
     alt: 'Journey',
     allyLink: 'brandon_jones',
-    hallLink: 'hall_great_thirteen'
+    hallLink: 'hall_great_thirteen',
+    votingRundown: 'Bayonetta (4), Donkey Kong Country: Tropical Freeze (6), Katamari Damacy (4)'
   },
   {
     ally: danielBloodworth,
@@ -1983,7 +2079,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1ow6.jpg',
     alt: 'Katamari Damacy',
     allyLink: 'daniel_bloodworth',
-    hallLink: 'hall_great_thirteen'
+    hallLink: 'hall_great_thirteen',
+    votingRundown: 'Journey (5), Bayonetta (6), The Stanley Parable (1)'
   },
   {
     ally: michaelDamiani,
@@ -2001,7 +2098,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1v83.jpg',
     alt: 'Metal Gear Rising: Revengeance',
     allyLink: 'michael_damiani',
-    hallLink: 'hall_great_thirteen'
+    hallLink: 'hall_great_thirteen',
+    votingRundown: 'Donkey Kong Country: Tropical Freeze (9), Bayonetta (8), Yakuza 0 (7)'
   },
   {
     ally: ianHinck,
@@ -2019,7 +2117,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co1rc9.jpg',
     alt: 'The Stanley Parable',
     allyLink: 'ian_hinck',
-    hallLink: 'hall_great_thirteen'
+    hallLink: 'hall_great_thirteen',
+    votingRundown: 'Yakuza 0 (10), Donkey Kong Country: Tropical Freeze (11), Journey (6)'
   },
   {
     ally: donCasanova,
@@ -2037,7 +2136,8 @@ const gameSeed = [
     image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co26jr.jpg',
     alt: 'Huntdown',
     allyLink: 'don_casanova',
-    hallLink: 'hall_great_thirteen'
+    hallLink: 'hall_great_thirteen',
+    votingRundown: 'Donkey Kong Country: Tropical Freeze (14), Yakuza 0 (12), Bayonetta (9)'
   },
 ];
 
