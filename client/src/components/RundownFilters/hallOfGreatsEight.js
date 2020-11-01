@@ -12,7 +12,6 @@ function HallOfGreatEightRundown(props) {
       let { data } = await gamesAPI.getGames();
       data = data.filter((games) => games.hallOfGreat === 8);
       setGames(data);
-      console.log('games', games)
     }
 
     fetchData();

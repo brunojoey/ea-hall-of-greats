@@ -28,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const CeremonyTabs = (props) => {
-  console.log('props', props)
   const classes = useStyles();
   const { match, history } = props;
   const { params } = match;

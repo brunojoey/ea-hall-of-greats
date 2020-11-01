@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Link } from 'react-router-dom';
-import HallOfGreatThreeRundown from '../RundownFilters/hallOfGreatsThree';
 import ReactPlayer from 'react-player';
 import { Typography } from "@material-ui/core";
 import CeremonyTable from "../Table/ceremonyTable";
+import HogThreeRundown from '../RundownFilters/hallOfGreatsThree';
 import gamesAPI from "../../utils/gamesAPI";
 
 function HallOfGreatOne(props) {
@@ -25,7 +24,7 @@ function HallOfGreatOne(props) {
       <Typography variant='h3' style={{textAlign: 'center', margin: '.5em 0 .5em 0'}}>The Third Hall of Greats</Typography>
       <ReactPlayer url='https://www.youtube.com/watch?v=f3XsR6Z5Rlw' className='hallOfGreatVideo' alt='Hall of Greats #3 https://www.youtube.com/watch?v=f3XsR6Z5Rlw'/>
       <CeremonyTable games={games} history={history} />
-      <Link to="/rundowns/hall_great_three" component={HallOfGreatThreeRundown} />
+      <HogThreeRundown games={games} history={history} />  
     </div>
   );
 }
