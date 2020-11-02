@@ -33,7 +33,27 @@ function RundownTable(props) {
                 padding: ".5em",
               }}
             >
-                {sorted.votingRundown}
+                {sorted.votingChoiceOne}
+            </td>
+            <td
+              className="tableInfoR"
+              style={{
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+                {sorted.votingChoiceTwo}
+            </td>
+            <td
+              className="tableInfoR"
+              style={{
+                borderBottom: "1px solid black",
+                borderLeft: "1px solid black",
+                padding: ".5em",
+              }}
+            >
+                {sorted.votingChoiceThree}
             </td>
           </tr>
         </tbody>
@@ -50,7 +70,13 @@ function RundownTable(props) {
               Ally
             </th>
             <th style={{ borderBottom: "1px solid black" }}>
-              What They Voted For (Votes at the Time)
+              3 Points (Votes at the Time)
+            </th>
+            <th style={{ borderBottom: "1px solid black" }}>
+              2 Points (Votes at the Time)
+            </th>
+            <th style={{ borderBottom: "1px solid black" }}>
+              1 Point (Votes at the Time)
             </th>
           </tr>
         </thead>
