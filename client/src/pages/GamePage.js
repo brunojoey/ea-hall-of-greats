@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
-import StarDecoration from '../components/StarDecoration';
-import Loader from 'react-loader-spinner';
-import { Grid } from "@material-ui/core";
-import { Image, Container, Row, Col } from "react-bootstrap";
+import StarDecoration from "../components/StarDecoration";
+import Loader from "react-loader-spinner";
 import "./Pages.css";
 
 function GamePage(props) {
@@ -23,70 +21,84 @@ function GamePage(props) {
 
   return (
     <>
-    {(gamePage.game)
-    ?
-    <Container fluid key={gamePage.id}>
-      {gamePage.victory === "True" ? (
-        <>
-          <Row className="starAndGame" style={{ textAlign: "center", marginTop: '-2em' }}>
-            <StarDecoration />
-            <h1 className="gameTitle" style={{marginBottom: '.25em'}}> {gamePage.game} </h1>
-            <Image src={gamePage.image} alt={gamePage.alt} style={{border: '4px solid red'}} className='gameImage'/>
-          </Row>
-        </>
-      ) : (
-        <div style={{textAlign: 'center'}}>
-        <h1
-        className="gameTitle"
-        style={{ margin: "0 auto", marginTop: ".3em", marginBottom: '.25em', textAlign: "center" }}
-        >
-          {gamePage.game}
-        </h1>
-        <Image src={gamePage.image} alt={gamePage.alt} style={{border: '4px solid red'}} />
-        </div>
-      )}
-      <Row>
-        <Col>
-          <h3 style={{ marginLeft: "1em" }}>
-            Brought By:{" "}
-            <span onClick={() => history.push(`/allies/${gamePage.allyLink}`)} className='gameLink'>
-              {gamePage.ally}
-            </span>{" "}
-          </h3>
-          <p style={{ marginLeft: "1em" }}>
-            {" "}
-            <span style={{ textDecoration: "underline" }}>Ceremony</span>:{" "}
-            <span
-              onClick={() => history.push(`/ceremonies/${gamePage.hallLink}`)}
-              className="gameLink"
-            >
-              Hall of Great {gamePage.hallOfGreat}{" "}
+      {gamePage.game ? (
+        <main key={gamePage.id}>
+          {gamePage.victory === "True" ? (
+            <section className="inductee-area">
+              <StarDecoration />
+              <h1 className="game-title-primary"> {gamePage.game} </h1>
+              <img
+                src={gamePage.image}
+                alt={gamePage.alt}
+                style={{ border: "4px solid red" }}
+                className="game-image-primary"
+              />
+            </section>
+          ) : (
+            <section className='nominee-area'>
+              <h1 className="game-title-secondary"> {gamePage.game} </h1>
+              <img
+                src={gamePage.image}
+                alt={gamePage.alt}
+                className='game-image-secondary'
+                style={{ border: "4px solid red" }}
+              />
+            </section>
+          )}
+          <section className="game-info">
+            <span className='ally-game'>
+              <h3 className='brought-by'>Brought By:</h3>{" "}
+              <p
+                onClick={() => history.push(`/allies/${gamePage.allyLink}`)}
+                className="ally-link"
+              >
+                {gamePage.ally}
+              </p>{" "}
             </span>
-            || <span style={{ textDecoration: "underline" }}>Platforms</span>:{" "}
-            {gamePage.platforms} ||{" "}
-            <span style={{ textDecoration: "underline" }}>Genre</span>:{" "}
-            {gamePage.genre} ||{" "}
-            <span style={{ textDecoration: "underline" }}>Metacritic</span>:{" "}
-            {gamePage.metacritic} ||{" "}
-            <span style={{ textDecoration: "underline" }}>Year</span>:{" "}
-            {gamePage.year} ||{" "}
-            <span style={{ textDecoration: "underline" }}>Votes Received</span>:{" "}
-            {gamePage.votes}
-          </p>
-        </Col>
-      </Row>
-      {gamePage.victory === "True"}
-      <Row>
-        <h4 style={{ marginLeft: "1em", marginBottom: '-.1em' }}>Description: </h4>
-        <p style={{ margin: "0 1em 1em 1em" }}>{gamePage.description}</p>
-      </Row>
-      <Grid item xs={12} style={{ marginTop: "-3em", marginBottom: '4em' }}>
+            <p className='game-data-section'>
+              {" "}
+              <span style={{ textDecoration: "underline" }}>
+                Ceremony
+              </span>:{" "}
+              <span
+                onClick={() => history.push(`/ceremonies/${gamePage.hallLink}`)}
+                className="hall-link"
+              >
+                Hall of Great {gamePage.hallOfGreat}{" "}
+              </span>
+              || <span style={{ textDecoration: "underline" }}>Platforms</span>:{" "}
+              {gamePage.platforms} ||{" "}
+              <span style={{ textDecoration: "underline" }}>Genre</span>:{" "}
+              {gamePage.genre} ||{" "}
+              <span style={{ textDecoration: "underline" }}>Metacritic</span>:{" "}
+              {gamePage.metacritic} ||{" "}
+              <span style={{ textDecoration: "underline" }}>Year</span>:{" "}
+              {gamePage.year} ||{" "}
+              <span style={{ textDecoration: "underline" }}>
+                Votes Received
+              </span>
+              : {gamePage.votes}
+            </p>
+          </section>
+          {gamePage.victory === "True"}
+          <section className="description-game-section">
+            <span>
+              {" "}
+              <strong>Description: </strong> <p className='description-game'>{gamePage.description}</p>{" "}
+            </span>
+          </section>
           <StarDecoration />
-        </Grid>
-    </Container>
-    :
-    <Loader className='loader' type='Circles' color='#FF0000' height={128} width={128} timeout={3000}/>
-    }
+        </main>
+      ) : (
+        <Loader
+          className="loader"
+          type="Circles"
+          color="red"
+          height={128}
+          width={128}
+          timeout={3000}
+        />
+      )}
     </>
   );
 }

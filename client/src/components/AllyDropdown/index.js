@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Menu } from "@material-ui/core/";
-import { Tabs, Tab } from "@material-ui/core";
+import { Button, Menu, Tabs, Tab } from "@material-ui/core/";
 
 import BenMoore from '../AllyFilters/benMoore';
 import BradEllis from '../AllyFilters/bradEllis';
@@ -61,31 +60,24 @@ function AllyDropdown(props) {
     <div>
       <Button
         className="ally-button"
-        style={{ color: "black", border: '1px solid black', justifyItems: 'center', marginTop: '1em' }}
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
       >
         Allies
       </Button>
-      <Menu
-        id="simple-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
-      >
-      <Tabs value={selectedLink} onChange={handleChange} orientation='vertical' >
-        <Tab label="Ben Moore" className='tab-allies'/>
-        <Tab label="Brad Ellis" className='tab-allies' />
-        <Tab label="Brandon Jones" className='tab-allies' />
-        <Tab label="Daniel Bloodworth" className='tab-allies' />
-        <Tab label="Don Casanova" className='tab-allies' />
-        <Tab label="Ian Hinck" className='tab-allies' />
-        <Tab label="Kyle Bosman" className='tab-allies' />
-        <Tab label="Michael Damiani" className='tab-allies' />
-        <Tab label="Michael Huber" className='tab-allies' />
-      </Tabs>
+      <Menu id="simple-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
+        <Tabs value={selectedLink} onChange={handleChange} orientation='vertical' >
+          <Tab label="Ben Moore" className='tab-allies'/>
+          <Tab label="Brad Ellis" className='tab-allies' />
+          <Tab label="Brandon Jones" className='tab-allies' />
+          <Tab label="Daniel Bloodworth" className='tab-allies' />
+          <Tab label="Don Casanova" className='tab-allies' />
+          <Tab label="Ian Hinck" className='tab-allies' />
+          <Tab label="Kyle Bosman" className='tab-allies' />
+          <Tab label="Michael Damiani" className='tab-allies' />
+          <Tab label="Michael Huber" className='tab-allies' />
+        </Tabs>
       </Menu>
 
       {selectedLink === 0 && <BenMoore history={history} />}

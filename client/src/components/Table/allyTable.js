@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import StarDecoration from '../StarDecoration';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
-import { Grid } from "@material-ui/core";
 import './styles.css';
 
 function AllyTable(props) {
@@ -48,7 +47,7 @@ function AllyTable(props) {
             >
               <span
                 onClick={() => history.push(`/ceremonies/${sorted.hallLink}`)}
-                className="gameLink"
+                className="hall-link"
               >
                 {sorted.hallOfGreat}
               </span>
@@ -63,7 +62,7 @@ function AllyTable(props) {
             >
               <span
                 onClick={() => history.push(`/games/${sorted._id}`)}
-                className="gameLink"
+                className="game-link"
               >
                 {sorted.game}
               </span>
@@ -104,7 +103,7 @@ function AllyTable(props) {
   };
 
   return (
-    <div style={{ marginBottom: '3em'}}>
+    <div>
       <table style={{ margin: "0 auto" }} className="table-sortable">
         <thead>
           <tr>
@@ -174,9 +173,7 @@ function AllyTable(props) {
         </thead>
         {newSortedItems}
       </table>
-      <Grid item xs={12} style={{ marginTop: "-2em" }}>
-        <StarDecoration />
-      </Grid>
+      <StarDecoration />
     </div>
   );
 };

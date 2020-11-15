@@ -46,7 +46,7 @@ function CeremonyTable(props) {
             >
               <span
                 onClick={() => history.push(`/allies/${sorted.allyLink}`)}
-                className="gameLink"
+                className="ally-link"
               >
                 {sorted.ally}
               </span>
@@ -61,7 +61,7 @@ function CeremonyTable(props) {
             >
               <span
                 onClick={() => history.push(`/games/${sorted._id}`)}
-                className="gameLink"
+                className="game-link"
               >
                 {sorted.game}
               </span>

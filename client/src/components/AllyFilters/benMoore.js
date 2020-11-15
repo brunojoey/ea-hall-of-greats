@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Typography } from "@material-ui/core";
 import gamesAPI from "../../utils/gamesAPI";
 import AllyTable from '../Table/allyTable';
 
@@ -19,8 +18,8 @@ function BenMoore(props) {
 
   if (games) {
   return (
-    <div key={games._id}>
-      <Typography variant='h4' style={{textAlign: 'center', margin: '.5em 0 .5em 0'}}>Ben Moore's Picks</Typography>
+    <div>
+      <h3 className='ally-title'>Ben Moores' Picks</h3>
       <AllyTable games={games} history={history} />
     </div>
   );

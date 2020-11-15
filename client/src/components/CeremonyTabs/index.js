@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Tabs, Tab } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import StarDecoration from '../StarDecoration';
-import { Grid } from "@material-ui/core";
 
 import HallOfGreatOne from "../CeremonyFilters/hallOfGreatOne";
 import HallOfGreatTwo from "../CeremonyFilters/hallOfGreatTwo";
@@ -89,6 +88,7 @@ const CeremonyTabs = (props) => {
         <Tab classes={{ root: classes.tab }} label="Hall of Greats 12" />
         <Tab classes={{ root: classes.tab }} label="Hall of Greats 13" />
       </Tabs>
+      
       {selectedTab === 0 && <HallOfGreatOne history={history} />}
       {selectedTab === 1 && <HallOfGreatTwo history={history} />}
       {selectedTab === 2 && <HallOfGreatThree history={history} />}
@@ -102,9 +102,7 @@ const CeremonyTabs = (props) => {
       {selectedTab === 10 && <HallOfGreatEleven history={history} />}
       {selectedTab === 11 && <HallOfGreatTwelve history={history} />}
       {selectedTab === 12 && <HallOfGreatThirteen history={history} />}
-      <Grid item xs={12} style={{ marginTop: "-3em", marginBottom: '3em' }}>
-        <StarDecoration />
-      </Grid>
+      <StarDecoration />
     </>
   );
 };

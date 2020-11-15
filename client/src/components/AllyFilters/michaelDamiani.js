@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Typography } from "@material-ui/core";
 import AllyTable from '../Table/allyTable';
 import gamesAPI from "../../utils/gamesAPI";
 
@@ -17,14 +16,12 @@ function MichaelDamiani(props) {
     fetchData();
   }, []);
 
-  if (ally) {
-    return (
-      <div>
-      <Typography variant='h4' style={{textAlign: 'center', margin: '.5em 0 .5em 0'}}>Michael Damiani's Picks</Typography>
-        <AllyTable games={ally} history={history} />
-      </div>
+  return (
+    <div>
+      <h3 className='ally-title'>Michael Damianis' Picks</h3>
+      <AllyTable games={ally} history={history} />
+    </div>
     );
-  }
 }
 
 export default MichaelDamiani;

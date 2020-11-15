@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Tabs, Tab } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { Tabs, Tab, makeStyles } from "@material-ui/core";
 
 import BenMoore from '../AllyFilters/benMoore';
 import BradEllis from '../AllyFilters/bradEllis';
@@ -83,7 +82,6 @@ function AllyTabs (props) {
       {selectedTab === 7 && <MichaelDamiani history={history} />}
       {selectedTab === 8 && <MichaelHuber history={history} />}
     </nav>
-
     </>
   );
 };

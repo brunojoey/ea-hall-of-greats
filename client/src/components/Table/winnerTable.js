@@ -49,7 +49,7 @@ function WinnerTable(props) {
             >
               <span
                 onClick={() => history.push(`/ceremonies/${sorted.hallLink}`)}
-                className="gameLink"
+                className="hall-link"
               >
                 {sorted.hallOfGreat}
               </span>
@@ -64,7 +64,7 @@ function WinnerTable(props) {
             >
               <span
                 onClick={() => history.push(`/allies/${sorted.allyLink}`)}
-                className="gameLink"
+                className="ally-link"
               >
                 {sorted.ally}
               </span>
@@ -79,7 +79,7 @@ function WinnerTable(props) {
             >
               <span
                 onClick={() => history.push(`/games/${sorted._id}`)}
-                className="gameLink"
+                className="game-link"
               >
                 {sorted.game}
               </span>
@@ -113,8 +113,8 @@ function WinnerTable(props) {
   };
 
   return (
-    <div>
-      <table style={{ margin: "0 auto" }} className="table-sortable">
+    <div className='winner-table'>
+      <table className="table-sortable">
         <thead>
           <tr>
             <th style={{ borderBottom: "1px solid black" }}>

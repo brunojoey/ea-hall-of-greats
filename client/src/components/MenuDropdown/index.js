@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Button from "@material-ui/core/Button";
-import Menu from "@material-ui/core/Menu";
+import { Button, Menu} from "@material-ui/core";
 import { Link } from "react-router-dom";
 
 function Dropdown() {

@@ -48,7 +48,7 @@ function SortedTable(props) {
             >
               <span
                 onClick={() => history.push(`/ceremonies/${sorted.hallLink}`)}
-                className="gameLink"
+                className="hall-link"
               >
                 {sorted.hallOfGreat}
               </span>
@@ -63,7 +63,7 @@ function SortedTable(props) {
             >
               <span
                 onClick={() => history.push(`/allies/${sorted.allyLink}`)}
-                className="gameLink"
+                className="ally-link"
               >
                 {sorted.ally}
               </span>
@@ -78,7 +78,7 @@ function SortedTable(props) {
             >
               <span
                 onClick={() => history.push(`/games/${sorted._id}`)}
-                className="gameLink"
+                className="game-link"
               >
                 {sorted.game}
               </span>

@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
-import { Button, Menu } from "@material-ui/core/";
-import { Tabs, Tab } from "@material-ui/core";
+import { Tabs, Tab, Button, Menu } from "@material-ui/core";
 import StarDecoration from '../StarDecoration';
-import { Grid } from "@material-ui/core";
-import './styles.css';
 
 import HallOfGreatOne from "../CeremonyFilters/hallOfGreatOne";
 import HallOfGreatTwo from "../CeremonyFilters/hallOfGreatTwo";
@@ -74,37 +71,28 @@ function CeremonyDropdown(props) {
 
   return (
     <div>
-      <Button
-        className="ally-button"
-        style={{ color: "black", border: '1px solid black', justifyItems: 'center', marginTop: '1em' }}
-        aria-controls="simple-menu"
+      <Button className="ceremony-button" style={{ color: "black", border: '1px solid black', justifyItems: 'center', marginTop: '1em' }} aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
       >
         Ceremonies
       </Button>
-      <Menu
-        id="simple-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
-      >
-      <Tabs value={selectedLink} onChange={handleChange} className='tab-bar-one' orientation="vertical">
-        <Tab label="Hall of Greats 1" />
-        <Tab label="Hall of Greats 2" />
-        <Tab label="Hall of Greats 3" />
-        <Tab label="Hall of Greats 4" />
-        <Tab label="Hall of Greats 5" />
-        <Tab label="Hall of Greats 6" />
-        <Tab label="Hall of Greats 7" />
-        <Tab label="Hall of Greats 8" />
-        <Tab label="Hall of Greats 9" />
-        <Tab label="Hall of Greats 10" />
-        <Tab label="Hall of Greats 11" />
-        <Tab label="Hall of Greats 12" />
-        <Tab label="Hall of Greats 13" />
-      </Tabs>
+      <Menu id="simple-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
+        <Tabs value={selectedLink} onChange={handleChange} className='tab-bar-one' orientation="vertical">
+          <Tab label="Hall of Greats 1" />
+          <Tab label="Hall of Greats 2" />
+          <Tab label="Hall of Greats 3" />
+          <Tab label="Hall of Greats 4" />
+          <Tab label="Hall of Greats 5" />
+          <Tab label="Hall of Greats 6" />
+          <Tab label="Hall of Greats 7" />
+          <Tab label="Hall of Greats 8" />
+          <Tab label="Hall of Greats 9" />
+          <Tab label="Hall of Greats 10" />
+          <Tab label="Hall of Greats 11" />
+          <Tab label="Hall of Greats 12" />
+          <Tab label="Hall of Greats 13" />
+        </Tabs>
       </Menu>
 
       {selectedLink === 0 && <HallOfGreatOne history={history} />}
@@ -120,9 +108,7 @@ function CeremonyDropdown(props) {
       {selectedLink === 10 && <HallOfGreatEleven history={history} />}
       {selectedLink === 11 && <HallOfGreatTwelve history={history} />}
       {selectedLink === 12 && <HallOfGreatThirteen history={history} />}
-      <Grid item xs={12} style={{ marginTop: "-3em", marginBottom: '3em' }}>
-        <StarDecoration />
-      </Grid>
+      <StarDecoration />
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ReactPlayer from 'react-player';
-import { Typography } from "@material-ui/core";
 import CeremonyTable from "../Table/ceremonyTable";
 import HogTwelveRundown from '../RundownFilters/hallOfGreatsTwelve';
 import gamesAPI from "../../utils/gamesAPI";
@@ -21,7 +20,7 @@ function HallOfGreatOne(props) {
 
   return (
     <div>
-      <Typography variant='h3' style={{textAlign: 'center', margin: '.5em 0 .5em 0'}}>The Twelfth Hall of Greats</Typography>
+      <h3 className='hall-title'>The Twelfth Hall of Greats</h3>
       <ReactPlayer url='https://www.youtube.com/watch?v=BBwj6gpT_MM' className='hallOfGreatVideo' alt='Hall of Greats #12 https://www.youtube.com/watch?v=BBwj6gpT_MM'/>
       <CeremonyTable games={games} history={history} />
       <HogTwelveRundown games={games} history={history} />

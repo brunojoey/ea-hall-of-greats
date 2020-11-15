@@ -12,6 +12,6 @@
   color: white;
 }
 
-.footer a:hover, .footer a:after {
+.footer a:hover {
   color: red;
 }

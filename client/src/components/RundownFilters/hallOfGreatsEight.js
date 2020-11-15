@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Typography } from "@material-ui/core";
 import RundownTable from "../Table/rundownTable";
 import gamesAPI from "../../utils/gamesAPI";
 
@@ -19,7 +18,7 @@ function HallOfGreatEightRundown(props) {
 
   return (
     <div>
-      <Typography variant='h4' style={{textAlign: 'center', margin: '.5em 0 .5em 0'}}>The Voting Rundown</Typography>
+      <h3 className='voting-title'>The Voting Rundown</h3>
       <RundownTable games={games} history={history} />
     </div>
   );

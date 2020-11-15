@@ -20,7 +20,7 @@ function RundownTable(props) {
             >
               <span
                 onClick={() => history.push(`/allies/${sorted.allyLink}`)}
-                className="gameLink"
+                className="ally-link"
               >
                 {sorted.ally}
               </span>
