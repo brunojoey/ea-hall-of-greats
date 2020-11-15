@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import StarDecoration from '../StarDecoration';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
-import './styles.css';
+import './Table.scss';
 
 function AllyTable(props) {
   const { history, games } = props;
@@ -104,7 +104,7 @@ function AllyTable(props) {
 
   return (
     <div>
-      <table style={{ margin: "0 auto" }} className="table-sortable">
+      <table>
         <thead>
           <tr>
             <th style={{ borderBottom: "1px solid black" }}>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
-import "./styles.css";
+import "./Table.scss";
 
 function WinnerTable(props) {
   const { history, games } = props;

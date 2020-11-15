@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./Table.scss";
 
 function RundownTable(props) {
   const { history, games } = props;

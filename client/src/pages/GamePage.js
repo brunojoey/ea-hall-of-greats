@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
 import StarDecoration from "../components/StarDecoration";
 import Loader from "react-loader-spinner";
-import "./Pages.css";
+import "./Pages.scss";
 
 function GamePage(props) {
   const [gamePage, setGamePage] = useState([]);

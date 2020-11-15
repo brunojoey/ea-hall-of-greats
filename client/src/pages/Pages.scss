@@ -9,22 +9,26 @@ body {
 .home-title {
   font-weight: 600;
   font-size: 4rem;
+  text-align: center;
   margin: 0;
 }
 
 .description-container {
   width: 75%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .rules-heading, .bans-heading {
-  font-weight: 400;
   font-size: 3rem;
-  margin: 0 auto
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
 }
 
 .rules-list, .banned-list {
   margin: 1rem 0;
+  text-align: center;
 }
 
 /* End Home Page Styling */
@@ -53,8 +57,15 @@ body {
   margin-top: 1em;
 }
 
-.hall-title, .ally-title, .voting-title {
+.hall-title, .ally-title {
   font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.voting-title {
+  font-size: 2.5rem;
   font-weight: 400;
   text-align: center;
   margin: 1rem 0;
@@ -89,6 +100,10 @@ body {
   margin: 0 auto;
   box-shadow: 2px 2px 9px #888;
   transition: .3s;
+
+  &:hover {
+
+  }
 }
 
 .game-image-primary:hover, .game-image-secondary:hover {
@@ -122,8 +137,3 @@ body {
 
 /* End Game Page Styling */
 
-.fa-star {
-  color: gold;
-  margin: 1rem 0;
-  font-size: 3rem;
-}

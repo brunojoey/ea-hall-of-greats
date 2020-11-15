@@ -1,10 +1,10 @@
 import React from "react";
 import StarDecoration from "../components/StarDecoration";
-import "./Pages.css";
+import "./Pages.scss";
 
 function Home() {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div>
       <StarDecoration />
       <h1 className="home-title">The Hall of Greats</h1>
       <div className="description-container">
@@ -41,7 +41,7 @@ function Home() {
         <li>Dungeons &#38; Dragons (Until Q4 2020)</li>
         <li>Huntdown (Until Q2 2021</li>
       </div>
-      <StarDecoration style={{ margin: "-3.5em 0 2.5em 0" }} />
+      <StarDecoration />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
 import WinnerTable from "../components/Table/winnerTable";
 import StarDecoration from '../components/StarDecoration';
-import "./Pages.css";
+import "./Pages.scss";
 
 function Winners(props) {
   const [games, setGames] = useState([]);

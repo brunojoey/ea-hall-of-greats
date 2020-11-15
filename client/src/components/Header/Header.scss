@@ -1,0 +1,21 @@
+.header-root {
+  display: flex;
+  flex-grow: 1;
+
+  .menu-bar {
+    background-color: black;
+
+    .menu-title {
+      font-size: 2rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: flex;
+      flex-grow: 1;    
+
+      &:hover {
+        color: white;
+        text-decoration: line-through;
+      }
+    }
+  }
+}

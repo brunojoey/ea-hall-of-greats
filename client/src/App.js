@@ -13,7 +13,7 @@ import Ceremonies from "./pages/Ceremonies";
 import GamePage from "./pages/GamePage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   const [path, setPath] = useState(window.location.pathname);

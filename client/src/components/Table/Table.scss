@@ -2,6 +2,16 @@ table {
   width: 75%; 
 	border-collapse: collapse; 
 	box-shadow: 2px 2px 7px #888;
+	margin: 0 auto;
+	animation: moveTable 1.5s ease-out;
+	
+	th { 
+		background: #333; 
+		color: white; 
+		font-weight: bold; 
+		text-align: center;
+	}
+
 }
 
 @keyframes moveTable {
@@ -16,22 +26,10 @@ table {
   }
 }
 
-.table-sortable {
-	animation: moveTable 1.5s ease-out;
-	margin: 0 auto;
-}
-
 tr:nth-of-type odd { 
   background: #eee; 
 }
 
-th { 
-  background: #333; 
-  color: white; 
-  font-weight: bold; 
-  text-align: center;
-
-}
 
 td, th { 
   padding: 6px; 

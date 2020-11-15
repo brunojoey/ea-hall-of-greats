@@ -1,7 +1,7 @@
 import React from "react";
 import NomineeTable from "../components/Table/nomineeTable";
 import StarDecoration from "../components/StarDecoration";
-import './Pages.css';
+import './Pages.scss';
 
 function Nominations(props) {
   const { history } = props;

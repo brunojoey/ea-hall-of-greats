@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { Grid } from "@material-ui/core";
+import './StarDecoration.scss';
 
 function StarDecoration() {
   return (
