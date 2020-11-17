@@ -70,7 +70,7 @@
     margin-top: 1em;  
   }
 
-  &-link {
+  &-link:hover {
     color: $color-red;
     text-decoration: line-through;
   }
@@ -92,7 +92,7 @@
     margin-top: 1em;  
   }
 
-  &-link {
+  &-link:hover {
     color: $color-red;
     text-decoration: line-through;
   }
