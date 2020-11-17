@@ -119,6 +119,11 @@
 
   .nominee-area {
     margin-top: 1rem;
+    transition: .3s;
+
+    &:hover {
+      transform: translateY(-0.5rem);
+    }
     
     .game-title-secondary {
       @include heading-styles(400, 3rem, 0 0 1rem 0);
