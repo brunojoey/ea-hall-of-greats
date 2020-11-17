@@ -60,7 +60,7 @@ function AllyTabs (props) {
   return (
     <>
     <nav>
-      <Tabs value={selectedTab} onChange={handleChange} className='tab-bar' >
+      <Tabs value={selectedTab} onChange={handleChange} className='ally-page-tab-bar' >
         <Tab classes={{ root: classes.tab }} label="Ben Moore" className='tab-allies'/>
         <Tab classes={{ root: classes.tab }} label="Brad Ellis" className='tab-allies' />
         <Tab classes={{ root: classes.tab }} label="Brandon Jones" className='tab-allies' />

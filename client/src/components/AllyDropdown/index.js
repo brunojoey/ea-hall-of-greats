@@ -59,7 +59,7 @@ function AllyDropdown(props) {
   return (
     <div>
       <Button
-        className="ally-button"
+        className="ally-page-button"
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
@@ -67,7 +67,7 @@ function AllyDropdown(props) {
         Allies
       </Button>
       <Menu id="simple-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
-        <Tabs value={selectedLink} onChange={handleChange} orientation='vertical' >
+        <Tabs value={selectedLink} onChange={handleChange} orientation='vertical' className='ally-page-tab-bar'>
           <Tab label="Ben Moore" className='tab-allies'/>
           <Tab label="Brad Ellis" className='tab-allies' />
           <Tab label="Brandon Jones" className='tab-allies' />

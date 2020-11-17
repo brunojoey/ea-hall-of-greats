@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="page-container">
-      <div className="content-wrap">
+      <div className="page-container-wrap">
         <Router>
           <Header path={path} setPath={setPath} />
           <Switch>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
 import "./Table.scss";
@@ -21,12 +21,16 @@ function WinnerTable(props) {
       }
       return 0;
     });
-  };
+  }
 
   // Returns sorted data ascending or descending
   const requestSort = (key) => {
-    let direction = 'ascending'
-    if (sortConfig && sortConfig.key === key && sortConfig.direction === "ascending") {
+    let direction = "ascending";
+    if (
+      sortConfig &&
+      sortConfig.key === key &&
+      sortConfig.direction === "ascending"
+    ) {
       direction = "descending";
     }
     setSortConfig({ key, direction });
@@ -40,22 +44,22 @@ function WinnerTable(props) {
         <tbody key={sorted._id}>
           <tr>
             <td
-              className='tableInfoE'
+              className="table-infoE"
               style={{
                 padding: "1em",
                 borderBottom: "1px solid black",
-                backgroundColor: 'light-grey'
+                backgroundColor: "light-grey",
               }}
             >
               <span
                 onClick={() => history.push(`/ceremonies/${sorted.hallLink}`)}
-                className="hall-link"
+                className="hall-page-link"
               >
                 {sorted.hallOfGreat}
               </span>
             </td>
             <td
-              className='tableInfoR'
+              className="table-infoR"
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -64,13 +68,13 @@ function WinnerTable(props) {
             >
               <span
                 onClick={() => history.push(`/allies/${sorted.allyLink}`)}
-                className="ally-link"
+                className="ally-page-link"
               >
                 {sorted.ally}
               </span>
             </td>
             <td
-              className='tableInfoR'
+              className="table-infoR"
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -79,29 +83,27 @@ function WinnerTable(props) {
             >
               <span
                 onClick={() => history.push(`/games/${sorted._id}`)}
-                className="game-link"
+                className="game-page-link"
               >
                 {sorted.game}
               </span>
             </td>
             <td
-              className='tableInfoE'
+              className="table-infoE"
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
                 padding: ".5em",
               }}
             >
-              <span>
-                {sorted.metacritic}
-              </span>
+              <span>{sorted.metacritic}</span>
             </td>
             <td
-              className='tableInfoE'
+              className="table-infoE"
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
-                padding: '.5em'
+                padding: ".5em",
               }}
             >
               {sorted.votes}
@@ -110,11 +112,11 @@ function WinnerTable(props) {
         </tbody>
       );
     });
-  };
+  }
 
   return (
-    <div className='winner-table'>
-      <table className="table-sortable">
+    <section className="winner-table">
+      <table>
         <thead>
           <tr>
             <th style={{ borderBottom: "1px solid black" }}>
@@ -178,9 +180,9 @@ function WinnerTable(props) {
           </tr>
         </thead>
         {newSortedItems}
-        </table>
-    </div>
+      </table>
+    </section>
   );
-};
+}
 
 export default WinnerTable;

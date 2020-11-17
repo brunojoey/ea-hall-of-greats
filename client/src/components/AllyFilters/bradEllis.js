@@ -17,10 +17,10 @@ function BradEllis(props) {
   }, []);
 
   return (
-    <div>
-      <h3 className='ally-title'>Brad Ellis' Picks</h3>
+    <main className='ally-page'>
+      <h3 className='ally-page-title'>Brad Ellis' Picks</h3>
       <AllyTable games={ally} history={history} />
-    </div>
+    </main>
   );
 }
 

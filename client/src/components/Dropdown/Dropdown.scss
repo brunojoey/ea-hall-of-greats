@@ -1,11 +1,13 @@
+@import '../../styles/variables.scss';
+
 .nav-links {
-  color: black;
+  color: $color-black;
   padding: 1em .5em 1em .5em;
   display: flex;
   flex-direction: column;
 
   &:hover {
-    color: red;
+    color: $color-red;
     text-decoration: line-through; 
   }
 }

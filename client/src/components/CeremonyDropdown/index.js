@@ -71,14 +71,14 @@ function CeremonyDropdown(props) {
 
   return (
     <div>
-      <Button className="ceremony-button" style={{ color: "black", border: '1px solid black', justifyItems: 'center', marginTop: '1em' }} aria-controls="simple-menu"
+      <Button className="hall-page-button" style={{ color: "black", border: '1px solid black', justifyItems: 'center', marginTop: '1em' }} aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
       >
         Ceremonies
       </Button>
       <Menu id="simple-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
-        <Tabs value={selectedLink} onChange={handleChange} className='tab-bar-one' orientation="vertical">
+        <Tabs value={selectedLink} onChange={handleChange} className='hall-page-tab-bar' orientation="vertical">
           <Tab label="Hall of Greats 1" />
           <Tab label="Hall of Greats 2" />
           <Tab label="Hall of Greats 3" />

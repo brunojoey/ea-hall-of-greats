@@ -4,19 +4,19 @@ import "./Pages.scss";
 
 function Home() {
   return (
-    <div>
+    <main className='home'>
       <StarDecoration />
       <h1 className="home-title">The Hall of Greats</h1>
-      <div className="description-container">
+      <section className="description-container">
         <p>
           The Easy Allies have been conducting their own Hall of Fame for video
           games they like to call 'THE HALL OF GREATS'! The inagural ceremony happened in February of 2017. Ever since, every
           three to four months the Allies gather to decide the two best games of
           each ceremony to induct into the Hall of Greats!
         </p>
-      </div>
+      </section>
       <h2 className='rules-heading'>The Rules</h2>
-      <div className="rules-list">
+      <section className="rules-list">
         <li>Starting with the eighth Hall of Greats, alliances were banned.</li>
         <li>
           Starting with the fifth Hall of Greats, a person cannot vote for their
@@ -35,14 +35,14 @@ function Home() {
           three points, the second choice will receive two points, and their
           last choice will receive one.
         </li>
-      </div>
+      </section>
       <h2 className='bans-heading'>The Current Bans</h2>
-      <div className="banned-list" style={{ marginBottom: "1em" }}>
+      <section className="banned-list" style={{ marginBottom: "1em" }}>
         <li>Dungeons &#38; Dragons (Until Q4 2020)</li>
         <li>Huntdown (Until Q2 2021</li>
-      </div>
+      </section>
       <StarDecoration />
-    </div>
+    </main>
   );
 }
 

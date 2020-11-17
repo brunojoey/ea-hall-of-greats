@@ -17,10 +17,10 @@ function HallOfGreatElevenRundown(props) {
   }, []);
 
   return (
-    <div>
+    <section>
       <h3 className='voting-title'>The Voting Rundown</h3>
       <RundownTable games={games} history={history} />
-    </div>
+    </section>
   );
 }
 

@@ -1,139 +1,172 @@
-body {
-  position: relative;
-  height: 100%;
-  width: 100%;
+@import '../styles/mixins.scss';
+@import '../styles/variables.scss';
+
+// Universal Styling
+// End Universal Styling
+
+// Home Page Styling
+.home {
+  &-title {
+    @include heading-styles(600, 4rem, 0);
+  }
+
+  .description-container {
+    width: 75%;
+    margin: $margin-auto;
+    text-align: $text-center;
+  }
+
+  .rules-heading, .bans-heading {
+    @include heading-styles(400, 3rem, 0);
+  }
+
+  .rules-list, .banned-list {
+    margin: 1rem 0;
+    text-align: $text-center;
+  }
 }
+// End Home Page Styling 
 
-/* Home Page Styling */
+// Winner & Nominee Page Styling 
 
-.home-title {
-  font-weight: 600;
-  font-size: 4rem;
-  text-align: center;
-  margin: 0;
-}
-
-.description-container {
-  width: 75%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.rules-heading, .bans-heading {
-  font-size: 3rem;
-  font-weight: 400;
-  text-align: center;
-  margin: 0;
-}
-
-.rules-list, .banned-list {
-  margin: 1rem 0;
-  text-align: center;
-}
-
-/* End Home Page Styling */
-
-/* Winner & Nominee Page Styling */
-
-.winner-heading, .nominee-heading {
-  font-size: 3rem;
-  font-weight: 400;
-  text-align: center;
-  margin: 0 0 1rem 0;
-}
-
-/* End Winner & Nominee Page Styling */
-
-.game-link:hover, .ally-link:hover, .hall-link:hover {
-  color: red;
-  text-decoration: line-through;
-}
-
-.ceremony-button {
-  color: black;
-  border: 1px solid black;
-  display: flex;
-  justify-items: center; 
-  margin-top: 1em;
-}
-
-.hall-title, .ally-title {
-  font-size: 3rem;
-  font-weight: 400;
-  text-align: center;
-  margin: 1rem 0;
-}
-
-.voting-title {
-  font-size: 2.5rem;
-  font-weight: 400;
-  text-align: center;
-  margin: 1rem 0;
-}
-
-.hallOfGreatVideo {
-  margin: 0 auto;
-  margin-bottom: 1em;
-  /* padding: 1em;
-  box-shadow: 2px 2px 9px #888888;
-  border: 3px solid darkred;
-  border-radius: 1em; */
-}
-
-.loader {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-/* Game Page Styling */
-
-.game-title-primary, .game-title-secondary {
-  font-size: 4rem;
-  font-weight: 400;
-  text-align: center;
-  margin: 0 0 1rem 0;
-}
-
-.game-image-primary, .game-image-secondary {
-  display: block;
-  margin: 0 auto;
-  box-shadow: 2px 2px 9px #888;
-  transition: .3s;
-
-  &:hover {
-
+.winner-page {
+  &-heading {
+    @include heading-styles(400, 3rem, 0 0 1rem 0);
   }
 }
 
-.game-image-primary:hover, .game-image-secondary:hover {
-  transform: translateY(-0.5rem);
+.nominations-page {
+  &-heading {
+    @include heading-styles(400, 3rem, 0 0 1rem 0);
+  }
+}
+// End Winner & Nominee Page Styling
+
+.game-page-link:hover {
+  color: $color-red;
+  text-decoration: line-through;
 }
 
-.nominee-area {
-  margin-top: 1rem;
+// Ceremony & Ally Page Styling
+
+.hall-page {
+  &-title {
+    @include heading-styles(400, 3rem, 1rem 0);
+  }
+
+  &-video {
+    margin: $margin-auto;
+    margin-bottom: 1rem;
+    /* padding: 1em;
+    box-shadow: 2px 2px 9px #888888;
+    border: 3px solid darkred;
+    border-radius: 1em; */
+  }
+
+  &-button {
+    color: $color-black;
+    border: 1px solid $color-black;
+    margin: $margin-auto;
+    margin-top: 1em;  
+  }
+
+  &-link {
+    color: $color-red;
+    text-decoration: line-through;
+  }
+
+  .voting-title {
+    @include heading-styles(400, 2.5rem, 1rem 0);
+  }
 }
 
-.game-info, .description-game-section {
-  margin-left: 1rem;
+.ally-page {
+  &-title {
+    @include heading-styles(400, 3rem, 1rem 0);
+  }
+
+  &-button {
+    color: $color-black;
+    border: 1px solid $color-black;
+    margin: $margin-auto;
+    margin-top: 1em;  
+  }
+
+  &-link {
+    color: $color-red;
+    text-decoration: line-through;
+  }
 }
 
-.ally-game {
-  display: flex;
-  align-items: baseline;
+// End Ceremony & Ally Page Styling 
+
+// Game Page Styling
+.game-page {
+  .inductee-area {
+    .game-title-primary {
+      @include heading-styles(400, 3rem, 0 0 1rem 0);
+    }
+
+    .game-image-primary {
+      display: block;
+      margin: $margin-auto;
+      box-shadow: 2px 2px 9px #888;
+      transition: .3s;
+    
+      &:hover {
+        transform: translateY(-0.5rem);
+      }
+    }
+  }
+
+  .nominee-area {
+    margin-top: 1rem;
+    
+    .game-title-secondary {
+      @include heading-styles(400, 3rem, 0 0 1rem 0);
+    }
+
+    .game-image-secondary {
+      display: block;
+      margin: $margin-auto;
+      box-shadow: 2px 2px 9px #888;
+      transition: .3s;
+  
+      &:hover {
+        transform: translateY(-0.5rem);
+      }  
+    }
+  }
+
+  .game-info {
+    margin-left: 1rem;
+
+    .ally-game {
+      display: flex;
+      align-items: baseline;
+
+      .brought-by {
+        margin-right: 0.5rem;
+      }
+    }
+    
+    .game-data-section {
+      margin-top: 0;
+    }
+  }
+
+  .description-game-section {
+    margin-left: 1rem;
+
+    .description-game {
+      margin: .25rem 1rem 0 0;
+    }
+  }
+
+  .loader {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
 }
-
-.brought-by {
-  margin-right: .5rem;
-}
-
-.game-data-section {
-  margin-top: 0;
-}
-
-.description-game {
-  margin: .25rem 1rem 0 0;
-}
-
-/* End Game Page Styling */
-
+// End Game Page Styling 

@@ -37,7 +37,7 @@ function CeremonyTable(props) {
         <tbody key={sorted._id}>
           <tr>
             <td
-              className='tableInfoR'
+              className='table-infoR'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -46,13 +46,13 @@ function CeremonyTable(props) {
             >
               <span
                 onClick={() => history.push(`/allies/${sorted.allyLink}`)}
-                className="ally-link"
+                className="ally-page-link"
               >
                 {sorted.ally}
               </span>
             </td>
             <td
-              className='tableInfoR'
+              className='table-infoR'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -61,13 +61,13 @@ function CeremonyTable(props) {
             >
               <span
                 onClick={() => history.push(`/games/${sorted._id}`)}
-                className="game-link"
+                className="game-page-link"
               >
                 {sorted.game}
               </span>
             </td>
             <td
-            className='tableInfoE'
+            className='table-infoE'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -76,7 +76,7 @@ function CeremonyTable(props) {
               {sorted.votes}
             </td>
             <td
-            className='tableInfoE'
+            className='table-infoE'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -86,7 +86,7 @@ function CeremonyTable(props) {
               {sorted.victory}
             </td>
             <td
-            className='tableInfoE'
+            className='table-infoE'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -102,8 +102,8 @@ function CeremonyTable(props) {
   }
 
   return (
-    <div>
-      <table style={{ margin: "0 auto" }} className="table-sortable">
+    <section className='ceremony-table'>
+      <table>
         <thead>
           <tr>
             <th style={{ borderBottom: "1px solid black" }}>
@@ -172,7 +172,7 @@ function CeremonyTable(props) {
         </thead>
         {newSortedItems}
       </table>
-    </div>
+    </section>
   );
 };
 

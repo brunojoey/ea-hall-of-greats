@@ -17,10 +17,10 @@ function IanHinck(props) {
   }, []);
 
   return (
-    <div>
-      <h3 className='ally-title'>Ian Hincks' Picks</h3>
+    <main className='ally-page'>
+      <h3 className='ally-page-title'>Ian Hincks' Picks</h3>
       <AllyTable games={ally} history={history} />
-    </div>
+    </main>
   );
 }
 

@@ -3,26 +3,25 @@ import gamesAPI from "../../utils/gamesAPI";
 import AllyTable from '../Table/allyTable';
 
 function BenMoore(props) {
-  const [games, setGames] = useState([]);
+  const [ally, setAlly] = useState([]);
   const { history } = props;
 
   useEffect(() => {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
       data = data.filter((games) => games.ally === 'Ben Moore');
-      setGames(data);
+      setAlly(data);
     }
 
     fetchData();
   }, []);
 
-  if (games) {
   return (
-    <div>
-      <h3 className='ally-title'>Ben Moores' Picks</h3>
-      <AllyTable games={games} history={history} />
-    </div>
+    <main className='ally-page'>
+      <h3 className='ally-page-title'>Ben Moores' Picks</h3>
+      <AllyTable games={ally} history={history} />
+    </main>
   );
-}};
+};
 
 export default BenMoore;

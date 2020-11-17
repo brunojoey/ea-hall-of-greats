@@ -22,7 +22,7 @@ function GamePage(props) {
   return (
     <>
       {gamePage.game ? (
-        <main key={gamePage.id}>
+        <main key={gamePage.id} className='game-page'>
           {gamePage.victory === "True" ? (
             <section className="inductee-area">
               <StarDecoration />
@@ -50,7 +50,7 @@ function GamePage(props) {
               <h3 className='brought-by'>Brought By:</h3>{" "}
               <p
                 onClick={() => history.push(`/allies/${gamePage.allyLink}`)}
-                className="ally-link"
+                className="ally-page-link"
               >
                 {gamePage.ally}
               </p>{" "}
@@ -62,7 +62,7 @@ function GamePage(props) {
               </span>:{" "}
               <span
                 onClick={() => history.push(`/ceremonies/${gamePage.hallLink}`)}
-                className="hall-link"
+                className="hall-page-link"
               >
                 Hall of Great {gamePage.hallOfGreat}{" "}
               </span>

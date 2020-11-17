@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ReactPlayer from 'react-player';
-import gamesAPI from "../../utils/gamesAPI";
-import HogTwoRundown from '../RundownFilters/hallOfGreatsTwo';
 import CeremonyTable from "../Table/ceremonyTable";
+import HogTwoRundown from '../RundownFilters/hallOfGreatsTwo';
+import gamesAPI from "../../utils/gamesAPI";
 
 function HallOfGreatOne(props) {
   const [games, setGames] = useState([]);
@@ -19,12 +19,12 @@ function HallOfGreatOne(props) {
   }, []);
 
   return (
-    <div>
-      <h3 className='hall-title'>The Second Hall of Greats</h3>
-      <ReactPlayer url='https://www.youtube.com/watch?v=4dqdQAJk90g' className='hallOfGreatVideo' alt='Hall of Greats #2 https://www.youtube.com/watch?v=4dqdQAJk90g'/>
+    <main className='hall-page'>
+      <h3 className='hall-page-title'>The Second Hall of Greats</h3>
+      <ReactPlayer url='https://www.youtube.com/watch?v=4dqdQAJk90g' className='hall-page-video' alt='Hall of Greats #2 https://www.youtube.com/watch?v=4dqdQAJk90g'/>
       <CeremonyTable games={games} history={history} />
       <HogTwoRundown games={games} history={history} />
-    </div>
+    </main>
   );
 }
 

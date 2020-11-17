@@ -19,12 +19,12 @@ function Winners(props) {
   }, []);
 
   return (
-    <div>
+    <main className='winner-page'>
       <StarDecoration />
-      <h2 className='winner-heading'>The Illustrious Inductees</h2>
+      <h2 className='winner-page-heading'>The Illustrious Inductees</h2>
       <WinnerTable games={games} history={history} />
       <StarDecoration />
-    </div>
+    </main>
   );
 }
 

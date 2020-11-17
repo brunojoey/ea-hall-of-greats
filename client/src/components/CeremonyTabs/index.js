@@ -73,7 +73,7 @@ const CeremonyTabs = (props) => {
 
   return (
     <>
-      <Tabs value={selectedTab} onChange={handleChange} className='tab-bar-one' >
+      <Tabs value={selectedTab} onChange={handleChange} className='ceremony-tab-bar' >
         <Tab classes={{ root: classes.tab }} label="Hall of Greats 1" />
         <Tab classes={{ root: classes.tab }} label="Hall of Greats 2" />
         <Tab classes={{ root: classes.tab }} label="Hall of Greats 3" />

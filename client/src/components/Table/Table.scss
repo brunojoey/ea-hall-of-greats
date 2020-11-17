@@ -1,51 +1,39 @@
-table { 
-  width: 75%; 
-	border-collapse: collapse; 
-	box-shadow: 2px 2px 7px #888;
-	margin: 0 auto;
-	animation: moveTable 1.5s ease-out;
-	
-	th { 
-		background: #333; 
-		color: white; 
-		font-weight: bold; 
-		text-align: center;
-	}
+@import '../../styles/animations.scss';
+@import '../../styles/variables.scss';
 
-}
+table {
+  width: 75%;
+  border-collapse: collapse;
+  box-shadow: 2px 2px 7px #888;
+  margin: $margin-auto;
+  animation: moveTable 1.5s ease-out;
 
-@keyframes moveTable {
-  0% {
-    opacity: 0;
-    transform: translateX(-30px); /* translateY because we want to move it in regards vertically. -30 to move from the top */
+  th {
+    background: #333;
+    color: $color-white;
+    font-weight: bold;
+    text-align: $text-center;
+    padding: 6px;
+    border: 1px solid #888;
   }
 
-  100% {
-    opacity: 1;
-    transform: translate(0);
+  td {
+    padding: 6px;
+    text-align: left;
+    border: 1px solid #888;
   }
-}
 
-tr:nth-of-type odd { 
-  background: #eee; 
-}
+  tr:nth-of-type(odd) {
+    background: $color-white;
+  }
 
+  .feed-user-icon:hover {
+    color: grey;
+  }
 
-td, th { 
-  padding: 6px; 
-  border: 1px solid #888; 
-}
-
-td {
-  text-align: left;
-}
-
-.feed-user-icon:hover {
-	color: grey;
-}
-
-.tableInfoE {
-	text-align: center;
+  .table-infoE {
+    text-align: $text-center;
+  }
 }
 
 /* 
@@ -53,72 +41,71 @@ Max width before this PARTICULAR table gets nasty
 This query will take effect for any screen smaller than 760px
 and also iPads specifically.
 */
-@media 
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  table {
+    width: 80%;
+    margin: $margin-auto;
 
-	table {
-		width: 80%;
-		margin: 0 auto;
-	}
+    tbody {
+      margin: 0.5em 0 0.5em 0;
+    }
 
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr { 
-		display: block; 
-	}
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
 
-	.gameLink {
-		text-decoration: underline;
-	}
-	
-	tbody {
-		margin: .5em 0 .5em 0;
-	}
+    tr {
+      border: 1px solid #ccc;
+			
+			td {
+				/* Behave  like a "row" */
+				border: 1px solid $color-black;
+				position: relative;
+				text-align: right;
+		
+				&:before {
+					/* Now like a table header */
+					position: absolute;
+					/* Top/left values mimic padding */
+					top: 6px;
+					left: 6px;
+					width: 20%;
+					padding-right: 10px;
+					white-space: nowrap;
+					text-align: left;
+				}
+		
+				&:nth-of-type(1) {
+					text-align: $text-center;
+		
+					&:before {
+						margin-top: 1rem;
+					}
+				}
+		
+				&:nth-of-type(3):before {
+					margin-top: 1rem;
+				}
+			}
+    }
+  }
 
-	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr { 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-	
-	tr { 
-		border: 1px solid #ccc;
-		/* background-color: black; */
-	 }
-	
-	td { 
-		/* Behave  like a "row" */
-		border: 1px solid black; 
-		position: relative;
-		text-align: right;
-	}
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
 
-	.tableInfoE, .tableInfoR {
-		text-align: center;
-	}
+  .game-page-link {
+    text-decoration: underline;
+  }
 
-	td:nth-of-type(1) {
-		background-color: #aaa;
-	}
 
-	td:nth-of-type(1):before {
-		margin-top: .5em;
-	}
-
-	td:nth-of-type(3):before {
-		margin-top: .1em;
-	}
-	
-	td:before { 
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 20%; 
-		padding-right: 10px; 
-		white-space: nowrap;
-		text-align: left;
-	}
+  .table-infoE,
+  .table-infoR {
+    text-align: $text-center;
+  }
 }

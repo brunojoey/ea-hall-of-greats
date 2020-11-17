@@ -12,7 +12,7 @@ function RundownTable(props) {
         <tbody key={sorted._id}>
           <tr>
             <td
-              className="tableInfoE"
+              className="table-infoE"
               style={{
                 padding: "1em",
                 borderBottom: "1px solid black",
@@ -20,13 +20,13 @@ function RundownTable(props) {
             >
               <span
                 onClick={() => history.push(`/allies/${sorted.allyLink}`)}
-                className="ally-link"
+                className="ally-page-link"
               >
                 {sorted.ally}
               </span>
             </td>
             <td
-              className="tableInfoR"
+              className="table-infoR"
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -36,7 +36,7 @@ function RundownTable(props) {
                 {sorted.votingChoiceOne}
             </td>
             <td
-              className="tableInfoR"
+              className="table-infoR"
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -46,7 +46,7 @@ function RundownTable(props) {
                 {sorted.votingChoiceTwo}
             </td>
             <td
-              className="tableInfoR"
+              className="table-infoR"
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -62,8 +62,8 @@ function RundownTable(props) {
   };
 
   return (
-    <div>
-      <table style={{ margin: "0 auto" }} className="table-sortable">
+    <section className='rundown-table'>
+      <table>
         <thead>
           <tr>
             <th style={{ borderBottom: "1px solid black" }}>
@@ -82,7 +82,7 @@ function RundownTable(props) {
         </thead>
         {newSortedItems}
       </table>
-    </div>
+    </section>
   );
 }
 

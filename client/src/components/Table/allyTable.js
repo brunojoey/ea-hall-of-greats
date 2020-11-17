@@ -39,7 +39,7 @@ function AllyTable(props) {
         <tbody key={sorted._id}>
           <tr>
             <td
-              className='tableInfoE'
+              className='table-infoE'
               style={{
                 padding: "1em",
                 borderBottom: "1px solid black",
@@ -47,13 +47,13 @@ function AllyTable(props) {
             >
               <span
                 onClick={() => history.push(`/ceremonies/${sorted.hallLink}`)}
-                className="hall-link"
+                className="hall-page-link"
               >
                 {sorted.hallOfGreat}
               </span>
             </td>
             <td
-              className='tableInfoR'
+              className='table-infoR'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -62,13 +62,13 @@ function AllyTable(props) {
             >
               <span
                 onClick={() => history.push(`/games/${sorted._id}`)}
-                className="game-link"
+                className="game-page-link"
               >
                 {sorted.game}
               </span>
             </td>
             <td
-              className='tableInfoE'
+              className='table-infoE'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -77,7 +77,7 @@ function AllyTable(props) {
               {sorted.votes}
             </td>
             <td
-              className='tableInfoE'
+              className='table-infoE'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -87,7 +87,7 @@ function AllyTable(props) {
               {sorted.victory}
             </td>
             <td
-              className='tableInfoE'
+              className='table-infoE'
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -103,7 +103,7 @@ function AllyTable(props) {
   };
 
   return (
-    <div>
+    <section className='ally-table'>
       <table>
         <thead>
           <tr>
@@ -174,7 +174,7 @@ function AllyTable(props) {
         {newSortedItems}
       </table>
       <StarDecoration />
-    </div>
+    </section>
   );
 };
 

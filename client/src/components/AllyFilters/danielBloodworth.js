@@ -17,10 +17,10 @@ function DanielBloodworth(props) {
   }, []);
 
   return (
-    <div>
-      <h3 className='ally-title'>Daniel Bloodworths' Picks</h3>
+    <main className='ally-page'>
+      <h3 className='ally-page-title'>Daniel Bloodworths' Picks</h3>
       <AllyTable games={ally} history={history} />
-    </div>
+    </main>
   );
 }
 

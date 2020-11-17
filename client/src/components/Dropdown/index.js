@@ -15,7 +15,7 @@ function Dropdown() {
   };
 
   return (
-    <div>
+    <section>
       <Button
         className="nav-links"
         style={{color: 'white'}}
@@ -48,7 +48,7 @@ function Dropdown() {
           The Allies
         </Link>
       </Menu>
-    </div>
+    </section>
   );
 };
 

@@ -19,12 +19,12 @@ function HallOfGreatOne(props) {
   }, []);
 
   return (
-    <div>
-      <h3 className='hall-title'>The Tenth Hall of Greats</h3>
-      <ReactPlayer url='https://www.youtube.com/watch?v=7vBHZYafUjI' className='hallOfGreatVideo' alt='Hall of Greats #10 https://www.youtube.com/watch?v=7vBHZYafUjI' />
+    <main className='hall-page'> 
+      <h3 className='hall-page-title'>The Tenth Hall of Greats</h3>
+      <ReactPlayer url='https://www.youtube.com/watch?v=7vBHZYafUjI' className='hall-page-video' alt='Hall of Greats #10 https://www.youtube.com/watch?v=7vBHZYafUjI' />
       <CeremonyTable games={games} history={history} />
       <HogTenRundown games={games} history={history} />  
-    </div>
+    </main>
   );
 }
 

@@ -11,17 +11,16 @@ function HallOfGreatTwoRundown(props) {
       let { data } = await gamesAPI.getGames();
       data = data.filter((games) => games.hallOfGreat === 2);
       setGames(data);
-      console.log('games', games)
     }
 
     fetchData();
   }, []);
 
   return (
-    <div>
+    <section>
       <h3 className='voting-title'>The Voting Rundown</h3>
       <RundownTable games={games} history={history} />
-    </div>
+    </section>
   );
 }
 

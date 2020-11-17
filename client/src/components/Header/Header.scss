@@ -1,9 +1,11 @@
+@import '../../styles/variables.scss';
+
 .header-root {
   display: flex;
   flex-grow: 1;
 
   .menu-bar {
-    background-color: black;
+    background-color: $color-black;
 
     .menu-title {
       font-size: 2rem;
@@ -13,7 +15,7 @@
       flex-grow: 1;    
 
       &:hover {
-        color: white;
+        color: $color-white;
         text-decoration: line-through;
       }
     }

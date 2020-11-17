@@ -17,10 +17,10 @@ function KyleBosman(props) {
   }, []);
 
   return (
-    <div>
-      <h3 className='ally-title'>Kyle Bosmans' Picks</h3>
+    <main className='ally-page'>
+      <h3 className='ally-page-title'>Kyle Bosmans' Picks</h3>
       <AllyTable games={ally} history={history} />
-    </div>
+    </main>
   );
 }
 

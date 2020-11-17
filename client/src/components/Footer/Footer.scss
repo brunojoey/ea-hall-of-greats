@@ -1,4 +1,6 @@
-.footer {
+@import '../../styles/variables.scss';
+
+footer {
   text-align: center;
   margin-top: 1rem;
   padding: 1rem 0 1rem 1rem;
@@ -6,13 +8,13 @@
   bottom: 0;
   left: 0;
   color: white;
-  background-color: black;
+  background-color: $color-black;
 
   & a {
-    color: white;
+    color: $color-white;
 
     &:hover {
-      color: red;
+      color: $color-red;
     }
   }
 }
