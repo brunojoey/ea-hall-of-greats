@@ -1,9 +1,6 @@
 @import '../styles/mixins.scss';
 @import '../styles/variables.scss';
 
-// Universal Styling
-// End Universal Styling
-
 // Home Page Styling
 .home {
   &-title {
@@ -41,11 +38,6 @@
   }
 }
 // End Winner & Nominee Page Styling
-
-.game-page-link:hover {
-  color: $color-red;
-  text-decoration: line-through;
-}
 
 // Ceremony & Ally Page Styling
 
@@ -102,7 +94,18 @@
 
 // Game Page Styling
 .game-page {
+
+  &-link:hover {
+    color: $color-red;
+    text-decoration: line-through;  
+  }
+
   .inductee-area {
+    transition: .3s;
+
+    &:hover {
+      transform: translateY(-0.5rem);
+    }
     .game-title-primary {
       @include heading-styles(400, 3rem, 0 0 1rem 0);
     }
@@ -110,12 +113,7 @@
     .game-image-primary {
       display: block;
       margin: $margin-auto;
-      box-shadow: 2px 2px 9px #888;
-      transition: .3s;
-    
-      &:hover {
-        transform: translateY(-0.5rem);
-      }
+      box-shadow: 2px 2px 9px #888;    
     }
   }
 
