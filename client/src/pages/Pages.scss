@@ -1,5 +1,5 @@
-@import '../styles/mixins.scss';
-@import '../styles/variables.scss';
+@import "../styles/mixins.scss";
+@import "../styles/variables.scss";
 
 // Home Page Styling
 .home {
@@ -13,18 +13,20 @@
     text-align: $text-center;
   }
 
-  .rules-heading, .bans-heading {
+  .rules-heading,
+  .bans-heading {
     @include heading-styles(400, 3rem, 0);
   }
 
-  .rules-list, .banned-list {
+  .rules-list,
+  .banned-list {
     margin: 1rem 0;
     text-align: $text-center;
   }
 }
-// End Home Page Styling 
+// End Home Page Styling
 
-// Winner & Nominee Page Styling 
+// Winner & Nominee Page Styling
 
 .winner-page {
   &-heading {
@@ -59,7 +61,7 @@
     color: $color-black;
     border: 1px solid $color-black;
     margin: $margin-auto;
-    margin-top: 1em;  
+    margin-top: 1em;
   }
 
   &-link:hover {
@@ -81,7 +83,7 @@
     color: $color-black;
     border: 1px solid $color-black;
     margin: $margin-auto;
-    margin-top: 1em;  
+    margin-top: 1em;
   }
 
   &-link:hover {
@@ -90,54 +92,58 @@
   }
 }
 
-// End Ceremony & Ally Page Styling 
+// End Ceremony & Ally Page Styling
 
 // Game Page Styling
 .game-page {
-
   &-link:hover {
     color: $color-red;
-    text-decoration: line-through;  
+    text-decoration: line-through;
   }
 
   .inductee-area {
-    transition: .3s;
-
-    &:hover {
-      transform: translateY(-0.5rem);
-    }
     .game-title-primary {
       @include heading-styles(400, 3rem, 0 0 1rem 0);
+      transition: 0.3s;
+
+      &:hover {
+        transform: translateY(-0.5rem);
+      }
     }
 
     .game-image-primary {
       display: block;
       margin: $margin-auto;
-      box-shadow: 2px 2px 9px #888;    
+      box-shadow: 2px 2px 9px #888;
+      transition: 0.3s;
+
+      &:hover {
+        transform: translateY(-0.5rem);
+      }
     }
   }
 
   .nominee-area {
     margin-top: 1rem;
-    transition: .3s;
 
-    &:hover {
-      transform: translateY(-0.5rem);
-    }
-    
     .game-title-secondary {
       @include heading-styles(400, 3rem, 0 0 1rem 0);
+      transition: 0.3s;
+
+      &:hover {
+        transform: translateY(-0.5rem);
+      }
     }
 
     .game-image-secondary {
       display: block;
       margin: $margin-auto;
       box-shadow: 2px 2px 9px #888;
-      transition: .3s;
-  
+      transition: 0.3s;
+
       &:hover {
         transform: translateY(-0.5rem);
-      }  
+      }
     }
   }
 
@@ -152,7 +158,7 @@
         margin-right: 0.5rem;
       }
     }
-    
+
     .game-data-section {
       margin-top: 0;
     }
@@ -162,7 +168,7 @@
     margin-left: 1rem;
 
     .description-game {
-      margin: .25rem 1rem 0 0;
+      margin: 0.25rem 1rem 0 0;
     }
   }
 
@@ -172,4 +178,4 @@
     margin-top: 2rem;
   }
 }
-// End Game Page Styling 
+// End Game Page Styling
