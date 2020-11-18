@@ -38,8 +38,7 @@ function Home() {
       </section>
       <h2 className='bans-heading'>The Current Bans</h2>
       <section className="banned-list" style={{ marginBottom: "1em" }}>
-        <li>Dungeons &#38; Dragons (Until Q4 2020)</li>
-        <li>Huntdown (Until Q2 2021</li>
+        <li>Huntdown (Until Q2 2021)</li>
       </section>
       <StarDecoration />
     </main>
