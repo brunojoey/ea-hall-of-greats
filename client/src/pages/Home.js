@@ -9,9 +9,9 @@ function Home() {
       <h1 className="home-title">The Hall of Greats</h1>
       <section className="description-container">
         <p>
-          The Easy Allies have been conducting their own Hall of Fame for video
-          games they like to call 'THE HALL OF GREATS'! The inagural ceremony happened in February of 2017. Ever since, every
-          three to four months the Allies gather to decide the two best games of
+          The Easy Allies have been conducting their own video game Hall of Fame 
+          they like to call The Hall of Greats! The inagural ceremony happened in February of 2017. Ever since, every
+          three to four months, the Allies gather to decide the two best games of
           each ceremony to induct into the Hall of Greats!
         </p>
       </section>
