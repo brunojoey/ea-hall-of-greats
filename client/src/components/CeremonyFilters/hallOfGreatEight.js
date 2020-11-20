@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import CeremonyTable from "../Table/ceremonyTable";
 import RundownTable from "../Table/rundownTable";
-// import HogEightRundown from "../RundownFilters/hallOfGreatsEight";
 import gamesAPI from "../../utils/gamesAPI";
 import useMediaQuery from "../../utils/useMediaQuery";
 
@@ -23,7 +22,7 @@ function HallOfGreatOne(props) {
 
   return (
     <main className="hall-page">
-      <h3 className="hall-page-title">The Eighth Hall of Greats</h3>
+      <h2 className="hall-page-title">The Eighth Hall of Greats</h2>
       {matches ? (
         <ReactPlayer
           url="https://www.youtube.com/watch?v=LKvBxu0tB0A"
@@ -36,7 +35,6 @@ function HallOfGreatOne(props) {
       <CeremonyTable games={games} history={history} />
       <h3 className='voting-title'>The Voting Rundown</h3>
       <RundownTable games={games} history={history} />
-      {/* <HogEightRundown games={games} history={history} /> */}
     </main>
   );
 }

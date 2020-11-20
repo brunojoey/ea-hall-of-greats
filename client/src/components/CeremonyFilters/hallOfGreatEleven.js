@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import CeremonyTable from "../Table/ceremonyTable";
-import HogElevenRundown from "../RundownFilters/hallOfGreatsEleven";
+import RundownTable from "../Table/rundownTable";
 import gamesAPI from "../../utils/gamesAPI";
 import useMediaQuery from "../../utils/useMediaQuery";
 
@@ -33,7 +33,8 @@ function HallOfGreatOne(props) {
         <></>
       )}
       <CeremonyTable games={games} history={history} />
-      <HogElevenRundown games={games} history={history} />
+      <h3 className="voting-title">The Voting Rundown</h3>
+      <RundownTable games={games} history={history} />
     </main>
   );
 }
