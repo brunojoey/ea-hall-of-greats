@@ -67,7 +67,7 @@ and also iPads specifically.
 				position: relative;
         text-align: right;
         
-        &:only(:first) {
+        &:first-child {
           background-color: #888;
           color: $color-white;
         }
