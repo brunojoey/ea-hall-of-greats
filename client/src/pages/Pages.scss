@@ -54,15 +54,13 @@
     box-shadow: 0 .5rem 1rem $color-black;
     border: 3px solid darkred;
     border-radius: 3px;
-    width: 50%;
-    height: 50%;
   }
 
   &-button {
     color: $color-black;
     border: 1px solid $color-black;
     margin: $margin-auto;
-    margin-top: 1em;
+    margin-top: 1rem;
   }
 
   &-link:hover {
@@ -80,11 +78,11 @@
     @include heading-styles(400, 3rem, 1rem 0);
   }
 
-  &-button {
+  .MuiButton-root {
     color: $color-black;
     border: 1px solid $color-black;
     margin: $margin-auto;
-    margin-top: 1em;
+    margin-top: 1rem;
   }
 
   &-link:hover {

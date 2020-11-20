@@ -59,7 +59,7 @@ function AllyDropdown(props) {
   return (
     <div>
       <Button
-        className="ally-page-button"
+        style={{ backgroundColor: 'red', color: "white", marginTop: '1rem', left: '39%' }}
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}

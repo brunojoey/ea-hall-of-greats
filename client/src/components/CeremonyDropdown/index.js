@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { Tabs, Tab, Button, Menu } from "@material-ui/core";
-import StarDecoration from '../StarDecoration';
+import StarDecoration from "../StarDecoration";
 
 import HallOfGreatOne from "../CeremonyFilters/hallOfGreatOne";
 import HallOfGreatTwo from "../CeremonyFilters/hallOfGreatTwo";
@@ -21,7 +21,7 @@ function CeremonyDropdown(props) {
   const { params } = match;
   const { page } = params;
   const [anchorEl, setAnchorEl] = useState(null);
-  
+
   const linkNameToIndex = {
     0: "hall_great_one",
     1: "hall_great_two",
@@ -37,7 +37,7 @@ function CeremonyDropdown(props) {
     11: "hall_great_twelve",
     12: "hall_great_thirteen",
   };
-  
+
   const indexToLinkName = {
     hall_great_one: 0,
     hall_great_two: 1,
@@ -71,14 +71,27 @@ function CeremonyDropdown(props) {
 
   return (
     <div>
-      <Button className="hall-page-button" style={{ color: "black", border: '1px solid black', justifyItems: 'center', marginTop: '1em' }} aria-controls="simple-menu"
+      <Button
+        style={{ backgroundColor: 'red', color: "white", marginTop: '1rem', left: '39%' }}
+        aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
       >
         Ceremonies
       </Button>
-      <Menu id="simple-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
-        <Tabs value={selectedLink} onChange={handleChange} className='hall-page-tab-bar' orientation="vertical">
+      <Menu
+        id="simple-menu"
+        anchorEl={anchorEl}
+        keepMounted
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+      >
+        <Tabs
+          value={selectedLink}
+          onChange={handleChange}
+          className="hall-page-tab-bar"
+          orientation="vertical"
+        >
           <Tab label="Hall of Greats 1" />
           <Tab label="Hall of Greats 2" />
           <Tab label="Hall of Greats 3" />
@@ -111,6 +124,6 @@ function CeremonyDropdown(props) {
       <StarDecoration />
     </div>
   );
-};
+}
 
 export default CeremonyDropdown;
