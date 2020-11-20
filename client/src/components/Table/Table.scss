@@ -42,12 +42,7 @@ This query will take effect for any screen smaller than 760px
 and also iPads specifically.
 */
 @media only screen and (max-width: 760px),
-  (min-device-width: 768px) and (max-device-width: 1024px) {
-  .hall-page-video {
-    width: 50%;
-    height: 50%;
-  }
-  
+  (min-device-width: 768px) and (max-device-width: 1024px) {  
   table {
     width: 80%;
     margin: $margin-auto;
@@ -70,7 +65,12 @@ and also iPads specifically.
 				/* Behave  like a "row" */
 				border: 1px solid $color-black;
 				position: relative;
-				text-align: right;
+        text-align: right;
+        
+        &:only(:first) {
+          background-color: #888;
+          color: $color-white;
+        }
 		
 				&:before {
 					/* Now like a table header */
