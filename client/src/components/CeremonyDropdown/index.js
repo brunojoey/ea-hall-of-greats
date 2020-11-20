@@ -72,7 +72,7 @@ function CeremonyDropdown(props) {
   return (
     <div>
       <Button
-        style={{ backgroundColor: 'red', color: "white", marginTop: '1rem', left: '42%' }}
+        style={{ backgroundColor: 'red', color: "white", marginTop: '1rem', left: '40%' }}
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
