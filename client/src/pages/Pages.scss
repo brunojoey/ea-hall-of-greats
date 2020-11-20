@@ -51,10 +51,9 @@
   &-video {
     margin: $margin-auto;
     margin-bottom: 1rem;
-    /* padding: 1em;
-    box-shadow: 2px 2px 9px #888888;
+    box-shadow: 0 .5rem 1rem $color-black;
     border: 3px solid darkred;
-    border-radius: 1em; */
+    border-radius: 3px;
   }
 
   &-button {
