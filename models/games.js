@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const GamesSchema = new Schema({
-  ally: { type: String, ref: "Allies" },
+const GamesSchema = new Schema ({
+  ally: { type: String, required: true },
   game: { type: String, required: true, ref: 'Games' },
   hallOfGreat: { type: Number, required: true },
   description: { type: String, required: false },
@@ -14,8 +14,8 @@ const GamesSchema = new Schema({
   victory: { type: String, required: false },
   banned: { type: String, required: false, default: false },
   wonByPatreonVote: { type: String, required: false},
-  image: { type: String, required: false },
-  alt: { type: String, required: false },
+  image: { type: String, required: true },
+  alt: { type: String, required: true },
   allyLink: { type: String, required: true },
   hallLink: { type: String, required: true },
   votingChoiceOne: { type: String, required: false },

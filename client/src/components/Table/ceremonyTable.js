@@ -99,7 +99,7 @@ function CeremonyTable(props) {
         </tbody>
       );
     });
-  }
+  };
 
   return (
     <section className='ceremony-table'>
