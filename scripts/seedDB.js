@@ -21,7 +21,6 @@ const ianHinck = "Ian Hinck";
 const kyleBosman = "Kyle Bosman";
 const michaelHuber = "Michael Huber";
 const michaelDamiani = "Michael Damiani";
-const ellisAndDamiani = bradEllis + " " + "and" + " " + michaelDamiani;
 
 // Multiple Nominated Game Variables
 const bloodBorne = "Bloodborne";
@@ -85,7 +84,7 @@ const gameSeed = [
     allyLink: 'daniel_bloodworth',
     hallLink: 'hall_great_one',
     votingChoiceOne: 'Super Metroid',
-    votingChoiceTwo: 'Street Fighter II Turbo',
+    votingChoiceTwo: 'Super Street Fighter II Turbo',
     votingChoiceThree: 'Metal Gear Solid'
   },
   {
@@ -148,7 +147,7 @@ const gameSeed = [
     hallLink: 'hall_great_one',
     votingChoiceOne: 'Super Metroid',
     votingChoiceTwo: "Assassin's Creed IV: Black Flag",
-    votingChoiceThree: 'Street Fighter II Turbo'
+    votingChoiceThree: 'Super Street Fighter II Turbo'
   },
   {
     ally: bradEllis,
