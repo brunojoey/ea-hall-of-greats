@@ -7,10 +7,10 @@ table {
   border: 1px solid black;
   box-shadow: 2px 2px 7px #888;
   margin: $margin-auto;
-  animation: moveTable 1.5s ease-out;
+  animation: fadeItemIn 2s ease;
 
   th {
-    background: #333;
+    background-color: rgba(255, 0, 0, .85);
     color: $color-white;
     font-weight: bold;
     text-align: $text-center;
@@ -25,11 +25,20 @@ table {
   }
 
   tr:nth-of-type(odd) {
-    background: $color-white;
+    background-color: $color-white;
   }
 
-  .feed-user-icon:hover {
-    color: #888;
+  .feed-user-icon {
+    color: white;
+    margin-left: 3px;
+
+    &:hover {
+      color: rgb(255, 150, 150);
+    }
+
+    &:active {
+      color: darkred;
+    }
   }
 
   .table-infoE {

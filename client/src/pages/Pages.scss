@@ -1,5 +1,6 @@
 @import "../styles/mixins.scss";
 @import "../styles/variables.scss";
+@import '../styles/animations.scss';
 
 // Home Page Styling
 .home {
@@ -52,7 +53,7 @@
     margin: $margin-auto;
     margin-bottom: 1rem;
     box-shadow: 0 .5rem 1rem $color-black;
-    border: 3px solid darkred;
+    border: 3px solid red;
     border-radius: 3px;
   }
 
@@ -104,17 +105,21 @@
     .game-title-primary {
       @include heading-styles(400, 3rem, 0 0 1rem 0);
       transition: 0.3s;
-
+      animation: fadeItemIn 2s ease;
+      
       &:hover {
         transform: translateY(-0.5rem);
       }
     }
-
+    
     .game-image-primary {
       display: block;
       margin: $margin-auto;
       box-shadow: 2px 2px 9px #888;
       transition: 0.3s;
+      border: 4px solid red;
+      border-radius: 3px;
+      animation: fadeItemIn 2s ease;
 
       &:hover {
         transform: translateY(-0.5rem);
@@ -128,6 +133,7 @@
     .game-title-secondary {
       @include heading-styles(400, 3rem, 0 0 1rem 0);
       transition: 0.3s;
+      animation: fadeItemIn 2s ease;
 
       &:hover {
         transform: translateY(-0.5rem);
@@ -139,6 +145,9 @@
       margin: $margin-auto;
       box-shadow: 2px 2px 9px #888;
       transition: 0.3s;
+      border: 4px solid red;
+      border-radius: 3px;
+      animation: fadeItemIn 2s ease;
 
       &:hover {
         transform: translateY(-0.5rem);
@@ -169,12 +178,6 @@
     .description-game {
       margin: 0.25rem 1rem 0 0;
     }
-  }
-
-  .loader {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
   }
 }
 // End Game Page Styling

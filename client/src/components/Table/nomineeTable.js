@@ -40,10 +40,9 @@ function NomineeTable(props) {
         <tbody key={sorted._id}>
           <tr>
             <td
-              className='table-info-e'
+              className='table-infoE'
               style={{
                 padding: "1em",
-                borderBottom: "1px solid black",
               }}
             >
               <span
@@ -54,10 +53,8 @@ function NomineeTable(props) {
               </span>
             </td>
             <td
-              className='table-info-r'
+              className='table-infoR'
               style={{
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
                 padding: ".5em",
               }}
             >
@@ -69,10 +66,8 @@ function NomineeTable(props) {
               </span>
             </td>
             <td
-              className='table-info-r'
+              className='table-infoR'
               style={{
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
                 padding: ".5em",
               }}
             >
@@ -84,59 +79,45 @@ function NomineeTable(props) {
               </span>
             </td>
             <td
-              className='table-info-e'
+              className='table-infoE'
               style={{
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
                 padding: ".5em",
               }}
             >
               {sorted.genre}
             </td>
             <td
-              className='table-info-e'
+              className='table-infoE'
               style={{
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
                 padding: ".5em",
               }}
             >
               {sorted.year}
             </td>
             <td
-              className='table-info-e'
+              className='table-infoE'
               style={{
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
                 padding: ".5em",
               }}
             >
               {sorted.metacritic}
             </td>
             <td
-              className='table-info-e'
-              style={{
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
-              }}
+              className='table-infoE'
             >
               {sorted.votes}
             </td>
             <td
-              className='table-info-e'
+              className='table-infoE'
               style={{
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
                 padding: ".5em",
               }}
             >
               {sorted.victory}
             </td>
             <td
-              className='table-info-e'
+              className='table-infoE'
               style={{
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
                 padding: ".5em",
               }}
             >
@@ -153,89 +134,74 @@ function NomineeTable(props) {
       <table>
         <thead>
           <tr>
-            <th style={{ borderBottom: "1px solid black" }}>
+            <th>
               Ceremony
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("hallOfGreat")}
               ></FontAwesomeIcon>
             </th>
-            <th style={{ borderBottom: "1px solid black" }}>
+            <th>
               Nominated By
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("ally")}
               ></FontAwesomeIcon>
             </th>
-            <th style={{ borderBottom: "1px solid black" }}>
+            <th>
               Game
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("game")}
               ></FontAwesomeIcon>
             </th>
-            <th style={{ borderBottom: "1px solid black" }}>
+            <th>
               Genre
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("genre")}
               ></FontAwesomeIcon>
             </th>
-            <th style={{ borderBottom: "1px solid black" }}>
+            <th>
               Year
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("year")}
               ></FontAwesomeIcon>
             </th>
-            <th style={{ borderBottom: "1px solid black" }}>
+            <th>
               Metacritic
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("metacritic")}
               ></FontAwesomeIcon>
             </th>
-            <th
-              style={{
-                borderBottom: "1px solid black",
-              }}
-            >
+            <th>
               Votes Received
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("votes")}
               ></FontAwesomeIcon>
             </th>
             <th
-              style={{
-                borderBottom: "1px solid black",
-              }}
             >
               Inducted
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("victory")}
@@ -249,7 +215,6 @@ function NomineeTable(props) {
               Banned
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("banned")}

@@ -42,7 +42,6 @@ function AllyTable(props) {
               className='table-infoE'
               style={{
                 padding: "1em",
-                borderBottom: "1px solid black",
               }}
             >
               <span
@@ -55,9 +54,7 @@ function AllyTable(props) {
             <td
               className='table-infoR'
               style={{
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
-                padding: ".5em"
+                padding: ".5em"              
               }}
             >
               <span
@@ -69,18 +66,12 @@ function AllyTable(props) {
             </td>
             <td
               className='table-infoE'
-              style={{
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
-              }}
             >
               {sorted.votes}
             </td>
             <td
               className='table-infoE'
               style={{
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
                 padding: ".5em",
               }}
             >
@@ -89,8 +80,6 @@ function AllyTable(props) {
             <td
               className='table-infoE'
               style={{
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
                 padding: ".5em",
               }}
             >
@@ -107,63 +96,49 @@ function AllyTable(props) {
       <table>
         <thead>
           <tr>
-            <th style={{ borderBottom: "1px solid black" }}>
+            <th>
               Ceremony
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("hallOfGreat")}
               ></FontAwesomeIcon>
             </th>
-            <th style={{ borderBottom: "1px solid black" }}>
+            <th>
               Game
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("game")}
               ></FontAwesomeIcon>
             </th>
             <th
-              style={{
-                borderBottom: "1px solid black",
-              }}
             >
               Votes Received
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("votes")}
               ></FontAwesomeIcon>
             </th>
             <th
-              style={{
-                borderBottom: "1px solid black",
-              }}
             >
               Inducted
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("victory")}
               ></FontAwesomeIcon>
             </th>
             <th
-              style={{
-                borderBottom: "1px solid black",
-              }}
             >
               Banned
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("banned")}

@@ -70,7 +70,6 @@ function RundownTable(props) {
               Ally
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("ally")}

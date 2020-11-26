@@ -39,9 +39,7 @@ function CeremonyTable(props) {
             <td
               className='table-infoR'
               style={{
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
-                padding: ".5em",
+                padding: ".5em"
               }}
             >
               <span
@@ -54,9 +52,7 @@ function CeremonyTable(props) {
             <td
               className='table-infoR'
               style={{
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
-                padding: ".5em",
+                padding: ".5em"
               }}
             >
               <span
@@ -68,10 +64,6 @@ function CeremonyTable(props) {
             </td>
             <td
             className='table-infoE'
-              style={{
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
-              }}
             >
               {sorted.votes}
             </td>
@@ -85,12 +77,11 @@ function CeremonyTable(props) {
             >
               {sorted.victory}
             </td>
+            {sorted.wonByPatreonVote === 'true' ? <td>{sorted.wonByPatreonVote}</td>: <></>}
             <td
             className='table-infoE'
               style={{
-                borderBottom: "1px solid black",
-                borderLeft: "1px solid black",
-                padding: ".5em",
+                padding: ".5em"
               }}
             >
               {sorted.banned}
@@ -106,63 +97,46 @@ function CeremonyTable(props) {
       <table>
         <thead>
           <tr>
-            <th style={{ borderBottom: "1px solid black" }}>
+            <th>
               Nominated By
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("ally")}
               ></FontAwesomeIcon>
             </th>
-            <th style={{ borderBottom: "1px solid black" }}>
+            <th>
               Game
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("game")}
               ></FontAwesomeIcon>
             </th>
-            <th
-              style={{
-                borderBottom: "1px solid black",
-              }}
-            >
+            <th>
               Votes Received
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("votes")}
               ></FontAwesomeIcon>
             </th>
-            <th
-              style={{
-                borderBottom: "1px solid black",
-              }}
-            >
+            <th>
               Inducted
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("victory")}
               ></FontAwesomeIcon>
             </th>
-            <th
-              style={{
-                borderBottom: "1px solid black",
-              }}
-            >
+            <th>
               Banned
               <FontAwesomeIcon
                 size="1x"
-                style={{ marginLeft: ".25em" }}
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("banned")}

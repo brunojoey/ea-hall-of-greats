@@ -97,6 +97,7 @@ function GamePage(props) {
           height={128}
           width={128}
           timeout={3000}
+          style={{ marginLeft: '40rem', marginTop: '5rem'}}
         />
       )}
     </>
