@@ -74,19 +74,19 @@ const CeremonyTabs = (props) => {
   return (
     <>
       <Tabs value={selectedTab} onChange={handleChange} className='ceremony-tab-bar' >
-        <Tab classes={{ root: classes.tab }} label="Hall of Greats 1" />
-        <Tab classes={{ root: classes.tab }} label="Hall of Greats 2" />
-        <Tab classes={{ root: classes.tab }} label="Hall of Greats 3" />
-        <Tab classes={{ root: classes.tab }} label="Hall of Greats 4" />
-        <Tab classes={{ root: classes.tab }} label="Hall of Greats 5" />
-        <Tab classes={{ root: classes.tab }} label="Hall of Greats 6" />
-        <Tab classes={{ root: classes.tab }} label="Hall of Greats 7" />
-        <Tab classes={{ root: classes.tab }} label="Hall of Greats 8" />
-        <Tab classes={{ root: classes.tab }} label="Hall of Greats 9" />
-        <Tab classes={{ root: classes.tab }} label="Hall of Greats 10" />
-        <Tab classes={{ root: classes.tab }} label="Hall of Greats 11" />
-        <Tab classes={{ root: classes.tab }} label="Hall of Greats 12" />
-        <Tab classes={{ root: classes.tab }} label="Hall of Greats 13" />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 1" className='tab-ceremonies'/>
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 2" className='tab-ceremonies' />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 3" className='tab-ceremonies' />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 4" className='tab-ceremonies' />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 5" className='tab-ceremonies' />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 6" className='tab-ceremonies' />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 7" className='tab-ceremonies' />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 8" className='tab-ceremonies' />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 9" className='tab-ceremonies' />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 10" className='tab-ceremonies' />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 11" className='tab-ceremonies' />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 12" className='tab-ceremonies' />
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 13" className='tab-ceremonies' />
       </Tabs>
       
       {selectedTab === 0 && <HallOfGreatOne history={history} />}

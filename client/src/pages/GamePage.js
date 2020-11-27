@@ -22,7 +22,7 @@ function GamePage(props) {
   return (
     <>
       {gamePage.game ? (
-        <main key={gamePage.id} className='game-page'>
+        <main key={gamePage.id} className="game-page">
           {gamePage.victory === "True" ? (
             <section className="inductee-area">
               <StarDecoration />
@@ -33,21 +33,23 @@ function GamePage(props) {
                 style={{ border: "4px solid red" }}
                 className="game-image-primary"
               />
+              <h2 className="game-ceremony">Hall of Greats {gamePage.hallOfGreat} Winner</h2>
             </section>
           ) : (
-            <section className='nominee-area'>
+            <section className="nominee-area">
               <h1 className="game-title-secondary"> {gamePage.game} </h1>
               <img
                 src={gamePage.image}
                 alt={gamePage.alt}
-                className='game-image-secondary'
+                className="game-image-secondary"
                 style={{ border: "4px solid red" }}
               />
+              <h2 className="game-ceremony">Hall of Greats {gamePage.hallOfGreat} Nominee</h2>
             </section>
           )}
           <section className="game-info">
-            <span className='ally-game'>
-              <h3 className='brought-by'>Brought By:</h3>{" "}
+            <span className="ally-game">
+              <h3 className="brought-by">Brought By:</h3>{" "}
               <p
                 onClick={() => history.push(`/allies/${gamePage.allyLink}`)}
                 className="ally-page-link"
@@ -55,36 +57,29 @@ function GamePage(props) {
                 {gamePage.ally}
               </p>{" "}
             </span>
-            <p className='game-data-section'>
+            <p className="game-data-section">
               {" "}
-              <span style={{ textDecoration: "underline" }}>
-                Ceremony
-              </span>:{" "}
+              <strong>Ceremony</strong>:{" "}
               <span
                 onClick={() => history.push(`/ceremonies/${gamePage.hallLink}`)}
                 className="hall-page-link"
               >
                 Hall of Great {gamePage.hallOfGreat}{" "}
-              </span>
-              || <span style={{ textDecoration: "underline" }}>Platforms</span>:{" "}
-              {gamePage.platforms} ||{" "}
-              <span style={{ textDecoration: "underline" }}>Genre</span>:{" "}
-              {gamePage.genre} ||{" "}
-              <span style={{ textDecoration: "underline" }}>Metacritic</span>:{" "}
-              {gamePage.metacritic} ||{" "}
-              <span style={{ textDecoration: "underline" }}>Year</span>:{" "}
-              {gamePage.year} ||{" "}
-              <span style={{ textDecoration: "underline" }}>
-                Votes Received
-              </span>
-              : {gamePage.votes}
+              </span> |{" "}
+              <strong>Platforms</strong>: {gamePage.platforms} |{" "}
+              <strong>Genre</strong>: {gamePage.genre} |{" "}
+              <strong>Metacritic</strong>: {gamePage.metacritic} |{" "}
+              <strong>Year</strong>: {gamePage.year} |{" "}
+              <strong>Votes Received</strong>: {gamePage.votes} |{" "}
+              <strong>Banned</strong>: {gamePage.banned}
             </p>
           </section>
           {gamePage.victory === "True"}
           <section className="description-game-section">
             <span>
               {" "}
-              <strong>Description: </strong> <p className='description-game'>{gamePage.description}</p>{" "}
+              <strong>Description: </strong>{" "}
+              <p className="description-game">{gamePage.description}</p>{" "}
             </span>
           </section>
           <StarDecoration />
@@ -97,7 +92,7 @@ function GamePage(props) {
           height={128}
           width={128}
           timeout={3000}
-          style={{ marginLeft: '40rem', marginTop: '5rem'}}
+          style={{ marginLeft: "40rem", marginTop: "5rem" }}
         />
       )}
     </>

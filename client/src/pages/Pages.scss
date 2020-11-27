@@ -16,7 +16,7 @@
 
   .rules-heading,
   .bans-heading {
-    @include heading-styles(400, 3rem, 0);
+    @include heading-styles(500, 3rem, 0);
   }
 
   .rules-list,
@@ -31,13 +31,13 @@
 
 .winner-page {
   &-heading {
-    @include heading-styles(400, 3rem, 0 0 1rem 0);
+    @include heading-styles(500, 3rem, 0 0 1rem 0);
   }
 }
 
 .nominations-page {
   &-heading {
-    @include heading-styles(400, 3rem, 0 0 1rem 0);
+    @include heading-styles(500, 3rem, 0 0 1rem 0);
   }
 }
 // End Winner & Nominee Page Styling
@@ -46,15 +46,20 @@
 
 .hall-page {
   &-title {
-    @include heading-styles(400, 3rem, 1rem 0);
+    @include heading-styles(500, 3rem, 1rem 0);
   }
 
   &-video {
     margin: $margin-auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     box-shadow: 0 .5rem 1rem $color-black;
     border: 3px solid red;
     border-radius: 3px;
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: translateY(-0.5rem);
+    }
   }
 
   &-button {
@@ -70,13 +75,13 @@
   }
 
   .voting-title {
-    @include heading-styles(400, 2.5rem, 1rem 0);
+    @include heading-styles(500, 2.5rem, 1rem 0);
   }
 }
 
 .ally-page {
   &-title {
-    @include heading-styles(400, 3rem, 1rem 0);
+    @include heading-styles(500, 3rem, 1rem 0);
   }
 
   .MuiButton-root {
@@ -92,6 +97,17 @@
   }
 }
 
+.tab-ceremonies:hover {
+  color: $color-red;
+  text-decoration: line-through;
+}
+
+.tab-allies:hover {
+  color: $color-red;
+  text-decoration: line-through;
+}
+
+
 // End Ceremony & Ally Page Styling
 
 // Game Page Styling
@@ -103,13 +119,14 @@
 
   .inductee-area {
     .game-title-primary {
-      @include heading-styles(400, 3rem, 0 0 1rem 0);
-      transition: 0.3s;
+      @include heading-styles(500, 3rem, 0 0 1rem 0);
+      animation: fadeItemIn 2s ease;      
+    }
+
+    .game-ceremony {
+      text-align: center;
       animation: fadeItemIn 2s ease;
-      
-      &:hover {
-        transform: translateY(-0.5rem);
-      }
+      font-weight: 500;
     }
     
     .game-image-primary {
@@ -131,20 +148,21 @@
     margin-top: 1rem;
 
     .game-title-secondary {
-      @include heading-styles(400, 3rem, 0 0 1rem 0);
-      transition: 0.3s;
+      @include heading-styles(500, 3rem, 0 0 1rem 0);
       animation: fadeItemIn 2s ease;
+    }
 
-      &:hover {
-        transform: translateY(-0.5rem);
-      }
+    .game-ceremony {
+      text-align: center;
+      animation: fadeItemIn 2s ease;
+      font-weight: 500;
     }
 
     .game-image-secondary {
       display: block;
       margin: $margin-auto;
       box-shadow: 2px 2px 9px #888;
-      transition: 0.3s;
+      transition: 0.3s ease;
       border: 4px solid red;
       border-radius: 3px;
       animation: fadeItemIn 2s ease;
@@ -156,7 +174,7 @@
   }
 
   .game-info {
-    margin-left: 1rem;
+    margin: 0 0 0 1rem;
 
     .ally-game {
       display: flex;

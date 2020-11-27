@@ -25,8 +25,12 @@ function RundownTable(props) {
   }
 
   const requestSort = (key) => {
-    let direction = 'ascending'
-    if (sortConfig && sortConfig.key === key && sortConfig.direction === "ascending") {
+    let direction = "ascending";
+    if (
+      sortConfig &&
+      sortConfig.key === key &&
+      sortConfig.direction === "ascending"
+    ) {
       direction = "descending";
     }
     setSortConfig({ key, direction });
@@ -41,20 +45,30 @@ function RundownTable(props) {
         <tbody key={sorted._id}>
           <tr>
             <td className="table-infoE">
-              <span
-                onClick={() => history.push(`/allies/${sorted.allyLink}`)}
-                className="ally-page-link"
-              >
-                {sorted.ally}
-              </span>
+              <span>{sorted.ally}</span>
             </td>
             {sorted.votingChoiceOne === "Was Not Able to Attend" ? (
               <td>{sorted.votingChoiceOne}</td>
             ) : (
-              <td className="table-infoR" onClick={() => history.push(`/games/${sorted._id}`)}>{sorted.votingChoiceOne}</td>
+              <td
+                className="table-infoR"
+                onClick={() => history.push(`/games/${sorted._id}`)}
+              >
+                {sorted.votingChoiceOne}
+              </td>
             )}
-            <td className="table-infoR" onClick={() => history.push(`/games/${sorted._id}`)}>{sorted.votingChoiceTwo}</td>
-            <td className="table-infoR" onClick={() => history.push(`/games/${sorted._id}`)}>{sorted.votingChoiceThree}</td>
+            <td
+              className="table-infoR"
+              onClick={() => history.push(`/games/${sorted._id}`)}
+            >
+              {sorted.votingChoiceTwo}
+            </td>
+            <td
+              className="table-infoR"
+              onClick={() => history.push(`/games/${sorted._id}`)}
+            >
+              {sorted.votingChoiceThree}
+            </td>
           </tr>
         </tbody>
       );
