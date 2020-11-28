@@ -44,9 +44,7 @@ function RundownTable(props) {
       return (
         <tbody key={sorted._id}>
           <tr>
-            <td className="table-infoE">
-              <span>{sorted.ally}</span>
-            </td>
+            <td> <span>{sorted.ally}</span> </td>
             {sorted.votingChoiceOne === "Was Not Able to Attend" ? (
               <td>{sorted.votingChoiceOne}</td>
             ) : (

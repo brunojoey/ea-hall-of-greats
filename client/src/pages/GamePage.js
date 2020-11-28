@@ -85,15 +85,18 @@ function GamePage(props) {
           <StarDecoration />
         </main>
       ) : (
-        <Loader
-          className="loader"
-          type="Circles"
-          color="red"
-          height={128}
-          width={128}
-          timeout={3000}
-          style={{ marginLeft: "40rem", marginTop: "5rem" }}
-        />
+        <>
+          <Loader
+            className="loader"
+            type="Circles"
+            color="red"
+            height={128}
+            width={128}
+            timeout={3000}
+            style={{ marginLeft: "40rem", marginTop: "5rem" }}
+          />
+          <h2 style={{textAlign: 'center'}}>Please Wait</h2>    
+        </>  
       )}
     </>
   );
