@@ -1,6 +1,6 @@
 @import "../styles/mixins.scss";
 @import "../styles/variables.scss";
-@import '../styles/animations.scss';
+@import "../styles/animations.scss";
 
 // Home Page Styling
 .home {
@@ -39,8 +39,55 @@
 // Winner & Nominee Page Styling
 
 .winner-page {
+
   &-heading {
     @include heading-styles(500, 3rem, 0 0 1rem 0);
+  }
+
+  &-map {
+    margin-left: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 30rem);
+    animation: fadeItemIn 4s ease;
+  }
+
+
+  &-game {
+    position: relative;
+    width: 75%;
+    backface-visibility: hidden;
+
+    .winner-page-caption {
+      color: $color-white;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      transition: all 0.4s;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      opacity: 0; // Initial state before hover animation  
+    }
+
+    .winner-page-image {
+      height: 100%;
+      border: 5px solid red;
+      border-radius: 5px;
+      transition: all 0.2s;
+      // transform: translateX(-2rem);
+
+      &:hover {
+        transform: translateY(-0.5rem) scale(1);
+        filter: blur(4px) brightness(80%);
+      }
+    }
+
+    &:hover .winner-page-caption {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+
   }
 }
 
@@ -61,7 +108,7 @@
   &-video {
     margin: $margin-auto;
     margin-bottom: 2rem;
-    box-shadow: 0 .5rem 1rem $color-black;
+    box-shadow: 0 0.5rem 1rem $color-black;
     border: 3px solid red;
     border-radius: 3px;
     transition: 0.3s ease;
@@ -116,7 +163,6 @@
   text-decoration: line-through;
 }
 
-
 // End Ceremony & Ally Page Styling
 
 // Game Page Styling
@@ -129,7 +175,7 @@
   .inductee-area {
     .game-title-primary {
       @include heading-styles(500, 3rem, 0 0 1rem 0);
-      animation: fadeItemIn 2s ease;      
+      animation: fadeItemIn 2s ease;
     }
 
     .game-ceremony {
@@ -137,7 +183,7 @@
       animation: fadeItemIn 2s ease;
       font-weight: 500;
     }
-    
+
     .game-image-primary {
       display: block;
       margin: $margin-auto;
