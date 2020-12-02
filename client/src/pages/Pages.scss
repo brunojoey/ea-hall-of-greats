@@ -44,7 +44,7 @@
     @include heading-styles(500, 3rem, 0 0 1rem 0);
   }
 
-  &-map {
+  &-container {
     margin-left: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 30rem);

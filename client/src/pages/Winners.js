@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
+import useMediaQuery from '../utils/useMediaQuery';
+import WinnerTable from '../components/Table/winnerTable'
 // import SameGameModal from "../components/Modal";
 import StarDecoration from "../components/StarDecoration";
 import "./Pages.scss";
 
 function Winners(props) {
   const [games, setGames] = useState([]);
+  const matches = useMediaQuery("(min-width: 768px)");
   const { history } = props;
 
   useEffect(() => {
@@ -23,7 +26,7 @@ function Winners(props) {
     winnerCard = games.map((winner) => {
       return (
           <div className="winner-page-game" onClick={() => history.push(`/games/${winner._id}`) }>
-            <figure className="winner-page-shape">
+            <figure className="winner-page-card">
               <img src={winner.image} alt={winner.alt} className="winner-page-image"/>
               <caption className="winner-page-caption"> {winner.game} 
                 <span style={{display: 'block'}} >&rarr;</span>
@@ -38,10 +41,13 @@ function Winners(props) {
     <main className="winner-page">
       <StarDecoration />
       <h2 className="winner-page-heading">The Illustrious Inductees</h2>
-      <section className='winner-page-map'>
+      {matches ? 
+      <section className='winner-page-container'>
         {winnerCard}
       </section>
-      {/* <WinnerTable games={games} history={history} /> */}
+      :
+      <WinnerTable games={games} history={history} />
+      }
       <StarDecoration />
     </main>
   );
