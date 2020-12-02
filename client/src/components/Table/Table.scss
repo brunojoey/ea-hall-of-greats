@@ -14,8 +14,8 @@ table {
     color: $color-white;
     font-weight: bold;
     text-align: $text-center;
-    padding: 6px;
     border: 1px solid #444;
+    padding: 6px;
   }
 
   td {
@@ -55,11 +55,10 @@ and also iPads specifically.
   (min-device-width: 768px) and (max-device-width: 1024px) {  
   table {
     width: 80%;
+    border: 1px solid #ccc;
     margin: $margin-auto;
-
-    tbody {
-      margin: 0.5em 0 0.5em 0;
-    }
+    border-collapse: collapse;
+    position: relative;
 
     /* Hide table headers (but not display: none;, for accessibility) */
     thead tr {
@@ -69,12 +68,11 @@ and also iPads specifically.
     }
 
     tr {
-      border: 1px solid #ccc;
 			
 			td {
 				/* Behave  like a "row" */
 				border: 1px solid $color-black;
-				position: relative;
+        position: relative;
         
         &:first-child {
           background-color: #888;
@@ -85,10 +83,10 @@ and also iPads specifically.
 					/* Now like a table header */
 					position: absolute;
 					/* Top/left values mimic padding */
-					top: 6px;
-					left: 6px;
+					// top: 6px;
+					// left: 6px;
 					width: 20%;
-					padding-right: 10px;
+					// padding-right: 10px;
 					white-space: nowrap;
 					text-align: left;
 				}
