@@ -14,10 +14,10 @@ function NomineeTable(props) {
   if (sortConfig !== null) {
     sortedItems.sort((a, b) => {
       if (a[sortConfig.key] < b[sortConfig.key]) {
-        return sortConfig.direction === "ascending" ? 1 : -1;
+        return sortConfig.direction === "ascending" ? -1 : 1;
       }
       if (a[sortConfig.key] > b[sortConfig.key]) {
-        return sortConfig.direction === "ascending" ? -1 : 1;
+        return sortConfig.direction === "ascending" ? 1 : -1;
       }
       return 0;
     });
@@ -92,6 +92,14 @@ function NomineeTable(props) {
                 padding: ".5em",
               }}
             >
+              {sorted.developer}
+            </td>
+            <td
+              className='table-infoE'
+              style={{
+                padding: ".5em",
+              }}
+            >
               {sorted.year}
             </td>
             <td
@@ -134,7 +142,7 @@ function NomineeTable(props) {
       <table>
         <thead>
           <tr>
-            <th>
+            <th style={{width: '15%'}}>
               Ceremony
               <FontAwesomeIcon
                 size="1x"
@@ -143,7 +151,7 @@ function NomineeTable(props) {
                 onClick={() => requestSort("hallOfGreat")}
               ></FontAwesomeIcon>
             </th>
-            <th>
+            <th style={{width: '25%'}}>
               Nominated By
               <FontAwesomeIcon
                 size="1x"
@@ -152,7 +160,7 @@ function NomineeTable(props) {
                 onClick={() => requestSort("ally")}
               ></FontAwesomeIcon>
             </th>
-            <th>
+            <th style={{width: '45%'}}>
               Game
               <FontAwesomeIcon
                 size="1x"
@@ -171,6 +179,15 @@ function NomineeTable(props) {
               ></FontAwesomeIcon>
             </th>
             <th>
+              Developer
+              <FontAwesomeIcon
+                size="1x"
+                className="feed-user-icon"
+                icon={faSort}
+                onClick={() => requestSort("developer")}
+              ></FontAwesomeIcon>
+            </th>
+            <th style={{width: '20%'}}>
               Year
               <FontAwesomeIcon
                 size="1x"
@@ -197,8 +214,7 @@ function NomineeTable(props) {
                 onClick={() => requestSort("votes")}
               ></FontAwesomeIcon>
             </th>
-            <th
-            >
+            <th>
               Inducted
               <FontAwesomeIcon
                 size="1x"
@@ -207,11 +223,7 @@ function NomineeTable(props) {
                 onClick={() => requestSort("victory")}
               ></FontAwesomeIcon>
             </th>
-            <th
-              style={{
-                borderBottom: "1px solid black",
-              }}
-            >
+            <th>
               Banned
               <FontAwesomeIcon
                 size="1x"

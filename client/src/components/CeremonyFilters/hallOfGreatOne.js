@@ -37,6 +37,6 @@ function HallOfGreatOne(props) {
       <RundownTable games={games} history={history} />
     </main>
   );
-}
+};
 
 export default HallOfGreatOne;

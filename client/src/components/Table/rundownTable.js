@@ -15,10 +15,10 @@ function RundownTable(props) {
       if (a[sortConfig.key] < b[sortConfig.key]) {
         // console.log('a sort config', a[sortConfig.key])
         // console.log('b sort config', b[sortConfig.key])
-        return sortConfig.direction === "ascending" ? 1 : -1;
+        return sortConfig.direction === "ascending" ? -1 : 1;
       }
       if (a[sortConfig.key] > b[sortConfig.key]) {
-        return sortConfig.direction === "ascending" ? -1 : 1;
+        return sortConfig.direction === "ascending" ? 1 : -1;
       }
       return 0;
     });

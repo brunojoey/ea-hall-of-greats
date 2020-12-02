@@ -14,6 +14,15 @@
     text-align: $text-center;
   }
 
+  &-links {
+    color: black;
+
+    &:hover {
+      text-decoration: line-through;
+      color: red;
+    }
+  }
+
   .rules-heading,
   .bans-heading {
     @include heading-styles(500, 3rem, 0);

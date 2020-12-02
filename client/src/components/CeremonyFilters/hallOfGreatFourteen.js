@@ -5,7 +5,7 @@ import RundownTable from "../Table/rundownTable";
 import gamesAPI from "../../utils/gamesAPI";
 import useMediaQuery from "../../utils/useMediaQuery";
 
-function HallOfGreatSeven(props) {
+function HallOfGreatFourteen(props) {
   const [games, setGames] = useState([]);
   const { history } = props;
   const matches = useMediaQuery("(min-width: 768px)");
@@ -13,21 +13,22 @@ function HallOfGreatSeven(props) {
   useEffect(() => {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
-      data = data.filter((games) => games.hallOfGreat === 7);
+      data = data.filter((games) => games.hallOfGreat === 14);
       setGames(data);
+      console.log('games', games)
     }
 
     fetchData();
-  }, []);
+  });
 
   return (
     <main className="hall-page">
-      <h3 className="hall-page-title">The Seventh Hall of Greats</h3>
+      <h3 className="hall-page-title">The Fourteenth Hall of Greats</h3>
       {matches ? (
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=KI8NvlEo18g"
+          url="https://www.youtube.com/watch?v=SxhlPJK4J0g"
           className="hall-page-video"
-          alt="Hall of Greats #7 https://www.youtube.com/watch?v=KI8NvlEo18g"
+          alt="Hall of Greats #14 https://www.youtube.com/watch?v=SxhlPJK4J0g"
         />
       ) : (
         <></>
@@ -39,4 +40,4 @@ function HallOfGreatSeven(props) {
   );
 };
 
-export default HallOfGreatSeven;
+export default HallOfGreatFourteen;

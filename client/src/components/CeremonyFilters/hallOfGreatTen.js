@@ -5,7 +5,7 @@ import RundownTable from "../Table/rundownTable";
 import gamesAPI from "../../utils/gamesAPI";
 import useMediaQuery from "../../utils/useMediaQuery";
 
-function HallOfGreatOne(props) {
+function HallOfGreatTen(props) {
   const [games, setGames] = useState([]);
   const { history } = props;
   const matches = useMediaQuery("(min-width: 768px)");
@@ -37,6 +37,6 @@ function HallOfGreatOne(props) {
       <RundownTable games={games} history={history} />
     </main>
   );
-}
+};
 
-export default HallOfGreatOne;
+export default HallOfGreatTen;
