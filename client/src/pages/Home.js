@@ -11,7 +11,7 @@ function Home() {
         <p>
           The Easy Allies have been conducting their own video game Hall of Fame
           they like to call The Hall of Greats! The inagural ceremony happened
-          in February of 2017. Ever since, everythree to four months, the Allies
+          in February of 2017. Ever since, every three to four months, the Allies
           gather to decide the two best games of each ceremony to induct into
           the Hall of Greats!{" "}
         </p>
