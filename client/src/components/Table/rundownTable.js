@@ -44,29 +44,17 @@ function RundownTable(props) {
       return (
         <tbody key={sorted._id}>
           <tr>
-            <td> <span>{sorted.ally}</span> </td>
+            <td>
+              {" "}
+              <span>{sorted.ally}</span>{" "}
+            </td>
             {sorted.votingChoiceOne === "Was Not Able to Attend" ? (
               <td>{sorted.votingChoiceOne}</td>
             ) : (
-              <td
-                className="table-infoR"
-                onClick={() => history.push(`/games/${sorted._id}`)}
-              >
-                {sorted.votingChoiceOne}
-              </td>
+              <td className="table-infoR">{sorted.votingChoiceOne}</td>
             )}
-            <td
-              className="table-infoR"
-              onClick={() => history.push(`/games/${sorted._id}`)}
-            >
-              {sorted.votingChoiceTwo}
-            </td>
-            <td
-              className="table-infoR"
-              onClick={() => history.push(`/games/${sorted._id}`)}
-            >
-              {sorted.votingChoiceThree}
-            </td>
+            <td className="table-infoR">{sorted.votingChoiceTwo}</td>
+            <td className="table-infoR">{sorted.votingChoiceThree}</td>
           </tr>
         </tbody>
       );

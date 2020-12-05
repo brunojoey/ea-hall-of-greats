@@ -36,6 +36,32 @@
 }
 // End Home Page Styling
 
+// Search Bar
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  .queryHOG {
+    width: 40%;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 1rem;
+    border: 2px solid red;
+    border-radius: 3px;
+
+    &:placeholder-shown {
+      font-weight: 700;
+    }
+  }
+
+  .submit-btn {
+    display: inline-block;
+    padding: 5px;
+  }
+}
+
 // Winner & Nominee Page Styling
 
 .winner-page {
@@ -74,7 +100,7 @@
       border: 5px solid red;
       border-radius: 5px;
       transition: all 0.2s;
-      // transform: translateX(-2rem);
+      box-shadow: 0 2px 1rem $color-black; 
 
       &:hover {
         transform: translateY(-0.5rem) scale(1);
@@ -85,8 +111,8 @@
     &:hover .winner-page-caption {
       opacity: 1;
       transform: translate(-50%, -50%);
+      text-shadow: 0 5px 1rem $color-black;
     }
-
   }
 }
 
