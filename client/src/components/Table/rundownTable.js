@@ -4,7 +4,7 @@ import { faSort } from "@fortawesome/free-solid-svg-icons";
 import "./Table.scss";
 
 function RundownTable(props) {
-  const { history, games } = props;
+  const { games } = props;
   const [sortConfig, setSortConfig] = useState(null);
 
   // Sorts the Table
@@ -13,8 +13,6 @@ function RundownTable(props) {
   if (sortConfig !== null) {
     sortedItems.sort((a, b) => {
       if (a[sortConfig.key] < b[sortConfig.key]) {
-        // console.log('a sort config', a[sortConfig.key])
-        // console.log('b sort config', b[sortConfig.key])
         return sortConfig.direction === "ascending" ? -1 : 1;
       }
       if (a[sortConfig.key] > b[sortConfig.key]) {
@@ -35,7 +33,6 @@ function RundownTable(props) {
     }
     setSortConfig({ key, direction });
   };
-  // console.log('sort config', sortConfig)
 
   // Puts data in a table sorted at first by Ceremony
   let newSortedItems;

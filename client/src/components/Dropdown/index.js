@@ -35,6 +35,9 @@ function Dropdown() {
         <Link to="/" className="nav-links">
           Home
         </Link>
+        <Link to='/about' className='nav-links'>
+          About 
+        </Link>
         <Link to="/winners" className="nav-links">
           The Inductees
         </Link>

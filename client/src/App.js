@@ -6,6 +6,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import Home from "./pages/Home";
+import About from './pages/About'
 import Winners from "./pages/Winners";
 import Allies from "./pages/Allies";
 import Nominations from "./pages/Nominations";
@@ -25,6 +26,7 @@ function App() {
           <Header path={path} setPath={setPath} />
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
             <Route
               exact
               path="/winners"

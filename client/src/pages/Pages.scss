@@ -4,10 +4,47 @@
 
 // Home Page Styling
 .home {
+  animation: fadeItemIn 2s;
   &-title {
-    @include heading-styles(600, 4rem, 0);
+    font-family: Snell Roundhand, cursive;
+    @include heading-styles(600, 6rem, 3rem 0);
   }
 
+  &-links-div {
+    margin: 5rem 0 4rem 0;
+    text-align: center;
+  }
+  
+  
+  &-links {
+    font-size: 2rem;
+    margin: 0 2rem;
+    color: black;
+    
+    &:hover {
+      text-decoration: line-through;
+      color: red;
+    }
+  }
+}
+// End Home Page Styling
+
+.about {
+  &-heading {
+    @include heading-styles(600, 4rem, 0);
+    margin-top: 1rem;
+  }
+  .rules-heading,
+  .bans-heading {
+    @include heading-styles(500, 3rem, 0);
+  }
+  
+  .rules-list,
+  .banned-list {
+    margin: 1rem 0;
+    text-align: $text-center;
+  }
+  
   .description-container {
     width: 75%;
     margin: $margin-auto;
@@ -23,19 +60,7 @@
     }
   }
 
-  .rules-heading,
-  .bans-heading {
-    @include heading-styles(500, 3rem, 0);
-  }
-
-  .rules-list,
-  .banned-list {
-    margin: 1rem 0;
-    text-align: $text-center;
-  }
 }
-// End Home Page Styling
-
 // Search Bar
 
 .search-bar {
