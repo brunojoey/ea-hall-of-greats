@@ -1,10 +1,10 @@
 @import "../../styles/animations.scss";
 @import "../../styles/variables.scss";
 
-// .ally-page-container {
-//   display: flex;
-//   flex-direction: row;
-// }
+.ally-page-container {
+  display: grid;
+  grid-template-columns: repeat(3, 30rem);
+}
 
 .ally-page-card {
   // Functionality
@@ -12,8 +12,6 @@
   -moz-perspective: 150rem; // Will work in Firefox
   position: relative;
   height: 23rem;
-  display: flex;
-  flex-direction: row;
 
   &-side {
     transition: all .8s ease;

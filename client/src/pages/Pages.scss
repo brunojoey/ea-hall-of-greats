@@ -5,6 +5,7 @@
 // Home Page Styling
 .home {
   animation: fadeItemIn 2s;
+  
   &-title {
     font-family: Snell Roundhand, cursive;
     @include heading-styles(600, 6rem, 3rem 0);
