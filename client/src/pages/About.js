@@ -1,4 +1,5 @@
 import React from "react";
+import StarDecoration from "../components/StarDecoration";
 import './Pages.scss';
 
 function About() {
@@ -75,6 +76,7 @@ function About() {
       <section className="banned-list">
         <li>Huntdown (Until Q2 2021)</li>
       </section>
+      <StarDecoration />
     </main>
   );
 }
