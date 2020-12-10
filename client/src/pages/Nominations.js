@@ -8,7 +8,7 @@ import "./Pages.scss";
 
 function Nominations(props) {
   const [games, setGames] = useState([]);
-  const { history, query } = props;
+  const { history } = props;
 
   // Retrieves Database
   useEffect(() => {
@@ -24,7 +24,7 @@ function Nominations(props) {
     <main className="nominations-page">
       <StarDecoration />
       <h2 className="nominations-page-heading">The Notorious Nominees</h2>
-      {/* <SearchBar history={history} query={query} /> */}
+      <SearchBar history={history} games={games} />
       <NomineeTable games={games} history={history} />
       <StarDecoration />
     </main>

@@ -16,13 +16,13 @@ import HallOfGreatTen from "../CeremonyFilters/hallOfGreatTen";
 import HallOfGreatEleven from "../CeremonyFilters/hallOfGreatEleven";
 import HallOfGreatTwelve from "../CeremonyFilters/hallOfGreatTwelve";
 import HallOfGreatThirteen from "../CeremonyFilters/hallOfGreatThirteen";
-// import HallOfGreatFourteen from "../CeremonyFilters/hallOfGreatFourteen";
+import HallOfGreatFourteen from "../CeremonyFilters/hallOfGreatFourteen";
 
 const useStyles = makeStyles((theme) => ({
   tab: {
-    paddingTop: 10,
+    padding: 10,
     minWidth: 10, // a number of your choice
-    width: 110, // a number of your choice
+    width: 103, // a number of your choice
     margin: '0 auto'
   }
 }));
@@ -47,7 +47,7 @@ const CeremonyTabs = (props) => {
     10: "hall_great_eleven",
     11: "hall_great_twelve",
     12: "hall_great_thirteen",
-    // 13: "hall_great_fourteen",
+    13: "hall_great_fourteen",
   };
 
   const indexToTabName = {
@@ -64,7 +64,7 @@ const CeremonyTabs = (props) => {
     hall_great_eleven: 10,
     hall_great_twelve: 11,
     hall_great_thirteen: 12,
-    // hall_great_fourteen: 13,
+    hall_great_fourteen: 13,
   };
 
   const [selectedTab, setSelectedTab] = useState(indexToTabName[page]);
@@ -90,7 +90,7 @@ const CeremonyTabs = (props) => {
         <Tab classes={{ root: classes.tab }} label="Hall of Greats 11" className='tab-ceremonies' />
         <Tab classes={{ root: classes.tab }} label="Hall of Greats 12" className='tab-ceremonies' />
         <Tab classes={{ root: classes.tab }} label="Hall of Greats 13" className='tab-ceremonies' />
-        {/* <Tab classes={{ root: classes.tab }} label="Hall of Greats 14" className='tab-ceremonies' /> */}
+        <Tab classes={{ root: classes.tab }} label="Hall of Greats 14" className='tab-ceremonies' />
       </Tabs>
       
       {selectedTab === 0 && <HallOfGreatOne history={history} />}
@@ -106,7 +106,7 @@ const CeremonyTabs = (props) => {
       {selectedTab === 10 && <HallOfGreatEleven history={history} />}
       {selectedTab === 11 && <HallOfGreatTwelve history={history} />}
       {selectedTab === 12 && <HallOfGreatThirteen history={history} />}
-      {/* {selectedTab === 13 && <HallOfGreatFourteen history={history} />} */}
+      {selectedTab === 13 && <HallOfGreatFourteen history={history} />}
       <StarDecoration />
     </>
   );

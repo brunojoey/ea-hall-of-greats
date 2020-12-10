@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
 import useMediaQuery from '../utils/useMediaQuery';
 import WinnerTable from '../components/Table/winnerTable'
-// import SameGameModal from "../components/Modal";
 import StarDecoration from "../components/StarDecoration";
 import "./Pages.scss";
 

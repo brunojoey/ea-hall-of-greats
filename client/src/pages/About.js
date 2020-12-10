@@ -72,7 +72,7 @@ function About() {
           last choice will receive one.
         </li>
       </section>
-      <h2 className="bans-heading">The Current Bans</h2>
+      <h2 className="bans-heading" data-testid="bans-heading">The Current Bans</h2>
       <section className="banned-list">
         <li>Huntdown (Until Q2 2021)</li>
       </section>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Menu } from "@material-ui/core";
-import { Link } from "react-router-dom";
-import './Dropdown.scss';
+import { BrowserRouter as Router, Link } from "react-router-dom";
+import "./Dropdown.scss";
 
 function Dropdown() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -18,7 +18,7 @@ function Dropdown() {
     <section>
       <Button
         className="nav-links"
-        style={{color: 'white'}}
+        style={{ color: "white" }}
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
@@ -32,27 +32,29 @@ function Dropdown() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <Link to="/" className="nav-links">
-          Home
-        </Link>
-        <Link to='/about' className='nav-links'>
-          About 
-        </Link>
-        <Link to="/winners" className="nav-links">
-          The Inductees
-        </Link>
-        <Link to="/nominations" className="nav-links">
-          The Nominees
-        </Link>
-        <Link to="/ceremonies" className="nav-links">
-          The Ceremonies
-        </Link>
-        <Link to="/allies" className="nav-links">
-          The Allies
-        </Link>
+        <Router>
+          <Link to="/" className="nav-links">
+            Home
+          </Link>
+          <Link to="/about" className="nav-links">
+            About
+          </Link>
+          <Link to="/winners" className="nav-links">
+            The Inductees
+          </Link>
+          <Link to="/nominations" className="nav-links">
+            The Nominees
+          </Link>
+          <Link to="/ceremonies" className="nav-links">
+            The Ceremonies
+          </Link>
+          <Link to="/allies" className="nav-links">
+            The Allies
+          </Link>
+        </Router>
       </Menu>
     </section>
   );
-};
+}
 
 export default Dropdown;
