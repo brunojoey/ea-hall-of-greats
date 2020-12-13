@@ -6,6 +6,7 @@ import "./Table.scss";
 function NomineeTable(props) {
   const { history, games } = props;
   const [sortConfig, setSortConfig] = useState(null);
+  console.log('games', games);
 
   // Returns a copy of games.
   let sortedItems = [...games];

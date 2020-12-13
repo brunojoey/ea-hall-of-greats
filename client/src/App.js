@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,6 +14,7 @@ import Ceremonies from "./pages/Ceremonies";
 import GamePage from "./pages/GamePage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import gamesAPI from './utils/gamesAPI';
 import "./App.scss";
 
 function App() {

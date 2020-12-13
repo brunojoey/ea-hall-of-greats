@@ -12,8 +12,10 @@
   }
 
   &-links-div {
-    margin: 5rem 0 4rem 0;
-    text-align: center;
+    margin: 0 0 7rem 15rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
   }
   
   
@@ -62,31 +64,6 @@
   }
 
 }
-// Search Bar
-
-.search-bar {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
-
-  .queryHOG {
-    width: 40%;
-    display: inline-block;
-    padding: 5px;
-    margin-right: 1rem;
-    border: 2px solid red;
-    border-radius: 3px;
-
-    &:placeholder-shown {
-      font-weight: 700;
-    }
-  }
-
-  .submit-btn {
-    display: inline-block;
-    padding: 5px;
-  }
-}
 
 // Winner & Nominee Page Styling
 
@@ -131,6 +108,7 @@
       &:hover {
         transform: translateY(-0.5rem) scale(1);
         filter: blur(4px) brightness(80%);
+        cursor: pointer;
       }
     }
 

@@ -19,5 +19,7 @@ it ("renders with About text", () => {
   act(() => {
     render(<About />, container);
   });
-  expect(getByClass("bans-heading"));
+  act(() => {
+    expect(getByClass("bans-heading"));
+  })
 });
