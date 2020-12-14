@@ -17,7 +17,14 @@
     display: flex;
     flex-direction: row;
   }
-  
+
+  &-links-div-two {
+    display: flex-direction;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    margin-left: -3em;
+  }
   
   &-links {
     font-size: 2rem;
@@ -28,6 +35,12 @@
       text-decoration: line-through;
       color: red;
     }
+  }
+
+  &-links-two {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 }
 // End Home Page Styling
@@ -44,14 +57,23 @@
   
   .rules-list,
   .banned-list {
+    display: grid;
+    grid-gap: 1rem;
+    list-style-type: none;
     margin: 1rem 0;
     text-align: $text-center;
+
+    .fa-star {
+      margin-right: .5rem;
+      color: red;
+    }
   }
   
   .description-container {
     width: 75%;
     margin: $margin-auto;
     text-align: $text-center;
+    line-height: 1.5rem;
   }
 
   &-links {
@@ -279,6 +301,7 @@
 
     .description-game {
       margin: 0.25rem 1rem 0 0;
+      line-height: 1.5rem;
     }
   }
 }

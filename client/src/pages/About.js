@@ -1,11 +1,14 @@
 import React from "react";
 import StarDecoration from "../components/StarDecoration";
-import './Pages.scss';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import "./Pages.scss";
 
 function About() {
   return (
-    <main className='about'>
-      <h1 className='about-heading'>About The Hall of Greats</h1>
+    <main className="about">
+      <StarDecoration />
+      <h1 className="about-heading">About The Hall of Greats</h1>
       <section className="description-container">
         <p>
           The Easy Allies have been conducting their own video game Hall of Fame
@@ -15,12 +18,12 @@ function About() {
           into the Hall of Greats!{" "}
         </p>
         <p>
-          Currently there are 26 games inducted into this illustrious hall,
+          Currently there are 26 games inducted into the illustrious hall,
           which you can find{" "}
           <a href="/winners" className="about-links">
             here
           </a>
-          . The allies who have the most games inducted are:{" "}
+          . The Allies who have the most games inducted are:{" "}
           <a href="allies/michael_damiani" className="about-links">
             Michael Damiani
           </a>{" "}
@@ -28,13 +31,13 @@ function About() {
           <a href="allies/brad_ellis" className="about-links">
             Brad Ellis
           </a>
-          , each inducting five games. The ally who sadly has the most games
+          , each inducting five games. The Ally who sadly has the most games
           banned is:{" "}
           <a href="allies/don_casanova" className="about-links">
             Don Casanova
           </a>
           , where he had three straight games be banned starting with the second
-          Hall of Greats. There have been three situations when a Patreon Vote
+          Hall of Greats. There have been three situations where a Patreon Vote
           was required to induct a game into the Hall of Greats,{" "}
           <a href="ceremonies/hall_great_one" className="about-links">
             The First Hall of Greats
@@ -52,29 +55,54 @@ function About() {
         </p>
       </section>
       <h2 className="rules-heading">The Rules</h2>
-      <section className="rules-list">
-        <li>Starting with the eighth Hall of Greats, alliances were banned.</li>
-        <li>
-          Starting with the fifth Hall of Greats, a person cannot vote for their
-          own game that they have nominated.
-        </li>
-        <li>
-          Starting with the second Hall of Greats, games that received no votes
-          from other Allies are banned for one year.{" "}
-        </li>
-        <li>
-          If the second and third games are tied, the Patreon Easy Allies
-          community will choose the game between the tied games to be inducted.{" "}
-        </li>
-        <li>
-          Each Ally has six votes. Their first choice for induction will receive
-          three points, the second choice will receive two points, and their
-          last choice will receive one.
-        </li>
+      <section>
+        <ul className='rules-list'>
+          <li>
+            <FontAwesomeIcon icon={faStar} className="fa-star" />
+            Starting with the eighth Hall of Greats, alliances were banned.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faStar} className="fa-star" />
+            Starting with the fifth Hall of Greats, a person cannot vote for their
+            own nominated game.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faStar} className="fa-star" />
+            Starting with the second Hall of Greats, games that received no votes
+            from other Allies are banned for one year.{" "}
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faStar} className="fa-star" />
+            If the second and third games are tied, the Easy Allies community on
+            Patreon will vote on the game they want to be inducted, between the
+            tied games.{" "}
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faStar} className="fa-star" />
+            Each Ally has six votes. Their first choice for induction will receive
+            three points, the second choice will receive two points, and their
+            last choice will receive one.
+          </li>
+          <li style={{margin: '0 10rem'}}>
+            {" "}
+            <FontAwesomeIcon icon={faStar} className="fa-star" />
+              Each Ally must present their game in a five minute speech.{" "}
+              Then, that game will be critiqued by the other Allies in a five
+              minute cross examination to make sure that game earns its way to
+              the Hall of Greats.{" "}
+          </li>
+        </ul>
       </section>
-      <h2 className="bans-heading" data-testid="bans-heading">The Current Bans</h2>
-      <section className="banned-list">
-        <li>Huntdown (Until Q2 2021)</li>
+      <h2 className="bans-heading" data-testid="bans-heading">
+        The Current Bans
+      </h2>
+      <section>
+        <ul className="banned-list">
+          <li>
+            <FontAwesomeIcon icon={faStar} className="fa-star" />
+            Huntdown (Until Q2 2021)
+          </li>
+        </ul>
       </section>
       <StarDecoration />
     </main>
