@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import NomineeTable from "../components/Table/nomineeTable";
 import SearchBar from '../components/SearchBar';
 import StarDecoration from "../components/StarDecoration";

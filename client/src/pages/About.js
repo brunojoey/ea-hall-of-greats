@@ -1,4 +1,3 @@
-import React from "react";
 import StarDecoration from "../components/StarDecoration";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
@@ -107,6 +106,6 @@ function About() {
       <StarDecoration />
     </main>
   );
-}
+};
 
 export default About;

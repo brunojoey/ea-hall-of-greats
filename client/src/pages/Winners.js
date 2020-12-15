@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
 import useMediaQuery from '../utils/useMediaQuery';
 import WinnerTable from '../components/Table/winnerTable'
@@ -50,6 +50,6 @@ function Winners(props) {
       <StarDecoration />
     </main>
   );
-}
+};
 
 export default Winners;

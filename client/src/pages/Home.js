@@ -1,4 +1,3 @@
-import React from "react";
 import StarDecoration from "../components/StarDecoration";
 import "./Pages.scss";
 import useMediaQuery from "../utils/useMediaQuery";
@@ -70,6 +69,6 @@ function Home() {
       <StarDecoration />
     </main>
   );
-}
+};
 
 export default Home;

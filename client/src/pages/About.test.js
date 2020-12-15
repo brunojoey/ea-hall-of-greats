@@ -1,4 +1,3 @@
-import React from 'react';
 import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils"
 import About from './About.js';
@@ -19,7 +18,5 @@ it ("renders with About text", () => {
   act(() => {
     render(<About />, container);
   });
-  act(() => {
-    expect(getByClass("bans-heading"));
-  })
+
 });

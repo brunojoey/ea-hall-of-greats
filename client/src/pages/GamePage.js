@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
 import StarDecoration from "../components/StarDecoration";
 import Loader from "react-loader-spinner";
@@ -33,7 +33,9 @@ function GamePage(props) {
                 style={{ border: "4px solid red" }}
                 className="game-image-primary"
               />
-              <h2 className="game-ceremony">Hall of Greats {gamePage.hallOfGreat} Winner</h2>
+              <h2 className="game-ceremony">
+                Hall of Greats {gamePage.hallOfGreat} Winner
+              </h2>
             </section>
           ) : (
             <section className="nominee-area">
@@ -44,7 +46,9 @@ function GamePage(props) {
                 className="game-image-secondary"
                 style={{ border: "4px solid red" }}
               />
-              <h2 className="game-ceremony">Hall of Greats {gamePage.hallOfGreat} Nominee</h2>
+              <h2 className="game-ceremony">
+                Hall of Greats {gamePage.hallOfGreat} Nominee
+              </h2>
             </section>
           )}
           <section className="game-info">
@@ -65,8 +69,8 @@ function GamePage(props) {
                 className="hall-page-link"
               >
                 Hall of Great {gamePage.hallOfGreat}{" "}
-              </span> |{" "}
-              <strong>Platforms</strong>: {gamePage.platforms} |{" "}
+              </span>{" "}
+              | <strong>Platforms</strong>: {gamePage.platforms} |{" "}
               <strong>Genre</strong>: {gamePage.genre} |{" "}
               <strong>Developer</strong>: {gamePage.developer} |{" "}
               <strong>Metacritic</strong>: {gamePage.metacritic} |{" "}
@@ -96,11 +100,11 @@ function GamePage(props) {
             timeout={3000}
             style={{ marginLeft: "40rem", marginTop: "5rem" }}
           />
-          <h2 style={{textAlign: 'center'}}>Please Wait</h2>    
-        </>  
+          <h2 style={{ textAlign: "center" }}>Please Wait</h2>
+        </>
       )}
     </>
   );
-}
+};
 
 export default GamePage;
