@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Button, Menu } from "@material-ui/core";
 import "./Dropdown.scss";
 

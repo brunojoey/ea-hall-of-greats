@@ -6,7 +6,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import Home from "./pages/Home";
-import About from './pages/About'
+import About from './pages/About';
 import Winners from "./pages/Winners";
 import Allies from "./pages/Allies";
 import Nominations from "./pages/Nominations";

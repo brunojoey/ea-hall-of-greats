@@ -1,6 +1,6 @@
 import StarDecoration from "../components/StarDecoration";
-import "./Pages.scss";
 import useMediaQuery from "../utils/useMediaQuery";
+import "./Pages.scss";
 
 function Home() {
   const matches = useMediaQuery("(min-width: 768px)");

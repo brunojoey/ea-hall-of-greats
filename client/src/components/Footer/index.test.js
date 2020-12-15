@@ -1,5 +1,3 @@
-import { faItalic } from '@fortawesome/free-solid-svg-icons';
-import React from 'react';
 import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils"
 import Footer from './index.js';

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button, Menu, Tabs, Tab } from "@material-ui/core/";
 
 import BenMoore from '../AllyFilters/benMoore';

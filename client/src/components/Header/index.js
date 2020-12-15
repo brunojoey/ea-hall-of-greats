@@ -1,4 +1,3 @@
-import React from "react";
 import Dropdown from '../Dropdown';
 import { AppBar, Toolbar } from "@material-ui/core/";
 import './Header.scss';

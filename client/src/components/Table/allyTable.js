@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import StarDecoration from '../StarDecoration';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";

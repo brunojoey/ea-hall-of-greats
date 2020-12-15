@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Tabs, Tab, makeStyles } from "@material-ui/core";
 
 import BenMoore from '../AllyFilters/benMoore';

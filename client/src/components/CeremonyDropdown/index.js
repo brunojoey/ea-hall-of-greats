@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Tabs, Tab, Button, Menu } from "@material-ui/core";
 import StarDecoration from "../StarDecoration";
 
@@ -15,7 +15,7 @@ import HallOfGreatTen from "../CeremonyFilters/hallOfGreatTen";
 import HallOfGreatEleven from "../CeremonyFilters/hallOfGreatEleven";
 import HallOfGreatTwelve from "../CeremonyFilters/hallOfGreatTwelve";
 import HallOfGreatThirteen from "../CeremonyFilters/hallOfGreatThirteen";
-// import HallOfGreatFourteen from "../CeremonyFilters/hallOfGreatFourteen";
+import HallOfGreatFourteen from "../CeremonyFilters/hallOfGreatFourteen";
 
 function CeremonyDropdown(props) {
   const { match, history } = props;
