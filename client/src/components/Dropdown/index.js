@@ -44,6 +44,6 @@ function Dropdown() {
       </Menu>
     </section>
   );
-}
+};
 
 export default Dropdown;

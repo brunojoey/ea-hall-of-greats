@@ -129,6 +129,6 @@ function CeremonyDropdown(props) {
       <StarDecoration />
     </div>
   );
-}
+};
 
 export default CeremonyDropdown;

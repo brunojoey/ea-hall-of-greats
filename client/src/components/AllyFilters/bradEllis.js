@@ -21,6 +21,6 @@ function BradEllis({ history }) {
       <AllyTable games={ally} history={history} />
     </main>
   );
-}
+};
 
 export default BradEllis;

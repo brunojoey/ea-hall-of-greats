@@ -237,8 +237,7 @@ function NomineeTable({ history, games }) {
         {newSortedItems}
         </table>
     </section>
-
-  )
+  );
 };
 
 export default NomineeTable;

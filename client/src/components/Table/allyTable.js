@@ -20,7 +20,7 @@ function AllyTable({ history, games }) {
       }
       return 0;
     });
-  }
+  };
 
   const requestSort = (key) => {
     let direction = 'ascending'

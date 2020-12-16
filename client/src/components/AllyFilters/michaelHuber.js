@@ -21,6 +21,6 @@ function MichaelHuber({ history }) {
       <AllyTable games={ally} history={history} />
     </main>
   );
-}
+};
 
 export default MichaelHuber;

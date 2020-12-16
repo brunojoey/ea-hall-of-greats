@@ -21,6 +21,6 @@ function BrandonJones({ history }) {
       <AllyTable games={ally} history={history} />
     </main>
   );
-}
+};
 
 export default BrandonJones;

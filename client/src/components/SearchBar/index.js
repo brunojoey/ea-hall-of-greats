@@ -113,6 +113,6 @@ function SearchBar(props) {
       ))}
     </section>
   );
-}
+};
 
 export default SearchBar;
