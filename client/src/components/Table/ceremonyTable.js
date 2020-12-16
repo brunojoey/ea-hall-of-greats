@@ -3,8 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
 import './Table.scss';
 
-function CeremonyTable(props) {
-  const { history, games } = props;
+function CeremonyTable({ history, games }) {
   const [sortConfig, setSortConfig] = useState(null);
 
   // Sorts the Table

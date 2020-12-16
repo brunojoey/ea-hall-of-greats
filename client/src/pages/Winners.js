@@ -5,10 +5,9 @@ import WinnerTable from '../components/Table/winnerTable'
 import StarDecoration from "../components/StarDecoration";
 import "./Pages.scss";
 
-function Winners(props) {
+function Winners({ history }) {
   const [games, setGames] = useState([]);
   const matches = useMediaQuery("(min-width: 768px)");
-  const { history } = props;
 
   useEffect(() => {
     async function fetchData() {

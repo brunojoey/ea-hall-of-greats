@@ -3,8 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
 import "./Table.scss";
 
-function RundownTable(props) {
-  const { games } = props;
+function RundownTable({ games }) {
   const [sortConfig, setSortConfig] = useState(null);
 
   // Sorts the Table

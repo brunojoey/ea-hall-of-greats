@@ -5,9 +5,8 @@ import RundownTable from "../Table/rundownTable";
 import gamesAPI from "../../utils/gamesAPI";
 import useMediaQuery from "../../utils/useMediaQuery";
 
-function HallOfGreatNine(props) {
+function HallOfGreatNine({ history }) {
   const [games, setGames] = useState([]);
-  const { history } = props;
   const matches = useMediaQuery("(min-width: 768px)");
 
   useEffect(() => {

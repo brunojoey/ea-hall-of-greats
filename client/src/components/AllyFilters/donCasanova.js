@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 import AllyTable from '../Table/allyTable';
 import gamesAPI from "../../utils/gamesAPI";
 
-function DonCasanova(props) {
+function DonCasanova({ history }) {
   const [ally, setAlly] = useState([]);
-  const { history } = props;
 
   useEffect(() => {
     async function fetchData() {

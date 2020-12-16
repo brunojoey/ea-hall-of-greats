@@ -3,8 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
 import "./Table.scss";
 
-function WinnerTable(props) {
-  const { history, games } = props;
+function WinnerTable({ history, games }) {
   const [sortConfig, setSortConfig] = useState(null);
 
   // Returns a copy of games.

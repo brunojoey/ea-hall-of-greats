@@ -4,10 +4,9 @@ import useMediaQuery from "../../utils/useMediaQuery";
 import AllyTable from "../Table/allyTable";
 import './Filters.scss';
 
-function BenMoore(props) {
+function BenMoore({ history }) {
   const [ally, setAlly] = useState([]);
   const matches = useMediaQuery("(min-width: 768px)");
-  const { history } = props;
 
   useEffect(() => {
     async function fetchData() {

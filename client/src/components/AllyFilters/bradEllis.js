@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 import gamesAPI from "../../utils/gamesAPI";
 import AllyTable from '../Table/allyTable';
 
-function BradEllis(props) {
+function BradEllis({ history }) {
   const [ally, setAlly] = useState([]);
-  const { history } = props;
 
   useEffect(() => {
     async function fetchData() {

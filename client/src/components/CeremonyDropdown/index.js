@@ -54,7 +54,7 @@ function CeremonyDropdown(props) {
     hall_great_eleven: 10,
     hall_great_twelve: 11,
     hall_great_thirteen: 12,
-    // hall_great_fourteen: 13,
+    hall_great_fourteen: 13,
   };
 
   const [selectedLink, setSelectedLink] = useState(indexToLinkName[page]);
@@ -108,7 +108,7 @@ function CeremonyDropdown(props) {
           <Tab label="Hall of Greats 11" />
           <Tab label="Hall of Greats 12" />
           <Tab label="Hall of Greats 13" />
-          {/* <Tab label="Hall of Greats 14" /> */}
+          <Tab label="Hall of Greats 14" />
         </Tabs>
       </Menu>
 
@@ -125,7 +125,7 @@ function CeremonyDropdown(props) {
       {selectedLink === 10 && <HallOfGreatEleven history={history} />}
       {selectedLink === 11 && <HallOfGreatTwelve history={history} />}
       {selectedLink === 12 && <HallOfGreatThirteen history={history} />}
-      {/* {selectedLink === 13 && <HallOfGreatFourteen history={history} />} */}
+      {selectedLink === 13 && <HallOfGreatFourteen history={history} />}
       <StarDecoration />
     </div>
   );

@@ -17,7 +17,7 @@ function About() {
           into the Hall of Greats!{" "}
         </p>
         <p>
-          Currently there are 26 games inducted into the illustrious hall,
+          Currently there are 28 games inducted into the illustrious hall,
           which you can find{" "}
           <a href="/winners" className="about-links">
             here
@@ -30,7 +30,7 @@ function About() {
           <a href="allies/brad_ellis" className="about-links">
             Brad Ellis
           </a>
-          , each inducting five games. The Ally who sadly has the most games
+          , each inducting six games. The Ally who sadly has the most games
           banned is:{" "}
           <a href="allies/don_casanova" className="about-links">
             Don Casanova
@@ -100,6 +100,14 @@ function About() {
           <li>
             <FontAwesomeIcon icon={faStar} className="fa-star" />
             Huntdown (Until Q2 2021)
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faStar} className="fa-star" />
+            Dead Rising (Until Q4 2021)
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faStar} className="fa-star" />
+            The Elder Scrolls V: Skyrim (Until Q4 2021)
           </li>
         </ul>
       </section>

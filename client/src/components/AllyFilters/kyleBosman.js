@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 import AllyTable from '../Table/allyTable';
 import gamesAPI from "../../utils/gamesAPI";
 
-function KyleBosman(props) {
+function KyleBosman({ history }) {
   const [ally, setAlly] = useState([]);
-  const { history } = props;
 
   useEffect(() => {
     async function fetchData() {

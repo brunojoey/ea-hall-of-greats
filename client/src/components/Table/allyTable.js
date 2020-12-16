@@ -4,8 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
 import './Table.scss';
 
-function AllyTable(props) {
-  const { history, games } = props;
+function AllyTable({ history, games }) {
   const [sortConfig, setSortConfig] = useState(null);
 
   // Sorts the Table

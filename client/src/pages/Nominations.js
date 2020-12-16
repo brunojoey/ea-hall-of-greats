@@ -3,13 +3,12 @@ import NomineeTable from "../components/Table/nomineeTable";
 import SearchBar from '../components/SearchBar';
 import StarDecoration from "../components/StarDecoration";
 import gamesAPI from "../utils/gamesAPI";
-import Loader from "react-loader-spinner";
+// import Loader from "react-loader-spinner";
 import "./Pages.scss";
 
-function Nominations(props) {
+function Nominations({ history }) {
   const [word, setWord] = useState(" ");
   const [games, setGames] = useState([]);
-  const { history } = props;
 
   const [filter, setFilter] = useState(games);
 
@@ -128,7 +127,7 @@ function Nominations(props) {
       setWord(event);
       console.log("word", word);
       
-      let newGameList = [];
+      let newGameList;
       newGameList = oldGameList.filter(gameQuery =>
       gameQuery.game.includes(word.toLowerCase())
       );
@@ -147,7 +146,7 @@ function Nominations(props) {
     <main className="nominations-page">
       <StarDecoration />
       <h2 className="nominations-page-heading">The Notorious Nominees</h2>
-      {/* <SearchBar games={games} history={history} value={word} filter={filter} handleChange={event => handleChange(event.target.value)}/> */}
+      <SearchBar games={games} history={history} value={word} filter={filter} handleChange={event => handleChange(event.target.value)}/>
       <NomineeTable games={games} history={history} />
       <StarDecoration />
     </main>
