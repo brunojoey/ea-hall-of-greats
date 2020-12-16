@@ -146,7 +146,7 @@ function Nominations({ history }) {
     <main className="nominations-page">
       <StarDecoration />
       <h2 className="nominations-page-heading">The Notorious Nominees</h2>
-      <SearchBar games={games} history={history} value={word} filter={filter} handleChange={event => handleChange(event.target.value)}/>
+      {/* <SearchBar games={games} history={history} value={word} filter={filter} handleChange={event => handleChange(event.target.value)}/> */}
       <NomineeTable games={games} history={history} />
       <StarDecoration />
     </main>
