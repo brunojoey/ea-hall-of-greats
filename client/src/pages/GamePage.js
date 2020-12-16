@@ -76,6 +76,7 @@ function GamePage(props) {
               <strong>Metacritic</strong>: {gamePage.metacritic} |{" "}
               <strong>Year</strong>: {gamePage.year} |{" "}
               <strong>Votes Received</strong>: {gamePage.votes} |{" "}
+              {gamePage.wonByPatreonVote ? <strong>Won By Patreon Vote</strong> : null} |{" "}
               <strong>Banned</strong>: {gamePage.banned}
             </p>
           </section>
