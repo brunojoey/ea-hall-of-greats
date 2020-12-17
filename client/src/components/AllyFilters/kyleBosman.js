@@ -18,8 +18,8 @@ function KyleBosman({ history }) {
   return (
     <main className='ally-page'>
       <h3 className='ally-page-title'>Kyle Bosmans' Picks</h3>
-      <AllyTable games={ally} history={history} />
       <p style={{textAlign: 'center'}}>Kyle's Last Induction was Hall of Greats 12.</p>
+      <AllyTable games={ally} history={history} />
     </main>
   );
 };
