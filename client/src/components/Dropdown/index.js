@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Button, Menu } from "@material-ui/core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./Dropdown.scss";
 
 function Dropdown() {
@@ -22,7 +24,7 @@ function Dropdown() {
         aria-haspopup="true"
         onClick={handleClick}
       >
-        Menu
+        <FontAwesomeIcon icon={faBars} className="fa-bars" />
       </Button>
       <Menu
         id="simple-menu"
@@ -31,19 +33,43 @@ function Dropdown() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-          <nav>
-            <ul className='nav-list'>
-              <li><a href='/' className='nav-list-links'>Home</a></li>
-              <li><a href='/about' className='nav-list-links'>About</a></li>
-              <li><a href='/winners' className='nav-list-links'>The Inductees</a></li>
-              <li><a href='/nominations' className='nav-list-links'>The Nominations</a></li>
-              <li><a href='/ceremonies' className='nav-list-links'>The Ceremonies</a></li>
-              <li><a href='/allies' className='nav-list-links'>The Allies</a></li>
-            </ul>
-          </nav>
+        <nav className='nav'>
+          <ul className="nav-list">
+            <li>
+              <a href="/" className="nav-list-links">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="/about" className="nav-list-links">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="/winners" className="nav-list-links">
+                The Inductees
+              </a>
+            </li>
+            <li>
+              <a href="/nominations" className="nav-list-links">
+                The Nominations
+              </a>
+            </li>
+            <li>
+              <a href="/ceremonies" className="nav-list-links">
+                The Ceremonies
+              </a>
+            </li>
+            <li>
+              <a href="/allies" className="nav-list-links">
+                The Allies
+              </a>
+            </li>
+          </ul>
+        </nav>
       </Menu>
     </section>
   );
-};
+}
 
 export default Dropdown;
