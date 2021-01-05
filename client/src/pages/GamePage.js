@@ -69,8 +69,8 @@ function GamePage(props) {
                 className="hall-page-link"
               >
                 Hall of Great {gamePage.hallOfGreat}{" "}
-              </span>{" "}
-              | <strong>Platforms</strong>: {gamePage.platforms} |{" "}
+              </span>|{" "}
+              <strong>Platforms</strong>: {gamePage.platforms} |{" "}
               <strong>Genre</strong>: {gamePage.genre} |{" "}
               <strong>Developer</strong>: {gamePage.developer} |{" "}
               <strong>Metacritic</strong>: {gamePage.metacritic} |{" "}
