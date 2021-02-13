@@ -20,9 +20,8 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-function AllyTabs (props) {
+function AllyTabs ({ match, history }) {
   const classes = useStyles();
-  const { match, history } = props;
   const { params } = match;
   const { page } = params;
 

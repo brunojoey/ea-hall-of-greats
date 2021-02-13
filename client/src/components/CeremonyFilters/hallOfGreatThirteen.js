@@ -17,7 +17,7 @@ function HallOfGreatThirteen({ history }) {
     }
 
     fetchData();
-  }, []);
+  }, [setGames]);
 
   return (
     <main className="hall-page">

@@ -5,14 +5,14 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./Dropdown.scss";
 
 function Dropdown() {
-  const [anchorEl, setAnchorEl] = useState(null);
+  const [anchor, setAnchor] = useState(null);
 
   const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+    setAnchor(event.currentTarget);
   };
 
   const handleClose = () => {
-    setAnchorEl(null);
+    setAnchor(null);
   };
 
   return (
@@ -28,9 +28,9 @@ function Dropdown() {
       </Button>
       <Menu
         id="simple-menu"
-        anchorEl={anchorEl}
+        anchorEl={anchor}
         keepMounted
-        open={Boolean(anchorEl)}
+        open={Boolean(anchor)}
         onClose={handleClose}
       >
         <nav className='nav'>
@@ -70,6 +70,6 @@ function Dropdown() {
       </Menu>
     </section>
   );
-}
+};
 
 export default Dropdown;

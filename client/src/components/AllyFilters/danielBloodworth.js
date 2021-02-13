@@ -13,7 +13,7 @@ function DanielBloodworth({ history }) {
     }
 
     fetchData();
-  }, []);
+  }, [setAlly]);
 
   return (
     <main className='ally-page'>

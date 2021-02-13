@@ -7,10 +7,10 @@ function RundownTable({ games }) {
   const [sortConfig, setSortConfig] = useState(null);
 
   // Sorts the Table
-  let sortedItems = [...games];
+  let gameList = [...games];
 
   if (sortConfig !== null) {
-    sortedItems.sort((a, b) => {
+    gameList.sort((a, b) => {
       if (a[sortConfig.key] < b[sortConfig.key]) {
         return sortConfig.direction === "ascending" ? -1 : 1;
       };
@@ -34,9 +34,9 @@ function RundownTable({ games }) {
   };
 
   // Puts data in a table sorted at first by Ceremony
-  let newSortedItems;
+  let sortedItems;
   if (games) {
-    newSortedItems = sortedItems.map((sorted) => {
+    sortedItems = gameList.map((sorted) => {
       return (
         <tbody key={sorted._id}>
           <tr>
@@ -76,7 +76,7 @@ function RundownTable({ games }) {
             <th>One Point Given</th>
           </tr>
         </thead>
-        {newSortedItems}
+        {sortedItems}
       </table>
     </section>
   );

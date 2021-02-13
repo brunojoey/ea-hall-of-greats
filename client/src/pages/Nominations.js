@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import NomineeTable from "../components/Table/nomineeTable";
-// import SearchBar from '../components/SearchBar';
+import SearchBar from '../components/SearchBar';
 import StarDecoration from "../components/StarDecoration";
 import gamesAPI from "../utils/gamesAPI";
-// import Loader from "react-loader-spinner";
 import "./Pages.scss";
 
 function Nominations({ history }) {
@@ -19,7 +18,7 @@ function Nominations({ history }) {
     }
 
     fetchData();
-  }, []);
+  }, [setGames]);
 
   // const handleChange = event => {
   //   let oldGameList = [];
@@ -145,7 +144,7 @@ function Nominations({ history }) {
     <main className="nominations-page">
       <StarDecoration />
       <h2 className="nominations-page-heading">The Notorious Nominees</h2>
-      {/* <SearchBar games={games} history={history} value={word} filter={filter} handleChange={event => handleChange(event.target.value)}/> */}
+      <SearchBar />
       <NomineeTable games={games} history={history} />
       <StarDecoration />
     </main>

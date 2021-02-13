@@ -17,7 +17,7 @@ function HallOfGreatOne({ history }) {
     }
 
     fetchData();
-  }, []);
+  }, [setGames]);
 
   return (
     <main className="hall-page">

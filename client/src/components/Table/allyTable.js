@@ -7,11 +7,12 @@ import './Table.scss';
 function AllyTable({ history, games }) {
   const [sortConfig, setSortConfig] = useState(null);
 
-  // Sorts the Table
-  let sortedItems = [...games];
+  // Gets the Games
+  let gameList = [...games];
 
+  // Sorts the games
   if (sortConfig !== null) {
-    sortedItems.sort((a, b) => {
+    gameList.sort((a, b) => {
       if (a[sortConfig.key] < b[sortConfig.key]) {
         return sortConfig.direction === "ascending" ? -1 : 1;
       }
@@ -31,9 +32,9 @@ function AllyTable({ history, games }) {
   };
 
 
-  let newSortedItems;
+  let sortedItems;
   if (games) {
-    newSortedItems = sortedItems.map((sorted) => {
+    sortedItems = gameList.map((sorted) => {
       return (
         <tbody key={sorted._id}>
           <tr>
@@ -145,7 +146,7 @@ function AllyTable({ history, games }) {
             </th>
           </tr>
         </thead>
-        {newSortedItems}
+        {sortedItems}
       </table>
       <StarDecoration />
     </section>

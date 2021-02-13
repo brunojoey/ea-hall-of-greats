@@ -17,7 +17,7 @@ function HallOfGreatFour( {history }) {
     }
 
     fetchData();
-  }, []);
+  }, [setGames]);
 
   return (
     <main className="hall-page">

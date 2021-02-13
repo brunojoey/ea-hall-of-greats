@@ -1,118 +1,97 @@
-// import { useState } from "react";
-import "./SearchBar.scss";
+import _ from 'lodash'
+import faker from 'faker'
+import { useReducer, useRef, useCallback, useEffect } from 'react'
+import { Search, Grid, Header, Segment } from 'semantic-ui-react'
 
-function SearchBar(props) {
-  const { history, filter, handleChange } = props;
-  console.log("props", props);
+const source = _.times(5, () => ({
+  title: faker.company.companyName(),
+  description: faker.company.catchPhrase(),
+  image: faker.internet.avatar(),
+  price: faker.finance.amount(0, 100, 2, '$'),
+}))
+
+const initialState = {
+  loading: false,
+  results: [],
+  value: '',
+}
+
+function reduce(state, action) {
+  switch (action.type) {
+    case 'CLEAN_QUERY':
+      return initialState
+    case 'START_SEARCH':
+      return { ...state, loading: true, value: action.query }
+    case 'FINISH_SEARCH':
+      return { ...state, loading: false, results: action.results }
+    case 'UPDATE_SELECTION':
+      return { ...state, value: action.selection }
+
+    default:
+      throw new Error()
+  }
+}
+
+function SearchBar() {
+  const [state, dispatch] = useReducer(reduce, initialState)
+  const { loading, results, value } = state
+
+  const timeoutRef = useRef();
+
+  const handleSearchChange = useCallback((e, data) => {
+    clearTimeout(timeoutRef.current)
+    dispatch({ type: 'START_SEARCH', query: data.value })
+
+    timeoutRef.current = setTimeout(() => {
+      if (data.value.length === 0) {
+        dispatch({ type: 'CLEAN_QUERY' })
+        return
+      }
+
+      const re = new RegExp(_.escapeRegExp(data.value), 'i')
+      const isMatch = (result) => re.test(result.title)
+
+      dispatch({
+        type: 'FINISH_SEARCH',
+        results: _.filter(source, isMatch),
+      })
+    }, 300)
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      clearTimeout(timeoutRef.current)
+    }
+  }, [])
 
   return (
-    <section className="search-bar">
-      <input
-        type="search"
-        className="queryHOG"
-        name="queryHOG"
-        placeholder="Search Nominations"
-        onChange={event => handleChange(event.target.value)}
-      >
-      </input>
-      {filter.map(gameQuery => (
-        <tbody key={gameQuery._id}>
-          <tr>
-            <td
-              className="table-infoE"
-              style={{
-                padding: "1em",
-              }}
-            >
-              <span
-                onClick={() =>
-                  history.push(`/ceremonies/${gameQuery.hallLink}`)
-                }
-                className="hall-page-link"
-              >
-                {gameQuery.hallOfGreat}
-              </span>
-            </td>
-            <td
-              className="table-infoR"
-              style={{
-                padding: ".5em",
-              }}
-            >
-              <span
-                onClick={() => history.push(`/allies/${gameQuery.allyLink}`)}
-                className="ally-page-link"
-              >
-                {gameQuery.ally}
-              </span>
-            </td>
-            <td
-              className="table-infoR"
-              style={{
-                padding: ".5em",
-              }}
-            >
-              <span
-                onClick={() => history.push(`/games/${gameQuery._id}`)}
-                className="game-page-link"
-              >
-                {gameQuery.game}
-              </span>
-            </td>
-            <td
-              className="table-infoE"
-              style={{
-                padding: ".5em",
-              }}
-            >
-              {gameQuery.genre}
-            </td>
-            <td
-              className="table-infoE"
-              style={{
-                padding: ".5em",
-              }}
-            >
-              {gameQuery.developer}
-            </td>
-            <td
-              className="table-infoE"
-              style={{
-                padding: ".5em",
-              }}
-            >
-              {gameQuery.year}
-            </td>
-            <td
-              className="table-infoE"
-              style={{
-                padding: ".5em",
-              }}
-            >
-              {gameQuery.metacritic}
-            </td>
-            <td className="table-infoE">{gameQuery.votes}</td>
-            <td
-              className="table-infoE"
-              style={{
-                padding: ".5em",
-              }}
-            >
-              {gameQuery.victory}
-            </td>
-            <td
-              className="table-infoE"
-              style={{
-                padding: ".5em",
-              }}
-            >
-              {gameQuery.banned}
-            </td>
-          </tr>
-        </tbody>
-      ))}
-    </section>
+    <Grid>
+      <Grid.Column width={6}>
+        <Search
+          loading={loading}
+          onResultSelect={(e, data) =>
+            dispatch({ type: 'UPDATE_SELECTION', selection: data.result.title })
+          }
+          onSearchChange={handleSearchChange}
+          results={results}
+          value={value}
+        />
+      </Grid.Column>
+
+      <Grid.Column width={10}>
+        <Segment>
+          <Header>State</Header>
+          <pre style={{ overflowX: 'auto' }}>
+            {JSON.stringify({ loading, results, value }, null, 2)}
+          </pre>
+          <Header>Options</Header>
+          <pre style={{ overflowX: 'auto' }}>
+            {JSON.stringify(source, null, 2)}
+          </pre>
+        </Segment>
+      </Grid.Column>
+    </Grid>
   );
 };
 
-export default SearchBar;
+export default SearchBar

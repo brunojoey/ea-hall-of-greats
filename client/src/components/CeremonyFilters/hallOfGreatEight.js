@@ -17,7 +17,7 @@ function HallOfGreatEight({ history }) {
     }
 
     fetchData();
-  }, []);
+  }, [setGames]);
 
 
   return (

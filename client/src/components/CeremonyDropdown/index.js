@@ -21,7 +21,7 @@ function CeremonyDropdown(props) {
   const { match, history } = props;
   const { params } = match;
   const { page } = params;
-  const [anchorEl, setAnchorEl] = useState(null);
+  const [anchor, setAnchor] = useState(null);
 
   const linkNameToIndex = {
     0: "hall_great_one",
@@ -37,7 +37,7 @@ function CeremonyDropdown(props) {
     10: "hall_great_eleven",
     11: "hall_great_twelve",
     12: "hall_great_thirteen",
-    // 13: "hall_great_fourteen",
+    13: "hall_great_fourteen",
   };
 
   const indexToLinkName = {
@@ -60,7 +60,7 @@ function CeremonyDropdown(props) {
   const [selectedLink, setSelectedLink] = useState(indexToLinkName[page]);
 
   const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+    setAnchor(event.currentTarget);
   };
 
   const handleChange = (event, newValue) => {
@@ -69,7 +69,7 @@ function CeremonyDropdown(props) {
   };
 
   const handleClose = () => {
-    setAnchorEl(null);
+    setAnchor(null);
   };
 
   return (
@@ -84,9 +84,9 @@ function CeremonyDropdown(props) {
       </Button>
       <Menu
         id="simple-menu"
-        anchorEl={anchorEl}
+        anchorEl={anchor}
         keepMounted
-        open={Boolean(anchorEl)}
+        open={Boolean(anchor)}
         onClose={handleClose}
       >
         <Tabs

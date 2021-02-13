@@ -13,7 +13,7 @@ function IanHinck({ history }) {
     }
 
     fetchData();
-  }, []);
+  }, [setAlly]);
 
   return (
     <main className='ally-page'>

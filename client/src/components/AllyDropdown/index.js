@@ -15,7 +15,7 @@ function AllyDropdown(props) {
   const { match, history } = props;
   const { params } = match;
   const { page } = params;
-  const [anchorEl, setAnchorEl] = useState(null);
+  const [anchor, setAnchor] = useState(null);
   
   const linkNameToIndex = {
     0: "ben_moore",
@@ -44,7 +44,7 @@ function AllyDropdown(props) {
   const [selectedLink, setSelectedLink] = useState(indexToLinkName[page]);
 
   const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+    setAnchor(event.currentTarget);
   };
 
   const handleChange = (event, newValue) => {
@@ -53,7 +53,7 @@ function AllyDropdown(props) {
   };
 
   const handleClose = () => {
-    setAnchorEl(null);
+    setAnchor(null);
   };
 
   return (
@@ -66,7 +66,7 @@ function AllyDropdown(props) {
       >
         Allies
       </Button>
-      <Menu id="simple-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
+      <Menu id="simple-menu" anchorEl={anchor} keepMounted open={Boolean(anchor)} onClose={handleClose}>
         <Tabs value={selectedLink} onChange={handleChange} orientation='vertical' className='ally-page-tab-bar'>
           <Tab label="Ben Moore" className='tab-allies'/>
           <Tab label="Brad Ellis" className='tab-allies' />

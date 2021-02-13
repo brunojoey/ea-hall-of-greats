@@ -17,7 +17,7 @@ function Winners({ history }) {
     }
 
     fetchData();
-  }, []);
+  }, [setGames]);
 
   let winnerCard;
   if (games) {

@@ -16,7 +16,7 @@ function BenMoore({ history }) {
     }
 
     fetchData();
-  }, []);
+  }, [setAlly]);
 
   // let benMooreCard;
   // benMooreCard = ally.map((benGames) => {

@@ -14,11 +14,10 @@ function HallOfGreatFourteen({ history }) {
       let { data } = await gamesAPI.getGames();
       data = data.filter((games) => games.hallOfGreat === 14);
       setGames(data);
-      console.log('games', games)
     }
 
     fetchData();
-  });
+  }, [setGames]);
 
   return (
     <main className="hall-page">

@@ -7,10 +7,10 @@ function CeremonyTable({ history, games }) {
   const [sortConfig, setSortConfig] = useState(null);
 
   // Sorts the Table
-  let sortedItems = [...games];
+  let gameList = [...games];
 
   if (sortConfig !== null) {
-    sortedItems.sort((a, b) => {
+    gameList.sort((a, b) => {
       if (a[sortConfig.key] < b[sortConfig.key]) {
         return sortConfig.direction === "ascending" ? -1 : 1;
       }
@@ -29,9 +29,9 @@ function CeremonyTable({ history, games }) {
     setSortConfig({ key, direction });
   };
 
-  let newSortedItems;
+  let sortedItems;
   if (games) {
-    newSortedItems = sortedItems.map((sorted) => {
+    sortedItems = gameList.map((sorted) => {
       return (
         <tbody key={sorted._id}>
           <tr>
@@ -143,7 +143,7 @@ function CeremonyTable({ history, games }) {
             </th>
           </tr>
         </thead>
-        {newSortedItems}
+        {sortedItems}
       </table>
     </section>
   );

@@ -13,7 +13,7 @@ function BradEllis({ history }) {
     }
 
     fetchData();
-  }, []);
+  }, [setAlly]);
 
   return (
     <main className='ally-page'>

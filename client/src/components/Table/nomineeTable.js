@@ -5,14 +5,13 @@ import "./Table.scss";
 
 function NomineeTable({ history, games }) {
   const [sortConfig, setSortConfig] = useState(null);
-  console.log('games', games);
 
   // Returns a copy of games.
-  let sortedItems = [...games];
+  let gameList = [...games];
 
   // Sorts table
   if (sortConfig !== null) {
-    sortedItems.sort((a, b) => {
+    gameList.sort((a, b) => {
       if (a[sortConfig.key] < b[sortConfig.key]) {
         return sortConfig.direction === "ascending" ? -1 : 1;
       }
@@ -33,9 +32,9 @@ function NomineeTable({ history, games }) {
   };
 
   // Puts data in a table sorted at first by Ceremony
-  let newSortedItems;
+  let sortedItems;
   if (games) {
-    newSortedItems = sortedItems.map((sorted) => {
+    sortedItems = gameList.map((sorted) => {
       return (
         <tbody key={sorted._id}>
           <tr>
@@ -234,7 +233,7 @@ function NomineeTable({ history, games }) {
             </th>
           </tr>
         </thead>
-        {newSortedItems}
+        {sortedItems}
         </table>
     </section>
   );
