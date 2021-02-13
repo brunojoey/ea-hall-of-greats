@@ -144,7 +144,7 @@ function Nominations({ history }) {
     <main className="nominations-page">
       <StarDecoration />
       <h2 className="nominations-page-heading">The Notorious Nominees</h2>
-      <SearchBar />
+      {/* <SearchBar /> */}
       <NomineeTable games={games} history={history} />
       <StarDecoration />
     </main>
