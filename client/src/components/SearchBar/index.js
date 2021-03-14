@@ -1,40 +1,45 @@
-import _ from 'lodash'
-import faker from 'faker'
-import { useReducer, useRef, useCallback, useEffect } from 'react'
-import { Search, Grid, Header, Segment } from 'semantic-ui-react'
+import _ from 'lodash';
+import { useReducer, useRef, useCallback, useEffect } from 'react';
+import { Search, Grid, Header, Segment } from 'semantic-ui-react';
 
-const source = _.times(5, () => ({
-  title: faker.company.companyName(),
-  description: faker.company.catchPhrase(),
-  image: faker.internet.avatar(),
-  price: faker.finance.amount(0, 100, 2, '$'),
-}))
-
-const initialState = {
-  loading: false,
-  results: [],
-  value: '',
-}
-
-function reduce(state, action) {
-  switch (action.type) {
-    case 'CLEAN_QUERY':
-      return initialState
-    case 'START_SEARCH':
-      return { ...state, loading: true, value: action.query }
-    case 'FINISH_SEARCH':
-      return { ...state, loading: false, results: action.results }
-    case 'UPDATE_SELECTION':
-      return { ...state, value: action.selection }
-
-    default:
-      throw new Error()
+function SearchBar({games, history}) {
+  const source = _.times(5, (i) => ({
+    ceremony: games.hallOfGreat,
+    nominatedBy: games.ally,
+    title: games.game,
+    genre: games.genre,
+    developer: games.developer,
+    year: games.year,
+    metacritic: games.metacritic,
+    votes: games.votes,
+    victory: games.victory,
+    banned: games.banned,
+  }));
+  console.log('source', source);
+  
+  const initialState = {
+    loading: false,
+    results: [],
+    value: '',
   }
-}
-
-function SearchBar() {
-  const [state, dispatch] = useReducer(reduce, initialState)
-  const { loading, results, value } = state
+  
+  function reduce(state, action) {
+    switch (action.type) {
+      case 'CLEAN_QUERY':
+        return initialState
+      case 'START_SEARCH':
+        return { ...state, loading: true, value: action.query }
+      case 'FINISH_SEARCH':
+        return { ...state, loading: false, results: action.results }
+      case 'UPDATE_SELECTION':
+        return { ...state, value: action.selection }
+  
+      default:
+        throw new Error()
+    }
+  }
+  const [state, dispatch] = useReducer(reduce, initialState);
+  const { loading, results, value } = state;
 
   const timeoutRef = useRef();
 
@@ -49,14 +54,15 @@ function SearchBar() {
       }
 
       const re = new RegExp(_.escapeRegExp(data.value), 'i')
-      const isMatch = (result) => re.test(result.title)
+      const isMatch = (result) => re.test(result.title);
+      console.log('result', isMatch);
 
       dispatch({
         type: 'FINISH_SEARCH',
         results: _.filter(source, isMatch),
       })
     }, 300)
-  }, []);
+  }, [source]);
 
   useEffect(() => {
     return () => {
