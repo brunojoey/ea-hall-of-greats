@@ -1,11 +1,13 @@
 import axios from 'axios';
 
-export default {
-  getGames: function() {
-    return axios.get('/api/games');
-  },
+const getGames = () => {
+  return axios.get('/api/games');
+};
 
-  getGame: function(id) {
-    return axios.get('/api/games/' + id);
-  }
-}
+const getGame = (id) => {
+  return axios.get('/api/games/' + id);
+};
+
+const gamesExport = { getGames, getGame };
+
+export default gamesExport;
