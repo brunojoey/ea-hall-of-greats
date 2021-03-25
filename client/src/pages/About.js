@@ -99,15 +99,15 @@ function About() {
         <ul className="banned-list">
           <li>
             <FontAwesomeIcon icon={faStar} className="fa-star" />
-            Huntdown (Until Q2 2021)
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faStar} className="fa-star" />
             Dead Rising (Until Q4 2021)
           </li>
           <li>
             <FontAwesomeIcon icon={faStar} className="fa-star" />
             The Elder Scrolls V: Skyrim (Until Q4 2021)
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faStar} className="fa-star" />
+            Dishonored 2 (Until Q1 2022)
           </li>
         </ul>
       </section>
