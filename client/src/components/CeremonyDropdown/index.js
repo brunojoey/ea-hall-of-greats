@@ -130,7 +130,7 @@ function CeremonyDropdown(props) {
       {selectedLink === 11 && <HallOfGreatTwelve history={history} />}
       {selectedLink === 12 && <HallOfGreatThirteen history={history} />}
       {selectedLink === 13 && <HallOfGreatFourteen history={history} />}
-      {selectedLink === 13 && <HallOfGreatFifteen history={history} />}
+      {selectedLink === 14 && <HallOfGreatFifteen history={history} />}
       <StarDecoration />
     </div>
   );
