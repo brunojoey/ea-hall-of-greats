@@ -1,6 +1,6 @@
-@mixin heading-styles($heading-font-weight, $heading-font-size, $heading-margin) {
+@mixin heading-styles($heading-font-weight, $text-align, $heading-font-size, $heading-margin) {
   font-weight: $heading-font-weight;
   font-size: $heading-font-size;
-  text-align: center;
+  text-align: $text-align;
   margin: $heading-margin;
 }

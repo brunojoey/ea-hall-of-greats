@@ -8,7 +8,7 @@
   
   &-title {
     font-family: Snell Roundhand, cursive;
-    @include heading-styles(600, 6rem, 3rem 0);
+    @include heading-styles(600, center, 6rem, 3rem 0);
   }
 
   &-links-div {
@@ -45,34 +45,18 @@
 }
 // End Home Page Styling
 
-.about {
-  &-heading {
-    @include heading-styles(600, 4rem, 0);
-    margin-top: 1rem;
-  }
-  .rules-heading,
-  .bans-heading {
-    @include heading-styles(500, 3rem, 0);
-  }
-  
-  .rules-list,
-  .banned-list {
-    display: grid;
-    grid-gap: 1rem;
-    list-style-type: none;
-    margin: 1rem 0;
-    text-align: $text-center;
+// About Page Styling
 
-    .fa-star {
-      margin-right: .5rem;
-      color: red;
-    }
+.about {
+  margin: 1.5rem;
+
+  &-heading {
+    @include heading-styles(600, left, 5rem, 0);
   }
-  
+
   .description-container {
-    width: 75%;
-    margin: $margin-auto;
-    text-align: $text-center;
+    // margin: 0 1rem;
+    text-align: left;
     line-height: 1.5rem;
   }
 
@@ -85,14 +69,36 @@
     }
   }
 
+  .rules-heading,
+  .bans-heading {
+    @include heading-styles(500, left, 2.5rem, 0);
+    text-decoration: underline;
+  }
+  
+  .rules-list,
+  .banned-list {
+    display: grid;
+    grid-gap: 1rem;
+    list-style-type: none;
+    margin: 1.5rem -2.5rem;
+    text-align: left;
+    width: 95%;
+
+    .fa-star {
+      margin-right: .5rem;
+      color: red;
+    }
+  }
+  
 }
+// End About Page Styling
 
 // Winner & Nominee Page Styling
 
 .winner-page {
 
   &-heading {
-    @include heading-styles(500, 3rem, 0 0 1rem 0);
+    @include heading-styles(500, center, 3rem, 0 0 1rem 0);
   }
 
   &-container {
@@ -144,7 +150,7 @@
 
 .nominations-page {
   &-heading {
-    @include heading-styles(500, 3rem, 0 0 1rem 0);
+    @include heading-styles(500, center, 3rem, 0 0 1rem 0);
   }
 }
 // End Winner & Nominee Page Styling
@@ -153,7 +159,7 @@
 
 .hall-page {
   &-title {
-    @include heading-styles(500, 3rem, 1rem 0);
+    @include heading-styles(500, center, 3rem, 1rem 0);
   }
 
   &-video {
@@ -182,13 +188,13 @@
   }
 
   .voting-title {
-    @include heading-styles(500, 2.5rem, 1rem 0);
+    @include heading-styles(500, center, 2.5rem, 1rem 0);
   }
 }
 
 .ally-page {
   &-title {
-    @include heading-styles(500, 3rem, 1rem 0);
+    @include heading-styles(500, center, 3rem, 1rem 0);
   }
 
   .MuiButton-root {
@@ -225,7 +231,7 @@
 
   .inductee-area {
     .game-title-primary {
-      @include heading-styles(500, 3rem, 0 0 1rem 0);
+      @include heading-styles(500, center, 3rem, 0 0 1rem 0);
       animation: fadeItemIn 2s ease;
     }
 
@@ -254,7 +260,7 @@
     margin-top: 1rem;
 
     .game-title-secondary {
-      @include heading-styles(500, 3rem, 0 0 1rem 0);
+      @include heading-styles(500, center, 3rem, 0 0 1rem 0);
       animation: fadeItemIn 2s ease;
     }
 

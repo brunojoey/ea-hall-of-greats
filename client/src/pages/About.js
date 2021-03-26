@@ -82,7 +82,7 @@ function About() {
             three points, the second choice will receive two points, and their
             last choice will receive one.
           </li>
-          <li style={{margin: '0 10rem'}}>
+          <li>
             {" "}
             <FontAwesomeIcon icon={faStar} className="fa-star" />
               Each Ally must present their game in a five minute speech.{" "}
