@@ -99,6 +99,14 @@ function NomineeTable({ history, games }) {
                 padding: ".5em",
               }}
             >
+              {sorted.publisher}
+            </td>
+            <td
+              className='table-infoE'
+              style={{
+                padding: ".5em",
+              }}
+            >
               {sorted.year}
             </td>
             <td
@@ -184,6 +192,15 @@ function NomineeTable({ history, games }) {
                 className="feed-user-icon"
                 icon={faSort}
                 onClick={() => requestSort("developer")}
+              ></FontAwesomeIcon>
+            </th>
+            <th style={{width: '50%'}}>
+              Publisher
+              <FontAwesomeIcon
+                size="1x"
+                className="feed-user-icon"
+                icon={faSort}
+                onClick={() => requestSort("publisher")}
               ></FontAwesomeIcon>
             </th>
             <th style={{width: '20%'}}>

@@ -11,6 +11,7 @@ const GamesSchema = new Schema ({
   platforms: { type: String, required: false },
   metacritic: { type: String, required: false },
   developer: { type: String, required: false },
+  publisher: { type: String, required: false },
   votes: { type: Number, required: false },
   victory: { type: String, required: false },
   banned: { type: String, required: false, default: false },

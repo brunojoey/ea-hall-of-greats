@@ -73,6 +73,7 @@ function GamePage(props) {
               <strong>Platforms</strong>: {gamePage.platforms} |{" "}
               <strong>Genre</strong>: {gamePage.genre} |{" "}
               <strong>Developer</strong>: {gamePage.developer} |{" "}
+              <strong>Publisher</strong>: {gamePage.publisher} |{" "}
               <strong>Metacritic</strong>: {gamePage.metacritic} |{" "}
               <strong>Year</strong>: {gamePage.year} |{" "}
               <strong>Votes Received</strong>: {gamePage.votes} |{" "}
