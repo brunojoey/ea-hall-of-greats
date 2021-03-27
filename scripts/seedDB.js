@@ -2760,7 +2760,7 @@ const gameSeed = [
     year: 2017,
     platforms: psFour + ", " + xboxOne + ", " + nSwitch + ", " + pc,
     metacritic: "86",
-    developer: "PagodaWest Games, Headcannon",
+    developer: "Christian Whitehead, Headcannon, PagodaWest Games",
     publisher: "Sega",
     votes: 5,
     victory: "False",
