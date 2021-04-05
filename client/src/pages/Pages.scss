@@ -7,7 +7,7 @@
   animation: fadeItemIn 2s;
 
   &-title {
-    font-family: "Snell Roundhand", Cursive, "Times New Roman", Times, Serif;
+    font-family: "Snell Roundhand", "Times New Roman", Times, Serif;
     @include heading-styles(600, center, 6rem, 3rem 0);
   }
 
