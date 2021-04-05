@@ -5,17 +5,18 @@
 // Home Page Styling
 .home {
   animation: fadeItemIn 2s;
-  
+
   &-title {
-    font-family: 'Snell Roundhand', cursive, 'Times New Roman', Times, serif;
+    font-family: "Snell Roundhand", Cursive, "Times New Roman", Times, Serif;
     @include heading-styles(600, center, 6rem, 3rem 0);
   }
 
   &-links-div {
-    margin: 0 0 7rem 15rem;
+    margin-bottom: 7rem;
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
   &-links-div-two {
@@ -25,12 +26,12 @@
     text-align: center;
     margin-left: -3em;
   }
-  
+
   &-links {
     font-size: 2rem;
     margin: 0 2rem;
     color: black;
-    
+
     &:hover {
       text-decoration: line-through;
       color: red;
@@ -55,7 +56,6 @@
   }
 
   .description-container {
-    // margin: 0 1rem;
     text-align: left;
     line-height: 1.5rem;
   }
@@ -74,7 +74,7 @@
     @include heading-styles(500, left, 2.5rem, 0);
     text-decoration: underline;
   }
-  
+
   .rules-list,
   .banned-list {
     display: grid;
@@ -85,18 +85,16 @@
     width: 95%;
 
     .fa-star {
-      margin-right: .5rem;
+      margin-right: 0.5rem;
       color: red;
     }
   }
-  
 }
 // End About Page Styling
 
 // Winner & Nominee Page Styling
 
 .winner-page {
-
   &-heading {
     @include heading-styles(500, center, 3rem, 0 0 1rem 0);
   }
@@ -123,7 +121,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, 0%);
-      opacity: 0; // Initial state before hover animation  
+      opacity: 0; // Initial state before hover animation
     }
 
     .winner-page-image {
@@ -131,7 +129,7 @@
       border: 5px solid red;
       border-radius: 5px;
       transition: all 0.2s;
-      box-shadow: 0 2px 1rem $color-black; 
+      box-shadow: 0 2px 1rem $color-black;
 
       &:hover {
         transform: translateY(-0.5rem) scale(1);
@@ -308,6 +306,21 @@
     .description-game {
       margin: 0.25rem 1rem 0 0;
       line-height: 1.5rem;
+
+      &-button {
+        background-color: $color-red;
+        color: $color-white;
+        animation: fadeItemIn 2s ease;
+        font-weight: bold;
+        margin-top: 1rem;
+        transition: all 0.2s;
+
+        &:hover {
+          text-decoration: line-through;
+          box-shadow: 2px 2px 9px #555;
+          transform: translateY(-0.5rem) scale(1);
+        }
+      }
     }
   }
 }

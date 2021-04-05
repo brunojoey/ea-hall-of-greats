@@ -20,6 +20,7 @@ const GamesSchema = new Schema ({
   alt: { type: String, required: true },
   allyLink: { type: String, required: true },
   hallLink: { type: String, required: true },
+  infoLink: { type: String, required: true },
   votingChoiceOne: { type: String, required: false },
   votingChoiceTwo: { type: String, required: false },
   votingChoiceThree: { type: String, required: false }
