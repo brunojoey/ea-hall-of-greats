@@ -313,12 +313,10 @@
         animation: fadeItemIn 2s ease;
         font-weight: bold;
         margin-top: 1rem;
-        transition: all 0.2s;
 
         &:hover {
           text-decoration: line-through;
           box-shadow: 2px 2px 9px #555;
-          transform: translateY(-0.5rem) scale(1);
         }
       }
     }
