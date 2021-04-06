@@ -21,9 +21,9 @@ const GamesSchema = new Schema ({
   allyLink: { type: String, required: true },
   hallLink: { type: String, required: true },
   infoLink: { type: String, required: true },
-  votingChoiceOne: { type: String, required: false },
-  votingChoiceTwo: { type: String, required: false },
-  votingChoiceThree: { type: String, required: false }
+  threePointVote: { type: String, required: false },
+  twoPointVote: { type: String, required: false },
+  onePointVote: { type: String, required: false }
 });
 
 const Games = mongoose.model("Games", GamesSchema);
