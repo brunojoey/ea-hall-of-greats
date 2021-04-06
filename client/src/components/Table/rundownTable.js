@@ -47,10 +47,10 @@ function RundownTable({ games }) {
             {sorted.votingChoiceOne === "Was Not Able to Attend" ? (
               <td>{sorted.votingChoiceOne}</td>
             ) : (
-              <td className="table-infoR">{sorted.votingChoiceOne}</td>
+              <td className="table-infoR">{sorted.threePointVote}</td>
             )}
-            <td className="table-infoR">{sorted.votingChoiceTwo}</td>
-            <td className="table-infoR">{sorted.votingChoiceThree}</td>
+            <td className="table-infoR">{sorted.twoPointVote}</td>
+            <td className="table-infoR">{sorted.onePointVote}</td>
           </tr>
         </tbody>
       );
