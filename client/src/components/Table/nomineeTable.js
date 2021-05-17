@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
 import "./Table.scss";
 
-function NomineeTable({ history, games }) {
+function NomineeTable({ history, games, results }) {
   const [sortConfig, setSortConfig] = useState(null);
 
   // Returns a copy of games.
@@ -20,12 +20,16 @@ function NomineeTable({ history, games }) {
       }
       return 0;
     });
-  };
+  }
 
   // Returns sorted data ascending or descending
   const requestSort = (key) => {
-    let direction = 'ascending'
-    if (sortConfig && sortConfig.key === key && sortConfig.direction === "ascending") {
+    let direction = "ascending";
+    if (
+      sortConfig &&
+      sortConfig.key === key &&
+      sortConfig.direction === "ascending"
+    ) {
       direction = "descending";
     }
     setSortConfig({ key, direction });
@@ -39,7 +43,7 @@ function NomineeTable({ history, games }) {
         <tbody key={sorted._id}>
           <tr>
             <td
-              className='table-infoE'
+              className="table-infoE"
               style={{
                 padding: "1em",
               }}
@@ -52,7 +56,7 @@ function NomineeTable({ history, games }) {
               </span>
             </td>
             <td
-              className='table-infoR'
+              className="table-infoR"
               style={{
                 padding: ".5em",
               }}
@@ -65,7 +69,7 @@ function NomineeTable({ history, games }) {
               </span>
             </td>
             <td
-              className='table-infoR'
+              className="table-infoR"
               style={{
                 padding: ".5em",
               }}
@@ -78,7 +82,7 @@ function NomineeTable({ history, games }) {
               </span>
             </td>
             <td
-              className='table-infoE'
+              className="table-infoE"
               style={{
                 padding: ".5em",
               }}
@@ -86,7 +90,7 @@ function NomineeTable({ history, games }) {
               {sorted.genre}
             </td>
             <td
-              className='table-infoE'
+              className="table-infoE"
               style={{
                 padding: ".5em",
               }}
@@ -94,7 +98,7 @@ function NomineeTable({ history, games }) {
               {sorted.developer}
             </td>
             <td
-              className='table-infoE'
+              className="table-infoE"
               style={{
                 padding: ".5em",
               }}
@@ -102,7 +106,7 @@ function NomineeTable({ history, games }) {
               {sorted.publisher}
             </td>
             <td
-              className='table-infoE'
+              className="table-infoE"
               style={{
                 padding: ".5em",
               }}
@@ -110,20 +114,16 @@ function NomineeTable({ history, games }) {
               {sorted.year}
             </td>
             <td
-              className='table-infoE'
+              className="table-infoE"
               style={{
                 padding: ".5em",
               }}
             >
               {sorted.metacritic}
             </td>
+            <td className="table-infoE">{sorted.votes}</td>
             <td
-              className='table-infoE'
-            >
-              {sorted.votes}
-            </td>
-            <td
-              className='table-infoE'
+              className="table-infoE"
               style={{
                 padding: ".5em",
               }}
@@ -131,7 +131,7 @@ function NomineeTable({ history, games }) {
               {sorted.victory}
             </td>
             <td
-              className='table-infoE'
+              className="table-infoE"
               style={{
                 padding: ".5em",
               }}
@@ -142,14 +142,123 @@ function NomineeTable({ history, games }) {
         </tbody>
       );
     });
-  };
+  }
+
+  let resultsList;
+  if (results) {
+    resultsList = results.map((result) => {
+      return (
+        <tbody key={result._id}>
+          <tr>
+            <td
+              className="table-infoE"
+              style={{
+                padding: "1em",
+              }}
+            >
+              <span
+                onClick={() => history.push(`/ceremonies/${result.hallLink}`)}
+                className="hall-page-link"
+              >
+                {result.hallOfGreat}
+              </span>
+            </td>
+            <td
+              className="table-infoR"
+              style={{
+                padding: ".5em",
+              }}
+            >
+              <span
+                onClick={() => history.push(`/allies/${result.allyLink}`)}
+                className="ally-page-link"
+              >
+                {result.ally}
+              </span>
+            </td>
+            <td
+              className="table-infoR"
+              style={{
+                padding: ".5em",
+              }}
+            >
+              <span
+                onClick={() => history.push(`/games/${result._id}`)}
+                className="game-page-link"
+              >
+                {result.game}
+              </span>
+            </td>
+            <td
+              className="table-infoE"
+              style={{
+                padding: ".5em",
+              }}
+            >
+              {result.genre}
+            </td>
+            <td
+              className="table-infoE"
+              style={{
+                padding: ".5em",
+              }}
+            >
+              {result.developer}
+            </td>
+            <td
+              className="table-infoE"
+              style={{
+                padding: ".5em",
+              }}
+            >
+              {result.publisher}
+            </td>
+            <td
+              className="table-infoE"
+              style={{
+                padding: ".5em",
+              }}
+            >
+              {result.year}
+            </td>
+            <td
+              className="table-infoE"
+              style={{
+                padding: ".5em",
+              }}
+            >
+              {result.metacritic}
+            </td>
+            <td className="table-infoE">{result.votes}</td>
+            <td
+              className="table-infoE"
+              style={{
+                padding: ".5em",
+              }}
+            >
+              {result.victory}
+            </td>
+            <td
+              className="table-infoE"
+              style={{
+                padding: ".5em",
+              }}
+            >
+              {result.banned}
+            </td>
+          </tr>
+        </tbody>
+      );
+    });
+  }
+
 
   return (
-    <section className='nominee-table'>
+    <section className="nominee-table">
       <table>
         <thead>
           <tr>
-            <th style={{width: '15%'}}>
+            <th style={{ width: "15%" }}>
               Ceremony
               <FontAwesomeIcon
                 size="1x"
@@ -158,7 +267,7 @@ function NomineeTable({ history, games }) {
                 onClick={() => requestSort("hallOfGreat")}
               ></FontAwesomeIcon>
             </th>
-            <th style={{width: '25%'}}>
+            <th style={{ width: "25%" }}>
               Nominated By
               <FontAwesomeIcon
                 size="1x"
@@ -167,7 +276,7 @@ function NomineeTable({ history, games }) {
                 onClick={() => requestSort("ally")}
               ></FontAwesomeIcon>
             </th>
-            <th style={{width: '45%'}}>
+            <th style={{ width: "45%" }}>
               Game
               <FontAwesomeIcon
                 size="1x"
@@ -194,7 +303,7 @@ function NomineeTable({ history, games }) {
                 onClick={() => requestSort("developer")}
               ></FontAwesomeIcon>
             </th>
-            <th style={{width: '50%'}}>
+            <th style={{ width: "50%" }}>
               Publisher
               <FontAwesomeIcon
                 size="1x"
@@ -203,7 +312,7 @@ function NomineeTable({ history, games }) {
                 onClick={() => requestSort("publisher")}
               ></FontAwesomeIcon>
             </th>
-            <th style={{width: '20%'}}>
+            <th style={{ width: "20%" }}>
               Year
               <FontAwesomeIcon
                 size="1x"
@@ -250,10 +359,11 @@ function NomineeTable({ history, games }) {
             </th>
           </tr>
         </thead>
+        {resultsList}
         {sortedItems}
-        </table>
+      </table>
     </section>
   );
-};
+}
 
 export default NomineeTable;

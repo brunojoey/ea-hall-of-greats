@@ -44,8 +44,8 @@ function RundownTable({ games }) {
               {" "}
               <span>{sorted.ally}</span>{" "}
             </td>
-            {sorted.votingChoiceOne === "Was Not Able to Attend" ? (
-              <td>{sorted.votingChoiceOne}</td>
+            {sorted.threePointVote === "Was Not Able to Attend" ? (
+              <td>Was Not Able to Attend</td>
             ) : (
               <td className="table-infoR">{sorted.threePointVote}</td>
             )}

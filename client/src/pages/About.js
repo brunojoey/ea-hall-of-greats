@@ -10,15 +10,21 @@ function About() {
       <h1 className="about-heading">About The Hall of Greats</h1>
       <section className="description-container">
         <p>
-          The Easy Allies have been conducting their own video game Hall of Fame
-          they like to call The Hall of Greats! The inagural ceremony happened
-          in February of 2017. Ever since, every three to four months, the
-          Allies gather to decide the two best games of each ceremony to induct
-          into the Hall of Greats!{" "}
+          <a href="https://www.easyallies.com" className="about-links">
+            The Easy Allies
+          </a>
+          have been conducting their own video game Hall of Fame they like to
+          call{" "}
+          <a href="https://easyallies.com/#!/show/the-hall-of-greats" className='about-links'>
+            The Hall of Greats
+          </a>
+          ! The inaugural ceremony happened in February of 2017. Ever since,
+          every three to four months, the Allies gather to decide the two best
+          games of each ceremony to induct into the Hall of Greats!{" "}
         </p>
         <p>
-          Currently there are 28 games inducted into the illustrious hall,
-          which you can find{" "}
+          Currently there are 28 games inducted into the illustrious hall, which
+          you can find{" "}
           <a href="/winners" className="about-links">
             here
           </a>
@@ -55,20 +61,20 @@ function About() {
       </section>
       <h2 className="rules-heading">The Rules</h2>
       <section>
-        <ul className='rules-list'>
+        <ul className="rules-list">
           <li>
             <FontAwesomeIcon icon={faStar} className="fa-star" />
             Starting with the eighth Hall of Greats, alliances were banned.
           </li>
           <li>
             <FontAwesomeIcon icon={faStar} className="fa-star" />
-            Starting with the fifth Hall of Greats, a person cannot vote for their
-            own nominated game.
+            Starting with the fifth Hall of Greats, a person cannot vote for
+            their own nominated game.
           </li>
           <li>
             <FontAwesomeIcon icon={faStar} className="fa-star" />
-            Starting with the second Hall of Greats, games that received no votes
-            from other Allies are banned for one year.{" "}
+            Starting with the second Hall of Greats, games that received no
+            votes from other Allies are banned for one year.{" "}
           </li>
           <li>
             <FontAwesomeIcon icon={faStar} className="fa-star" />
@@ -78,17 +84,17 @@ function About() {
           </li>
           <li>
             <FontAwesomeIcon icon={faStar} className="fa-star" />
-            Each Ally has six votes. Their first choice for induction will receive
-            three points, the second choice will receive two points, and their
-            last choice will receive one.
+            Each Ally has six votes. Their first choice for induction will
+            receive three points, the second choice will receive two points, and
+            their last choice will receive one.
           </li>
           <li>
             {" "}
             <FontAwesomeIcon icon={faStar} className="fa-star" />
-              Each Ally must present their game in a five minute speech.{" "}
-              Then, that game will be critiqued by the other Allies in a five
-              minute cross examination to make sure that game earns its way to
-              the Hall of Greats.{" "}
+            Each Ally must present their game in a five minute speech. Then,
+            that game will be critiqued by the other Allies in a five minute
+            cross examination to make sure that game earns its way to the Hall
+            of Greats.{" "}
           </li>
         </ul>
       </section>
@@ -114,6 +120,6 @@ function About() {
       <StarDecoration />
     </main>
   );
-};
+}
 
 export default About;
