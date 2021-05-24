@@ -1,6 +1,6 @@
 import { Search, Grid } from "semantic-ui-react";
 import { useEffect } from "react";
-import './SearchBar.scss';
+import "./SearchBar.scss";
 
 function SearchBar({
   value,
@@ -9,7 +9,6 @@ function SearchBar({
   dispatch,
   handleSearchChange,
 }) {
-
   useEffect(() => {
     const timeout = timeoutRef.current;
     return () => {
@@ -17,9 +16,8 @@ function SearchBar({
     };
   }, [timeoutRef]);
 
-
   return (
-    <Grid> 
+    <Grid>
       <Grid.Column width={6}>
         <Search
           loading={loading}
@@ -30,7 +28,7 @@ function SearchBar({
           placeholder="Search Nominees"
           value={value}
           showNoResults={false}
-          style={{display: 'flex'}}
+          style={{ display: "flex" }}
         />
       </Grid.Column>
     </Grid>

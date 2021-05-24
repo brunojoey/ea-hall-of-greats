@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .search {
   display: flex;
   justify-content: center;
@@ -12,8 +14,9 @@
     transition: .05s all;
 
     &:hover {
-      border: .2rem black solid;
+      border: .2rem #444 solid;
       border-radius: 5px;
+      box-shadow: 2px 2px 9px #888;
     }
   }
 }

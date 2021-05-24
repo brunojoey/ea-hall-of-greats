@@ -30,16 +30,16 @@
   &-links {
     font-size: 2rem;
     margin: 0 2rem;
-    color: black;
+    color: $color-black;
 
     &:hover {
       text-decoration: line-through;
-      color: red;
+      color: $color-red;
     }
   }
 
   &-links-two {
-    color: black;
+    color: $color-black;
     font-size: 2rem;
     margin-bottom: 1rem;
   }
@@ -61,11 +61,12 @@
   }
 
   &-links {
-    color: black;
+    color: $color-black;
+    transition: 1s all;
 
     &:hover {
       text-decoration: line-through;
-      color: red;
+      color: $color-red;
     }
   }
 
@@ -86,7 +87,7 @@
 
     .fa-star {
       margin-right: 0.5rem;
-      color: red;
+      color: $color-red;
     }
   }
 }
@@ -126,7 +127,7 @@
 
     .winner-page-image {
       height: 100%;
-      border: 5px solid red;
+      border: 5px solid $color-red;
       border-radius: 5px;
       transition: all 0.2s;
       box-shadow: 0 2px 1rem $color-black;
@@ -164,7 +165,7 @@
     margin: $margin-auto;
     margin-bottom: 2rem;
     box-shadow: 0 0.5rem 1rem $color-black;
-    border: 3px solid red;
+    border: 3px solid $color-red;
     border-radius: 3px;
     transition: 0.3s ease;
 
@@ -244,12 +245,13 @@
       margin: $margin-auto;
       box-shadow: 2px 2px 9px #888;
       transition: 0.3s;
-      border: 4px solid red;
+      border: 4px solid $color-red;
       border-radius: 3px;
       animation: fadeItemIn 2s ease;
 
       &:hover {
         transform: translateY(-0.5rem);
+        box-shadow: 3px 4px 8px #555;
       }
     }
   }
@@ -273,7 +275,7 @@
       margin: $margin-auto;
       box-shadow: 2px 2px 9px #888;
       transition: 0.3s ease;
-      border: 4px solid red;
+      border: 4px solid $color-red;
       border-radius: 3px;
       animation: fadeItemIn 2s ease;
 

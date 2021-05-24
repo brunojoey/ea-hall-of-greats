@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
 import StarDecoration from "../components/StarDecoration";
 import Loader from "react-loader-spinner";
-import { Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
+import { Button } from "@material-ui/core";
 import "./Pages.scss";
 
 function GamePage(props) {
@@ -70,15 +71,17 @@ function GamePage(props) {
                 className="hall-page-link"
               >
                 Hall of Great {gamePage.hallOfGreat}{" "}
-              </span>|{" "}
-              <strong>Platforms</strong>: {gamePage.platforms} |{" "}
+              </span>
+              | <strong>Platforms</strong>: {gamePage.platforms} |{" "}
               <strong>Genre</strong>: {gamePage.genre} |{" "}
               <strong>Developer</strong>: {gamePage.developer} |{" "}
               <strong>Publisher</strong>: {gamePage.publisher} |{" "}
               <strong>Metacritic</strong>: {gamePage.metacritic} |{" "}
               <strong>Year</strong>: {gamePage.year} |{" "}
               <strong>Votes Received</strong>: {gamePage.votes} |{" "}
-              {gamePage.wonByPatreonVote ? <strong>Won By Patreon Vote | </strong> : null}
+              {gamePage.wonByPatreonVote ? (
+                <strong>Won By Patreon Vote | </strong>
+              ) : null}
               <strong>Banned</strong>: {gamePage.banned}
             </p>
           </section>
@@ -88,8 +91,15 @@ function GamePage(props) {
               {" "}
               <strong>Description: </strong>{" "}
               <p className="description-game">{gamePage.description}</p>{" "}
-              <Button className='description-game-button'>
-                <a href={gamePage.infoLink} target='_blank' rel='noreferrer noopener' style={{color: 'white', textDecoration: 'none'}}>More Information</a>
+              <Button className="description-game-button">
+                <Link
+                  htoref={gamePage.infoLink}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  style={{ color: "white", textDecoration: "none" }}
+                >
+                  More Information
+                </Link>
               </Button>
             </span>
           </section>
@@ -111,6 +121,6 @@ function GamePage(props) {
       )}
     </>
   );
-};
+}
 
 export default GamePage;

@@ -32,10 +32,10 @@ function HallOfGreatSix({ history }) {
         <></>
       )}
       <CeremonyTable games={games} history={history} />
-      <h3 className='voting-title'>The Voting Rundown</h3>
+      <h3 className="voting-title">The Voting Rundown</h3>
       <RundownTable games={games} history={history} />
     </main>
   );
-};
+}
 
 export default HallOfGreatSix;

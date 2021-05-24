@@ -32,11 +32,11 @@ function HallOfGreatFourteen({ history }) {
         <></>
       )}
       <CeremonyTable games={games} history={history} />
-      <h3 className='voting-title'>The Voting Rundown</h3>
+      <h3 className="voting-title">The Voting Rundown</h3>
       <RundownTable games={games} history={history} />
-      <p style={{textAlign: 'center'}}>* Assumed Votes Given</p>
+      <p style={{ textAlign: "center" }}>* Assumed Votes Given</p>
     </main>
   );
-};
+}
 
 export default HallOfGreatFourteen;

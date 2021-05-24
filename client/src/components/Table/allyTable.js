@@ -1,8 +1,8 @@
 import { useState } from "react";
-import StarDecoration from '../StarDecoration';
+import StarDecoration from "../StarDecoration";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
-import './Table.scss';
+import "./Table.scss";
 
 function AllyTable({ history, games }) {
   const [sortConfig, setSortConfig] = useState(null);
@@ -21,16 +21,19 @@ function AllyTable({ history, games }) {
       }
       return 0;
     });
-  };
+  }
 
   const requestSort = (key) => {
-    let direction = 'ascending'
-    if (sortConfig && sortConfig.key === key && sortConfig.direction === "ascending") {
+    let direction = "ascending";
+    if (
+      sortConfig &&
+      sortConfig.key === key &&
+      sortConfig.direction === "ascending"
+    ) {
       direction = "descending";
     }
     setSortConfig({ key, direction });
   };
-
 
   let sortedItems;
   if (games) {
@@ -39,7 +42,7 @@ function AllyTable({ history, games }) {
         <tbody key={sorted._id}>
           <tr>
             <td
-              className='table-infoE'
+              className="table-infoE"
               style={{
                 padding: "1em",
               }}
@@ -52,9 +55,9 @@ function AllyTable({ history, games }) {
               </span>
             </td>
             <td
-              className='table-infoR'
+              className="table-infoR"
               style={{
-                padding: ".5em"              
+                padding: ".5em",
               }}
             >
               <span
@@ -64,13 +67,9 @@ function AllyTable({ history, games }) {
                 {sorted.game}
               </span>
             </td>
+            <td className="table-infoE">{sorted.votes}</td>
             <td
-              className='table-infoE'
-            >
-              {sorted.votes}
-            </td>
-            <td
-              className='table-infoE'
+              className="table-infoE"
               style={{
                 padding: ".5em",
               }}
@@ -78,7 +77,7 @@ function AllyTable({ history, games }) {
               {sorted.victory}
             </td>
             <td
-              className='table-infoE'
+              className="table-infoE"
               style={{
                 padding: ".5em",
               }}
@@ -89,10 +88,10 @@ function AllyTable({ history, games }) {
         </tbody>
       );
     });
-  };
+  }
 
   return (
-    <section className='ally-table'>
+    <section className="ally-table">
       <table>
         <thead>
           <tr>
@@ -114,8 +113,7 @@ function AllyTable({ history, games }) {
                 onClick={() => requestSort("game")}
               ></FontAwesomeIcon>
             </th>
-            <th
-            >
+            <th>
               Votes Received
               <FontAwesomeIcon
                 size="1x"
@@ -124,8 +122,7 @@ function AllyTable({ history, games }) {
                 onClick={() => requestSort("votes")}
               ></FontAwesomeIcon>
             </th>
-            <th
-            >
+            <th>
               Inducted
               <FontAwesomeIcon
                 size="1x"
@@ -134,8 +131,7 @@ function AllyTable({ history, games }) {
                 onClick={() => requestSort("victory")}
               ></FontAwesomeIcon>
             </th>
-            <th
-            >
+            <th>
               Banned
               <FontAwesomeIcon
                 size="1x"
@@ -151,6 +147,6 @@ function AllyTable({ history, games }) {
       <StarDecoration />
     </section>
   );
-};
+}
 
 export default AllyTable;

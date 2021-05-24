@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
-import './Table.scss';
+import "./Table.scss";
 
 function CeremonyTable({ history, games }) {
   const [sortConfig, setSortConfig] = useState(null);
@@ -19,11 +19,15 @@ function CeremonyTable({ history, games }) {
       }
       return 0;
     });
-  };
+  }
 
   const requestSort = (key) => {
-    let direction = 'ascending'
-    if (sortConfig && sortConfig.key === key && sortConfig.direction === "ascending") {
+    let direction = "ascending";
+    if (
+      sortConfig &&
+      sortConfig.key === key &&
+      sortConfig.direction === "ascending"
+    ) {
       direction = "descending";
     }
     setSortConfig({ key, direction });
@@ -36,9 +40,9 @@ function CeremonyTable({ history, games }) {
         <tbody key={sorted._id}>
           <tr>
             <td
-              className='table-infoR'
+              className="table-infoR"
               style={{
-                padding: ".5em"
+                padding: ".5em",
               }}
             >
               <span
@@ -49,9 +53,9 @@ function CeremonyTable({ history, games }) {
               </span>
             </td>
             <td
-              className='table-infoR'
+              className="table-infoR"
               style={{
-                padding: ".5em"
+                padding: ".5em",
               }}
             >
               <span
@@ -61,13 +65,9 @@ function CeremonyTable({ history, games }) {
                 {sorted.game}
               </span>
             </td>
+            <td className="table-infoE">{sorted.votes}</td>
             <td
-            className='table-infoE'
-            >
-              {sorted.votes}
-            </td>
-            <td
-            className='table-infoE'
+              className="table-infoE"
               style={{
                 borderBottom: "1px solid black",
                 borderLeft: "1px solid black",
@@ -76,11 +76,15 @@ function CeremonyTable({ history, games }) {
             >
               {sorted.victory}
             </td>
-            {sorted.wonByPatreonVote === 'true' ? <td>{sorted.wonByPatreonVote}</td>: <></>}
+            {sorted.wonByPatreonVote === "true" ? (
+              <td>{sorted.wonByPatreonVote}</td>
+            ) : (
+              <></>
+            )}
             <td
-            className='table-infoE'
+              className="table-infoE"
               style={{
-                padding: ".5em"
+                padding: ".5em",
               }}
             >
               {sorted.banned}
@@ -89,10 +93,10 @@ function CeremonyTable({ history, games }) {
         </tbody>
       );
     });
-  };
+  }
 
   return (
-    <section className='ceremony-table'>
+    <section className="ceremony-table">
       <table>
         <thead>
           <tr>
@@ -147,6 +151,6 @@ function CeremonyTable({ history, games }) {
       </table>
     </section>
   );
-};
+}
 
 export default CeremonyTable;

@@ -4,7 +4,7 @@
 table {
   width: 80%;
   border-collapse: collapse;
-  border: 1px solid black;
+  border: 1px solid $color-black;
   box-shadow: 2px 2px 7px #888;
   margin: $margin-auto;
   animation: fadeItemIn 2s ease;

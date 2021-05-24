@@ -13,13 +13,13 @@ function RundownTable({ games }) {
     gameList.sort((a, b) => {
       if (a[sortConfig.key] < b[sortConfig.key]) {
         return sortConfig.direction === "ascending" ? -1 : 1;
-      };
+      }
       if (a[sortConfig.key] > b[sortConfig.key]) {
         return sortConfig.direction === "ascending" ? 1 : -1;
-      };
+      }
       return 0;
     });
-  };
+  }
 
   const requestSort = (key) => {
     let direction = "ascending";
@@ -55,7 +55,7 @@ function RundownTable({ games }) {
         </tbody>
       );
     });
-  };
+  }
 
   return (
     <section className="rundown-table">
@@ -80,6 +80,6 @@ function RundownTable({ games }) {
       </table>
     </section>
   );
-};
+}
 
 export default RundownTable;

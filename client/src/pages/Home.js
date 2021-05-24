@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import StarDecoration from "../components/StarDecoration";
 import useMediaQuery from "../utils/useMediaQuery";
 import "./Pages.scss";
@@ -12,63 +13,63 @@ function Home() {
       {matches ? (
         <ul className="home-links-div">
           <li>
-            <a href="/about" className="home-links">
+            <Link to="/about" className="home-links">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/winners" className="home-links">
+            <Link to="/winners" className="home-links">
               Winners
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/nominations" className="home-links">
+            <Link to="/nominations" className="home-links">
               Nominations
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/ceremonies" className="home-links">
+            <Link to="/ceremonies" className="home-links">
               Ceremonies
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/allies" className="home-links">
+            <Link to="/allies" className="home-links">
               Allies
-            </a>
+            </Link>
           </li>
         </ul>
       ) : (
         <ul className="home-links-div-two">
           <li className="home-links-two">
-            <a href="/about" className="home-links-two">
+            <Link to="/about" className="home-links-two">
               About
-            </a>
+            </Link>
           </li>
           <li className="home-links-two">
-            <a href="/winners" className="home-links-two">
+            <Link to="/winners" className="home-links-two">
               Winners
-            </a>
+            </Link>
           </li>
           <li className="home-links-two">
-            <a href="/nominations" className="home-links-two">
+            <Link to="/nominations" className="home-links-two">
               Nominations
-            </a>
+            </Link>
           </li>
           <li className="home-links-two">
-            <a href="/ceremonies" className="home-links-two">
+            <Link to="/ceremonies" className="home-links-two">
               Ceremonies
-            </a>
+            </Link>
           </li>
           <li className="home-links-two">
-            <a href="/allies" className="home-links-two">
+            <Link to="/allies" className="home-links-two">
               Allies
-            </a>
+            </Link>
           </li>
         </ul>
       )}
       <StarDecoration />
     </main>
   );
-};
+}
 
 export default Home;

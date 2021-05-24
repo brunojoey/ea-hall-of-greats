@@ -1,4 +1,5 @@
 import StarDecoration from "../components/StarDecoration";
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import "./Pages.scss";
@@ -23,39 +24,39 @@ function About() {
           games of each ceremony to induct into the Hall of Greats!{" "}
         </p>
         <p>
-          Currently there are 28 games inducted into the illustrious hall, which
+          Currently there are 30 games inducted into the illustrious hall, which
           you can find{" "}
-          <a href="/winners" className="about-links">
+          <Link to="/winners" className="about-links">
             here
-          </a>
+          </Link>
           . The Allies who have the most games inducted are:{" "}
-          <a href="allies/michael_damiani" className="about-links">
+          <Link to="allies/michael_damiani" className="about-links">
             Michael Damiani
-          </a>{" "}
+          </Link>{" "}
           &amp;{" "}
-          <a href="allies/brad_ellis" className="about-links">
+          <Link to="allies/brad_ellis" className="about-links">
             Brad Ellis
-          </a>
+          </Link>
           , each inducting six games. The Ally who sadly has the most games
           banned is:{" "}
-          <a href="allies/don_casanova" className="about-links">
+          <Link to="allies/don_casanova" className="about-links">
             Don Casanova
-          </a>
+          </Link>
           , where he had three straight games be banned starting with the second
           Hall of Greats. There have been three situations where a Patreon Vote
           was required to induct a game into the Hall of Greats,{" "}
-          <a href="ceremonies/hall_great_one" className="about-links">
+          <Link to="ceremonies/hall_great_one" className="about-links">
             The First Hall of Greats
-          </a>
+          </Link>
           ,{" "}
-          <a href="ceremonies/hall_great_eight" className="about-links">
+          <Link to="ceremonies/hall_great_eight" className="about-links">
             The Eighth Hall of Greats
-          </a>
+          </Link>
           , and the most impressive feat being when Patreon decided both games
           to get inducted when there was a three-way tie,{" "}
-          <a href="ceremonies/hall_great_ten" className="about-links">
+          <Link to="ceremonies/hall_great_ten" className="about-links">
             The Tenth Hall of Greats
-          </a>
+          </Link>
           .{" "}
         </p>
       </section>
@@ -105,15 +106,15 @@ function About() {
         <ul className="banned-list">
           <li>
             <FontAwesomeIcon icon={faStar} className="fa-star" />
-            Dead Rising (Until Q4 2021)
+            Dead Rising <strong>(Until Q4 2021)</strong>
           </li>
           <li>
             <FontAwesomeIcon icon={faStar} className="fa-star" />
-            The Elder Scrolls V: Skyrim (Until Q4 2021)
+            The Elder Scrolls V: Skyrim <strong>(Until Q4 2021)</strong>
           </li>
           <li>
             <FontAwesomeIcon icon={faStar} className="fa-star" />
-            Dishonored 2 (Until Q1 2022)
+            Dishonored 2 <strong>(Until Q1 2022)</strong>
           </li>
         </ul>
       </section>

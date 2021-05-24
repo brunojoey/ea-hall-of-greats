@@ -1,8 +1,10 @@
+@import '../../styles/variables.scss';
+
 .fa-star-section {
   text-align: center;
   
   .fa-star {
-    color: red;
+    color: $color-red;
     margin: 1rem 0;
     font-size: 3rem;
   }

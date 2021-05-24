@@ -20,7 +20,7 @@ function WinnerTable({ history, games }) {
       }
       return 0;
     });
-  };
+  }
 
   // Returns sorted data ascending or descending
   const requestSort = (key) => {
@@ -45,7 +45,7 @@ function WinnerTable({ history, games }) {
             <td
               className="table-infoE"
               style={{
-                padding: "1em"
+                padding: "1em",
               }}
             >
               <span
@@ -101,7 +101,7 @@ function WinnerTable({ history, games }) {
         </tbody>
       );
     });
-  };
+  }
 
   return (
     <section className="winner-table">
@@ -159,6 +159,6 @@ function WinnerTable({ history, games }) {
       </table>
     </section>
   );
-};
+}
 
 export default WinnerTable;

@@ -252,7 +252,6 @@ function NomineeTable({ history, games, results }) {
     });
   }
 
-
   return (
     <section className="nominee-table">
       <table>

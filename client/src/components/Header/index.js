@@ -1,4 +1,5 @@
 import Dropdown from '../Dropdown';
+import { Link } from 'react-router-dom';
 import { AppBar, Toolbar } from "@material-ui/core/";
 import './Header.scss';
 
@@ -7,10 +8,10 @@ function Header() {
     <header className='header-root'>
       <AppBar position="static">
         <Toolbar className='menu-bar'>
-          <a href="/" className='menu-title'>
+          <Link to="/" className='menu-title'>
             <span style={{ color: "white" }}>EASY</span>
             <span style={{ color: "red" }}>ALLIES</span>{" "}
-          </a>
+          </Link>
           <Dropdown />
         </Toolbar>
       </AppBar>

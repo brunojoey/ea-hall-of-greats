@@ -19,7 +19,6 @@ function HallOfGreatEight({ history }) {
     fetchData();
   }, [setGames]);
 
-
   return (
     <main className="hall-page">
       <h2 className="hall-page-title">The Eighth Hall of Greats</h2>
@@ -33,10 +32,10 @@ function HallOfGreatEight({ history }) {
         <></>
       )}
       <CeremonyTable games={games} history={history} />
-      <h3 className='voting-title'>The Voting Rundown</h3>
+      <h3 className="voting-title">The Voting Rundown</h3>
       <RundownTable games={games} history={history} />
     </main>
   );
-};
+}
 
 export default HallOfGreatEight;

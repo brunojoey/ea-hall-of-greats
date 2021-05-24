@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import { Button, Menu } from "@material-ui/core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -33,43 +34,43 @@ function Dropdown() {
         open={Boolean(anchor)}
         onClose={handleClose}
       >
-        <nav className='nav'>
+        <nav className="nav">
           <ul className="nav-list">
             <li>
-              <a href="/" className="nav-list-links">
+              <Link to="/" className="nav-list-links">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/about" className="nav-list-links">
+              <Link to="/about" className="nav-list-links">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/winners" className="nav-list-links">
+              <Link to="/winners" className="nav-list-links">
                 The Inductees
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/nominations" className="nav-list-links">
+              <Link to="/nominations" className="nav-list-links">
                 The Nominations
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/ceremonies" className="nav-list-links">
+              <Link to="/ceremonies" className="nav-list-links">
                 The Ceremonies
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/allies" className="nav-list-links">
+              <Link to="/allies" className="nav-list-links">
                 The Allies
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
       </Menu>
     </section>
   );
-};
+}
 
 export default Dropdown;

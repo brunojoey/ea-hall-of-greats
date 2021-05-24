@@ -36,6 +36,6 @@ function HallOfGreatEleven({ history }) {
       <RundownTable games={games} history={history} />
     </main>
   );
-};
+}
 
 export default HallOfGreatEleven;

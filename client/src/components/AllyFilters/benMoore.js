@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import gamesAPI from "../../utils/gamesAPI";
 // import useMediaQuery from "../../utils/useMediaQuery";
 import AllyTable from "../Table/allyTable";
-import './Filters.scss';
+import "./Filters.scss";
 
 function BenMoore({ history }) {
   const [ally, setAlly] = useState([]);
@@ -53,7 +53,7 @@ function BenMoore({ history }) {
           <section>{benMooreCard}</section>
         </div>
       ) : ( */}
-        <AllyTable games={ally} history={history} />
+      <AllyTable games={ally} history={history} />
       {/* )} */}
     </main>
   );

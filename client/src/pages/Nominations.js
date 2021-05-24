@@ -14,7 +14,7 @@ function Nominations({ history }) {
 
   const initialState = {
     loading: false,
-    results: '',
+    results: "",
     value: "",
   };
 
@@ -32,7 +32,7 @@ function Nominations({ history }) {
       default:
         throw new Error();
     }
-  };
+  }
   const [state, dispatch] = useReducer(reduce, initialState);
   const { loading, results, value } = state;
 
@@ -82,16 +82,16 @@ function Nominations({ history }) {
         dispatch={dispatch}
         handleSearchChange={handleSearchChange}
       />
-        <NomineeTable
-          games={gamesList}
-          history={history}
-          results={results}
-          value={value}
-          loading={loading}
-          timeoutRef={timeoutRef}
-          dispatch={dispatch}
-          handleSearchChange={handleSearchChange}
-        />
+      <NomineeTable
+        games={gamesList}
+        history={history}
+        results={results}
+        value={value}
+        loading={loading}
+        timeoutRef={timeoutRef}
+        dispatch={dispatch}
+        handleSearchChange={handleSearchChange}
+      />
       <StarDecoration />
     </main>
   );

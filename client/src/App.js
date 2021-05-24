@@ -6,7 +6,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import Home from "./pages/Home";
-import About from './pages/About';
+import About from "./pages/About";
 import Winners from "./pages/Winners";
 import Allies from "./pages/Allies";
 import Nominations from "./pages/Nominations";
@@ -37,7 +37,10 @@ function App() {
               path="/nominations"
               render={(props) => <Nominations {...props} />}
             />
-            <Route exact path="/games/:id" render={(props) => <GamePage {...props} />}
+            <Route
+              exact
+              path="/games/:id"
+              render={(props) => <GamePage {...props} />}
             />
             <Redirect
               exact
@@ -61,6 +64,6 @@ function App() {
       <Footer />
     </div>
   );
-};
+}
 
 export default App;
