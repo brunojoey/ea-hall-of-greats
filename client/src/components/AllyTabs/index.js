@@ -6,7 +6,7 @@ import BradEllis from "../AllyFilters/bradEllis";
 import BrandonJones from "../AllyFilters/brandonJones";
 import DanielBloodworth from "../AllyFilters/danielBloodworth";
 import DonCasanova from "../AllyFilters/donCasanova";
-import IanHinck from "../AllyFilters/ianHinck";
+import IslaHinck from "../AllyFilters/islaHinck";
 import KyleBosman from "../AllyFilters/kyleBosman";
 import MichaelDamiani from "../AllyFilters/michaelDamiani";
 import MichaelHuber from "../AllyFilters/michaelHuber";
@@ -31,7 +31,7 @@ function AllyTabs({ match, history }) {
     2: "brandon_jones",
     3: "daniel_bloodworth",
     4: "don_casanova",
-    5: "ian_hinck",
+    5: "isla_hinck",
     6: "kyle_bosman",
     7: "michael_damiani",
     8: "michael_huber",
@@ -43,7 +43,7 @@ function AllyTabs({ match, history }) {
     brandon_jones: 2,
     daniel_bloodworth: 3,
     don_casanova: 4,
-    ian_hinck: 5,
+    isla_hinck: 5,
     kyle_bosman: 6,
     michael_damiani: 7,
     michael_huber: 8,
@@ -91,7 +91,7 @@ function AllyTabs({ match, history }) {
           />
           <Tab
             classes={{ root: classes.tab }}
-            label="Ian Hinck"
+            label="Isla Hinck"
             className="tab-allies"
           />
           <Tab
@@ -116,7 +116,7 @@ function AllyTabs({ match, history }) {
         {selectedTab === 2 && <BrandonJones history={history} />}
         {selectedTab === 3 && <DanielBloodworth history={history} />}
         {selectedTab === 4 && <DonCasanova history={history} />}
-        {selectedTab === 5 && <IanHinck history={history} />}
+        {selectedTab === 5 && <IslaHinck history={history} />}
         {selectedTab === 6 && <KyleBosman history={history} />}
         {selectedTab === 7 && <MichaelDamiani history={history} />}
         {selectedTab === 8 && <MichaelHuber history={history} />}

@@ -18,7 +18,7 @@ const bradEllis = "Brad Ellis";
 const brandonJones = "Brandon Jones";
 const danielBloodworth = "Daniel Bloodworth";
 const donCasanova = "Don Casanova";
-const ianHinck = "Ian Hinck";
+const islaHinck = "Isla Hinck";
 const kyleBosman = "Kyle Bosman";
 const michaelHuber = "Michael Huber";
 const michaelDamiani = "Michael Damiani";
@@ -143,7 +143,7 @@ const gameSeed = [
     onePointVote: "Super Metroid",
   },
   {
-    ally: ianHinck,
+    ally: islaHinck,
     game: bloodborne,
     hallOfGreat: 1,
     description:
@@ -159,7 +159,7 @@ const gameSeed = [
     banned: "False",
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rba.jpg",
     alt: bloodborne,
-    allyLink: "ian_hinck",
+    allyLink: "isla_hinck",
     hallLink: "hall_great_one",
     infoLink: "https://en.wikipedia.org/wiki/Bloodborne",
     threePointVote: bloodborne,
@@ -355,7 +355,7 @@ const gameSeed = [
     onePointVote: symphony,
   },
   {
-    ally: ianHinck,
+    ally: islaHinck,
     game: symphony,
     hallOfGreat: 2,
     description:
@@ -371,7 +371,7 @@ const gameSeed = [
     banned: "False",
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nh3.jpg",
     alt: symphony,
-    allyLink: "ian_hinck",
+    allyLink: "isla_hinck",
     hallLink: "hall_great_two",
     infoLink: "https://en.wikipedia.org/wiki/Castlevania:_Symphony_of_the_Night",
     threePointVote: symphony,
@@ -525,7 +525,7 @@ const gameSeed = [
     onePointVote: "Xenoblade Chronicles",
   },
   {
-    ally: ianHinck,
+    ally: islaHinck,
     game: symphony,
     hallOfGreat: 3,
     description:
@@ -541,7 +541,7 @@ const gameSeed = [
     banned: "False",
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nh3.jpg",
     alt: symphony,
-    allyLink: "ian_hinck",
+    allyLink: "isla_hinck",
     hallLink: "hall_great_three",
     infoLink: "https://en.wikipedia.org/wiki/Castlevania:_Symphony_of_the_Night",
     threePointVote: symphony,
@@ -885,7 +885,7 @@ const gameSeed = [
     onePointVote: "Pokemon: Red & Blue",
   },
   {
-    ally: ianHinck,
+    ally: islaHinck,
     game: "Myst",
     hallOfGreat: 4,
     description:
@@ -901,7 +901,7 @@ const gameSeed = [
     banned: "False",
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1y96.jpg",
     alt: "Myst",
-    allyLink: "ian_hinck",
+    allyLink: "isla_hinck",
     hallLink: "hall_great_four",
     infoLink: "https://en.wikipedia.org/wiki/Myst",
     threePointVote: "Mega Man X",
@@ -1123,7 +1123,7 @@ const gameSeed = [
     onePointVote: "Pandemonium!",
   },
   {
-    ally: ianHinck,
+    ally: islaHinck,
     game: dungeonsAndDragons,
     hallOfGreat: 5,
     description:
@@ -1140,7 +1140,7 @@ const gameSeed = [
     image:
       "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Dungeons_%26_Dragons_5th_Edition_logo.svg/250px-Dungeons_%26_Dragons_5th_Edition_logo.svg.png",
     alt: dungeonsAndDragons,
-    allyLink: "ian_hinck",
+    allyLink: "isla_hinck",
     hallLink: "hall_great_five",
     infoLink: "https://en.wikipedia.org/wiki/Dungeons_%26_Dragons",
     threePointVote: darkSouls,
@@ -1196,7 +1196,7 @@ const gameSeed = [
     onePointVote: dq8,
   },
   {
-    ally: ianHinck,
+    ally: islaHinck,
     game: silentHillTwo,
     hallOfGreat: 6,
     description:
@@ -1212,7 +1212,7 @@ const gameSeed = [
     banned: "False",
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2edz.jpg",
     alt: silentHillTwo,
-    allyLink: "ian_hinck",
+    allyLink: "isla_hinck",
     hallLink: "hall_great_six",
     infoLink: "https://en.wikipedia.org/wiki/Silent_Hill_2",
     threePointVote: "Metroid Prime",
@@ -1508,7 +1508,7 @@ const gameSeed = [
     onePointVote: "Tetris",
   },
   {
-    ally: ianHinck,
+    ally: islaHinck,
     game: silentHillTwo,
     hallOfGreat: 7,
     description:
@@ -1524,7 +1524,7 @@ const gameSeed = [
     banned: "False",
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2edz.jpg",
     alt: silentHillTwo,
-    allyLink: "ian_hinck",
+    allyLink: "isla_hinck",
     hallLink: "hall_great_seven",
     infoLink: "https://en.wikipedia.org/wiki/Silent_Hill_2",
     threePointVote: bloodborne,
@@ -1588,7 +1588,7 @@ const gameSeed = [
     onePointVote: haloOne,
   },
   {
-    ally: ianHinck,
+    ally: islaHinck,
     game: bloodborne,
     hallOfGreat: 8,
     description:
@@ -1604,7 +1604,7 @@ const gameSeed = [
     banned: "False",
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rba.jpg",
     alt: bloodborne,
-    allyLink: "ian_hinck",
+    allyLink: "isla_hinck",
     hallLink: "hall_great_eight",
     infoLink: "https://en.wikipedia.org/wiki/Bloodborne",
     threePointVote: portal,
@@ -1974,7 +1974,7 @@ const gameSeed = [
     onePointVote: "The Legend of Zelda: A Link to the Past",
   },
   {
-    ally: ianHinck,
+    ally: islaHinck,
     game: darkSoulsRemastered,
     hallOfGreat: 9,
     description:
@@ -1991,7 +1991,7 @@ const gameSeed = [
     image:
       "https://images.igdb.com/igdb/image/upload/t_cover_big/kvr6upeqbsvt7nunhlf4.jpg",
     alt: darkSoulsRemastered,
-    allyLink: "ian_hinck",
+    allyLink: "isla_hinck",
     hallLink: "hall_great_nine",
     infoLink: "https://en.wikipedia.org/wiki/Dark_Souls#Dark_Souls:_Remastered",
     threePointVote: "The Legend of Zelda: Twilight Princess",
@@ -2145,7 +2145,7 @@ const gameSeed = [
     onePointVote: "Phantasy Star Online",
   },
   {
-    ally: ianHinck,
+    ally: islaHinck,
     game: ff7,
     hallOfGreat: 10,
     description:
@@ -2161,7 +2161,7 @@ const gameSeed = [
     banned: "False",
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2evn.jpg",
     alt: ff7,
-    allyLink: "ian_hinck",
+    allyLink: "isla_hinck",
     hallLink: "hall_great_ten",
     infoLink: "https://en.wikipedia.org/wiki/Final_Fantasy_VII",
     threePointVote: "Bioshock",
@@ -2291,7 +2291,7 @@ const gameSeed = [
     onePointVote: "Metal Gear Solid 3: Snake Eater",
   },
   {
-    ally: ianHinck,
+    ally: islaHinck,
     game: "Metal Gear Solid 3: Snake Eater",
     hallOfGreat: 11,
     description:
@@ -2307,7 +2307,7 @@ const gameSeed = [
     banned: "False",
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co29pn.jpg",
     alt: "Metal Gear Solid 3: Snake Eater",
-    allyLink: "ian_hinck",
+    allyLink: "isla_hinck",
     hallLink: "hall_great_eleven",
     infoLink: "https://en.wikipedia.org/wiki/Metal_Gear_Solid_3:_Snake_Eater",
     threePointVote: "Alien vs. Predator",
@@ -2508,7 +2508,7 @@ const gameSeed = [
     onePointVote: silentHillTwo,
   },
   {
-    ally: ianHinck,
+    ally: islaHinck,
     game: silentHillTwo,
     hallOfGreat: 12,
     description:
@@ -2524,7 +2524,7 @@ const gameSeed = [
     banned: "False",
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2edz.jpg",
     alt: silentHillTwo,
-    allyLink: "ian_hinck",
+    allyLink: "isla_hinck",
     hallLink: "hall_great_twelve",
     infoLink: "https://en.wikipedia.org/wiki/Silent_Hill_2",
     threePointVote: "DOOM",
@@ -2700,7 +2700,7 @@ const gameSeed = [
     onePointVote: "Yakuza 0",
   },
   {
-    ally: ianHinck,
+    ally: islaHinck,
     game: "The Stanley Parable",
     hallOfGreat: 13,
     description:
@@ -2716,7 +2716,7 @@ const gameSeed = [
     banned: "False",
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rc9.jpg",
     alt: "The Stanley Parable",
-    allyLink: "ian_hinck",
+    allyLink: "isla_hinck",
     hallLink: "hall_great_thirteen",
     infoLink: "https://en.wikipedia.org/wiki/The_Stanley_Parable",
     threePointVote: "Yakuza 0",
@@ -2845,7 +2845,7 @@ const gameSeed = [
     onePointVote: shadowColossus,
   },
   {
-    ally: ianHinck,
+    ally: islaHinck,
     game: "Final Fantasy Tactics",
     hallOfGreat: 14,
     description:
@@ -2861,7 +2861,7 @@ const gameSeed = [
     banned: "False",
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co26f4.jpg",
     alt: "Final Fantasy Tactics",
-    allyLink: "ian_hinck",
+    allyLink: "isla_hinck",
     hallLink: "hall_great_fourteen",
     infoLink: "https://en.wikipedia.org/wiki/Final_Fantasy_Tactics",
     threePointVote: silentHillTwo,
@@ -2941,7 +2941,7 @@ const gameSeed = [
     onePointVote: "Final Fantasy Tactics",
   },
   {
-    ally: ianHinck,
+    ally: islaHinck,
     game: "Silent Hill 2: Director's Cut",
     hallOfGreat: 15,
     description: "Silent Hill 2: Director's Cut is a survival horror game developed by Team Silent, ported by Creature Labs, and published by Konami. It is the second installment in the Silent Hill series. The game was originally released for the PlayStation 2 on September 21, 2001 worldwide. The game later received an extended Director's Cut version on PlayStation 2 as a Greatest Hits re-release, Xbox, and PC, which added a new Born from a Wish scenario, a secret UFO ending, and for the PC version, a quick-save function, real-time weapon swapping, and a movie gallery.",
@@ -2956,7 +2956,7 @@ const gameSeed = [
     banned: "False",
     image: 'https://thumbnails.pcgamingwiki.com/d/d4/Silent_Hill_2_Directors_Cut_-_cover.jpg/300px-Silent_Hill_2_Directors_Cut_-_cover.jpg',
     alt: "Silent Hill 2: Director's Cut",
-    allyLink: 'ian_hinck',
+    allyLink: 'isla_hinck',
     hallLink: 'hall_great_fifteen',
     infoLink: "https://en.wikipedia.org/wiki/Silent_Hill_2",
     threePointVote: 'Diablo II',
