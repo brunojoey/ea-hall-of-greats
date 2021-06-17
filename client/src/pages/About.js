@@ -8,13 +8,13 @@ function About() {
   return (
     <main className="about">
       <StarDecoration />
-      <h1 className="about-heading">About The Hall of Greats</h1>
+      <h1 className="about-heading" style={{textAlign: 'center'}}>About The Hall of Greats</h1>
       <section className="description-container">
         <p>
           <a href="https://www.easyallies.com" className="about-links">
             The Easy Allies
           </a>
-          have been conducting their own video game Hall of Fame they like to
+           have been conducting their own video game Hall of Fame they like to
           call{" "}
           <a href="https://easyallies.com/#!/show/the-hall-of-greats" className='about-links'>
             The Hall of Greats
