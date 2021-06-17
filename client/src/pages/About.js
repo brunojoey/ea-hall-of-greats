@@ -14,7 +14,7 @@ function About() {
           <a href="https://www.easyallies.com" className="about-links">
             The Easy Allies
           </a>
-           have been conducting their own video game Hall of Fame they like to
+          {" "}have been conducting their own video game Hall of Fame they like to
           call{" "}
           <a href="https://easyallies.com/#!/show/the-hall-of-greats" className='about-links'>
             The Hall of Greats
