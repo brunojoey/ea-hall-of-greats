@@ -93,8 +93,7 @@ function GamePage(props) {
               <p className="description-game">{gamePage.description}</p>{" "}
               <Button className="description-game-button">
                 <Link
-                  htoref={gamePage.infoLink}
-                  target="_blank"
+                  to={gamePage.infoLink}
                   rel="noreferrer noopener"
                   style={{ color: "white", textDecoration: "none" }}
                 >
