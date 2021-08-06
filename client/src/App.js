@@ -11,6 +11,7 @@ import Winners from "./pages/Winners";
 import Allies from "./pages/Allies";
 import Nominations from "./pages/Nominations";
 import Ceremonies from "./pages/Ceremonies";
+import NotFound from "./pages/NotFound";
 import GamePage from "./pages/GamePage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -58,6 +59,8 @@ function App() {
               path="/allies/:page?"
               render={(props) => <Allies {...props} />}
             />
+            {/* Acts as a catch all for every link besides the ones above */}
+            <Route component={NotFound} />
           </Switch>
         </Router>
       </div>

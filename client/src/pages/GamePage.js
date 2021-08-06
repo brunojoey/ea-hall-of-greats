@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import gamesAPI from "../utils/gamesAPI";
 import StarDecoration from "../components/StarDecoration";
 import Loader from "react-loader-spinner";
-import { Link } from 'react-router-dom';
 import { Button } from "@material-ui/core";
 import "./Pages.scss";
 
@@ -92,13 +91,12 @@ function GamePage(props) {
               <strong>Description: </strong>{" "}
               <p className="description-game">{gamePage.description}</p>{" "}
               <Button className="description-game-button">
-                <Link
-                  to={gamePage.infoLink}
-                  rel="noreferrer noopener"
+                <a
+                  href={gamePage.infoLink}
                   style={{ color: "white", textDecoration: "none" }}
                 >
                   More Information
-                </Link>
+                </a>
               </Button>
             </span>
           </section>
