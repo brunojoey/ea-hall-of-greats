@@ -34,6 +34,7 @@ function HallOfGreatSixteen({ history }) {
       <CeremonyTable games={games} history={history} />
       <h3 className="voting-title">The Voting Rundown</h3>
       <RundownTable games={games} history={history} />
+      <p style={{ textAlign: "center" }}>* Assumed Votes Given</p>
     </main>
   );
 }

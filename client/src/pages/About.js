@@ -1,5 +1,5 @@
 import StarDecoration from "../components/StarDecoration";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import "./Pages.scss";
@@ -8,23 +8,28 @@ function About() {
   return (
     <main className="about">
       <StarDecoration />
-      <h1 className="about-heading" style={{textAlign: 'center'}}>About The Hall of Greats</h1>
+      <h1 className="about-heading" style={{ textAlign: "center" }}>
+        About The Hall of Greats
+      </h1>
       <section className="description-container">
         <p>
           <a href="https://www.easyallies.com" className="about-links">
             The Easy Allies
-          </a>
-          {" "}have been conducting their own video game Hall of Fame they like to
+          </a>{" "}
+          have been conducting their own video game Hall of Fame they like to
           call{" "}
-          <a href="https://easyallies.com/#!/show/the-hall-of-greats" className='about-links'>
+          <a
+            href="https://easyallies.com/#!/show/the-hall-of-greats"
+            className="about-links"
+          >
             The Hall of Greats
           </a>
           ! The inaugural ceremony happened in February of 2017. Ever since,
-          every three to four months, the Allies gather to decide the two best
+          every three to five months, the Allies gather to decide the two best
           games of each ceremony to induct into the Hall of Greats!{" "}
         </p>
         <p>
-          Currently there are 30 games inducted into the illustrious hall, which
+          Currently there are 32 games inducted into the illustrious hall, which
           you can find{" "}
           <Link to="/winners" className="about-links">
             here
@@ -37,7 +42,7 @@ function About() {
           <Link to="allies/brad_ellis" className="about-links">
             Brad Ellis
           </Link>
-          , each inducting six games. The Ally who sadly has the most games
+          , each inducting seven games. The Ally who sadly has the most games
           banned is:{" "}
           <Link to="allies/don_casanova" className="about-links">
             Don Casanova
@@ -79,6 +84,12 @@ function About() {
           </li>
           <li>
             <FontAwesomeIcon icon={faStar} className="fa-star" />
+            Starting with the tenth Hall of Greats, with a break in the eleventh
+            Hall of Greats, the allies do not say the exact points of what they
+            are voting for, instead keeping it secret from chat.{" "}
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faStar} className="fa-star" />
             If the second and third games are tied, the Easy Allies community on
             Patreon will vote on the game they want to be inducted, between the
             tied games.{" "}
@@ -115,6 +126,10 @@ function About() {
           <li>
             <FontAwesomeIcon icon={faStar} className="fa-star" />
             Dishonored 2 <strong>(Until Q1 2022)</strong>
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faStar} className="fa-star" />
+            Minecraft <strong>(Until Q3 2022)</strong>
           </li>
         </ul>
       </section>
