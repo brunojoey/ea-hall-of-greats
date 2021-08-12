@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   tab: {
     padding: 10,
     minWidth: 10, // a number of your choice
-    width: 94, // a number of your choice
+    width: 90, // a number of your choice
     margin: "0 auto",
   },
 }));

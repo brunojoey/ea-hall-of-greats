@@ -12,7 +12,7 @@ mongoose.connect(
   }
 );
 
-// Ally variables
+// Ally Variables
 const benMoore = "Ben Moore";
 const bradEllis = "Brad Ellis";
 const brandonJones = "Brandon Jones";
@@ -49,7 +49,7 @@ const symphony = "Castlevania: Symphony of the Night";
 const witcher3 = "The Witcher III: Wild Hunt";
 const worldOfWarcraft = "World of Warcraft";
 
-// Platform variables
+// Platform Variables
 const arcade = "Arcade";
 const pc = "PC";
 const psOne = "PlayStation";
@@ -69,6 +69,24 @@ const xbox = "Xbox";
 const xbox360 = "Xbox 360";
 const xboxOne = "Xbox One";
 
+// Genre Variables
+const action = "Action";
+const adventure = "Adventure";
+const actionAdventure = "Action-Adventure";
+const rpg = "Role-Playing Game";
+const actionRPG = "Action Role-Playing Game";
+const japaneseRPG = "Japanese Role-Playing Game";
+const survivalHorror = "Survival Horror";
+const psychHorror = "Psychological Horror";
+const beatEmUp = "Beat 'Em Up";
+const fighting = "Fighting";
+const fps = "First-Person Shooter";
+const metroidVania = "Metroidvania";
+const platformer = "Platformer";
+const puzzle = "Puzzle";
+const racing = "Racing";
+const strategy = "Strategy";
+
 // All data compiled for each Hall of Greats and the nominated games.
 const gameSeed = [
   {
@@ -77,7 +95,7 @@ const gameSeed = [
     hallOfGreat: 1,
     description:
       "You are Snake, a government agent on a mission to regain control of a secret nuclear weapons base from terrorist hands. Lightly armed and facing an army of foes, Snake must avoid firefights in order to survive. If Snake can locate them he can utilize advanced hardware, ranging from silenced pistols to ground-to-air missiles. Enemies react to sight and sound - so stay quiet and stay in the shadows. State-of-the-art graphics: textures, transparencies, models and explosions. Taut, gripping story with multiple endings - a truly cinematic experience.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 1998,
     platforms: psOne,
     metacritic: "94",
@@ -99,7 +117,7 @@ const gameSeed = [
     hallOfGreat: 1,
     description:
       "Super Metroid is an 2D, side-scrolling action-adventure game, which primarily takes place on the fictional planet Zebes—a large, open-ended world with areas connected by doors and elevators. The player controls Samus Aran as she searches the planet for a Metroid that was stolen by Ridley, the leader of the Space Pirates.",
-    genre: "Metroidvania",
+    genre: metroidVania,
     year: 1994,
     platforms: superNES,
     metacritic: "97",
@@ -124,7 +142,7 @@ const gameSeed = [
     hallOfGreat: 1,
     description:
       "Super Turbo introduced several new gameplay mechanics not present in previous versions of Street Fighter II, including the addition of combination moves called super combos and air combos. It also introduced the secret character Akuma, who would go on to become a recurring character in later Street Fighter installments and other Capcom fighting games.",
-    genre: "Fighting",
+    genre: fighting,
     year: 1994,
     platforms: arcade,
     metacritic: "84",
@@ -148,7 +166,7 @@ const gameSeed = [
     hallOfGreat: 1,
     description:
       "Bloodborne is an action RPG in which you hunt for answers in the ancient city of Yharnam, now cursed with a strange endemic illness spreading through the streets like a disease. Peril, death and madness infest this dark world, and you're tasked with uncovering its darkest secrets which will be necessary for you to survive. Armed with a singular arsenal of weaponry, including guns and saw cleavers, you'll require wits, strategy and reflexes to dispatch the agile and intelligent enemies that guard the city's underbelly. You will utility holy chalices to access an array of vast underground ruins, chock full of traps, beasts, and rewards, to explore and conquer on your own or with other people.",
-    genre: "Action Role-Playing Game",
+    genre: actionRPG,
     year: 2015,
     platforms: psFour,
     metacritic: "92",
@@ -173,7 +191,7 @@ const gameSeed = [
     votes: 2,
     description:
       "The year is 1715. Pirates rule the waters of the Caribbean and have established a lawless Republic. Among these outlaws is a lethal young captain named Edward Kenway. His notorious exploits earn the respect of legends like Blackbeard, but draw him into an ancient war that may destroy everything the pirates have built for themselves.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2015,
     platforms: psFour + ", " + psThree + ", " + xboxOne + ", " + xbox360,
     metacritic: "83",
@@ -196,7 +214,7 @@ const gameSeed = [
     hallOfGreat: 1,
     description:
       "Dark Souls is a brand new dark fantasy RPG designed to completely embrace the concepts of tension in dungeon exploration, fear in encountering enemies, the joy of new discoveries, and a high sense of achievement in progressing. The game is set in a dark fantasy world filled with decadent atmosphere, with a heavy emphasis on player freedom in discovering various tactics and strategies to use in weapon based combat.",
-    genre: "Action Role-Playing Game",
+    genre: actionRPG,
     year: 2011,
     platforms: psThree + ", " + xbox360,
     metacritic: "89",
@@ -218,7 +236,7 @@ const gameSeed = [
     hallOfGreat: 1,
     description:
       "GoldenEye 007 is a 1997 first-person shooter developed by Rare and published by Nintendo for the Nintendo 64. Based on the 1995 James Bond film GoldenEye, it features a single-player campaign in which players assume the role of British Secret Intelligence Service agent James Bond as he fights to prevent a criminal syndicate from using a satellite weapon against London to cause a global financial meltdown. The game includes a split-screen multiplayer mode in which up to four players can compete in different types of deathmatch games.",
-    genre: "First-Person Shooter",
+    genre: fps,
     year: 1997,
     platforms: n64,
     metacritic: "96",
@@ -242,7 +260,7 @@ const gameSeed = [
     hallOfGreat: 1,
     description:
       "Mega Man Legends is an action-adventure shooter game released by Capcom. It is the first game in the Mega Man Legends sub-series of Mega Man games from Capcom, and the second major 3D polygonal Mega Man title released in the franchise, following Mega Man: Battle & Chase. It was released on the PlayStation in 1997 in Japan and in 1998 in North America. A Nintendo 64 port was released in 2000 with the same title, but it was renamed Mega Man 64 for the English release in 2001. Another port was released for Microsoft Windows in 2001, and PlayStation Portable in 2005, with the latter only in Japan.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 1997,
     platforms: psOne,
     metacritic: "73",
@@ -266,7 +284,7 @@ const gameSeed = [
     hallOfGreat: 1,
     description:
       "Raccoon City has been completely overrun by mutant beasts and bloodthirsty zombies. You are a member of S.T.A.R.S.--a rescue squad sent into the community to investigate the ominous mansion at the core of the disaster. Take the role of operative Jill Valentine or Chris Redfield and uncover the secrets behind a radical, genetic research facility. With an array of weapons to master and horrors around every corner, the ultimate test may be just to make it out alive.",
-    genre: "Survival Horror",
+    genre: survivalHorror,
     year: 2002,
     platforms: gameCube,
     metacritic: "91",
@@ -288,7 +306,7 @@ const gameSeed = [
     hallOfGreat: 2,
     description:
       "Mario is super in a whole new way! Combining the finest 3-D graphics ever developed for a video game and an explosive sound track, Super Mario 64 becomes a new standard for video games. It's packed with bruising battles, daunting obstacle courses and underwater adventures. Retrieve the Power Stars from their hidden locations and confront your arch nemesis - Bowser, King of the Koopas!",
-    genre: "Platformer",
+    genre: platformer,
     year: 1996,
     platforms: n64,
     metacritic: "94",
@@ -312,7 +330,7 @@ const gameSeed = [
     hallOfGreat: 2,
     description:
       "Mario is super in a whole new way! Combining the finest 3-D graphics ever developed for a video game and an explosive sound track, Super Mario 64 becomes a new standard for video games. It's packed with bruising battles, daunting obstacle courses and underwater adventures. Retrieve the Power Stars from their hidden locations and confront your arch nemesis - Bowser, King of the Koopas!",
-    genre: "Platformer",
+    genre: platformer,
     year: 1996,
     platforms: n64,
     metacritic: "94",
@@ -336,7 +354,7 @@ const gameSeed = [
     hallOfGreat: 2,
     description:
       "A sequel to Street Fighter, Street Fighter II improved upon the many concepts introduced in the first game, including the use of command-based special moves and a six-button configuration, while offering players a selection of multiple playable characters, each with their own unique fighting style and special moves.",
-    genre: "Fighting",
+    genre: fighting,
     year: 1992,
     platforms: arcade + ", " + superNES + " and many others.",
     metacritic: "92",
@@ -360,7 +378,7 @@ const gameSeed = [
     hallOfGreat: 2,
     description:
       "As a descendant of Dracula, you must end the vampire bloodline. Can you rid the world of this unspeakable terror? Uncover the mystery of Castlevania and challenge an adventure as legendary as its name. Over 140 different enemies, bosses, and ghastly creatures. Awesome magical spells - transform into a bat, a wolf, or etheral mist. Hidden weapons, secrets, and characters...the largest Castlevania ever!",
-    genre: "Metroidvania",
+    genre: metroidVania,
     year: 1997,
     platforms: psOne,
     metacritic: "93",
@@ -384,7 +402,7 @@ const gameSeed = [
     hallOfGreat: 2,
     description:
       "The world of Dragon Quest VIII is created with breakthrough 3D graphics. The world, which includes fields, towns and dungeons, allow players to move around seamlessly. The graphics are of a high-quality animation, and players can feel as if they are walking around inside the world created by Character Designer, Akira Toriyama. The battle scenes and monsters make users feel as if they were actually facing them. All of the monsters and characters are transformed with 3D graphics.",
-    genre: "Japanese Role-Playing Game",
+    genre: japaneseRPG,
     year: 2005,
     platforms: psTwo,
     metacritic: "89",
@@ -408,7 +426,7 @@ const gameSeed = [
     hallOfGreat: 2,
     description:
       "Link's Awakening is one of the few Zelda games not to take place in the land of Hyrule, and does not feature Princess Zelda or the Triforce relic. Instead, protagonist Link begins the game stranded on Koholint Island, a place guarded by a whale-like deity called the Wind Fish. Assuming the role of Link, the player fights monsters and solves puzzles while searching for eight musical instruments that will awaken the sleeping Wind Fish and allow him to escape from the island.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 1998,
     platforms: gameboyColor,
     metacritic: "91",
@@ -506,7 +524,7 @@ const gameSeed = [
     hallOfGreat: 3,
     description:
       "The Legend of Zelda: Ocarina of Time reveals the genesis of the fantasy land of Hyrule, the origin of the Triforce, and the tale of the first exploits of Princess Zelda and the heroic adventurer Link. Vibrant, real-time 3-D graphics transport you into the fantasy world of Hyrule. Your quest takes you through dense forests and across wind-whipped deserts. Swim raging rivers, climb treacherous mountains, dash on horseback across rolling hills, and delve into dungeons full of creatures that fight to the finish to put an end to your adventures. With immersive graphics, a sweeping story line, swashbuckling adventure, mind-bending puzzles, and a touch of humor, The Legend of Zelda: Ocarina of Time is one of Nintendo's most epic challenges ever.",
-    genre: "Adventure",
+    genre: adventure,
     year: 1998,
     platforms: n64,
     metacritic: "99",
@@ -530,7 +548,7 @@ const gameSeed = [
     hallOfGreat: 3,
     description:
       "As a descendant of Dracula, you must end the vampire bloodline. Can you rid the world of this unspeakable terror? Uncover the mystery of Castlevania and challenge an adventure as legendary as its name. Over 140 different enemies, bosses, and ghastly creatures. Awesome magical spells - transform into a bat, a wolf, or etheral mist. Hidden weapons, secrets, and characters...the largest Castlevania ever!",
-    genre: "Metroidvania",
+    genre: metroidVania,
     year: 1997,
     platforms: psOne,
     metacritic: "93",
@@ -554,7 +572,7 @@ const gameSeed = [
     hallOfGreat: 3,
     description:
       "The last Final Fantasy for the PlayStation, Final Fantasy IX returns to the pure fantasy roots that spawned the series. This latest installment features highly detailed characters, vehicles, and environments, and breathtaking cinema-graphics. The addition of brand new features such as the story-enhancing Active Time Event system and the return of minigames that grant additional gameplay make Final Fantasy IX not only a memorable gaming experience, but also a significant step forward in the series.",
-    genre: "Japanese Role-Playing Game",
+    genre: japaneseRPG,
     year: 2000,
     platforms: psOne,
     metacritic: "94",
@@ -578,7 +596,7 @@ const gameSeed = [
     hallOfGreat: 3,
     description:
       "By taking the suspense, challenge and visceral charge of the original, and adding startling new realism and responsiveness, Half-Life 2 opens the door to a world where the player's presence affects everything around him, from the physical environment to the behaviors -- even the emotions -- of both friends and enemies. The player again picks up the crowbar of research scientist Gordon Freeman, who finds himself on an alien-infested Earth being picked to the bone, its resources depleted, its populace dwindling. Freeman is thrust into the unenviable role of rescuing the world from the wrong he unleashed back at Black Mesa. And a lot of people -- people he cares about -- are counting on him.",
-    genre: "Action",
+    genre: action,
     year: 2004,
     platforms: pc,
     metacritic: "96",
@@ -602,7 +620,7 @@ const gameSeed = [
     hallOfGreat: 3,
     description:
       "Set in the mysterious Aperture Science Laboratories, Portal has been called one of the most innovative new games on the horizon and offers gamers hours of unique gameplay. The game is designed to change the way players approach, manipulate, and surmise the possibilities in a given environment; similar to how Half-Life 2's Gravity Gun innovated new ways to leverage an object in any given situation. Players must solve physical puzzles and challenges by opening portals to maneuvering objects, and themselves, through space. ",
-    genre: "Puzzle",
+    genre: puzzle,
     year: 2007,
     platforms: pc + ", " + xbox360 + ", " + psThree,
     metacritic: "90",
@@ -626,7 +644,7 @@ const gameSeed = [
     hallOfGreat: 3,
     description:
       "Twenty years after a pandemic radically transformed known civilization, infected humans run amuck and survivors kill one another for sustenance and weapons - literally whatever they can get their hands on. Joel, a salty survivor, is hired to smuggle a fourteen-year-old girl, Ellie, out of a rough military quarantine, but what begins as a simple job quickly turns into a brutal journey across the country.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2013,
     platforms: psThree,
     metacritic: "95",
@@ -650,7 +668,7 @@ const gameSeed = [
     hallOfGreat: 3,
     description:
       "Xenoblade Chronicles throws you into a universe bursting with imagination. Take hold of an ancient sword that offers glimpses of the future, customise your characters extensively and discover a world where your relationships with others matter.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2012,
     platforms: wii,
     metacritic: "92",
@@ -698,7 +716,7 @@ const gameSeed = [
     hallOfGreat: 3,
     description:
       "There is no taking cover or stopping to regenerate health in campaign mode as you beat back Hell’s raging demon hordes. Combine your arsenal of futuristic and iconic guns, upgrades, movement and an advanced melee system to knock-down, slash, stomp, crush, and blow apart demons in creative and violent ways. In multiplayer, dominate your opponents in DOOM’s signature, fast-paced arena-style combat. In both classic and all-new game modes, annihilate your enemies utilizing your personal blend of skill, powerful weapons, vertical movement, and unique power-ups that allow you to play as a demon.",
-    genre: "First-Person Shooter",
+    genre: fps,
     year: 2016,
     platforms: psFour + ", " + xboxOne + ", " + nSwitch + ", " + pc,
     metacritic: "85",
@@ -722,7 +740,7 @@ const gameSeed = [
     hallOfGreat: 4,
     description:
       "When a newly developed teleportation device malfunctions at the Millennial Fair, young Crono must travel through time to rescue his unfortunate companion from an intricate web of past and present perils. The swashbuckling adventure that ensues soon unveils an evil force set to destroy the world, triggering Crono's race against time to change the course of history and bring about a brighter future.",
-    genre: "Role-Playing Game",
+    genre: japaneseRPG,
     year: 1995,
     platforms: superNES + ", Nintendo DS",
     metacritic: "96",
@@ -746,7 +764,7 @@ const gameSeed = [
     hallOfGreat: 4,
     description:
       "You've finally been granted your Pokémon Trainer's license. Now, it's time to head out to become the world's greatest Pokémon Trainer. It's going to take all you've got to collect 150 Pokémon in this enormous world. Catch and train monsters like the shockingly-cute Pikachu. Face off against Blastoise's torrential water cannons. Stand strong when facing Pidgeot's stormy Gust. Trade with friends and watch your Pokémon evolve. Important—no single Pokémon can win at all. Can you develop the ultimate Pokémon strategy to defeat the eight Gym Leaders and become the greatest Pokémon Master of all time?",
-    genre: "Role-Playing Game",
+    genre: rpg,
     year: 1998,
     platforms: gameboy,
     metacritic: "88",
@@ -770,7 +788,7 @@ const gameSeed = [
     hallOfGreat: 4,
     description:
       "Mega Man X is an action-platform video game developed and published by Capcom for the Super Nintendo Entertainment System (SNES). It was the first Mega Man game for the 16-bit console and the first game in the Mega Man X series, a spin-off of the original Mega Man series that began on the SNES's predecessor, the Nintendo Entertainment System (NES). Mega Man X was released in Japan on December 17, 1993 and was released in both North America and Europe the following year. Taking place a century after the original Mega Man series, Mega Man X is set in a futuristic world populated by both humans and 'Reploids', robots capable of thinking, feeling, and growing like their human creators. Because of these complex attributes, many Reploids are prone to destructive, renegade activity and are thereafter referred to as 'Mavericks'. The plot of the game follows the protagonist Mega Man X, an android member of a military task force called the 'Maverick Hunters'. With the help of his partner Zero, X must thwart the plans of Sigma, a powerful Maverick leader wishing to bring about human extinction.",
-    genre: "Action",
+    genre: action,
     year: 1993,
     platforms: superNES,
     metacritic: "97",
@@ -794,7 +812,7 @@ const gameSeed = [
     hallOfGreat: 4,
     description:
       "Players are put at the heart of their very own gangster movie, and let loose in a fully-realised 3 dimensional city with a cast of hundreds, 50 plus vehicles, ranging from sports cars to ice cream trucks and from boats to buses, 3 hours of music, including opera, reggae, house, drum and bass, pop and disco, and a huge array of street ready weapons.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2001,
     platforms: psTwo + ", " + xbox,
     metacritic: "97",
@@ -818,7 +836,7 @@ const gameSeed = [
     hallOfGreat: 4,
     description:
       "Axel Stone and Blaze Fielding return while the game introduces two new characters: Max 'Thunder' Hatchet and Eddie 'Skate' Hunter, the younger brother of Adam Hunter from the original game. A commercial and critical success, it is commonly regarded as the best entry in the series, the best beat 'em up game for the Mega Drive/Genesis and one of the greatest video games of all time.",
-    genre: "Beat 'Em Up",
+    genre: beatEmUp,
     year: 1992,
     platforms: "Sega Genesis",
     metacritic: "88",
@@ -842,7 +860,7 @@ const gameSeed = [
     hallOfGreat: 4,
     description:
       "Play a countless number of intensely creative Super Mario levels from players around the globe. It’s easy enough to create your own levels with the Wii U GamePad controller that it may feel like you’re simply sketching out your ideas on paper, but you can now bring enemies and objects into a playable course in ways you could only consider before. Violate the conventions of traditional Super Mario gameplay by blending enemies, traps and items into unexpected twists, like Piranha Plant-shooting cannons, power-up-tossing Lakitus, or even Hammer Bros. riding on Bowser while bouncing on trampolines.",
-    genre: "Platformer",
+    genre: platformer,
     year: 2015,
     platforms: wiiU,
     metacritic: "88",
@@ -866,7 +884,7 @@ const gameSeed = [
     hallOfGreat: 4,
     description:
       "Enter the world of Journey, the third game from indie developers thatgamecompany (creators of 'flOw' and 'Flower'). Journey is an interactive parable, an anonymous online adventure to experience a person’s life passage and their intersections with other’s. You wake alone and surrounded by miles of burning, sprawling desert, and soon discover the looming mountaintop which is your goal. Faced with rolling sand dunes, age-old ruins, caves and howling winds, your passage will not be an easy one. The goal is to get to the mountaintop, but the experience is discovering who you are, what this place is, and what is your purpose. Travel and explore this ancient, mysterious world alone, or with a stranger you meet along the way. Soar above ruins and glide across sands as you discover the secrets of a forgotten civilization.",
-    genre: "Adventure",
+    genre: adventure,
     year: 2012,
     platforms: psThree,
     metacritic: "92",
@@ -890,7 +908,7 @@ const gameSeed = [
     hallOfGreat: 4,
     description:
       "Myst is a graphic adventure puzzle video game designed by the Miller brothers, Robyn and Rand. It was developed by Cyan, Inc., published by Brøderbund, and initially released for the Macintosh personal computer platform in 1993. In the game, players travel via a special book to the island of Myst. There, players solve puzzles and, by doing so, travel to four other worlds, known as Ages, which reveal the backstory of the game's characters.",
-    genre: "Adventure",
+    genre: adventure,
     year: 1993,
     platforms: pc,
     metacritic: "83",
@@ -914,7 +932,7 @@ const gameSeed = [
     hallOfGreat: 4,
     description:
       "The next chapter in the Elder Scrolls saga arrives from the Bethesda Game Studios. Skyrim reimagines the open-world fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose. Play any type of character you can imagine, and do whatever you want; the legendary freedom of choice, storytelling, and adventure of The Elder Scrolls is realized like never before. Skyrim's new game engine brings to life a complete virtual world with rolling clouds, rugged mountains, bustling cities, lush fields, and ancient dungeons. Choose from hundreds of weapons, spells, and abilities. The new character system allows you to play any way you want and define yourself through your actions. Battle ancient dragons like you've never seen. As Dragonborn, learn their secrets and harness their power for yourself.",
-    genre: "Role-Playing Game",
+    genre: rpg,
     year: 2011,
     platforms: xbox360 + ", " + psThree + ", " + pc,
     metacritic: "96",
@@ -938,7 +956,7 @@ const gameSeed = [
     hallOfGreat: 5,
     description:
       "Resident Evil 4 marks a new chapter in the Resident Evil series. You'll rejoin Leon S. Kennedy six years after his first mission as a rookie cop from Resident Evil 2. Now a US agent, Leon is on a top secret mission to investigate the disappearance of the president's daughter. As Leon, you must make your way to a mysterious location in Europe, where new enemies await. Take them down by using enhanced aim-and-shoot features and a new action button.",
-    genre: "Survival Horror",
+    genre: survivalHorror,
     year: 2005,
     platforms: gameCube + ", " + wii + ", " + psTwo,
     metacritic: "96",
@@ -960,7 +978,7 @@ const gameSeed = [
     hallOfGreat: 5,
     description:
       "Raccoon City has been completely overrun by mutant beasts and bloodthirsty zombies. You are a member of S.T.A.R.S.--a rescue squad sent into the community to investigate the ominous mansion at the core of the disaster. Take the role of operative Jill Valentine or Chris Redfield and uncover the secrets behind a radical, genetic research facility. With an array of weapons to master and horrors around every corner, the ultimate test may be just to make it out alive.",
-    genre: "Survival Horror",
+    genre: survivalHorror,
     year: 2002,
     platforms: gameCube,
     metacritic: "91",
@@ -984,7 +1002,7 @@ const gameSeed = [
     hallOfGreat: 5,
     description:
       "With the Empire attacking the Kingdoms of the North and the Wild Hunt, a cavalcade of ghastly riders, breathing down your neck, the only way to survive is to fight back. As Geralt of Rivia, a master swordsman and monster hunter, leave none of your enemies standing. Explore a gigantic open world, slay beasts and decide the fates of whole communities with your actions, all in a genuine next generation format.",
-    genre: "Action Role-Playing Game",
+    genre: actionRPG,
     year: 2015,
     platforms: psFour + ", " + xboxOne + ", " + pc,
     metacritic: "92",
@@ -1008,7 +1026,7 @@ const gameSeed = [
     hallOfGreat: 5,
     description:
       "Dark Souls is a brand new dark fantasy RPG designed to completely embrace the concepts of tension in dungeon exploration, fear in encountering enemies, the joy of new discoveries, and a high sense of achievement in progressing. The game is set in a dark fantasy world filled with decadent atmosphere, with a heavy emphasis on player freedom in discovering various tactics and strategies to use in weapon based combat.",
-    genre: "Action Role-Playing Game",
+    genre: actionRPG,
     year: 2011,
     platforms: psThree + ", " + xbox360,
     metacritic: "89",
@@ -1032,7 +1050,7 @@ const gameSeed = [
     hallOfGreat: 5,
     description:
       "Pandemonium! is a 1996 platform video game developed by Toys for Bob and published by Crystal Dynamics for the PlayStation and Sega Saturn. Pandemonium! features Fargus, a joker, and Nikki, a sorceress, who unwittingly casts a spell that destroys the town. The goal of the game is to reach the Wishing Engine, where they can wish the town back to normal. For each level, the player can choose which character to be. Each has a special move – Fargus can deliver a special spinning attack, and Nikki can double jump. The game consists of a great variety of unique gameplay objects, such as watermelons, clouds, spider webs and logs.",
-    genre: "Platformer",
+    genre: platformer,
     year: 1996,
     platforms: psOne + "Sega Saturn",
     metacritic: "71",
@@ -1080,7 +1098,7 @@ const gameSeed = [
     hallOfGreat: 5,
     description:
       "Tales speak of an ancient realm where Colossi roam the majestic landscape. Bound to the land, these creatures hold a key to a mystical power of revival – a power you must obtain to bring a loved one back to life.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2018,
     platforms: psFour,
     metacritic: "91",
@@ -1104,7 +1122,7 @@ const gameSeed = [
     hallOfGreat: 5,
     description:
       "Mega Man Legends is an action-adventure shooter game released by Capcom. It is the first game in the Mega Man Legends sub-series of Mega Man games from Capcom, and the second major 3D polygonal Mega Man title released in the franchise, following Mega Man: Battle & Chase. It was released on the PlayStation in 1997 in Japan and in 1998 in North America. A Nintendo 64 port was released in 2000 with the same title, but it was renamed Mega Man 64 for the English release in 2001. Another port was released for Microsoft Windows in 2001, and PlayStation Portable in 2005, with the latter only in Japan.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 1997,
     platforms: psOne,
     metacritic: "73",
@@ -1153,7 +1171,7 @@ const gameSeed = [
     hallOfGreat: 6,
     description:
       "Samus returns in a new mission to unravel the mystery behind the ruined walls scattered across Tallon IV. In Metroid Prime, you'll play the role of this bounty hunter and view the world through her visor, which displays information ranging from current energy levels to ammunition. Equipped with a Power Beam and Gravity Suit, you must shoot locked switches, solve puzzles, and eliminate enemies. It's up to you to explore the world and recover more power-ups and weapons, which gradually open more gameplay areas.",
-    genre: "Metroidvania",
+    genre: metroidVania,
     year: 2002,
     platforms: gameCube,
     metacritic: "97",
@@ -1177,7 +1195,7 @@ const gameSeed = [
     hallOfGreat: 6,
     description:
       "Time passes, the pages turn… and a new chapter unfolds in an unfamiliar land! Get ready for a two-dimensional role-playing adventure for the ages as Mario returns to paper form to discover a mystery that sleeps behind an ancient, legendary portal called the Thousand-Year Door. The quest is long, the dangers many, and this time, Mario will have to make full use of his papery qualities just to survive.",
-    genre: "Role-Playing Game",
+    genre: rpg,
     year: 2004,
     platforms: gameCube,
     metacritic: "87",
@@ -1201,7 +1219,7 @@ const gameSeed = [
     hallOfGreat: 6,
     description:
       "Players assume the role of James, who receives a cryptic letter from his wife (who has been dead for 3 years) beckoning him to meet her in Silent Hill, a place that holds great meaning for the couple. The mystery of the letter compels him to return to the surreal horror and all-too-real danger in Silent Hill.",
-    genre: "Psychological Horror",
+    genre: psychHorror,
     year: 2001,
     platforms: psTwo,
     metacritic: "89",
@@ -1225,7 +1243,7 @@ const gameSeed = [
     hallOfGreat: 6,
     description:
       "The world of Dragon Quest VIII is created with breakthrough 3D graphics. The world, which includes fields, towns and dungeons, allow players to move around seamlessly. The graphics are of a high-quality animation, and players can feel as if they are walking around inside the world created by Character Designer, Akira Toriyama. The battle scenes and monsters make users feel as if they were actually facing them. All of the monsters and characters are transformed with 3D graphics.",
-    genre: "Japanese Role-Playing Game",
+    genre: japaneseRPG,
     year: 2005,
     platforms: psTwo,
     metacritic: "89",
@@ -1273,7 +1291,7 @@ const gameSeed = [
     hallOfGreat: 6,
     description:
       "All the challenging ground-pounding, barrel-blasting, side-scrolling mine cart action from the Donkey Kong Country series is back along with a bushel of new game-play elements and features. And now, there are four playable characters! Dixie Kong is back to join the adventure as a playable character alongside Diddy Kong, and for the first time in Donkey Kong Country, bearded old hero Cranky Kong joins the adventure with his bouncy cane. Any of the three can buddy up with Donkey Kong, and each character offers a different gameplay experience. On their journey to reclaim Donkey Kong Island, Donkey Kong and his friends travel across five islands with a variety of stages that include underwater areas and frozen environments.",
-    genre: "Platformer",
+    genre: platformer,
     year: 2014,
     platforms: wiiU + ", " + nSwitch,
     metacritic: "86",
@@ -1297,7 +1315,7 @@ const gameSeed = [
     hallOfGreat: 6,
     description:
       "Los Santos is a vast, sun-soaked metropolis full of self-help gurus, starlets and once-important, formerly-known-as celebrities. The city was once the envy of the Western world, but is now struggling to stay afloat in an era of economic uncertainty and reality TV. Amidst the chaos, three unique criminals plot their own chances of survival and success: Franklin, a former street gangster in search of real opportunities and serious cheddar; Michael, a professional ex-con whose retirement is a lot less rosy than he hoped it would be; and Trevor, a violent maniac driven by the chance of a cheap high and the next big score. Quickly running out of options, the crew risks it all in a sequence of daring and dangerous heists that could set them up for life.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2013,
     platforms: psThree + ", " + psFour + ", " + xbox360 + ", " + xboxOne,
     metacritic: "97",
@@ -1321,7 +1339,7 @@ const gameSeed = [
     hallOfGreat: 6,
     description:
       "Mega Man Legends is an action-adventure shooter game released by Capcom. It is the first game in the Mega Man Legends sub-series of Mega Man games from Capcom, and the second major 3D polygonal Mega Man title released in the franchise, following Mega Man: Battle & Chase. It was released on the PlayStation in 1997 in Japan and in 1998 in North America. A Nintendo 64 port was released in 2000 with the same title, but it was renamed Mega Man 64 for the English release in 2001. Another port was released for Microsoft Windows in 2001, and PlayStation Portable in 2005, with the latter only in Japan.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 1997,
     platforms: psOne,
     metacritic: "73",
@@ -1369,7 +1387,7 @@ const gameSeed = [
     hallOfGreat: 7,
     description:
       "Part of the Final Fantasy turn-based Japanese RPG franchise, Final Fantasy VI follows an ensemble cast of characters as they attempt to save the their steampunk/fantasy land from the repercussions of the otherworldly campaigns of Emperor Gestahl and his court jester/general Kefka, while trying to resolve their personal issues together and find meaning in their own existence through their tumultuous journey.",
-    genre: "Role-Playing Game",
+    genre: japaneseRPG,
     year: 1994,
     platforms: superNES,
     metacritic: "94",
@@ -1393,7 +1411,7 @@ const gameSeed = [
     hallOfGreat: 7,
     description:
       "Tetris is a puzzle video game for the Game Boy released in 1989. It is a portable version of Alexey Pajitnov's original Tetris and it was bundled in the North American and European releases of the Game Boy itself. It was the first game compatible with the Game Link Cable, a pack-in accessory that allowed two Game Boys to link together for multiplayer purposes.",
-    genre: "Puzzle",
+    genre: puzzle,
     year: 1989,
     platforms: gameboy,
     metacritic: "92",
@@ -1417,7 +1435,7 @@ const gameSeed = [
     hallOfGreat: 7,
     description:
       "Bloodborne is an action RPG in which you hunt for answers in the ancient city of Yharnam, now cursed with a strange endemic illness spreading through the streets like a disease. Peril, death and madness infest this dark world, and you're tasked with uncovering its darkest secrets which will be necessary for you to survive. Armed with a singular arsenal of weaponry, including guns and saw cleavers, you'll require wits, strategy and reflexes to dispatch the agile and intelligent enemies that guard the city's underbelly. You will utility holy chalices to access an array of vast underground ruins, chock full of traps, beasts, and rewards, to explore and conquer on your own or with other people.",
-    genre: "Action Role-Playing Game",
+    genre: actionRPG,
     year: 2015,
     platforms: psFour,
     metacritic: "92",
@@ -1441,7 +1459,7 @@ const gameSeed = [
     hallOfGreat: 7,
     description:
       "Mortal Kombat returns to consoles after a long hiatus featuring a return to the gruesome fatalities.",
-    genre: "Fighting",
+    genre: fighting,
     year: 2011,
     platforms: xbox360 + ", " + psThree,
     metacritic: "86",
@@ -1465,7 +1483,7 @@ const gameSeed = [
     hallOfGreat: 7,
     description:
       "Enter the mysterious world of Halo, an alien planet shaped like a ring. As mankind's super soldier Master Chief, you must uncover the secrets of Halo and fend off the attacking Covenant. During your missions, you'll battle on foot, in vehicles, inside, and outside with alien and human weaponry. Your objectives include attacking enemy outposts, raiding underground labs for advanced technology, rescuing fallen comrades, and sniping enemy forces. Halo also lets you battle three other players via intense split screen combat or fight cooperatively with a friend through the single-player missions.",
-    genre: "First-Person Shooter",
+    genre: fps,
     year: 2001,
     platforms: xbox,
     metacritic: "97",
@@ -1489,7 +1507,7 @@ const gameSeed = [
     hallOfGreat: 7,
     description:
       "Developed by Rocksteady Studios, Batman: Arkham City builds upon the intense, atmospheric foundation of Batman: Arkham Asylum, sending players soaring into Arkham City, the new maximum security home for all of Gotham City's thugs, gangsters and insane criminal masterminds. Set inside the heavily fortified walls of a sprawling district in the heart of Gotham City, this highly anticipated sequel introduces a brand-new story that draws together a new all-star cast of classic characters and murderous villains from the Batman universe, as well as a vast range of new and enhanced gameplay features to deliver the ultimate experience as the Dark Knight.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2011,
     platforms: xbox360 + ", " + psThree,
     metacritic: "94",
@@ -1513,7 +1531,7 @@ const gameSeed = [
     hallOfGreat: 7,
     description:
       "Players assume the role of James, who receives a cryptic letter from his wife (who has been dead for 3 years) beckoning him to meet her in Silent Hill, a place that holds great meaning for the couple. The mystery of the letter compels him to return to the surreal horror and all-too-real danger in Silent Hill.",
-    genre: "Psychological Horror",
+    genre: psychHorror,
     year: 2001,
     platforms: psTwo,
     metacritic: "89",
@@ -1537,7 +1555,7 @@ const gameSeed = [
     hallOfGreat: 7,
     description:
       "Super Mario RPG: Legend of the Seven Stars is a role-playing video game (RPG) developed by Square and published by Nintendo for the Super Nintendo Entertainment System in 1996. It was directed by Yoshihiko Maekawa and Chihiro Fujioka and produced by Mario creator Shigeru Miyamoto. Yoko Shimomura composed the score, which was released on a soundtrack album in Japan.",
-    genre: "Role-Playing Game",
+    genre: rpg,
     year: 1996,
     platforms: superNES,
     metacritic: "89",
@@ -1593,7 +1611,7 @@ const gameSeed = [
     hallOfGreat: 8,
     description:
       "Bloodborne is an action RPG in which you hunt for answers in the ancient city of Yharnam, now cursed with a strange endemic illness spreading through the streets like a disease. Peril, death and madness infest this dark world, and you're tasked with uncovering its darkest secrets which will be necessary for you to survive. Armed with a singular arsenal of weaponry, including guns and saw cleavers, you'll require wits, strategy and reflexes to dispatch the agile and intelligent enemies that guard the city's underbelly. You will utility holy chalices to access an array of vast underground ruins, chock full of traps, beasts, and rewards, to explore and conquer on your own or with other people.",
-    genre: "Action Role-Playing Game",
+    genre: actionRPG,
     year: 2015,
     platforms: psFour,
     metacritic: "92",
@@ -1617,7 +1635,7 @@ const gameSeed = [
     hallOfGreat: 8,
     description:
       "Set in the mysterious Aperture Science Laboratories, Portal has been called one of the most innovative new games on the horizon and offers gamers hours of unique gameplay. The game is designed to change the way players approach, manipulate, and surmise the possibilities in a given environment; similar to how Half-Life 2's Gravity Gun innovated new ways to leverage an object in any given situation. Players must solve physical puzzles and challenges by opening portals to maneuvering objects, and themselves, through space. ",
-    genre: "Puzzle",
+    genre: puzzle,
     year: 2007,
     platforms: pc + ", " + xbox360 + ", " + psThree,
     metacritic: "90",
@@ -1642,7 +1660,7 @@ const gameSeed = [
     hallOfGreat: 8,
     description:
       "His vengeance against the gods of Olympus far behind him, Kratos now lives as a man in the lands of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same. As mentor and protector to a son determined to earn his respect, Kratos is faced with an unexpected opportunity to master the rage that has long defined him. Questioning the dark lineage he’s passed on to his son, he hopes to make amends for the shortcomings of his past. Set within the untamed forests, mountains, and realms of Norse lore, God of War features a distinctly new setting with its own pantheon of creatures, monsters, and gods.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2018,
     platforms: psFour,
     metacritic: "94",
@@ -1666,7 +1684,7 @@ const gameSeed = [
     hallOfGreat: 8,
     description:
       "Link's Awakening is one of the few Zelda games not to take place in the land of Hyrule, and does not feature Princess Zelda or the Triforce relic. Instead, protagonist Link begins the game stranded on Koholint Island, a place guarded by a whale-like deity called the Wind Fish. Assuming the role of Link, the player fights monsters and solves puzzles while searching for eight musical instruments that will awaken the sleeping Wind Fish and allow him to escape from the island.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 1998,
     platforms: gameboyColor,
     metacritic: "91",
@@ -1690,7 +1708,7 @@ const gameSeed = [
     hallOfGreat: 8,
     description:
       "Trials Fusion melds the classic, proven Trials formula of simple yet addictive competition with the social and visual breakthroughs of the next generation of gaming.",
-    genre: "Racing",
+    genre: racing,
     year: 2014,
     platforms: psFour + ", " + xbox360 + ", " + xboxOne,
     metacritic: "79",
@@ -1714,7 +1732,7 @@ const gameSeed = [
     hallOfGreat: 8,
     description:
       "Twenty years after a pandemic radically transformed known civilization, infected humans run amuck and survivors kill one another for sustenance and weapons - literally whatever they can get their hands on. Joel, a salty survivor, is hired to smuggle a fourteen-year-old girl, Ellie, out of a rough military quarantine, but what begins as a simple job quickly turns into a brutal journey across the country.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2013,
     platforms: psThree,
     metacritic: "95",
@@ -1738,7 +1756,7 @@ const gameSeed = [
     hallOfGreat: 8,
     description:
       "Pikmin may be small and plantlike, but they can be a space traveler's best friend. Stranded on an unknown planet, Captain Olimar must enlist the help of these native Pikmin to rebuild his spaceship before the life-support system runs out. In the meantime, you'll have to fend off attackers and solve various puzzles. To produce additional multicolored Pikmin you must defeat enemies and carry them back to the Pikmin nests called onions. But beware--watching giant predators gobble your Pikmin might make you angrier than you'd expect.",
-    genre: "Strategy",
+    genre: strategy,
     year: 2001,
     platforms: gameCube,
     metacritic: "89",
@@ -1762,7 +1780,7 @@ const gameSeed = [
     hallOfGreat: 8,
     description:
       "The game that incorporates RPG, action, adventure, and 1st-person shooter genres into a chaotic blend of real-world conspiracies, cliffhangers, and plot twists. A richly simulated world of unparalleled interactivity, engineered to react logically to your every action. The decisions and consequences are yours.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2000,
     platforms: pc,
     metacritic: "90",
@@ -1786,7 +1804,7 @@ const gameSeed = [
     hallOfGreat: 8,
     description:
       "You manage the Kestrel and its crew as you explore the galaxy. Strategic, real-time combat involves managing power between essential systems and choosing which enemy systems to target. Meanwhile, you control your crew to keep the ship functioning and fight off intruders. The combat is difficult but, being a roguelike-like game, frequent permadeath is at the core of the experience.",
-    genre: "Sci-Fi Simulation",
+    genre: strategy,
     year: 2012,
     platforms: pc,
     metacritic: "84",
@@ -1811,7 +1829,7 @@ const gameSeed = [
     hallOfGreat: 9,
     description:
       "A top-down action/adventure title in which Link, a blacksmith's nephew living in the fantastical land of Hyrule, must free the land from the evildoings of Ganon by taking up the mythical Master Sword and collecting the three Triforces in order to free the Seven Maidens, including the princess of Hyrule, Zelda, from the dungeons and castles of the Dark World.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 1991,
     platforms: superNES,
     metacritic: "92",
@@ -1835,7 +1853,7 @@ const gameSeed = [
     hallOfGreat: 9,
     description:
       "Your mission is to rescue the Mushroom Kingdom monarchs who have been transformed into animals by Bowser and his mischievous offspring, and in the process save the princess kidnapped by Bowser.",
-    genre: "Platformer",
+    genre: platformer,
     year: 1988,
     platforms: nes,
     metacritic: "97",
@@ -1859,7 +1877,7 @@ const gameSeed = [
     hallOfGreat: 9,
     description:
       "The last Final Fantasy for the PlayStation, Final Fantasy IX returns to the pure fantasy roots that spawned the series. This latest installment features highly detailed characters, vehicles, and environments, and breathtaking cinema-graphics. The addition of brand new features such as the story-enhancing Active Time Event system and the return of minigames that grant additional gameplay make Final Fantasy IX not only a memorable gaming experience, but also a significant step forward in the series.",
-    genre: "Japanese Role-Playing Game",
+    genre: japaneseRPG,
     year: 2000,
     platforms: psOne,
     metacritic: "94",
@@ -1883,7 +1901,7 @@ const gameSeed = [
     hallOfGreat: 9,
     description:
       "In the next chapter in the Legend of Zelda series, Link can transform into a wolf to scour the darkened land of Hyrule. With the help of Midna, a mysterious being, you must guide Link through hordes of foul creatures and challenging bosses using new moves and a new horseback combat system. Many puzzles stand between Link and the fulfillment of his quest, so you must sharpen your wits as you hunt for weapons and items.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2006,
     platforms: gameCube + ", " + wii,
     metacritic: "96",
@@ -1907,7 +1925,7 @@ const gameSeed = [
     hallOfGreat: 9,
     description:
       "Wave Race 64 is sure to provide some of the most exciting racing you've ever experienced. Feel the pounding and crashing of the waves as you accelerate into straight-aways, whip around the marker buoys and go airborne on the jump ramps. Don't race alone - challenge a friend! Take control in three different modes of play - Championship, Time Trials and Stunt Mode. Nine challenging courses set in exotic locales - race conditions change and the wave action responds to the way both you and your opponents race!",
-    genre: "Racing",
+    genre: racing,
     year: 1996,
     platforms: n64,
     metacritic: "92",
@@ -1931,7 +1949,7 @@ const gameSeed = [
     hallOfGreat: 9,
     description:
       "Your death won’t come easily. Enter the world of late 1500s Sengoku Japan; a brutal, bloody period of constant life-and-death conflict. As tensions rise, a compelling new story unfolds amongst the chaos. Introducing Sekiro: Shadows Die Twice, a dark and twisted new gameplay experience developed by the renowned team at FromSoftware and published by Activision. Directed by Hidetaka Miyazaki, Sekiro: Shadows Die Twice is a third-person, action-adventure game with RPG elements. The single-player game puts players in the protagonist role of a hard-hearted warrior whose mission is to rescue his master, a young lord, and exact revenge on his arch nemesis. As “Sekiro,” or the “one-armed wolf,” players discover the many ways to strategically approach combat and engage enemies.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2019,
     platforms: psFour + ", " + xboxOne,
     metacritic: "90",
@@ -1955,7 +1973,7 @@ const gameSeed = [
     hallOfGreat: 9,
     description:
       "GoldenEye 007 is a 1997 first-person shooter developed by Rare and published by Nintendo for the Nintendo 64. Based on the 1995 James Bond film GoldenEye, it features a single-player campaign in which players assume the role of British Secret Intelligence Service agent James Bond as he fights to prevent a criminal syndicate from using a satellite weapon against London to cause a global financial meltdown. The game includes a split-screen multiplayer mode in which up to four players can compete in different types of deathmatch games.",
-    genre: "First-Person Shooter",
+    genre: fps,
     year: 1997,
     platforms: n64,
     metacritic: "96",
@@ -1979,7 +1997,7 @@ const gameSeed = [
     hallOfGreat: 9,
     description:
       "Embark upon an epic dark fantasy in a universe stricken by decline and the Curse. Explore its intricate world design - full of hidden passages, dungeons and secrets - and uncover its deeply rooted lore.",
-    genre: "Action Role-Playing Game",
+    genre: actionRPG,
     year: 2018,
     platforms: psFour + ", " + xboxOne + ", " + nSwitch,
     metacritic: "84",
@@ -2004,7 +2022,7 @@ const gameSeed = [
     hallOfGreat: 10,
     description:
       "Twenty years after a pandemic radically transformed known civilization, infected humans run amuck and survivors kill one another for sustenance and weapons - literally whatever they can get their hands on. Joel, a salty survivor, is hired to smuggle a fourteen-year-old girl, Ellie, out of a rough military quarantine, but what begins as a simple job quickly turns into a brutal journey across the country.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2013,
     platforms: psThree,
     metacritic: "95",
@@ -2029,7 +2047,7 @@ const gameSeed = [
     hallOfGreat: 10,
     description:
       "With the Empire attacking the Kingdoms of the North and the Wild Hunt, a cavalcade of ghastly riders, breathing down your neck, the only way to survive is to fight back. As Geralt of Rivia, a master swordsman and monster hunter, leave none of your enemies standing. Explore a gigantic open world, slay beasts and decide the fates of whole communities with your actions, all in a genuine next generation format.",
-    genre: "Action Role-Playing Game",
+    genre: actionRPG,
     year: 2015,
     platforms: psFour + ", " + xboxOne + ", " + pc,
     metacritic: "92",
@@ -2078,7 +2096,7 @@ const gameSeed = [
     hallOfGreat: 10,
     description:
       "Enter the mysterious world of Halo, an alien planet shaped like a ring. As mankind's super soldier Master Chief, you must uncover the secrets of Halo and fend off the attacking Covenant. During your missions, you'll battle on foot, in vehicles, inside, and outside with alien and human weaponry. Your objectives include attacking enemy outposts, raiding underground labs for advanced technology, rescuing fallen comrades, and sniping enemy forces. Halo also lets you battle three other players via intense split screen combat or fight cooperatively with a friend through the single-player missions.",
-    genre: "First-Person Shooter",
+    genre: fps,
     year: 2001,
     platforms: xbox,
     metacritic: "97",
@@ -2102,7 +2120,7 @@ const gameSeed = [
     hallOfGreat: 10,
     description:
       'Going beyond "run and gun corridors," "monster-closet AIs" and static worlds, BioShock creates a living, unique and unpredictable FPS experience. After your plane crashes into icy uncharted waters, you discover a rusted bathysphere and descend into Rapture, a city hidden beneath the sea. Constructed as an idealistic society for a hand picked group of scientists, artists and industrialists, the idealism is no more.',
-    genre: "Action",
+    genre: actionAdventure,
     year: 2007,
     platforms: psThree + ", " + xbox360,
     metacritic: "96",
@@ -2126,7 +2144,7 @@ const gameSeed = [
     hallOfGreat: 10,
     description:
       "Burnout 3 takes the hit series even further, now featuring a unique crash and burn racing concept and a one-of-a-kind special effects engine that delivers spectacular visuals. The intensity heats up as players race, and often crash, their way through oncoming traffic in an attempt to claim the top spot. Boasting multiple single-player, multiplayer and online crash and race modes, Burnout 3 offers players the opportunity to race through busy city streets and be rewarded for taking risks that result in heart-pounding action and electrifying crashes.",
-    genre: "Racing",
+    genre: racing,
     year: 2004,
     platforms: psTwo + ", " + xbox,
     metacritic: "93",
@@ -2150,7 +2168,7 @@ const gameSeed = [
     hallOfGreat: 10,
     description:
       "What begins as a rebellion against an evil corporation becomes much more. And what erupts goes beyond imagination. With vivid landscapes, lush 3D animation and environments, Square Soft's multi-million dollar masterpiece is like nothing ever seen before.",
-    genre: "Role-Playing Game",
+    genre: japaneseRPG,
     year: 1997,
     platforms: psOne,
     metacritic: "92",
@@ -2174,7 +2192,7 @@ const gameSeed = [
     hallOfGreat: 11,
     description:
       "Play the world's number 1 online action game. Engage in an incredibly realistic brand of terrorist warfare in this wildly popular team-based game. Ally with teammates to complete strategic missions. Take out enemy sites. Rescue hostages. Your role affects your team's success. Your team's success affects your role.",
-    genre: "First-Person Shooter",
+    genre: fps,
     year: 2000,
     platforms: pc,
     metacritic: "88",
@@ -2199,7 +2217,7 @@ const gameSeed = [
     hallOfGreat: 11,
     description:
       "What begins as a rebellion against an evil corporation becomes much more. And what erupts goes beyond imagination. With vivid landscapes, lush 3D animation and environments, Square Soft's multi-million dollar masterpiece is like nothing ever seen before.",
-    genre: "Role-Playing Game",
+    genre: japaneseRPG,
     year: 1997,
     platforms: psOne,
     metacritic: "92",
@@ -2223,7 +2241,7 @@ const gameSeed = [
     hallOfGreat: 11,
     description:
       "Alien vs. Predator is a 1994 beat 'em up video game developed and released by Capcom for the CPS-2 arcade game system. It is based on the science fiction franchise of the same name. In the game, the players take control of up to three out of four cyborg and Predator characters in a battle against the Alien hordes and rogue human soldiers. The game was very well-received by the public and by media publications, becoming a classic title for many fans of the beat 'em up genre.",
-    genre: "Beat 'Em Up",
+    genre: beatEmUp,
     year: 1994,
     platforms: arcade,
     metacritic: "N/A",
@@ -2248,7 +2266,7 @@ const gameSeed = [
     hallOfGreat: 11,
     description:
       "Animal Crossing allows you to interact with a virtual village of animals that are doing something different every minute of every day. With Animal Crossing's 24-hour clock, the game's unique events can be in synch with real time--as day turns to night in the real world, the sun will also begin to set in the game. The dynamic setup requires you to come back every day and carry out your daily routines, build relationships with villagers, celebrate special days, collect furnishings for your homes, and just live life in the unique world of Animal Crossing. ",
-    genre: "Life Simulation",
+    genre: "Simulation",
     year: 2002,
     platforms: gameCube,
     metacritic: "87",
@@ -2272,7 +2290,7 @@ const gameSeed = [
     hallOfGreat: 11,
     description:
       "This isn't the Spider-Man you've known before, or seen in a movie. This is an experienced Peter Parker who is more masterful in fighting major crimes in New York City. At the same time he is struggling to balance his tumultuous personal life and career while the fate of nine million New Yorkers rests upon his shoulders.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2018,
     platforms: psFour,
     metacritic: "87",
@@ -2296,7 +2314,7 @@ const gameSeed = [
     hallOfGreat: 11,
     description:
       "In the struggle to achieve world peace and world dominance, rivaling governments are secretly developing weapons technology that could threaten the future existence of life. Destined to be the first, a race ensues to become the ultimate nation. A special elite tactical soldier is summoned to penetrate deep in the heart of enemy territory and obtain intel about Metal Gear, a prototype weapon with nuclear capabilities. This is your mission and you must infiltrate alone. Interactive environments where traps catch enemies and prey. Rely on camouflage, combat, hunting and instincts to survive. Set in the 1960s where politics and war are shaping real world history. Blockbuster musical score composed by Harry Gregson-Williams.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2004,
     platforms: psTwo,
     metacritic: "91",
@@ -2320,7 +2338,7 @@ const gameSeed = [
     hallOfGreat: 11,
     description:
       "Zombies are invading your home, and the only defense is your arsenal of plants! Armed with an alien nursery-worth of zombie-zapping plants like peashooters and cherry bombs, you'll need to think fast and plant faster to stop dozens of types of zombies dead in their tracks. Obstacles like a setting sun, creeping fog and a swimming pool add to the challenge, and with five game modes to dig into, the fun never dies!",
-    genre: "Strategy",
+    genre: strategy,
     year: 2009,
     platforms: xbox360 + ", " + psThree + ", " + pc + " iPad, and many others",
     metacritic: "97",
@@ -2393,7 +2411,7 @@ const gameSeed = [
     hallOfGreat: 12,
     description:
       "Things aren't looking too good. You'll never navigate off the planet on your own. Plus, all the heavy weapons have been taken by the assault team leaving you with only a pistol. If you only could get your hands around a plasma rifle or even a shotgun you could take a few down on your way out. Whatever killed your buddies deserves a couple of pellets in the forehead. Securing your helmet, you exit the landing pod. Hopefully you can find more substantial firepower somewhere within the station. As you walk through the main entrance of the base, you hear animal-like growls echoing through the distant corridors. They know you're here. There's no turning back now.",
-    genre: "First-Person Shooter",
+    genre: fps,
     year: 1993,
     platforms: pc,
     metacritic: "91",
@@ -2417,7 +2435,7 @@ const gameSeed = [
     hallOfGreat: 12,
     description:
       "Inklings from the Splatoon series, as well as returning Smash characters like Mario and Link will be making appearances in this classic Nintendo franchise's Switch debut. Faster combat, new items, new attacks, new defensive options, and more will keep the battle raging whether you’re at home or on the go.",
-    genre: "Fighting",
+    genre: fighting,
     year: 2018,
     platforms: nSwitch,
     metacritic: "93",
@@ -2441,7 +2459,7 @@ const gameSeed = [
     hallOfGreat: 12,
     description:
       "Mega Man Legends is an action-adventure shooter game released by Capcom. It is the first game in the Mega Man Legends sub-series of Mega Man games from Capcom, and the second major 3D polygonal Mega Man title released in the franchise, following Mega Man: Battle & Chase. It was released on the PlayStation in 1997 in Japan and in 1998 in North America. A Nintendo 64 port was released in 2000 with the same title, but it was renamed Mega Man 64 for the English release in 2001. Another port was released for Microsoft Windows in 2001, and PlayStation Portable in 2005, with the latter only in Japan.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 1997,
     platforms: psOne,
     metacritic: "73",
@@ -2465,7 +2483,7 @@ const gameSeed = [
     hallOfGreat: 12,
     description:
       "Shovel Knight: Treasure Trove is the full and complete edition of Shovel Knight, a sweeping classic action adventure game series with awesome gameplay, memorable characters, and an 8-bit retro aesthetic! Become Shovel Knight, wielder of the Shovel Blade, as he runs, jumps, and battles in a quest for his lost beloved. Take down the nefarious knights of the Order of No Quarter and their menacing leader, The Enchantress.",
-    genre: "Action",
+    genre: action,
     year: 2017,
     platforms: nSwitch + ", " + psFour + ", " + xboxOne + ", and many others",
     metacritic: "91",
@@ -2489,7 +2507,7 @@ const gameSeed = [
     hallOfGreat: 12,
     description:
       "Teenage Mutant Ninja Turtles: Turtles in Time, released as Teenage Mutant Hero Turtles: Turtles in Time in Europe, is an arcade video game produced by Konami. A sequel to the original Teenage Mutant Ninja Turtles arcade game, it is a scrolling beat 'em up type game based mainly on the 1987 TMNT animated series. Originally an arcade game, Turtles in Time was ported to the Super Nintendo Entertainment System in 1992 under the title Teenage Mutant Ninja Turtles IV: Turtles in Time, continuing the numbering from the earlier Turtles games released on the original NES.",
-    genre: "Beat 'Em Up",
+    genre: beatEmUp,
     year: 1991,
     platforms: arcade + ", " + superNES,
     metacritic: "N/A",
@@ -2513,7 +2531,7 @@ const gameSeed = [
     hallOfGreat: 12,
     description:
       "Players assume the role of James, who receives a cryptic letter from his wife (who has been dead for 3 years) beckoning him to meet her in Silent Hill, a place that holds great meaning for the couple. The mystery of the letter compels him to return to the surreal horror and all-too-real danger in Silent Hill.",
-    genre: "Psychological Horror",
+    genre: psychHorror,
     year: 2001,
     platforms: psTwo,
     metacritic: "89",
@@ -2561,7 +2579,7 @@ const gameSeed = [
     hallOfGreat: 13,
     description:
       "All the challenging ground-pounding, barrel-blasting, side-scrolling mine cart action from the Donkey Kong Country series is back along with a bushel of new game-play elements and features. And now, there are four playable characters! Dixie Kong is back to join the adventure as a playable character alongside Diddy Kong, and for the first time in Donkey Kong Country, bearded old hero Cranky Kong joins the adventure with his bouncy cane. Any of the three can buddy up with Donkey Kong, and each character offers a different gameplay experience. On their journey to reclaim Donkey Kong Island, Donkey Kong and his friends travel across five islands with a variety of stages that include underwater areas and frozen environments.",
-    genre: "Platformer",
+    genre: platformer,
     year: 2014,
     platforms: wiiU + ", " + nSwitch,
     metacritic: "86",
@@ -2585,7 +2603,7 @@ const gameSeed = [
     hallOfGreat: 13,
     description:
       "Tokyo 1988. Getting rich is easy, the women are beautiful, and everyone wants in on the action. It's time to become Yakuza. The glitz, glamour, and unbridled decadence of the 80s are back in Yakuza 0! Fight like hell through Tokyo and Osaka with protagonist Kazuma Kiryu and series regular Goro Majima. Play as Kazuma Kiryu and discover how he finds himself in a world of trouble when a simple debt collection goes wrong and his mark winds up murdered. Then, step into the silver-toed shoes of Goro Majima and explore his normal life as the proprietor of a cabaret club.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2017,
     platforms: psFour + ", " + xboxOne + ", " + pc,
     metacritic: "85",
@@ -2609,7 +2627,7 @@ const gameSeed = [
     hallOfGreat: 13,
     description:
       "Bayonetta is a stylish and cinematic action game directed by creator Hideki Kamiya. A member of an ancient witch clan and possessing powers beyond the comprehension of mere mortals, Bayonetta faces-off against countless ethereal enemies, many reaching epic proportions, in a game of 100% pure, unadulterated all-out action. Outlandish finishing moves are performed with balletic grace as Bayonetta flows from one fight to another. With over-the-top action taking place in stages that are a veritable theme park of exciting attractions, Bayonetta pushes the limits of the action genre, bringing to life its fast-paced, dynamic climax combat.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2010,
     platforms: psThree + ", " + xbox360,
     metacritic: "90",
@@ -2633,7 +2651,7 @@ const gameSeed = [
     hallOfGreat: 13,
     description:
       "Enter the world of Journey, the third game from indie developers thatgamecompany (creators of 'flOw' and 'Flower'). Journey is an interactive parable, an anonymous online adventure to experience a person’s life passage and their intersections with other’s. You wake alone and surrounded by miles of burning, sprawling desert, and soon discover the looming mountaintop which is your goal. Faced with rolling sand dunes, age-old ruins, caves and howling winds, your passage will not be an easy one. The goal is to get to the mountaintop, but the experience is discovering who you are, what this place is, and what is your purpose. Travel and explore this ancient, mysterious world alone, or with a stranger you meet along the way. Soar above ruins and glide across sands as you discover the secrets of a forgotten civilization.",
-    genre: "Adventure",
+    genre: adventure,
     year: 2012,
     platforms: psThree,
     metacritic: "92",
@@ -2657,7 +2675,7 @@ const gameSeed = [
     hallOfGreat: 13,
     description:
       "In Katamari Damacy, players take on the role of Prince of the Cosmos, whose father ­ the great King ­ managed to inadvertently knock the stars out of the sky. As the prince, a player's duty is to clean up the King's mess and re-create the starry skies by rolling around the cleverly designed locations to collect objects and build up their 'katamari' -- a Japanese word for clump or large mass. The catch is that it's not the quality or the actual number of objects gathered that is most critical to the player's success, but instead the sheer size of the player's 'katamari' that is most important. Along the way, players can roll over hundreds of unusual objects of all sizes and shapes including cookies, cars, mermaids, planes, clouds and even people. The larger the player's 'katamari' grows, the more objects the player can amass along the way -- thus proving if you want to succeed in Katamari Damacy -- size does matter. Katamari Damacy features a single-player story mode and a two-player battle mode. The simple game play mechanics allow for optimal ball rolling and object collecting fun.",
-    genre: "Action",
+    genre: action,
     year: 2004,
     platforms: psTwo,
     metacritic: "86",
@@ -2681,7 +2699,7 @@ const gameSeed = [
     hallOfGreat: 13,
     description:
       "Metal Gear Rising: Revengeance moves the notorious Metal Gear franchise into new territory by delivering a novel action experience. Coupling development teams at Kojima Productions and PlatinumGames, Revengeance was made with the goal of providing players with a fresh synergistic experience that combines the best elements of pure action and epic storytelling, all within the expansive Metal Gear universe. The game introduces Raiden as the main character; a child soldier transformed into a half-man, half-machine cyborg ninja, equipped with a high-frequency katana blade and a soul fueled by revenge.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2013,
     platforms: xbox360 + ", " + psThree + ", " + pc,
     metacritic: "82",
@@ -2705,7 +2723,7 @@ const gameSeed = [
     hallOfGreat: 13,
     description:
       "It is a first person exploration game. You will play as Stanley, and you will not play as Stanley. You will follow a story, you will not follow a story. You will have a choice, you will have no choice. The game will end, the game will never end.",
-    genre: "Action-Adventure",
+    genre: actionAdventure,
     year: 2013,
     platforms: pc,
     metacritic: "88",
@@ -2729,7 +2747,7 @@ const gameSeed = [
     hallOfGreat: 13,
     description:
       "Challenge yourselves in this hard-boiled co-op arcade shooter! Run, jump, and take cover in the mayhem-filled streets of the future. Kill the henchmen, take their guns, and Huntdown the leaders! Collect the bounty, level by level, and make a healthy living by making living unhealthy.",
-    genre: "Action",
+    genre: action,
     year: 2020,
     platforms: psFour + ", " + xboxOne + ", " + nSwitch + ", " + pc,
     metacritic: "86",
@@ -2753,7 +2771,7 @@ const gameSeed = [
     hallOfGreat: 14,
     description:
       "An open-world action/adventure game in which a young wanderer, along with a stolen magical sword and his steed companion, trespasses a cursed land, makes a deal with an ancient being to bring a sacrificial victim back to life, and sets off to fulfill his end of the bargain, which involves tracking down and infiltrating the abodes of sixteen colossi and sacrificing them to achieve his goal.",
-    genre: "Advenutre",
+    genre: adventure,
     year: 2005,
     platforms: psTwo,
     metacritic: "91",
@@ -2777,7 +2795,7 @@ const gameSeed = [
     hallOfGreat: 14,
     description:
       "Embark upon an epic dark fantasy in a universe stricken by decline and the Curse. Explore its intricate world design - full of hidden passages, dungeons and secrets - and uncover its deeply rooted lore.",
-    genre: "Action Role-Playing Game",
+    genre: actionRPG,
     year: 2018,
     platforms: psFour + ", " + xboxOne + ", " + nSwitch,
     metacritic: "84",
@@ -2802,7 +2820,7 @@ const gameSeed = [
     hallOfGreat: 14,
     description:
       "Players assume the role of James, who receives a cryptic letter from his wife (who has been dead for 3 years) beckoning him to meet her in Silent Hill, a place that holds great meaning for the couple. The mystery of the letter compels him to return to the surreal horror and all-too-real danger in Silent Hill.",
-    genre: "Psychological Horror",
+    genre: psychHorror,
     year: 2001,
     platforms: psTwo,
     metacritic: "89",
@@ -2826,7 +2844,7 @@ const gameSeed = [
     hallOfGreat: 14,
     description:
       "The demented Dr. Wily is at it again! This time he's stolen the experimental Time Skimmer and skipped into the future. But Wait! Four of his strongest cyborgs have been left behind to squash the mighty Mega Man! Time is of the essence as Mega Man and Rush blast past waves of maniacal metal monsters on the way to underground lair of Dr. Wily. Once there they must face Quint, the ferocious fiend from the future!",
-    genre: "Platformer",
+    genre: platformer,
     year: 1988,
     platforms: nes,
     metacritic: "88",
@@ -2874,7 +2892,7 @@ const gameSeed = [
     hallOfGreat: 14,
     description:
       "It's the ultimate Sonic celebration! Sonic returns in a new 2D platforming high speed adventure, and he's not alone! Developed in collaboration between SEGA, Christian Whitehead, Headcannon, and PagodaWest Games, experience new zones and remixed classic levels with Sonic, Tails, and Knuckles!",
-    genre: "Platformer",
+    genre: platformer,
     year: 2017,
     platforms: psFour + ", " + xboxOne + ", " + nSwitch + ", " + pc,
     metacritic: "86",
@@ -2898,7 +2916,7 @@ const gameSeed = [
     hallOfGreat: 14,
     description:
       "Frank West, a freelance photojournalist on the hunt for the scoop of a lifetime, pursues a juicy lead to a small suburban town only to find that it is being overrun by zombies! He escapes to the local shopping mall thinking it will be a bastion of safety, but it turns out to be anything but. It's a true struggle to survive the endless stream of enemies, but with full reign over an entire shopping center, Frank can utilize anything to fight off the flesh-hungry mob and search for the truth behind the horrendous epidemic.",
-    genre: "Adventure",
+    genre: adventure,
     year: 2006,
     platforms: xbox360 + ", " + psThree,
     metacritic: "85",
@@ -2922,7 +2940,7 @@ const gameSeed = [
     hallOfGreat: 14,
     description:
       "The next chapter in the Elder Scrolls saga arrives from the Bethesda Game Studios. Skyrim reimagines the open-world fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose. Play any type of character you can imagine, and do whatever you want; the legendary freedom of choice, storytelling, and adventure of The Elder Scrolls is realized like never before. Skyrim's new game engine brings to life a complete virtual world with rolling clouds, rugged mountains, bustling cities, lush fields, and ancient dungeons. Choose from hundreds of weapons, spells, and abilities. The new character system allows you to play any way you want and define yourself through your actions. Battle ancient dragons like you've never seen. As Dragonborn, learn their secrets and harness their power for yourself.",
-    genre: "Role-Playing Game",
+    genre: rpg,
     year: 2011,
     platforms: xbox360 + ", " + psThree + ", " + pc,
     metacritic: "96",
@@ -2945,7 +2963,7 @@ const gameSeed = [
     game: "Silent Hill 2: Director's Cut",
     hallOfGreat: 15,
     description: "Silent Hill 2: Director's Cut is a survival horror game developed by Team Silent, ported by Creature Labs, and published by Konami. It is the second installment in the Silent Hill series. The game was originally released for the PlayStation 2 on September 21, 2001 worldwide. The game later received an extended Director's Cut version on PlayStation 2 as a Greatest Hits re-release, Xbox, and PC, which added a new Born from a Wish scenario, a secret UFO ending, and for the PC version, a quick-save function, real-time weapon swapping, and a movie gallery.",
-    genre: "Psychological Horror",
+    genre: psychHorror,
     year: 2002,
     platforms: psTwo + ", " + xbox + ", " + pc,
     metacritic: "89",
@@ -2968,7 +2986,7 @@ const gameSeed = [
     game: 'Diablo II',
     hallOfGreat: 15,
     description: 'A top down adventure game of epic proportion. Diablo 2 is the continuation of a wonderful world of magic and horror. - - "There is no escape from chaos, there is only the sweet release of death"',
-    genre: "Action Role-Playing Game",
+    genre: actionRPG,
     year: 2000,
     platforms: pc,
     metacritic: "88",
@@ -2991,7 +3009,7 @@ const gameSeed = [
     game: "Super Mario Galaxy",
     hallOfGreat: 15,
     description: "A 3D platformer and first Wii entry in the Super Mario franchise, Super Mario Galaxy sees Mario jump across planets and galaxies with varying items, enemies, geographies and gravity mechanics in order to reach his enemy Bowser, who has attacked the Mushroom Kingdom and hijacked Princess Peach's castle with her inside.",
-    genre: "Platformer",
+    genre: platformer,
     year: 2007,
     platforms: wii + ", " + nSwitch,
     metacritic: "97",
@@ -3014,7 +3032,7 @@ const gameSeed = [
     game: 'Batman: Arkham Asylum',
     hallOfGreat: 15,
     description: "Using a great variety of gadgets you must make your way around the island, and the asylums halls to find and stop the joker. The game uses a 3-button combat system, but with a great number of gadget abilites which Batman can unlock. This makes for a very cinematic combat experience when fighting the Joker's goons.",
-    genre: "Adventure",
+    genre: actionAdventure,
     year: 2009,
     platforms: xbox360 + ", " + psThree + ", " + pc,
     metacritic: "92",
@@ -3060,7 +3078,7 @@ const gameSeed = [
     game: 'Trials HD',
     hallOfGreat: 15,
     description: 'Trials HD is a full-featured, physics-based motorcycle racing game with more than 50 tracks in two unique game modes. Race Mode emphasizes balance, skill, and control as you tackle indoor obstacle tracks. Skill Mode features extreme skill games in which explosions, crashes, and injuries cannot – and sometimes should not – be avoided.',
-    genre: "Platformer, Puzzle, Racing",
+    genre: platformer + ", " + puzzle + ", " + racing,
     year: 2009,
     platforms: xbox360,
     metacritic: "86",
@@ -3083,7 +3101,7 @@ const gameSeed = [
     game: godOfWar,
     hallOfGreat: 15,
     description: "His vengeance against the gods of Olympus far behind him, Kratos now lives as a man in the lands of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same. As mentor and protector to a son determined to earn his respect, Kratos is faced with an unexpected opportunity to master the rage that has long defined him. Questioning the dark lineage he’s passed on to his son, he hopes to make amends for the shortcomings of his past. Set within the untamed forests, mountains, and realms of Norse lore, God of War features a distinctly new setting with its own pantheon of creatures, monsters, and gods.",
-    genre: "Adventure",
+    genre: adventure,
     year: 2018,
     platforms: psFour,
     metacritic: "94",
@@ -3106,7 +3124,7 @@ const gameSeed = [
     game: "Dishonored 2",
     hallOfGreat: 15,
     description: "Reprise your role as a supernatural assassin in Dishonored 2. Play your way in a world where mysticism and industry collide. Will you choose to play as Empress Emily Kaldwin or the Royal Protector, Corvo Attano? Will you stalk your way through the game unseen, make full use of its brutal combat system, or use a blend of both? How will you combine your character’s unique set of powers, weapons and gadgets to eliminate your enemies? The story responds to your choices, leading to intriguing outcomes, as you play through each of the game’s hand-crafted missions.",
-    genre: "Adventure",
+    genre: "Stealth " + actionAdventure,
     year: 2016,
     platforms: xboxOne + ", " + psFour,
     metacritic: "88",
@@ -3129,12 +3147,12 @@ const gameSeed = [
     game: "Final Fantasy X",
     hallOfGreat: 16,
     description: "Final Fantasy X is the tenth main installment in the Final Fantasy series, developed and published by Squaresoft. It was the first title in the series released on sixth-generation consoles, the first to feature fully three-dimensional areas rather than including pre-rendered backdrops, and the first to include voice acting.",
-    genre: "Japanese Role-Playing Game",
+    genre: japaneseRPG,
     year: 2001,
     platforms: psTwo,
     metacritic: "92",
-    developer: "Square Enix",
-    publisher: "Square Enix",
+    developer: "SquareSoft",
+    publisher: "SquareSoft",
     votes: 13,
     victory: "True",
     banned: "False",
@@ -3152,7 +3170,7 @@ const gameSeed = [
     game: "Super Mario World",
     hallOfGreat: 16,
     description: "A 2D platformer and first entry on the SNES in the Super Mario franchise, Super Mario World follows Mario as he attempts to defeat Bowser's underlings and rescue Princess Peach from his clutches. The game features a save system, a less linear world map, an expanded movement arsenal and numerous new items for Mario, alongside new approaches to level design and art direction.",
-    genre: "Platformer",
+    genre: platformer,
     year: 1990,
     platforms: superNES,
     metacritic: "94",
@@ -3177,7 +3195,7 @@ const gameSeed = [
     description: "You may not be able to live like the legend, but now you can skate like him. Skate as the legendary Tony Hawk or choose from a dream team of 12 top pro skaters, including old favorites like Lasek, Thomas, Muska, and Steamer, as well as new talent like Gilfberg, Caballero, Koston, and Mullen. Or enjoy full customization abilities with the enhanced Create-a-Skater (now including female skaters) and the Skatepark Editor. Travel from L.A. to Tokyo, Suburbia to Skater's Island performing challenges and meeting goals. New moves include the Revert, which allows you to link vert tricks, and flatland tricks such as Caspers, the Primo, and Handstand Manual. If you're good, you can even unlock hidden pro footage.",
     genre: "Sports",
     year: 2001,
-    platforms: psTwo + ", " + xbox + ", " + gameCube,
+    platforms: psTwo + ", " + xbox + ", " + gameCube + ", " + gameboyColor + ", " + "Game Boy Advance",
     metacritic: "97",
     developer: "Neversoft Entertainment",
     publisher: "Activision",
@@ -3198,9 +3216,9 @@ const gameSeed = [
     game: "Streets of Rage 4",
     hallOfGreat: 16,
     description: "Streets of Rage 4 is an all-new continuation of the iconic arcade brawler series known for its radical fights, jammin’ ‘90s beats and dashing sparring gloves and bandanas.",
-    genre: "Beat 'Em Up",
+    genre: beatEmUp,
     year: 2020,
-    platforms: xboxOne + ", " + nSwitch + ", " + psFour + ", " + pc ,
+    platforms: xboxOne + ", " + nSwitch + ", " + psFour + ", " + pc,
     metacritic: "87",
     developer: "Lizardcube" + ", " + "Dotemu" + ", " + "Guard Crush Games" ,
     publisher: "Dotemu",
@@ -3221,7 +3239,7 @@ const gameSeed = [
     game: "Destruction Derby 2",
     hallOfGreat: 16,
     description: "Destruction Derby 2 is the sequel to the PC, PlayStation, Sega Saturn and Nintendo 64 title Destruction Derby. Here the player must race on up to seven different circuits, in a range of modes, similar to its predecessor. The modes are Wrecking Racing (where the player must destroy or spin the other competitors), Stock Car (a typical race where it's 1st to the flag) and Destruction Derby, which is based around the crash arenas. Commentator Paul Page performed as the announcer. This Racing game is widely known for its destruction and chaotic themes that follow by loud, gritty and dark metal songs.",
-    genre: "Racing",
+    genre: racing,
     year: 1996,
     platforms: psOne,
     metacritic: "N/A",
@@ -3244,7 +3262,7 @@ const gameSeed = [
     game: "Mass Effect 2",
     hallOfGreat: 16,
     description: "Are you prepared to lose everything to save the galaxy? You'll need to be, Commander Shephard. It's time to bring together your greatest allies and recruit the galaxy's fighting elite to continue the resistance against the invading Reapers. So steel yourself, because this is an astronomical mission where sacrifices must be made. You'll face tougher choices and new, deadlier enemies. Arm yourself and prepare for an unforgettable intergalactic adventure.",
-    genre: "Role-Playing Game",
+    genre: rpg,
     year: 2010,
     platforms: xbox360 + ", " + psThree + ", " + pc, 
     metacritic: "96",
@@ -3267,9 +3285,9 @@ const gameSeed = [
     game: "Minecraft",
     hallOfGreat: 16,
     description: "Minecraft focuses on allowing the player to explore, interact with, and modify a dynamically-generated map made of one-cubic-meter-sized blocks. In addition to blocks, the environment features plants, mobs, and items. Some activities in the game include mining for ore, fighting hostile mobs, and crafting new blocks and tools by gathering various resources found in the game. The game's open-ended model allows players to create structures, creations, and artwork on various multiplayer servers or their single-player maps. Other features include redstone circuits for logic computations and remote actions, minecarts and tracks, and a mysterious underworld called the Nether. A designated but completely optional goal of the game is to travel to a dimension called the End, and defeat the ender dragon.",
-    genre: "Adventure, Sandbox",
+    genre: adventure + ", " + "Sandbox",
     year: 2011,
-    platforms: pc + ", " + psFour + ", ",
+    platforms: pc + ", " + psFour + ", " + psThree + ", " + xboxOne + ", " + xbox360 + ", " + wiiU + ", " + nSwitch,
     metacritic: "93",
     developer: "Mojang Studios",
     publisher: "Mojang Studios",

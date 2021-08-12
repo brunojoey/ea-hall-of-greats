@@ -24,9 +24,9 @@ function HallOfGreatSixteen({ history }) {
       <h3 className="hall-page-title">The Sixteenth Hall of Greats</h3>
       {matches ? (
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=GgmRoZ4w4xc"
+          url="https://www.youtube.com/watch?v=vQShXhY7bZI"
           className="hall-page-video"
-          alt="Hall of Greats #16 https://www.youtube.com/watch?v=GgmRoZ4w4xc"
+          alt="Hall of Greats #16 https://www.youtube.com/watch?v=vQShXhY7bZI"
         />
       ) : (
         <></>

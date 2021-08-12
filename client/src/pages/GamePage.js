@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import gamesAPI from "../utils/gamesAPI";
 import StarDecoration from "../components/StarDecoration";
 import Loader from "react-loader-spinner";
 import { Button } from "@material-ui/core";
 import "./Pages.scss";
 
-function GamePage(props) {
+function GamePage({ match, history }) {
   const [gamePage, setGamePage] = useState([]);
-  const { match, history } = props;
   const { params } = match;
   const { id } = params;
 
@@ -97,6 +97,14 @@ function GamePage(props) {
                 >
                   More Information
                 </a>
+              </Button>
+              <Button className="description-game-button">
+                <Link
+                  to='/'
+                  style={{ color: "white", textDecoration: "none" }}
+                >
+                  Go Home
+                </Link>
               </Button>
             </span>
           </section>
