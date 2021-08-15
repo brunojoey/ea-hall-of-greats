@@ -98,7 +98,7 @@ function GamePage({ match, history }) {
                   More Information
                 </a>
               </Button>
-              <Button className="description-game-button">
+              <Button className="description-game-button" style={{marginLeft: "3rem"}}>
                 <Link
                   to='/'
                   style={{ color: "white", textDecoration: "none" }}
