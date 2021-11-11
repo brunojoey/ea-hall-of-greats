@@ -9,9 +9,9 @@ function GameCarousel() {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
       data = data.filter((games) => games.victory === "True");
-      let randomGame = data.random(data[0]);
+      let randomGame = Math.floor(Math.random() * data.length);
       console.log("Random Game", randomGame);
-      setGames(randomGame);
+      setGames(data[randomGame]);
     }
 
     fetchData();
