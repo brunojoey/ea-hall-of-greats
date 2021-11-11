@@ -20,13 +20,33 @@ function GameCarousel() {
   return (
     <>
       {games ? (
-        <figure className="home-page-card" style={{alignItems: "center"}}>
-          <img
-            src={games.image}
-            alt={games.alt}
-            className="home-page-image"
-          />
-        </figure>
+        games.map((game) => {
+          return (
+            <div>
+              <figure className="home-page-card" style={{alignItems: "center"}}>
+                <img
+                  src={game.image}
+                  alt={game.alt}
+                  className="home-page-image"
+                />
+              </figure>
+              <figure className="home-page-card" style={{alignItems: "center"}}>
+                <img
+                  src={game.image}
+                  alt={game.alt}
+                  className="home-page-image"
+                />
+              </figure>
+              <figure className="home-page-card" style={{alignItems: "center"}}>
+                <img
+                  src={game.image}
+                  alt={game.alt}
+                  className="home-page-image"
+                />
+              </figure>
+            </div>
+          )
+        })
     ) : (
         <></>
       )}

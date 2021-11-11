@@ -11,7 +11,6 @@ function Home() {
     <main className="home">
       <StarDecoration />
       <h1 className="home-title">Welcome to The Hall of Greats</h1>
-      <GameCarousel />
       {matches ? (
         <ul className="home-links-div">
           <li>
@@ -69,6 +68,7 @@ function Home() {
           </li>
         </ul>
       )}
+      <GameCarousel />
       <StarDecoration />
     </main>
   );
