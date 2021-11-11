@@ -4,17 +4,13 @@ import gamesAPI from "../../utils/gamesAPI";
 
 function GameCarousel() {
   const [games, setGames] = useState([]);
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
 
   useEffect(() => {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
       data = data.filter((games) => games.victory === "True");
       let randomGame = data.random(data[0]);
+      console.log("Random Game", randomGame);
       setGames(randomGame);
     }
 
@@ -24,12 +20,19 @@ function GameCarousel() {
   return (
     <>
       {games ? (
-        <img
-          className="d-block w-100"
-          src={games.image}
-          alt={games.name}
-        />
-      ) : (
+          <figure className="winner-page-card">
+          <img
+            src={games.image}
+            alt={games.alt}
+            className="winner-page-image"
+          />
+          <caption className="winner-page-caption">
+            {" "}
+            {games.game}
+            <span style={{ display: "block" }}>&rarr;</span>
+          </caption>
+        </figure>
+    ) : (
         <></>
       )}
     </>
