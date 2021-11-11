@@ -10,8 +10,7 @@ function GameCarousel() {
       data = data.filter((games) => games.victory === "True");
       let randomGame = Math.floor(Math.random() * data.length);
       console.log("Random Game", randomGame);
-      const threeGames = randomGame * 3;
-      setGames(data[threeGames]);
+      setGames(data[randomGame]);
     }
 
     fetchData();
