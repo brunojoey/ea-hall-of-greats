@@ -93,6 +93,8 @@ function GamePage({ match, history }) {
               <Button className="description-game-button">
                 <a
                   href={gamePage.infoLink}
+                  target="_blank"
+                  rel="noreferrer"
                   style={{ color: "white", textDecoration: "none" }}
                 >
                   More Information
