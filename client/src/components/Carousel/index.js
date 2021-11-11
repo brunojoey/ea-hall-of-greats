@@ -14,8 +14,8 @@ function GameCarousel() {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
       data = data.filter((games) => games.victory === "True");
-      console.log("data", data)
-      setGames(data);
+      let randomGame = data.random(data[0]);
+      setGames(randomGame);
     }
 
     fetchData();
@@ -25,26 +25,18 @@ function GameCarousel() {
     <>
       {games ? (
         <Carousel activeIndex={index} onSelect={handleSelect}>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="https://images.igdb.com/igdb/image/upload/t_cover_big/co20ac.jpg"
-              alt="Name"
-            />
-            <Carousel.Caption>
-              <h3>Title</h3>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="https://images.igdb.com/igdb/image/upload/t_cover_big/co20ac.jpg"
-              alt="Name"
-            />
-            <Carousel.Caption>
-              <h3>Title</h3>
-            </Carousel.Caption>
-          </Carousel.Item>
+          <>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={games.image}
+                alt={games.name}
+              />
+              <Carousel.Caption>
+                <h3>{games.name}</h3>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </>
         </Carousel>
       ) : (
         <></>

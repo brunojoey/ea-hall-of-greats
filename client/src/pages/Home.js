@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import StarDecoration from "../components/StarDecoration";
-// import GameCarousel from "../components/Carousel";
+import GameCarousel from "../components/Carousel";
 import useMediaQuery from "../utils/useMediaQuery";
 import "./Pages.scss";
 
@@ -11,7 +11,7 @@ function Home() {
     <main className="home">
       <StarDecoration />
       <h1 className="home-title">Welcome to The Hall of Greats</h1>
-      {/* <GameCarousel /> */}
+      <GameCarousel />
       {matches ? (
         <ul className="home-links-div">
           <li>
