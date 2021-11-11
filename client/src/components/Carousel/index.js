@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Carousel } from "react-bootstrap";
 import gamesAPI from "../../utils/gamesAPI";
 
 function GameCarousel() {
