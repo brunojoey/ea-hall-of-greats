@@ -10,7 +10,7 @@ function GameCarousel() {
       data = data.filter((games) => games.victory === "True");
       let randomGame = Math.floor(Math.random() * data.length);
       console.log("Random Game", randomGame);
-      setGames(data[randomGame]);
+      setGames(data[randomGame] * 3);
     }
 
     fetchData();
@@ -22,20 +22,6 @@ function GameCarousel() {
         games.map((game) => {
           return (
             <div>
-              <figure className="home-page-card" style={{alignItems: "center"}}>
-                <img
-                  src={game.image}
-                  alt={game.alt}
-                  className="home-page-image"
-                />
-              </figure>
-              <figure className="home-page-card" style={{alignItems: "center"}}>
-                <img
-                  src={game.image}
-                  alt={game.alt}
-                  className="home-page-image"
-                />
-              </figure>
               <figure className="home-page-card" style={{alignItems: "center"}}>
                 <img
                   src={game.image}
