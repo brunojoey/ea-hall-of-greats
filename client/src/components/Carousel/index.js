@@ -20,17 +20,12 @@ function GameCarousel() {
   return (
     <>
       {games ? (
-          <figure className="winner-page-card">
+        <figure className="home-page-card" style={{alignItems: "center"}}>
           <img
             src={games.image}
             alt={games.alt}
-            className="winner-page-image"
+            className="home-page-image"
           />
-          <caption className="winner-page-caption">
-            {" "}
-            {games.game}
-            <span style={{ display: "block" }}>&rarr;</span>
-          </caption>
         </figure>
     ) : (
         <></>
