@@ -24,20 +24,11 @@ function GameCarousel() {
   return (
     <>
       {games ? (
-        <Carousel activeIndex={index} onSelect={handleSelect}>
-          <>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={games.image}
-                alt={games.name}
-              />
-              <Carousel.Caption>
-                <h3>{games.name}</h3>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </>
-        </Carousel>
+        <img
+          className="d-block w-100"
+          src={games.image}
+          alt={games.name}
+        />
       ) : (
         <></>
       )}
