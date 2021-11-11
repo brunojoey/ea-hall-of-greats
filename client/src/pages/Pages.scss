@@ -44,6 +44,11 @@
     margin-bottom: 1rem;
   }
 
+  &-page-card {
+    display: flex;
+    align-items: center;
+  }
+
   &-page-image {
     height: 100%;
     border: 5px solid $color-red;
