@@ -116,20 +116,28 @@ function About() {
       <section>
         <ul className="banned-list">
           <li>
-            <FontAwesomeIcon icon={faStar} className="fa-star" />
-            Dead Rising <strong>(Until Q4 2021)</strong>
+            <Link to="/games/611489baf90ad10004b2cea8" className="about-links">
+              <FontAwesomeIcon icon={faStar} className="fa-star" />
+              Dead Rising <strong>(Until Q4 2021)</strong>
+            </Link>
           </li>
           <li>
-            <FontAwesomeIcon icon={faStar} className="fa-star" />
-            The Elder Scrolls V: Skyrim <strong>(Until Q4 2021)</strong>
+            <Link to="/games/611489baf90ad10004b2cea9" className="about-links">
+              <FontAwesomeIcon icon={faStar} className="fa-star" />
+              The Elder Scrolls V: Skyrim <strong>(Until Q4 2022)</strong>
+            </Link>            
           </li>
           <li>
-            <FontAwesomeIcon icon={faStar} className="fa-star" />
-            Dishonored 2 <strong>(Until Q1 2022)</strong>
+            <Link to="/games/611489baf90ad10004b2ceb1" className="about-links">
+              <FontAwesomeIcon icon={faStar} className="fa-star" />
+              Dishonored 2 <strong>(Until Q1 2022)</strong>
+            </Link>
           </li>
           <li>
-            <FontAwesomeIcon icon={faStar} className="fa-star" />
-            Minecraft <strong>(Until Q3 2022)</strong>
+            <Link to="/games/611489baf90ad10004b2ceb8" className="about-links">
+              <FontAwesomeIcon icon={faStar} className="fa-star" />
+              Minecraft <strong>(Until Q3 2022)</strong>
+            </Link>            
           </li>
         </ul>
       </section>

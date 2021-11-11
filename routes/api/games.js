@@ -9,4 +9,4 @@ router.route('/')
 router.route('/:id')
   .get(gamesController.findById);
 
-  module.exports = router;
+module.exports = router;
