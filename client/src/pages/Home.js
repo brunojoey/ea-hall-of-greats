@@ -68,7 +68,11 @@ function Home() {
           </li>
         </ul>
       )}
-      <GameCarousel />
+      <div style={{flexDirection: "row"}}>
+        <GameCarousel />
+        <GameCarousel />
+        <GameCarousel />
+      </div>
       <StarDecoration />
     </main>
   );

@@ -22,7 +22,7 @@ function GameCarousel() {
         games.map((game) => {
           return (
             <div>
-              <figure className="home-page-card" style={{alignItems: "center"}}>
+              <figure className="home-page-card">
                 <img
                   src={game.image}
                   alt={game.alt}
