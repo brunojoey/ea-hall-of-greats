@@ -6,6 +6,12 @@
 .home {
   animation: fadeItemIn 2s;
 
+  &-carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   &-title {
     font-family: "Snell Roundhand", "Times New Roman", Times, Serif;
     @include heading-styles(600, center, 6rem, 3rem 0);

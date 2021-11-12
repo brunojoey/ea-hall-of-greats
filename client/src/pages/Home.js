@@ -68,7 +68,7 @@ function Home() {
           </li>
         </ul>
       )}
-      <div style={{flexDirection: "row"}}>
+      <div className="home-carousel">
         <GameCarousel />
         <GameCarousel />
         <GameCarousel />

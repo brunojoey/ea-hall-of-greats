@@ -19,16 +19,16 @@ function GameCarousel() {
   return (
     <>
       {games ? (
-            <div>
-              <figure className="home-page-card">
-                <img
-                  src={games.image}
-                  alt={games.alt}
-                  className="home-page-image"
-                />
-              </figure>
-            </div>
-    ) : (
+        <div>
+          <figure className="home-page-card">
+            <img
+              src={games.image}
+              alt={games.alt}
+              className="home-page-image"
+            />
+          </figure>
+        </div>
+      ) : (
         <></>
       )}
     </>
