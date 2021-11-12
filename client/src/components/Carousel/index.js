@@ -19,19 +19,15 @@ function GameCarousel() {
   return (
     <>
       {games ? (
-        games.map((game) => {
-          return (
             <div>
               <figure className="home-page-card">
                 <img
-                  src={game.image}
-                  alt={game.alt}
+                  src={games.image}
+                  alt={games.alt}
                   className="home-page-image"
                 />
               </figure>
             </div>
-          )
-        })
     ) : (
         <></>
       )}
