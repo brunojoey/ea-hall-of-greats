@@ -38,6 +38,7 @@
     font-size: 2rem;
     margin: 0 2rem;
     color: $color-black;
+    transition: 1s all;
 
     &:hover {
       text-decoration: line-through;
