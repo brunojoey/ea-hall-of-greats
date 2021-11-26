@@ -363,3 +363,11 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  // Home Carousel Mobile styling
+  .home-carousel {
+    display: flex;
+    flex-direction: column;
+  }
+}
