@@ -3347,8 +3347,8 @@ const gameSeed = [
     hallLink: "hall_great_seventeen",
     infoLink: "https://en.wikipedia.org/wiki/Shenmue_(video_game)",
     threePointVote: "Halo: Combat Evolved",
-    twoPointVote: "Monster Hunter World",
-    onePointVote: "Final Fantasy XIV",
+    twoPointVote: "Final Fantasy XIV",
+    onePointVote: "Monster Hunter World",
   },
   {
     ally: danielBloodworth,
