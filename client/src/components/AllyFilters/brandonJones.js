@@ -18,6 +18,9 @@ function BrandonJones({ history }) {
   return (
     <main className="ally-page">
       <h3 className="ally-page-title">Brandon Jones' Picks</h3>
+      <p style={{ textAlign: "center" }}>
+        Brandon's Last Induction was Hall of Greats 16.
+      </p>
       <AllyTable games={ally} history={history} />
     </main>
   );

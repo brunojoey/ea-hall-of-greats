@@ -19,6 +19,7 @@ import HallOfGreatThirteen from "../CeremonyFilters/hallOfGreatThirteen";
 import HallOfGreatFourteen from "../CeremonyFilters/hallOfGreatFourteen";
 import HallOfGreatFifteen from "../CeremonyFilters/hallOfGreatFifteen";
 import HallOfGreatSixteen from "../CeremonyFilters/hallOfGreatSixteen";
+import HallOfGreatSeventeen from "../CeremonyFilters/hogSeventeen";
 
 const useStyles = makeStyles((theme) => ({
   tab: {
@@ -52,6 +53,7 @@ const CeremonyTabs = (props) => {
     13: "hall_great_fourteen",
     14: "hall_great_fifteen",
     15: "hall_great_sixteen",
+    16: "hall_great_seventeen",
   };
 
   const indexToTabName = {
@@ -71,6 +73,7 @@ const CeremonyTabs = (props) => {
     hall_great_fourteen: 13,
     hall_great_fifteen: 14,
     hall_great_sixteen: 15,
+    hall_great_seventeen: 16,
   };
 
   const [selectedTab, setSelectedTab] = useState(indexToTabName[page]);
@@ -167,6 +170,11 @@ const CeremonyTabs = (props) => {
           label="Hall of Greats 16"
           className="tab-ceremonies"
         />
+        <Tab
+          classes={{ root: classes.tab }}
+          label="Hall of Greats 17"
+          className="tab-ceremonies"
+        />
       </Tabs>
 
       {selectedTab === 0 && <HallOfGreatOne history={history} />}
@@ -185,6 +193,7 @@ const CeremonyTabs = (props) => {
       {selectedTab === 13 && <HallOfGreatFourteen history={history} />}
       {selectedTab === 14 && <HallOfGreatFifteen history={history} />}
       {selectedTab === 15 && <HallOfGreatSixteen history={history} />}
+      {selectedTab === 16 && <HallOfGreatSeventeen history={history} />}
       <StarDecoration />
     </>
   );

@@ -18,6 +18,7 @@ import HallOfGreatThirteen from "../CeremonyFilters/hallOfGreatThirteen";
 import HallOfGreatFourteen from "../CeremonyFilters/hallOfGreatFourteen";
 import HallOfGreatFifteen from "../CeremonyFilters/hallOfGreatFifteen";
 import HallOfGreatSixteen from "../CeremonyFilters/hallOfGreatSixteen";
+import HallOfGreatSeventeen from "../CeremonyFilters/hogSeventeen";
 
 function CeremonyDropdown(props) {
   const { match, history } = props;
@@ -42,6 +43,7 @@ function CeremonyDropdown(props) {
     13: "hall_great_fourteen",
     14: "hall_great_fifteen",
     15: "hall_great_sixteen",
+    16: "hall_great_seventeen",
   };
 
   const indexToLinkName = {
@@ -61,6 +63,7 @@ function CeremonyDropdown(props) {
     hall_great_fourteen: 13,
     hall_great_fifteen: 14,
     hall_great_sixteen: 15,
+    hall_great_seventeen: 16,
   };
 
   const [selectedLink, setSelectedLink] = useState(indexToLinkName[page]);
@@ -122,6 +125,7 @@ function CeremonyDropdown(props) {
           <Tab label="Hall of Greats 14" />
           <Tab label="Hall of Greats 15" />
           <Tab label="Hall of Greats 16" />
+          <Tab label="Hall of Greats 17" />
         </Tabs>
       </Menu>
 
@@ -141,6 +145,7 @@ function CeremonyDropdown(props) {
       {selectedLink === 13 && <HallOfGreatFourteen history={history} />}
       {selectedLink === 14 && <HallOfGreatFifteen history={history} />}
       {selectedLink === 15 && <HallOfGreatSixteen history={history} />}
+      {selectedLink === 16 && <HallOfGreatSeventeen history={history} />}
       <StarDecoration />
     </div>
   );
