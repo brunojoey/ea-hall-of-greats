@@ -29,20 +29,16 @@ function About() {
           games of each ceremony to induct into the Hall of Greats!{" "}
         </p>
         <p>
-          Currently there are 32 games inducted into the illustrious hall, which
+          Currently there are 34 games inducted into the illustrious hall, which
           you can find{" "}
           <Link to="/winners" className="about-links">
             here
           </Link>
-          . The Allies who have the most games inducted are:{" "}
+          . The Allies who have the most games inducted is:{" "}
           <Link to="allies/michael_damiani" className="about-links">
             Michael Damiani
           </Link>{" "}
-          &amp;{" "}
-          <Link to="allies/brad_ellis" className="about-links">
-            Brad Ellis
-          </Link>
-          , each inducting seven games. The Ally who sadly has the most games
+          who has inducted eight games. The Ally who sadly has the most games
           banned is:{" "}
           <Link to="allies/don_casanova" className="about-links">
             Don Casanova
@@ -115,24 +111,6 @@ function About() {
       </h2>
       <section>
         <ul className="banned-list">
-          <li>
-            <Link to="/games/611489baf90ad10004b2cea8" className="about-links">
-              <FontAwesomeIcon icon={faStar} className="fa-star" />
-              Dead Rising <strong>(Until Q4 2021)</strong>
-            </Link>
-          </li>
-          <li>
-            <Link to="/games/611489baf90ad10004b2cea9" className="about-links">
-              <FontAwesomeIcon icon={faStar} className="fa-star" />
-              The Elder Scrolls V: Skyrim <strong>(Until Q4 2022)</strong>
-            </Link>            
-          </li>
-          <li>
-            <Link to="/games/611489baf90ad10004b2ceb1" className="about-links">
-              <FontAwesomeIcon icon={faStar} className="fa-star" />
-              Dishonored 2 <strong>(Until Q1 2022)</strong>
-            </Link>
-          </li>
           <li>
             <Link to="/games/611489baf90ad10004b2ceb8" className="about-links">
               <FontAwesomeIcon icon={faStar} className="fa-star" />
