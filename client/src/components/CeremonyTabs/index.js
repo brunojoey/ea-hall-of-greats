@@ -24,8 +24,8 @@ import HallOfGreatSeventeen from "../CeremonyFilters/hogSeventeen";
 const useStyles = makeStyles((theme) => ({
   tab: {
     padding: 10,
-    minWidth: 10, // a number of your choice
-    width: 90, // a number of your choice
+    minWidth: 30, // a number of your choice
+    width: 120, // a number of your choice
     margin: "0 auto",
   },
 }));
@@ -88,6 +88,8 @@ const CeremonyTabs = (props) => {
       <Tabs
         value={selectedTab}
         onChange={handleChange}
+        variant="scrollable"
+        scrollButtons="auto"
         className="ceremony-tab-bar"
       >
         <Tab

@@ -34,7 +34,7 @@ function About() {
           <Link to="/winners" className="about-links">
             here
           </Link>
-          . The Allies who have the most games inducted is:{" "}
+          . The Ally who has the most games inducted is:{" "}
           <Link to="allies/michael_damiani" className="about-links">
             Michael Damiani
           </Link>{" "}
@@ -44,8 +44,9 @@ function About() {
             Don Casanova
           </Link>
           , where he had three straight games be banned starting with the second
-          Hall of Greats. There have been three situations where a Patreon Vote
-          was required to induct a game into the Hall of Greats,{" "}
+          Hall of Greats, but one in the thirteenth ceremony as well. There have
+          been three situations where a Patreon Vote was required to induct a
+          game into the Hall of Greats,{" "}
           <Link to="ceremonies/hall_great_one" className="about-links">
             The First Hall of Greats
           </Link>
@@ -53,7 +54,7 @@ function About() {
           <Link to="ceremonies/hall_great_eight" className="about-links">
             The Eighth Hall of Greats
           </Link>
-          , and the most impressive feat being when Patreon decided both games
+          , and the most impressive feat being when the Patreon community decided both games
           to get inducted when there was a three-way tie,{" "}
           <Link to="ceremonies/hall_great_ten" className="about-links">
             The Tenth Hall of Greats
@@ -86,6 +87,11 @@ function About() {
           </li>
           <li>
             <FontAwesomeIcon icon={faStar} className="fa-star" />
+            Starting with the fourteenth Hall of Greats, a nominee can encompass
+            all versions of the game.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faStar} className="fa-star" />
             If the second and third games are tied, the Easy Allies community on
             Patreon will vote on the game they want to be inducted, between the
             tied games.{" "}
@@ -115,7 +121,7 @@ function About() {
             <Link to="/games/611489baf90ad10004b2ceb8" className="about-links">
               <FontAwesomeIcon icon={faStar} className="fa-star" />
               Minecraft <strong>(Until Q3 2022)</strong>
-            </Link>            
+            </Link>
           </li>
         </ul>
       </section>

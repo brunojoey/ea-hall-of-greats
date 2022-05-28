@@ -106,8 +106,6 @@ function CeremonyDropdown(props) {
         <Tabs
           value={selectedLink}
           onChange={handleChange}
-          variant="scrollable"
-          scrollButtons="auto"
           className="hall-page-tab-bar"
           orientation="vertical"
         >
