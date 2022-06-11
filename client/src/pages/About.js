@@ -38,15 +38,18 @@ function About() {
           <Link to="allies/michael_damiani" className="about-links">
             Michael Damiani
           </Link>{" "}
-          who has inducted eight games. The Ally who sadly has the most games
-          banned is:{" "}
+          who has inducted eight games. The Allies who sadly have the most games
+          banned are:{" "}
           <Link to="allies/don_casanova" className="about-links">
             Don Casanova
           </Link>
-          , where he had three straight games be banned starting with the second
-          Hall of Greats, but one in the thirteenth ceremony as well. There have
-          been three situations where a Patreon Vote was required to induct a
-          game into the Hall of Greats,{" "}
+          and{" "}
+          <Link to="allies/brandon_jones" className="about-links">
+            Brandon Jones
+          </Link>
+          . Each having four games banned. There have been three situations
+          where a Patreon Vote was required to induct a game into the Hall of
+          Greats,{" "}
           <Link to="ceremonies/hall_great_one" className="about-links">
             The First Hall of Greats
           </Link>
@@ -54,12 +57,12 @@ function About() {
           <Link to="ceremonies/hall_great_eight" className="about-links">
             The Eighth Hall of Greats
           </Link>
-          , and the most impressive feat being when the Patreon community decided both games
-          to get inducted when there was a three-way tie,{" "}
+          , and the most impressive feat being when the Patreon community
+          decided both games to get inducted when there was a three-way tie,{" "}
           <Link to="ceremonies/hall_great_ten" className="about-links">
             The Tenth Hall of Greats
           </Link>
-          .{" "}
+          .{" "} Four the last ceremony in 2021, the Allies chose to switch things up and begin a Hall of Shame where they pick a game that is highly unworthy of being called a Great and more so needed to be Shamed.
         </p>
       </section>
       <h2 className="rules-heading">The Rules</h2>

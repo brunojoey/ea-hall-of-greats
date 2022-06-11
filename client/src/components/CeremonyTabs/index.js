@@ -3,23 +3,23 @@ import { Tabs, Tab } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import StarDecoration from "../StarDecoration";
 
-import HallOfGreatOne from "../CeremonyFilters/hallOfGreatOne";
-import HallOfGreatTwo from "../CeremonyFilters/hallOfGreatTwo";
-import HallOfGreatThree from "../CeremonyFilters/hallOfGreatThree";
-import HallOfGreatFour from "../CeremonyFilters/hallOfGreatFour";
-import HallOfGreatFive from "../CeremonyFilters/hallOfGreatFive";
-import HallOfGreatSix from "../CeremonyFilters/hallOfGreatSix";
-import HallOfGreatSeven from "../CeremonyFilters/hallOfGreatSeven";
-import HallOfGreatEight from "../CeremonyFilters/hallOfGreatEight";
-import HallOfGreatNine from "../CeremonyFilters/hallOfGreatNine";
-import HallOfGreatTen from "../CeremonyFilters/hallOfGreatTen";
-import HallOfGreatEleven from "../CeremonyFilters/hallOfGreatEleven";
-import HallOfGreatTwelve from "../CeremonyFilters/hallOfGreatTwelve";
-import HallOfGreatThirteen from "../CeremonyFilters/hallOfGreatThirteen";
-import HallOfGreatFourteen from "../CeremonyFilters/hallOfGreatFourteen";
-import HallOfGreatFifteen from "../CeremonyFilters/hallOfGreatFifteen";
-import HallOfGreatSixteen from "../CeremonyFilters/hallOfGreatSixteen";
-import HallOfGreatSeventeen from "../CeremonyFilters/hogSeventeen";
+import HogOne from "../CeremonyFilters/HogOne";
+import HogTwo from "../CeremonyFilters/HogTwo";
+import HogThree from "../CeremonyFilters/HogThree";
+import HogFour from "../CeremonyFilters/HogFour";
+import HogFive from "../CeremonyFilters/HogFive";
+import HogSix from "../CeremonyFilters/HogSix";
+import HogSeven from "../CeremonyFilters/HogSeven";
+import HogEight from "../CeremonyFilters/HogEight";
+import HogNine from "../CeremonyFilters/HogNine";
+import HogTen from "../CeremonyFilters/HogTen";
+import HogEleven from "../CeremonyFilters/HogEleven";
+import HogTwelve from "../CeremonyFilters/HogTwelve";
+import HogThirteen from "../CeremonyFilters/HogThirteen";
+import HogFourteen from "../CeremonyFilters/HogFourteen";
+import HogFifteen from "../CeremonyFilters/HogFifteen";
+import HogSixteen from "../CeremonyFilters/HogSixteen";
+import HogSeventeen from "../CeremonyFilters/HogSeventeen";
 
 const useStyles = makeStyles((theme) => ({
   tab: {
@@ -179,23 +179,23 @@ const CeremonyTabs = (props) => {
         />
       </Tabs>
 
-      {selectedTab === 0 && <HallOfGreatOne history={history} />}
-      {selectedTab === 1 && <HallOfGreatTwo history={history} />}
-      {selectedTab === 2 && <HallOfGreatThree history={history} />}
-      {selectedTab === 3 && <HallOfGreatFour history={history} />}
-      {selectedTab === 4 && <HallOfGreatFive history={history} />}
-      {selectedTab === 5 && <HallOfGreatSix history={history} />}
-      {selectedTab === 6 && <HallOfGreatSeven history={history} />}
-      {selectedTab === 7 && <HallOfGreatEight history={history} />}
-      {selectedTab === 8 && <HallOfGreatNine history={history} />}
-      {selectedTab === 9 && <HallOfGreatTen history={history} />}
-      {selectedTab === 10 && <HallOfGreatEleven history={history} />}
-      {selectedTab === 11 && <HallOfGreatTwelve history={history} />}
-      {selectedTab === 12 && <HallOfGreatThirteen history={history} />}
-      {selectedTab === 13 && <HallOfGreatFourteen history={history} />}
-      {selectedTab === 14 && <HallOfGreatFifteen history={history} />}
-      {selectedTab === 15 && <HallOfGreatSixteen history={history} />}
-      {selectedTab === 16 && <HallOfGreatSeventeen history={history} />}
+      {selectedTab === 0 && <HogOne history={history} />}
+      {selectedTab === 1 && <HogTwo history={history} />}
+      {selectedTab === 2 && <HogThree history={history} />}
+      {selectedTab === 3 && <HogFour history={history} />}
+      {selectedTab === 4 && <HogFive history={history} />}
+      {selectedTab === 5 && <HogSix history={history} />}
+      {selectedTab === 6 && <HogSeven history={history} />}
+      {selectedTab === 7 && <HogEight history={history} />}
+      {selectedTab === 8 && <HogNine history={history} />}
+      {selectedTab === 9 && <HogTen history={history} />}
+      {selectedTab === 10 && <HogEleven history={history} />}
+      {selectedTab === 11 && <HogTwelve history={history} />}
+      {selectedTab === 12 && <HogThirteen history={history} />}
+      {selectedTab === 13 && <HogFourteen history={history} />}
+      {selectedTab === 14 && <HogFifteen history={history} />}
+      {selectedTab === 15 && <HogSixteen history={history} />}
+      {selectedTab === 16 && <HogSeventeen history={history} />}
       <StarDecoration />
     </>
   );

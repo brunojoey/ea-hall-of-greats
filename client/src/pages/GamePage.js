@@ -34,6 +34,13 @@ function GamePage({ match, history }) {
                 style={{ border: "4px solid red" }}
                 className="game-image-primary"
               />
+              { gamePage.imageTwo ? 
+              <img
+                src={gamePage.imageTwo}
+                alt={gamePage.alt}
+                style={{ border: "4px solid red" }}
+                className="game-image-primary"
+              /> : <></>}
               <h2 className="game-ceremony">
                 Hall of Greats {gamePage.hallOfGreat} Winner
               </h2>

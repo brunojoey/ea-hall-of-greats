@@ -5,14 +5,14 @@ import RundownTable from "../Table/rundownTable";
 import gamesAPI from "../../utils/gamesAPI";
 import useMediaQuery from "../../utils/useMediaQuery";
 
-function HallOfGreatTwo({ history }) {
+function HogSixteen({ history }) {
   const [games, setGames] = useState([]);
   const matches = useMediaQuery("(min-width: 768px)");
 
   useEffect(() => {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
-      data = data.filter((games) => games.hallOfGreat === 2);
+      data = data.filter((games) => games.hallOfGreat === 16);
       setGames(data);
     }
 
@@ -21,21 +21,22 @@ function HallOfGreatTwo({ history }) {
 
   return (
     <main className="hall-page">
-      <h3 className="hall-page-title">The Second Hall of Greats</h3>
+      <h3 className="hall-page-title">The Sixteenth Hall of Greats</h3>
       {matches ? (
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=4dqdQAJk90g"
+          url="https://www.youtube.com/watch?v=vQShXhY7bZI"
           className="hall-page-video"
-          alt="Hall of Greats #2 https://www.youtube.com/watch?v=4dqdQAJk90g"
+          alt="Hall of Greats #16 https://www.youtube.com/watch?v=vQShXhY7bZI"
         />
       ) : (
-        <> </>
+        <></>
       )}
       <CeremonyTable games={games} history={history} />
       <h3 className="voting-title">The Voting Rundown</h3>
       <RundownTable games={games} history={history} />
+      <p style={{ textAlign: "center" }}>* Assumed Votes Given</p>
     </main>
   );
 }
 
-export default HallOfGreatTwo;
+export default HogSixteen;

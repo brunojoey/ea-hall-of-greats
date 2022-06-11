@@ -5,7 +5,7 @@ import RundownTable from "../Table/rundownTable";
 import gamesAPI from "../../utils/gamesAPI";
 import useMediaQuery from "../../utils/useMediaQuery";
 
-function HallOfGreatSix({ history }) {
+function HogSix({ history }) {
   const [games, setGames] = useState([]);
   const matches = useMediaQuery("(min-width: 768px)");
 
@@ -38,4 +38,4 @@ function HallOfGreatSix({ history }) {
   );
 }
 
-export default HallOfGreatSix;
+export default HogSix;

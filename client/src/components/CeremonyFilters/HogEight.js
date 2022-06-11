@@ -5,7 +5,7 @@ import RundownTable from "../Table/rundownTable";
 import gamesAPI from "../../utils/gamesAPI";
 import useMediaQuery from "../../utils/useMediaQuery";
 
-function HallOfGreatEight({ history }) {
+function HogEight({ history }) {
   const [games, setGames] = useState([]);
   const matches = useMediaQuery("(min-width: 768px)");
 
@@ -38,4 +38,4 @@ function HallOfGreatEight({ history }) {
   );
 }
 
-export default HallOfGreatEight;
+export default HogEight;

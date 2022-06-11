@@ -775,6 +775,7 @@ const gameSeed = [
     victory: "True",
     banned: "False",
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1zhl.jpg",
+    imageTwo: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2s5u.png",
     alt: "Pokemon Red & Blue",
     allyLink: "kyle_bosman",
     hallLink: "hall_great_four",

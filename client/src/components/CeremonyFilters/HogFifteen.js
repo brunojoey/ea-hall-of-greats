@@ -5,14 +5,14 @@ import RundownTable from "../Table/rundownTable";
 import gamesAPI from "../../utils/gamesAPI";
 import useMediaQuery from "../../utils/useMediaQuery";
 
-function HallOfGreatOne({ history }) {
+function HogFifteen({ history }) {
   const [games, setGames] = useState([]);
   const matches = useMediaQuery("(min-width: 768px)");
 
   useEffect(() => {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
-      data = data.filter((games) => games.hallOfGreat === 1);
+      data = data.filter((games) => games.hallOfGreat === 15);
       setGames(data);
     }
 
@@ -21,12 +21,12 @@ function HallOfGreatOne({ history }) {
 
   return (
     <main className="hall-page">
-      <h3 className="hall-page-title">The First Hall of Greats</h3>
+      <h3 className="hall-page-title">The Fifteenth Hall of Greats</h3>
       {matches ? (
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=75w5xT9AOnA"
+          url="https://www.youtube.com/watch?v=GgmRoZ4w4xc"
           className="hall-page-video"
-          alt="Hall of Greats #1 https://www.youtube.com/watch?v=75w5xT9AOnA"
+          alt="Hall of Greats #15 https://www.youtube.com/watch?v=GgmRoZ4w4xc"
         />
       ) : (
         <></>
@@ -38,4 +38,4 @@ function HallOfGreatOne({ history }) {
   );
 }
 
-export default HallOfGreatOne;
+export default HogFifteen;
