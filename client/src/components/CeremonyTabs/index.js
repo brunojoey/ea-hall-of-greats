@@ -3,23 +3,23 @@ import { Tabs, Tab } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import StarDecoration from "../StarDecoration";
 
-import HogOne from "../CeremonyFilters/HogOne";
-import HogTwo from "../CeremonyFilters/HogTwo";
-import HogThree from "../CeremonyFilters/HogThree";
-import HogFour from "../CeremonyFilters/HogFour";
-import HogFive from "../CeremonyFilters/HogFive";
-import HogSix from "../CeremonyFilters/HogSix";
-import HogSeven from "../CeremonyFilters/HogSeven";
-import HogEight from "../CeremonyFilters/HogEight";
-import HogNine from "../CeremonyFilters/HogNine";
-import HogTen from "../CeremonyFilters/HogTen";
-import HogEleven from "../CeremonyFilters/HogEleven";
-import HogTwelve from "../CeremonyFilters/HogTwelve";
-import HogThirteen from "../CeremonyFilters/HogThirteen";
-import HogFourteen from "../CeremonyFilters/HogFourteen";
-import HogFifteen from "../CeremonyFilters/HogFifteen";
-import HogSixteen from "../CeremonyFilters/HogSixteen";
-import HogSeventeen from "../CeremonyFilters/HogSeventeen";
+import HogOne from "../CeremonyFilters/HogOne.js";
+import HogTwo from "../CeremonyFilters/HogTwo.js";
+import HogThree from "../CeremonyFilters/HogThree.js";
+import HogFour from "../CeremonyFilters/HogFour.js";
+import HogFive from "../CeremonyFilters/HogFive.js";
+import HogSix from "../CeremonyFilters/HogSix.js";
+import HogSeven from "../CeremonyFilters/HogSeven.js";
+import HogEight from "../CeremonyFilters/HogEight.js";
+import HogNine from "../CeremonyFilters/HogNine.js";
+import HogTen from "../CeremonyFilters/HogTen.js";
+import HogEleven from "../CeremonyFilters/HogEleven.js";
+import HogTwelve from "../CeremonyFilters/HogTwelve.js";
+import HogThirteen from "../CeremonyFilters/HogThirteen.js";
+import HogFourteen from "../CeremonyFilters/HogFourteen.js";
+import HogFifteen from "../CeremonyFilters/HogFifteen.js";
+import HogSixteen from "../CeremonyFilters/HogSixteen.js";
+import HogSeventeen from "../CeremonyFilters/HogSeventeen.js";
 
 const useStyles = makeStyles((theme) => ({
   tab: {
