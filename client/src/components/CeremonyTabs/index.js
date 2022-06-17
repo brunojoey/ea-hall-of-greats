@@ -20,6 +20,7 @@ import HogFourteen from "../CeremonyFilters/HogFourteen.js";
 import HogFifteen from "../CeremonyFilters/HogFifteen.js";
 import HogSixteen from "../CeremonyFilters/HogSixteen.js";
 import HogSeventeen from "../CeremonyFilters/HogSeventeen.js";
+import HogEighteen from "../CeremonyFilters/HogEighteen";
 
 const useStyles = makeStyles((theme) => ({
   tab: {
@@ -54,6 +55,7 @@ const CeremonyTabs = (props) => {
     14: "hall_great_fifteen",
     15: "hall_great_sixteen",
     16: "hall_great_seventeen",
+    17: "hall_great_eighteen",
   };
 
   const indexToTabName = {
@@ -74,6 +76,7 @@ const CeremonyTabs = (props) => {
     hall_great_fifteen: 14,
     hall_great_sixteen: 15,
     hall_great_seventeen: 16,
+    hall_great_eighteen: 17,
   };
 
   const [selectedTab, setSelectedTab] = useState(indexToTabName[page]);
@@ -177,6 +180,11 @@ const CeremonyTabs = (props) => {
           label="Hall of Greats 17"
           className="tab-ceremonies"
         />
+        <Tab
+          classes={{ root: classes.tab }}
+          label="Hall of Greats 18"
+          className="tab-ceremonies"
+        />
       </Tabs>
 
       {selectedTab === 0 && <HogOne history={history} />}
@@ -196,6 +204,7 @@ const CeremonyTabs = (props) => {
       {selectedTab === 14 && <HogFifteen history={history} />}
       {selectedTab === 15 && <HogSixteen history={history} />}
       {selectedTab === 16 && <HogSeventeen history={history} />}
+      {selectedTab === 17 && <HogEighteen history={history} />}
       <StarDecoration />
     </>
   );
