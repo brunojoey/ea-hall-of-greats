@@ -53,6 +53,9 @@ function BenMoore({ history }) {
           <section>{benMooreCard}</section>
         </div>
       ) : ( */}
+      <p style={{ textAlign: "center" }}>
+        Ben's Last Induction was Hall of Greats 18.
+      </p>
       <AllyTable games={ally} history={history} />
       {/* )} */}
     </main>
