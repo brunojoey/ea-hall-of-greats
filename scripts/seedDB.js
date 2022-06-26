@@ -7,7 +7,6 @@ mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/hallOfGreatsDB",
   {
     useNewUrlParser: true,
-    useFindAndModify: false,
     useUnifiedTopology: true,
   }
 );
