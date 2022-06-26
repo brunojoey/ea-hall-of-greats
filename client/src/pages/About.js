@@ -41,7 +41,7 @@ function About() {
           who has inducted eight games. The Allies who sadly have the most games
           banned are:{" "}
           <Link to="allies/don_casanova" className="about-links">
-            Don Casanova 
+            Don Casanova {" "}
           </Link>
           and{" "}
           <Link to="allies/brandon_jones" className="about-links">
@@ -62,7 +62,7 @@ function About() {
           <Link to="ceremonies/hall_great_ten" className="about-links">
             The Tenth Hall of Greats
           </Link>
-          .{" "} Four the last ceremony in 2021, the Allies chose to switch things up and begin a Hall of Shame where they pick a game that is highly unworthy of being called a Great and more so needed to be Shamed.
+          .{" "} For the last ceremony in 2021, the Allies chose to switch things up and begin a Hall of Shame where they pick a game that is highly unworthy of being called a Great and more so needed to be Shamed.
         </p>
       </section>
       <h2 className="rules-heading">The Rules</h2>
