@@ -18,7 +18,7 @@ import HogThirteen from "../CeremonyFilters/HogThirteen.js";
 import HogFourteen from "../CeremonyFilters/HogFourteen.js";
 import HogFifteen from "../CeremonyFilters/HogFifteen.js";
 import HogSixteen from "../CeremonyFilters/HogSixteen.js";
-import HogSeventeen from "../CeremonyFilters/HogSeventeen";
+import HogSeventeen from "../CeremonyFilters/HallGreatsSeventeen";
 import HogEighteen from "../CeremonyFilters/HogEighteen";
 
 function CeremonyDropdown(props) {
