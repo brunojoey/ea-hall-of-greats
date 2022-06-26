@@ -29,7 +29,7 @@ function About() {
           games of each ceremony to induct into the Hall of Greats!{" "}
         </p>
         <p>
-          Currently there are 34 games inducted into the illustrious hall, which
+          Currently there are 36 games inducted into the illustrious hall, which
           you can find{" "}
           <Link to="/winners" className="about-links">
             here
