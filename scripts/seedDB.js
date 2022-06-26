@@ -3,9 +3,9 @@ const mongoose = require("mongoose");
 const db = require("../models");
 
 // This file empties the database and inserts new games and ceremonies.
-mongoose.connect(
+await mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/hallOfGreatsDB",
-);
+).asPromise;
 
 // Ally Variables
 const benMoore = "Ben Moore";
