@@ -3631,7 +3631,7 @@ const gameSeed = [
 db.Games.deleteMany({})
   .then(() => db.Games.collection.insertMany(gameSeed))
   .then((data) => {
-    console.log(data.result.n + " records inserted!");
+    console.log(data.result + " records inserted!");
     process.exit(0);
   })
   .catch((err) => {
