@@ -3546,7 +3546,7 @@ const gameSeed = [
     publisher: "Psygonis",
     votes: 5,
     victory: "False",
-    banned: "True",
+    banned: "False",
     image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co4ay9.png",
     alt: "Wipeout XL",
     allyLink: "don_casanova",
