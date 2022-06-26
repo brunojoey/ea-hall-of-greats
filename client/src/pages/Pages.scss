@@ -264,6 +264,7 @@
     .game-images {
       display: flex;
       flex-direction: row;
+      justify-content: space-around;
     }
 
     .game-image-primary {

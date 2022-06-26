@@ -62,7 +62,9 @@ function About() {
           <Link to="ceremonies/hall_great_ten" className="about-links">
             The Tenth Hall of Greats
           </Link>
-          .{" "} For the last ceremony in 2021, the Allies chose to switch things up and begin a Hall of Shame where they pick a game that is highly unworthy of being called a Great and more so needed to be Shamed.
+          . For the last ceremony in 2021, the Allies chose to switch things up
+          and begin a Hall of Shame where they pick a game that is highly
+          unworthy of being called a Great and more so needed to be Shamed.
         </p>
       </section>
       <h2 className="rules-heading">The Rules</h2>
@@ -121,10 +123,8 @@ function About() {
       <section>
         <ul className="banned-list">
           <li>
-            <Link to="/games/611489baf90ad10004b2ceb8" className="about-links">
-              <FontAwesomeIcon icon={faStar} className="fa-star" />
-              Minecraft <strong>(Until Q3 2022)</strong>
-            </Link>
+            <FontAwesomeIcon icon={faStar} className="fa-star" />
+            Minecraft <strong>(Until Q3 2022)</strong>
           </li>
         </ul>
       </section>
