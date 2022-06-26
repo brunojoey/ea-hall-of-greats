@@ -3518,7 +3518,7 @@ const gameSeed = [
     genre: platformer,
     year: 1985,
     platforms: nes,
-    metacritic: "",
+    metacritic: "N/A",
     developer: "Nintendo",
     publisher: "Nintendo",
     votes: 7,
