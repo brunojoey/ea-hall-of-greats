@@ -5,10 +5,6 @@ const db = require("../models");
 // This file empties the database and inserts new games and ceremonies.
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/hallOfGreatsDB",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
 );
 
 // Ally Variables
