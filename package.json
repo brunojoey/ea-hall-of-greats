@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/brunojoey/ea-hall-of-greats/issues"
   },
-  "homepage": "http://thehallofgreats.com",
+  "homepage": "https://www.thehallofgreats.com",
   "dependencies": {
     "concurrently": "^7.2.1",
     "eslint": "^7.0.0",

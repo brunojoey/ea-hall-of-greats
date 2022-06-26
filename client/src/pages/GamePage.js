@@ -28,19 +28,21 @@ function GamePage({ match, history }) {
             <section className="inductee-area">
               <StarDecoration />
               <h1 className="game-title-primary"> {gamePage.game} </h1>
-              <img
-                src={gamePage.image}
-                alt={gamePage.alt}
-                style={{ border: "4px solid red" }}
-                className="game-image-primary"
-              />
-              { gamePage.imageTwo ? 
-              <img
-                src={gamePage.imageTwo}
-                alt={gamePage.alt}
-                style={{ border: "4px solid red" }}
-                className="game-image-primary"
-              /> : <></>}
+              <span className="game-images">
+                <img
+                  src={gamePage.image}
+                  alt={gamePage.alt}
+                  style={{ border: "4px solid red" }}
+                  className="game-image-primary"
+                />
+                { gamePage.imageTwo ? 
+                <img
+                  src={gamePage.imageTwo}
+                  alt={gamePage.alt}
+                  style={{ border: "4px solid red" }}
+                  className="game-image-primary"
+                /> : <></>}
+              </span>
               <h2 className="game-ceremony">
                 Hall of Greats {gamePage.hallOfGreat} Winner
               </h2>

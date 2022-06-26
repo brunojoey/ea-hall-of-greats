@@ -41,7 +41,7 @@ function About() {
           who has inducted eight games. The Allies who sadly have the most games
           banned are:{" "}
           <Link to="allies/don_casanova" className="about-links">
-            Don Casanova {" "}
+            Don Casanova{" "}
           </Link>
           and{" "}
           <Link to="allies/brandon_jones" className="about-links">
