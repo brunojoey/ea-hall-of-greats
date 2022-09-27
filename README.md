@@ -38,7 +38,7 @@ To use this application you go to the deployed link available within this README
 To contribute, clone this repository into your terminal, work on the project, then create a pull request.
 
 ## Deployment Application Link
-[Deployed Hall of Greats Application](http://thehallofgreats.com/)
+[Deployed Hall of Greats Application](https://thehallofgreats.com/)
 
 ## Application in Use
 ![Hall of Greats Application In Use](./hall-of-greats.gif)
