@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import CeremonyTable from "../Table/ceremonyTable";
-import RundownTable from "../Table/rundownTable";
 import gamesAPI from "../../utils/gamesAPI";
 import useMediaQuery from "../../utils/useMediaQuery";
 
@@ -26,14 +25,12 @@ function HogNinteen({ history }) {
         <ReactPlayer
           url="https://www.youtube.com/watch?v=Ka5kRNop_Kk"
           className="hall-page-video"
-          alt="Hall of Greats #19 https://www.youtube.com/watch?v=Ka5kRNop_Kk"
+          alt="Hall of Greats #19 https://www.youtube.com/watch?v=q1yyhGNn54A"
         />
       ) : (
         <></>
       )}
       <CeremonyTable games={games} history={history} />
-      <h3 className="voting-title">The Voting Rundown</h3>
-      <RundownTable games={games} history={history} />
     </main>
   );
 }

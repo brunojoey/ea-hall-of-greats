@@ -13,6 +13,7 @@ const GamesSchema = new Schema ({
   developer: { type: String, required: false },
   publisher: { type: String, required: false },
   votes: { type: Number, required: false },
+  runoffVotes: { type: Number, required: false},
   victory: { type: String, required: false },
   banned: { type: String, required: false, default: false },
   wonByPatreonVote: { type: String, required: false},
