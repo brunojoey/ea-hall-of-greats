@@ -31,6 +31,13 @@ function HogNinteen({ history }) {
         <></>
       )}
       <CeremonyTable games={games} history={history} />
+      <p style={{ textAlign: "center" }}>
+        A runoff vote was held between the three allies not in the tie and the Twitch Chat as they received voting power!
+      </p>
+      <p style={{ textAlign: "center" }}>
+        * Voting Was Not Disclosed
+      </p>
+
     </main>
   );
 }
