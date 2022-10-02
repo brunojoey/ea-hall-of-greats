@@ -66,7 +66,7 @@ function CeremonyTable({ history, games }) {
               </span>
             </td>
             <td className="table-infoE">{sorted.votes}</td>
-            {sorted.runoffVote ? (
+            {sorted.runoffVotes ? (
               <td>{sorted.runoffVotes}</td>
             ) : (
               <></>
