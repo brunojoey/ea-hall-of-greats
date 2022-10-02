@@ -29,14 +29,17 @@ function About() {
           games of each ceremony to induct into the Hall of Greats!{" "}
         </p>
         <p>
-          Currently there are 36 games inducted into the illustrious hall, which
+          Currently there are 38 games inducted into the illustrious hall, which
           you can find{" "}
           <Link to="/winners" className="about-links">
             here
           </Link>
-          . The Ally who has the most games inducted is:{" "}
+          . The Allies who have the most games inducted are:{" "}
           <Link to="allies/michael_damiani" className="about-links">
             Michael Damiani
+          </Link>{" "}and 
+          <Link to="allies/brad_ellis" className="about-links">
+            Brad Ellis
           </Link>{" "}
           who has inducted eight games. The Allies who sadly have the most games
           banned are:{" "}
@@ -63,7 +66,7 @@ function About() {
             The Tenth Hall of Greats
           </Link>
           . For the last ceremony in 2021, the Allies chose to switch things up
-          and begin a Hall of Shame where they pick a game that is highly
+          and began a Hall of Shame where they pick a game that is highly
           unworthy of being called a Great and more so needed to be Shamed.
         </p>
       </section>
