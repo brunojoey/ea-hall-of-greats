@@ -99,7 +99,7 @@ function About() {
             <FontAwesomeIcon icon={faStar} className="fa-star" />
             If the second and third games are tied, the Easy Allies community on
             Patreon will vote on the game they want to be inducted, between the
-            tied games.{" "}
+            tied games. The 19th Ceremony did change this however to have runoff votes between the allies who were not part of the tie and the Twitch chat.{" "}
           </li>
           <li>
             <FontAwesomeIcon icon={faStar} className="fa-star" />
@@ -118,16 +118,16 @@ function About() {
         </ul>
       </section>
       <h2 className="bans-heading" data-testid="bans-heading">
-        The Current Bans
+        No Current Bans!
       </h2>
-      <section>
+      {/* <section>
         <ul className="banned-list">
           <li>
             <FontAwesomeIcon icon={faStar} className="fa-star" />
             Minecraft <strong>(Until Q3 2022)</strong>
           </li>
         </ul>
-      </section>
+      </section> */}
       <StarDecoration />
     </main>
   );
