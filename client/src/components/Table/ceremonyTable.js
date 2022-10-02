@@ -66,11 +66,6 @@ function CeremonyTable({ history, games }) {
               </span>
             </td>
             <td className="table-infoE">{sorted.votes}</td>
-            {sorted.runoffVotes ? (
-              <td>{sorted.runoffVotes}</td>
-            ) : (
-              <></>
-            )}
             <td
               className="table-infoE"
               style={{
@@ -133,15 +128,6 @@ function CeremonyTable({ history, games }) {
               ></FontAwesomeIcon>
             </th>
             {}
-            <th>
-              Runoff Votes
-              <FontAwesomeIcon
-                size="1x"
-                className="feed-user-icon"
-                icon={faSort}
-                onClick={() => requestSort("runoffVotes")}
-              ></FontAwesomeIcon>
-            </th>
             <th>
               Inducted
               <FontAwesomeIcon
