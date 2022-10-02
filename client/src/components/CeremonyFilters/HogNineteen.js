@@ -23,7 +23,7 @@ function HogNinteen({ history }) {
       <h3 className="hall-page-title">The Ninteenth Hall of Greats</h3>
       {matches ? (
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=Ka5kRNop_Kk"
+          url="https://www.youtube.com/watch?v=q1yyhGNn54A"
           className="hall-page-video"
           alt="Hall of Greats #19 https://www.youtube.com/watch?v=q1yyhGNn54A"
         />
