@@ -91,7 +91,7 @@ function GamePage({ match, history }) {
                 <strong>Won By Patreon Vote |{" "}</strong>
               ) : null}
               {gamePage.runoffVotes ? (
-                <span><strong>Runoff Votes </strong>: {gamePage.runoffVotes} |</span>
+                <strong>Runoff Votes: {gamePage.runoffVotes} |</strong> 
               ) : <></>} {" "}
               <strong>Banned</strong>: {gamePage.banned}
             </p>
