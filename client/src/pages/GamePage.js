@@ -88,10 +88,10 @@ function GamePage({ match, history }) {
               <strong>Year</strong>: {gamePage.year} |{" "}
               <strong>Votes Received</strong>: {gamePage.votes} |{" "}
               {gamePage.wonByPatreonVote ? (
-                <strong>Won By Patreon Vote | </strong>
+                <strong>Won By Patreon Vote |{" "}</strong>
               ) : null}
               {gamePage.runoffVotes ? (
-                <p><strong>Runoff Votes </strong>: {gamePage.runoffVotes} |</p>
+                <span><strong>Runoff Votes </strong>: {gamePage.runoffVotes} |</span>
               ) : <></>} {" "}
               <strong>Banned</strong>: {gamePage.banned}
             </p>
