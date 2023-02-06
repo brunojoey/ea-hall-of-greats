@@ -15,7 +15,7 @@
     "axios": "^0.21.4",
     "eslint-plugin-react-hooks": "0.0.0-57768ef90",
     "node-sass": "^7.0.0",
-    "postcss": "^8.2.10",
+    "postcss": "^8.2.13",
     "react": "^17.0.1",
     "react-bootstrap": "^2.0.2",
     "react-dom": "^17.0.1",
