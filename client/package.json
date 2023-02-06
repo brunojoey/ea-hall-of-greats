@@ -14,7 +14,7 @@
     "@testing-library/user-event": "^12.6.0",
     "axios": "^0.21.4",
     "eslint-plugin-react-hooks": "0.0.0-57768ef90",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "postcss": "^8.2.10",
     "react": "^17.0.1",
     "react-bootstrap": "^2.0.2",
