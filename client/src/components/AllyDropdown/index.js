@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Menu, Tabs, Tab } from "@material-ui/core/";
+import { Button, Menu, Tabs, Tab } from "@mui/material";
 
 import BenMoore from "../AllyFilters/benMoore";
 import BradEllis from "../AllyFilters/bradEllis";

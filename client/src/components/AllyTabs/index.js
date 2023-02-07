@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Tabs, Tab, makeStyles } from "@material-ui/core";
+import { Tabs, Tab } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 
 import BenMoore from "../AllyFilters/benMoore";
 import BradEllis from "../AllyFilters/bradEllis";

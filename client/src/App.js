@@ -22,7 +22,7 @@ function App() {
   const [path, setPath] = useState(window.location.pathname);
 
   return (
-    <div className="page-container">
+    <div id="app" className="page-container">
       <div className="page-container-wrap">
         <Router>
           <Header path={path} setPath={setPath} />

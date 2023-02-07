@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from 'react-router-dom';
-import { Button, Menu } from "@material-ui/core";
+import { Button, Menu } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./Dropdown.scss";

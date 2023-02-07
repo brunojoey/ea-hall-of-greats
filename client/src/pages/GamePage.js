@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import gamesAPI from "../utils/gamesAPI";
 import StarDecoration from "../components/StarDecoration";
-import Loader from "react-loader-spinner";
-import { Button } from "@material-ui/core";
+import { BallTriangle } from "react-loader-spinner";
+import { Button } from "@mui/material";
 import "./Pages.scss";
 
 function GamePage({ match, history }) {
@@ -126,7 +126,7 @@ function GamePage({ match, history }) {
         </main>
       ) : (
         <>
-          <Loader
+          <BallTriangle
             className="loader"
             type="Circles"
             color="red"

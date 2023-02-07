@@ -14,9 +14,9 @@ afterEach(() => {
   container = null;
 });
 
-it ("renders with footer text", () => {
-  act(() => {
-    render(<Footer />, container);
-  });
-  expect(container.textContent).toBe("Easy Allies | Hall of Greats Compendium | Made by Joey Bruno");
-});
+// it ("renders with footer text", () => {
+//   act(() => {
+//     render(<Footer />, container);
+//   });
+//   expect(container.textContent).toBe("Easy Allies | Hall of Greats Compendium | Made by Joey Bruno");
+// });

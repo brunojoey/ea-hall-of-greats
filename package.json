@@ -28,12 +28,10 @@
   },
   "homepage": "https://www.thehallofgreats.com",
   "dependencies": {
-    "concurrently": "^7.2.1",
-    "eslint": "^7.0.0",
-    "eslint-plugin-react-hooks": "0.0.0-57768ef90",
-    "express": "^4.18.1",
+    "concurrently": "^7.6.0",
+    "express": "^4.18.2",
     "if-env": "^1.0.4",
-    "mongoose": "^6.4.6",
+    "mongoose": "^6.9.1",
     "mquery": "^4.0.3",
     "nodemon": "^2.0.20",
     "path": "^0.12.7"

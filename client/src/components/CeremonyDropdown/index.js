@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Tabs, Tab, Button, Menu } from "@material-ui/core";
+import { Tabs, Tab, Button, Menu } from "@mui/material";
 import StarDecoration from "../StarDecoration";
 
 import HogOne from "../CeremonyFilters/HogOne.js";
