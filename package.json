@@ -18,7 +18,7 @@
     "url": "git+https://github.com/brunojoey/ea-hall-of-greats.git"
   },
   "engines": {
-    "node": "12.9.1"
+    "node": "18.14.0"
   },
   "keywords": [],
   "author": "",
