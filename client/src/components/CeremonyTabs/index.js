@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Tabs, Tab } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import StarDecoration from "../StarDecoration";
 
 import HogOne from "../CeremonyFilters/HogOne.js";
@@ -22,18 +21,9 @@ import HogSixteen from "../CeremonyFilters/HogSixteen.js";
 import HogSeventeen from "../CeremonyFilters/HallGreatsSeventeen";
 import HogEighteen from "../CeremonyFilters/HogEighteen";
 import HogNineteen from "../CeremonyFilters/HogNineteen";
-
-const useStyles = makeStyles((theme) => ({
-  tab: {
-    padding: 10,
-    minWidth: 30, // a number of your choice
-    width: 120, // a number of your choice
-    margin: "0 auto",
-  },
-}));
+import "./CeremonyTabs.scss";
 
 const CeremonyTabs = (props) => {
-  const classes = useStyles();
   const { match, history } = props;
   const { params } = match;
   const { page } = params;
@@ -99,97 +89,78 @@ const CeremonyTabs = (props) => {
         className="ceremony-tab-bar"
       >
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 1"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 2"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 3"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 4"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 5"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 6"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 7"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 8"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 9"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 10"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 11"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 12"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 13"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 14"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 15"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 16"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 17"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 18"
           className="tab-ceremonies"
         />
         <Tab
-          classes={{ root: classes.tab }}
           label="Hall of Greats 19"
           className="tab-ceremonies"
         />

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Tabs, Tab } from "@mui/material";
-import { makeStyles } from "@mui/styles";
-
+import "./AllyTabs.scss";
 import BenMoore from "../AllyFilters/benMoore";
 import BradEllis from "../AllyFilters/bradEllis";
 import BrandonJones from "../AllyFilters/brandonJones";
@@ -12,17 +11,7 @@ import KyleBosman from "../AllyFilters/kyleBosman";
 import MichaelDamiani from "../AllyFilters/michaelDamiani";
 import MichaelHuber from "../AllyFilters/michaelHuber";
 
-const useStyles = makeStyles((theme) => ({
-  tab: {
-    paddingTop: 10,
-    minWidth: 50, // a number of your choice
-    width: 110, // a number of your choice
-    margin: "0 auto",
-  },
-}));
-
 function AllyTabs({ match, history }) {
-  const classes = useStyles();
   const { params } = match;
   const { page } = params;
 
@@ -66,47 +55,38 @@ function AllyTabs({ match, history }) {
           className="ally-page-tab-bar"
         >
           <Tab
-            classes={{ root: classes.tab }}
             label="Ben Moore"
             className="tab-allies"
           />
           <Tab
-            classes={{ root: classes.tab }}
             label="Brad Ellis"
             className="tab-allies"
           />
           <Tab
-            classes={{ root: classes.tab }}
             label="Brandon Jones"
             className="tab-allies"
           />
           <Tab
-            classes={{ root: classes.tab }}
             label="Daniel Bloodworth"
             className="tab-allies"
           />
           <Tab
-            classes={{ root: classes.tab }}
             label="Don Casanova"
             className="tab-allies"
           />
           <Tab
-            classes={{ root: classes.tab }}
             label="Isla Hinck"
             className="tab-allies"
           />
           <Tab
-            classes={{ root: classes.tab }}
             label="Kyle Bosman"
             className="tab-allies"
           />
           <Tab
-            classes={{ root: classes.tab }}
             label="Michael Damiani"
             className="tab-allies"
           />
           <Tab
-            classes={{ root: classes.tab }}
             label="Michael Huber"
             className="tab-allies"
           />
