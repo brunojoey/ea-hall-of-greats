@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import ReactPlayer from "react-player";
 import CeremonyTable from "../Table/ceremonyTable";
 import gamesAPI from "../../utils/gamesAPI";
 import useMediaQuery from "../../utils/useMediaQuery";
+import YoutubeVideo from "../YoutubeVideo";
 
 function HogNinteen({ history }) {
   const [games, setGames] = useState([]);
@@ -22,22 +22,22 @@ function HogNinteen({ history }) {
     <main className="hall-page">
       <h3 className="hall-page-title">The Ninteenth Hall of Greats</h3>
       {matches ? (
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=q1yyhGNn54A"
-          className="hall-page-video"
+        <YoutubeVideo
+          embedId="q1yyhGNn54A"
           alt="Hall of Greats #19 https://www.youtube.com/watch?v=q1yyhGNn54A"
         />
       ) : (
+        // <ReactPlayer
+        //   url="https://www.youtube.com/watch?v=q1yyhGNn54A"
+        //   className="hall-page-video"
         <></>
       )}
       <CeremonyTable games={games} history={history} />
       <p style={{ textAlign: "center" }}>
-        A runoff vote was held between the three allies not in the tie and the Twitch Chat as they received voting power!
+        A runoff vote was held between the three allies not in the tie and the
+        Twitch Chat as they received voting power!
       </p>
-      <p style={{ textAlign: "center" }}>
-        * Voting Was Not Disclosed
-      </p>
-
+      <p style={{ textAlign: "center" }}>* Voting Was Not Disclosed</p>
     </main>
   );
 }

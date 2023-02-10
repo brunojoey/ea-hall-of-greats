@@ -27,7 +27,7 @@
   }
 
   &-links-div-two {
-    display: flex-direction;
+    display: flex;
     flex-direction: column;
     list-style: none;
     text-align: center;
@@ -182,15 +182,23 @@
   }
 
   &-video {
-    margin: $margin-auto;
     margin-bottom: 2rem;
     box-shadow: 0 0.5rem 1rem $color-black;
     border: 3px solid $color-red;
     border-radius: 3px;
     transition: 0.3s ease;
+    width: 500px;
+    height: 300px;
 
     &:hover {
       transform: translateY(-0.5rem);
+    }
+
+    &-container {
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 

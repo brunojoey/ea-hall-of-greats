@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import ReactPlayer from "react-player";
 import CeremonyTable from "../Table/ceremonyTable";
 import RundownTable from "../Table/rundownTable";
 import gamesAPI from "../../utils/gamesAPI";
 import useMediaQuery from "../../utils/useMediaQuery";
+import YoutubeVideo from "../YoutubeVideo";
 
 function HogTwelve({ history }) {
   const [games, setGames] = useState([]);
@@ -23,9 +23,8 @@ function HogTwelve({ history }) {
     <main className="hall-page">
       <h3 className="hall-page-title">The Twelfth Hall of Greats</h3>
       {matches ? (
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=BBwj6gpT_MM"
-          className="hall-page-video"
+        <YoutubeVideo
+          embedId="BBwj6gpT_MM"
           alt="Hall of Greats #12 https://www.youtube.com/watch?v=BBwj6gpT_MM"
         />
       ) : (
