@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import CeremonyTable from "../Table/ceremonyTable";
-import RundownTable from "../Table/rundownTable";
 import gamesAPI from "../../utils/gamesAPI";
 import useMediaQuery from "../../utils/useMediaQuery";
 import YoutubeVideo from "../YoutubeVideo";
@@ -31,8 +30,6 @@ function HogSeven({ history }) {
         <></>
       )}
       <CeremonyTable games={games} history={history} />
-      <h3 className="voting-title">The Voting Rundown</h3>
-      <RundownTable games={games} history={history} />
     </main>
   );
 }

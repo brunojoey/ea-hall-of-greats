@@ -24,12 +24,9 @@ function HogNinteen({ history }) {
       {matches ? (
         <YoutubeVideo
           embedId="q1yyhGNn54A"
-          alt="Hall of Greats #19 https://www.youtube.com/watch?v=q1yyhGNn54A"
+          alt="Hall of Greats #19 Video"
         />
       ) : (
-        // <ReactPlayer
-        //   url="https://www.youtube.com/watch?v=q1yyhGNn54A"
-        //   className="hall-page-video"
         <></>
       )}
       <CeremonyTable games={games} history={history} />
@@ -37,7 +34,6 @@ function HogNinteen({ history }) {
         A runoff vote was held between the three allies not in the tie and the
         Twitch Chat as they received voting power!
       </p>
-      <p style={{ textAlign: "center" }}>* Voting Was Not Disclosed</p>
     </main>
   );
 }

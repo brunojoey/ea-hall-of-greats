@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import CeremonyTable from "../Table/ceremonyTable";
-import RundownTable from "../Table/rundownTable";
 import gamesAPI from "../../utils/gamesAPI";
 import useMediaQuery from "../../utils/useMediaQuery";
 import YoutubeVideo from "../YoutubeVideo";
@@ -25,15 +24,12 @@ function HogFourteen({ history }) {
       {matches ? (
         <YoutubeVideo
           embedId="SOSOYqCY0TI"
-          alt="Hall of Greats #14 https://www.youtube.com/watch?v=SOSOYqCY0TI"
+          alt="Hall of Greats #14 Video"
         />
       ) : (
         <></>
       )}
       <CeremonyTable games={games} history={history} />
-      <h3 className="voting-title">The Voting Rundown</h3>
-      <RundownTable games={games} history={history} />
-      <p style={{ textAlign: "center" }}>* Assumed Votes Given</p>
     </main>
   );
 }

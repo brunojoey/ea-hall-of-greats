@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import CeremonyTable from "../Table/ceremonyTable";
-import RundownTable from "../Table/rundownTable";
 import gamesAPI from "../../utils/gamesAPI";
 import useMediaQuery from "../../utils/useMediaQuery";
 import YoutubeVideo from "../YoutubeVideo";
@@ -24,14 +23,12 @@ function HogOne({ history }) {
       <h3 className="hall-page-title">The First Hall of Greats</h3>
       {matches ? (
         <YoutubeVideo embedId="75w5xT9AOnA" 
-          alt="Hall of Greats #1 https://www.youtube.com/watch?v=75w5xT9AOnA"
+          alt="Hall of Greats #1 First"
         />
       ) : (
         <></>
       )}
       <CeremonyTable games={games} history={history} />
-      <h3 className="voting-title">The Voting Rundown</h3>
-      <RundownTable games={games} history={history} />
     </main>
   );
 }

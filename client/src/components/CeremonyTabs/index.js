@@ -18,9 +18,11 @@ import HogThirteen from "../CeremonyFilters/HogThirteen.js";
 import HogFourteen from "../CeremonyFilters/HogFourteen.js";
 import HogFifteen from "../CeremonyFilters/HogFifteen.js";
 import HogSixteen from "../CeremonyFilters/HogSixteen.js";
-import HogSeventeen from "../CeremonyFilters/HallGreatsSeventeen";
+import HogSeventeen from "../CeremonyFilters/HogSeventeen";
 import HogEighteen from "../CeremonyFilters/HogEighteen";
 import HogNineteen from "../CeremonyFilters/HogNineteen";
+import HogTwenty from "../CeremonyFilters/HogTwenty";
+import HogTwentyOne from "../CeremonyFilters/HogTwentyOne";
 import "./CeremonyTabs.scss";
 
 const CeremonyTabs = (props) => {
@@ -47,7 +49,9 @@ const CeremonyTabs = (props) => {
     15: "hall_great_sixteen",
     16: "hall_great_seventeen",
     17: "hall_great_eighteen",
-    18: "hall_great_nineteen"
+    18: "hall_great_nineteen",
+    19: "hall_great_twenty",
+    20: "hall_great_twentyone"
   };
 
   const indexToTabName = {
@@ -69,7 +73,9 @@ const CeremonyTabs = (props) => {
     hall_great_sixteen: 15,
     hall_great_seventeen: 16,
     hall_great_eighteen: 17,
-    hall_great_nineteen: 18
+    hall_great_nineteen: 18,
+    hall_great_twenty: 19,
+    hall_great_twentyone: 20
   };
 
   const [selectedTab, setSelectedTab] = useState(indexToTabName[page]);
@@ -164,6 +170,14 @@ const CeremonyTabs = (props) => {
           label="Hall of Greats 19"
           className="tab-ceremonies"
         />
+        <Tab
+          label="Hall of Greats 20"
+          className="tab-ceremonies"
+        />
+        <Tab
+        label="Hall of Greats 21"
+        className="tab-ceremonies"
+        />
       </Tabs>
 
       {selectedTab === 0 && <HogOne history={history} />}
@@ -185,6 +199,8 @@ const CeremonyTabs = (props) => {
       {selectedTab === 16 && <HogSeventeen history={history} />}
       {selectedTab === 17 && <HogEighteen history={history} />}
       {selectedTab === 18 && <HogNineteen history={history} />}
+      {selectedTab === 19 && <HogTwenty history={history} />}
+      {selectedTab === 20 && <HogTwentyOne history={history} />}
       <StarDecoration />
     </>
   );

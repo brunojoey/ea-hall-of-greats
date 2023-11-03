@@ -4,14 +4,14 @@ import gamesAPI from "../../utils/gamesAPI";
 import useMediaQuery from "../../utils/useMediaQuery";
 import YoutubeVideo from "../YoutubeVideo";
 
-function HogTwelve({ history }) {
+function HogTwentyOne({ history }) {
   const [games, setGames] = useState([]);
   const matches = useMediaQuery("(min-width: 768px)");
 
   useEffect(() => {
     async function fetchData() {
       let { data } = await gamesAPI.getGames();
-      data = data.filter((games) => games.hallOfGreat === 12);
+      data = data.filter((games) => games.hallOfGreat === 21);
       setGames(data);
     }
 
@@ -20,11 +20,11 @@ function HogTwelve({ history }) {
 
   return (
     <main className="hall-page">
-      <h3 className="hall-page-title">The Twelfth Hall of Greats</h3>
+      <h3 className="hall-page-title">The Twenty-First Hall of Greats</h3>
       {matches ? (
         <YoutubeVideo
-          embedId="BBwj6gpT_MM"
-          alt="Hall of Greats #12 Video"
+          embedId="naY-M3Otq4A"
+          alt="Hall of Greats #21 Video"
         />
       ) : (
         <></>
@@ -34,4 +34,4 @@ function HogTwelve({ history }) {
   );
 }
 
-export default HogTwelve;
+export default HogTwentyOne;

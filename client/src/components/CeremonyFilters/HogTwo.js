@@ -25,14 +25,12 @@ function HogTwo({ history }) {
       {matches ? (
         <YoutubeVideo
           embedId="4dqdQAJk90g"
-          alt="Hall of Greats #2 https://www.youtube.com/watch?v=4dqdQAJk90g"
+          alt="Hall of Greats #2 Video"
         />
       ) : (
         <> </>
       )}
       <CeremonyTable games={games} history={history} />
-      <h3 className="voting-title">The Voting Rundown</h3>
-      <RundownTable games={games} history={history} />
     </main>
   );
 }
